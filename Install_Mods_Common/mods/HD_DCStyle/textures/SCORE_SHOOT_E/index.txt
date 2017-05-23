@@ -1,0 +1,3 @@
+10000339,action_2.png
+10000357,minigame_0.png
+10000338,action_16.png

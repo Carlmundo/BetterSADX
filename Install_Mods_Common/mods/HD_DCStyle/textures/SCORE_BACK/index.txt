@@ -1,0 +1,4 @@
+365665,score_back.png
+365663,score_back0_New.png
+365664,score_back1.png
+100000030,score_ring.png

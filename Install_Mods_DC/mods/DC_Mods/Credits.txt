@@ -1,0 +1,17 @@
+This conversion wouldn't have been made possible without the help of the following people:
+
+MainMemory - author of most SADX/SA1 hacking tools, including the SADX Mod Loader. He has also helped me a lot with getting started with SADX modding.
+
+SonicFreak94 - author of the palette lighting mod, who has also provided extremely valuable help in many seemingly hopeless situations, guided me around the SADX disassembly and helped me with a ton of other things.
+
+ItsEasyActually - helped with model and animation data, as well as many interesting insights and help on various aspects of SADX/SA1 hacking.
+
+TheArcadeStriker - author of the SADX '99 Edition mod, which inspired me to start working on this conversion. Co-author of DC Branding and DC Subgames.
+
+Dark Sonic - Remade character and capsule icons in HD (those are included in the HD GUI mod)
+
+SteG - provided original high-quality water textures, helped with various design-related things and animated textures.
+
+CheatFreak - provided a re-encoding of the original SA1 intro movie with the animated Sonic Team logo
+
+Jeff - provided code to disable the static Sonic Team logo

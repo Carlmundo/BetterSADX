@@ -1,0 +1,15 @@
+500951,icon_goma.png
+50095,icon_pen.png
+500959,icon_rak.png
+500953,icon_kuj.png
+500961,icon_tuba.png
+500957,icon_oum.png
+500950,icon_banb.png
+500962,icon_usa.png
+500963,icon_wara.png
+500952,icon_gori.png
+500955,icon_lion.png
+500964,icon_zou.png
+500956,icon_mog.png
+500954,icon_koa.png
+500960,icon_suka.png

@@ -1,0 +1,14 @@
+1686,digit0.png
+1687,digit1.png
+1688,digit2.png
+1689,digit3.png
+1690,digit4.png
+1691,digit5.png
+1692,digit6.png
+1693,digit7.png
+1694,digit8.png
+1695,digit9.png
+1696,colon.png
+1697,e102_getsecbg.png
+1698,e102_lockon0.png
+1699,e102lastsec.png

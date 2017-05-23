@@ -1,0 +1,229 @@
+Dreamcast Conversion latest notes and changelog
+
+Changelog
+
+Update 08/2/2017
+Removed DC Tornado models from the DC Subgames mod
+
+Update 29/1/2017
+Minor skybox and draw distance tweaks for Emerald Coast 1/2
+Made stationary light in Red Mountain 2 ignore lighting like on the Dreamcast
+HD GUI mod: added upscaled animal icons
+Some more Twinkle Park objects restored
+Material fixes for Lost World
+
+Update 25/1/2017 - Update 2 release on ModDB
+Added a separate Credits file to the mod folder
+DC Branding now includes credit screens from SA1 (thanks TheArcadeStriker!)
+
+Update 24/1/2017
+Implemented flickering lights in Casinopolis 2
+Fog tweaks for Windy Valley 1 and 3
+Removed Sky Deck soundbanks - use Sound Overhaul for sound-related stuff
+Restored the DC model for Final Egg walkway in Mystic Ruins jungle
+Updated glass model in Speed Highway
+Added an experimental mod to remove Cream cameos
+The DC Branding mod now includes even more SA1 textures
+
+Update 23/1/2017
+Restored the Egg Carrier model in Sky Chase 1/2
+Added a new mini-mod to restore SA1 Tornado models in Sky Chase
+Another collision update for Mystic Ruins
+Updated Windy Valley 3 background PVM with proper texture mirroring
+
+Update 21/1/2017
+Fixed minor transparency issues in Final Egg 3
+Fixed some windows in Speed Highway 3
+Changed collision in Tails' workshop so that Gamma doesn't get stuck inside
+
+Update 20/1/2017
+Fixed windows in the area where Tails gets his first upgrade (Station Square)
+Station Square Twinkle Park walkway reflections are now the same as on the Dreamcast
+Fixed Z fighting in Egg Carrier pool
+Updated Mystic Ruins sky textures
+Fixed transparency issues with foliage in Chaos 4
+Added HD Dreamcast Style GUI mod
+
+Update 18/1/2017
+Fixed an issue with some Missions in the Mystic Ruins
+Fixed the clip functions in Egg Carrier Exterior (modified CAM files are no longer necessary)
+Restored the rock blocking the passage to Ice Cap and Angel Island (should stand out less now)
+
+Update 17/1/2017
+Fixed (?) a problem with clouds in Red Mountain having wrong UVs after playing the game for a long time
+Updated snake model in Lost World 1
+Slowed down water animations in Emerald Coast and Station Square
+
+Update 14/1/2017
+The clouds in Red Mountain 1 and 3 are now layered and slightly brighter
+Restored DC camera in Emerald Coast and some other stages
+Disabled fog in Emerald Coast
+The ocean in Emerald Coast is now properly aligned with the horizon
+Restored lava textures and fog in Red Mountain
+Restored the wooden box in Station Square sewers
+Restored the Dreamcast model for the rail trolley and cannon models in Sky Deck 1-2
+Undid some of the old fixes in Casinopolis 2 and fixed some minor alpha issues
+Restored several Lost World objects and textures + added Lost World 3 fog data
+Fixed a texlist error in Final Egg
+Made the glowing Eggman logo in Final Egg 2 green like on the Dreamcast
+Added a Mod Loader code for flipped environment maps to the Final Egg mod
+Restored heli pads in Speed Highway and fixed a potential issue with emerald shards in Act 3
+
+Update 13/1/2017
+Improved lighting accuracy on some objects in Emerald Coast, Twinkle Park and Casinopolis
+Improved the look of Emerald Coast water
+Restored some DC object models and textures in Twinkle Park 2 and Casinopolis 1
+Fog data for Casinopolis 1
+Restored animation for the billboard on the second floor of Casinopolis (Knuckles) broken by an older fix
+Reworked the mirror rooms in Twinkle Park 3 (sadly still not perfect)
+
+Update 10/1/2017
+Restored standing light (scaling + rotation), electric traps and electric cylinders in Final Egg
+
+Update 9/1/2017
+Fixed a missing generator wall near Tails' workshop
+Fixed various collision-related issues in Station Square and Mystic Ruins
+Made the water slightly less transparent in Emerald Coast
+
+Update 8/1/2017
+Restored fog in Egg Carrier transformation cutscenes
+Improved the look of E G G M A N buttons at the bridge (Egg Carrier)
+Dreamcast textures for the EC Monorail fully restored
+
+Update 7/1/2017
+Restored Sky Deck clouds
+Dynamic fog color and draw distance improvements for Sky Deck
+Restored Eggman's announcements and DC sounds in Sky Deck
+Fixed (?) invisible emerald shards in Knuckles' Speed Highway
+
+Update 3/1/2017
+Minor transparency fixes for Speed Highway 3 and Sky Deck 2
+Draw distance improvements for Speed Highway 3
+Fixed collision in Station Square sewers
+Material fixes for Emerald Coast 1
+Object placement fixes for Red Mountain 1
+Fixed breakable glass in Hot Shelter 1
+
+Update 1/1/2017 - Update 1 release on ModDB
+Includes DC Subgames by TheArcadeStriker with a few updates
+Includes DC Branding by TheArcadeStriker with a few adaptations for this mod package
+Includes ADX Voices that restores character voice clips from the Dreamcast version and adds missing Metal Sonic voice clips from the Gamecube version
+DC Conversion is now 100% compatible with SADXFE Code and SET fixes (always load DC mods AFTER SADXFE)
+Fixed water flickering in Hot Shelter 1
+Prevented dynamic tornado fog from being triggered in Gamma's Windy Valley
+Minor layout fixes for Casinopolis
+Additional object placement/rotation fixes for Emerald Coast, Red Mountain, Sky Deck etc.
+Old version of the DC TitleScreen mod has been removed from this pack - use DC Branding instead
+Updated water textures in boss arenas to match current ocean textures in Mystic Ruins and Egg Carrier
+Updated city background before Chaos0 fight
+Material color fixes for the ocean in Station Square main area
+Fixed a minor transparency issue in Station Square casino area
+Fixed (I think) a collision issue at the start of Speed Highway
+
+Update 30/12/2016
+Transparency fixes for pinball tables in Casinopolis
+Integrated SADXFE SET fixes for Speed Highway	
+Windy Valley should be compatible with SADXFE SET fixes as-is
+Fixed a potential crash in Sky Deck 2 (please report other crashes if you run into them)
+Improved the look of the mirrors in Twinkle Park 3
+Fixed an issue with water waves at certain camera angles in Emerald Coast 2
+Fixed white snowboard in Ice Cap 3
+
+Update 29/12/2016
+Further improved transparency for trees and mountains in the Angel Island area
+Fixed evening fog fade in the MR jungle area
+Draw distance improvements for Mystic Ruins
+Implemented pink hint monitors in Egg Carrier interior and Hot Shelter
+Implemented "pure" water than becomes a swamp when Chaos 4 is swimming in it, and goes back to normal after Chaos 4 is defeated
+Fixed collision problems in Big's Ice Cap (more testing needed, please report issues!)
+Capsule rotation and item layout fixes for Emerald Coast
+
+Update 28/12/2016
+Restored sea waves and changed water textures in Mystic Ruins Act 1
+Changed water textures in Mystic Ruins Past
+Misc transparency fixes for Egg Carrier transformed
+Restored the animated monorail logo in Egg Carrier
+Preliminary work on restoring the E G G M A N buttons in Egg Carrier
+Improved the look of the water in Emerald Coast Acts 2-3 and fixed the water in Big's secret area
+Restored the skybox in Chaos 6
+Added fog for Egg Carrier interior areas and Chaos 6
+
+Update 26/12/2016
+Draw distance improvements for Windy Valley 3 and Twinkle Park 2
+Fixed neon panels in Twinkle Park 1 that were too bright
+Implemented dynamic fog in Windy Valley and Mystic Ruins jungle
+Some object layout fixes for Mystic Ruins jungle
+Tweaked fog data in Windy Valley 2 to make it look more like the Dreamcast version
+Further improvements to tree transparency in Mystic Ruins jungle
+Fix for Gamma getting hurt when trying to walk into the hotel pool
+Greatly optimized texture usage in Mystic Ruins 1 and 3
+
+Update 25/12/2016
+All stages now resize their texlists properly
+Fixed transparent objects in Final Egg 3, Sky Deck 3 and Casinopolis (Knuckles)
+Restored some missing objects in Knuckles' Casino layout
+Added all DC boss landtables
+Removed a leftover test SET file for Final Egg 3
+Removed some leftover textures
+The Final Egg cylinder function now checks whether palette lighting is enabled, and doesn't activate if it is detected
+Z fighting fixes for Emerald Coast (Gamma), Station Square (TP entrance) and Mystic Ruins jungle
+DC-like fog for Lost World 2 mirror room
+Speed Highway 1 fog data
+First compatibility fixes for SADXFE (fix for rhinotank texture bug in Windy Valley)
+Red Mountain draw distance increased to avoid clipping artifacts
+Restored Dreamcast texture mapping for the crosswalks in Station Square main area
+Misc code cleanup
+
+Update 23/12/2016 - first release on ModDB:
+Emerald Coast transparency and object layout fixes, 
+Custom effect for Final Egg cylinder (doesn't work with the PL mod for now) 
+Some minor Casinopolis fixes 
+Texture fixes for Sky Deck
+
+Update 19/12/2016 
+Lots of Speed Highway transparency fixes (windows in Act 3 should be near-perfect now)
+Proper Ice Cap 4 landtable with transparency fixes
+
+Update 17/12/2016 
+Hot Shelter level transparency fully restored 
+Proper Final Egg 2 landtable port with transparency fixes
+Casinopolis 2 light fix 
+Restored capsule area in Sky Deck 3
+
+Update 16/12/2016 
+Final Egg 2 layout fixes
+
+Update 13/12/2016 
+Final Egg laser restored
+Twinkle Park barrel model restored
+Emerald Coast 3 and Big's Ice Cap (PL mod compatible only)
+Various bug fixes
+
+Update 29/11/2016 
+Restored transparent environment mapped walls in Ice Cap 2
+DC glass tubes and blue light model+texture in Final Egg 2
+Ceiling light texture in Lost World 1
+Ceiling light model in Hot Shelter 2
+Ceiling light in Casino 2 
+Imitated the DC look of Twinkle Park 1 lights 
+SET file fixes for Lost World 1
+Fog and draw distance improvements for Casino 2
+
+Update 27/11/2016 
+Fixed Speed Highway 3 random texture bug caused by a different texture count in HIGHWAY_CAR.PVM
+Made sure fog is applied correctly in Ice Cap 4
+
+Update 26/11/2016 
+Fog and draw distance data update for Emerald Coast 1-2, Twinkle Park 1, Red Mountain 1 and 3, Ice Cap 1, 2 and 4, Lost World 1 and 2 (partially)
+
+Update 24/11/2016 
+Emerald Coast is now also included
+
+Update 22/11/2016 
+Final Egg 2 update with better fog, blue glass objects and backgrounds
+Twinkle Park 3 fog data added
+
+Update 21/11/2016 
+Hot Shelter is now also included
+
+PkR

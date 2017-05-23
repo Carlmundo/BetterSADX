@@ -1,0 +1,15 @@
+9045000,caos2_bgb.png
+9045001,caos2_gmarble0.png
+9045002,caos2_hasiraa.png
+9045003,caos2_iron0.png
+9045004,caos2_iron1.png
+9045005,caos2_jyutan0.png
+9045006,caos2_marb0.png
+9045007,caos2_marb4.png
+9045008,caos2_marb5.png
+9045009,caos2_marb6.png
+9045010,caos2_marb7.png
+9045011,caos2bga.png
+9045012,caos2eleface.png
+9045013,caos2elesky.png
+9045014,caosbgb.png

@@ -1,0 +1,5 @@
+13400000,hyoji_emblem0.png
+13400001,hyoji_emblem1.png
+305005,ST_064S_SCORE.png
+90000,HYOJI_BALLS_E.png
+400999,B32ASCII.png
