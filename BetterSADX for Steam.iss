@@ -30,7 +30,7 @@ Uninstallable=no
 PrivilegesRequired=admin
 
 [Types]
-Name: "full"; Description: "BetterSADX + Dreamcast Edition"
+Name: "full"; Description: "BetterSADX + Dreamcast Conversion"
 Name: "standard"; Description: "BetterSADX (Standard)"
 Name: "speedrun"; Description: "Speedrunner";
 
@@ -38,7 +38,7 @@ Name: "speedrun"; Description: "Speedrunner";
 Name: "base"; Description: "Minimum required files"; Types: full standard speedrun; Flags: fixed
 Name: "speedrun"; Description: "Speedrun Install"; Types: speedrun; Flags: fixed
 Name: "standard"; Description: "Major Improvements"; Types: full standard; Flags: fixed
-Name: "full"; Description: "Dreamcast Edition"; Types: full; Flags: fixed
+Name: "full"; Description: "Dreamcast Conversion"; Types: full; Flags: fixed
 
 
 [Code]
