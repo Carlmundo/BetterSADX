@@ -105,13 +105,7 @@ begin
       
       Exec('cmd.exe', ExpandConstant('/c MOVE /Y "{app}\SoundData\bgm\wma\*.adx" "{app}\system\sounddata\bgm\wma\"'), '', SW_HIDE, ewWaitUntilTerminated, ErrorCode);
       Exec('cmd.exe', ExpandConstant('/c MOVE /Y "{app}\SoundData\VOICE_JP\WMA\*.adx" "{app}\system\sounddata\VOICE_JP\wma\"'), '', SW_HIDE, ewWaitUntilTerminated, ErrorCode);
-      Exec('cmd.exe', ExpandConstant('/c MOVE /Y "{app}\SoundData\VOICE_US\WMA\*.adx" "{app}\system\sounddata\VOICE_US\wma\"'), '', SW_HIDE, ewWaitUntilTerminated, ErrorCode);
-      
-      begin
-      if IsComponentSelected('full') then
-        FileCopy(ExpandConstant('{app}\mods\DC_Edition\DC_Branding_Lesser\system\RE-US.mpg'),ExpandConstant('{app}\mods\DC_Edition\DC_Branding_Lesser\system\RE-JP.mpg'),False);
-      end;
-      
+      Exec('cmd.exe', ExpandConstant('/c MOVE /Y "{app}\SoundData\VOICE_US\WMA\*.adx" "{app}\system\sounddata\VOICE_US\wma\"'), '', SW_HIDE, ewWaitUntilTerminated, ErrorCode);      
       
       //Remove unneeded folders
       ProgressPage.SetText('Removing unneeded folders...', '');
