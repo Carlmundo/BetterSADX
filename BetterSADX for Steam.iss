@@ -32,7 +32,7 @@ PrivilegesRequired=admin
 [Types]
 Name: "full"; Description: "BetterSADX + Dreamcast Conversion"
 Name: "standard"; Description: "BetterSADX (Standard)"
-Name: "speedrun"; Description: "Speedrunner";
+Name: "speedrun"; Description: "Minimal / Speedruns";
 
 [Components]
 Name: "base"; Description: "Minimum required files"; Types: full standard speedrun; Flags: fixed
