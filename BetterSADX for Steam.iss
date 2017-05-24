@@ -324,8 +324,14 @@ Type: files; Name: "{app}\system\ava_tool_tips.pvm"
 
 ;Remove redundant directories from 4.0
 Type: filesandordirs; Name: "{app}\mods\DC_Edition"
+;New version of SADXFE has different file/folder structure
 Type: filesandordirs; Name: "{app}\mods\SADXFE"
-;D3D8 needs to be removed for Speedrun. Other installs will re-add this file.
+;sadx-dc-lighting debug files
+Type: files; Name: "{app}\mods\sadx-dc-lighting\sadx-dc-lighting.iobj"
+Type: files; Name: "{app}\mods\sadx-dc-lighting\sadx-dc-lighting.ipdb"
+Type: files; Name: "{app}\mods\sadx-dc-lighting\sadx-dc-lighting.lib"
+Type: files; Name: "{app}\mods\sadx-dc-lighting\sadx-dc-lighting.pdb"
+;Files needed to be removed for Speedrun. Other installs will re-add this.
 Type: files; Name: "{app}\d3d8.dll"
 
 
