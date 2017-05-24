@@ -32,12 +32,14 @@ PrivilegesRequired=admin
 [Types]
 Name: "full"; Description: "BetterSADX + Dreamcast Edition"
 Name: "standard"; Description: "BetterSADX (Standard)"
-Name: "minimum"; Description: "Minimal (suitable for Speedruns)";
+Name: "speedrun"; Description: "Speedrunner";
 
 [Components]
-Name: "minimum"; Description: "Necessary Mods"; Types: full standard minimum; Flags: fixed
+Name: "base"; Description: "Minimum required files"; Types: full standard speedrun; Flags: fixed
+Name: "speedrun"; Description: "Speedrun Install"; Types: speedrun; Flags: fixed
 Name: "standard"; Description: "Major Improvements"; Types: full standard; Flags: fixed
 Name: "full"; Description: "Dreamcast Edition"; Types: full; Flags: fixed
+
 
 [Code]
 var ProgressPage: TOutputProgressWizardPage;
@@ -326,13 +328,16 @@ Type: files; Name: "{app}\system\ava_how2play.pvm"
 Type: files; Name: "{app}\system\ava_tool_tips.pvm"
 
 [Files]
-;Source: "C:\Users\Carl\Desktop\SADX Fix\Install_Steam\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: full standard minimum
-;Source: "C:\Users\Carl\Desktop\SADX Fix\Install_Shared\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: full standard minimum
-;Source: "C:\Users\Carl\Desktop\SADX Fix\Install_Mods_Common\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: full standard
-;Source: "C:\Users\Carl\Desktop\SADX Fix\Install_Mods_DC\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: full
-;Source: "C:\Users\Carl\Desktop\SADX Fix\Config_Speedrun\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: minimum
-;Source: "C:\Users\Carl\Desktop\SADX Fix\Config_Common\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: standard
-;Source: "C:\Users\Carl\Desktop\SADX Fix\Config_Full\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: full
+Source: ".\Install_Steam\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: base
+Source: ".\Install_Shared\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: base
+Source: ".\Install_Mods_Common\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: full standard
+Source: ".\Install_Mods_DC\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: full
+Source: ".\Install_Speedrun\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: speedrun
+
+Source: ".\Config_Speedrun\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: speedrun
+Source: ".\Config_Common\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: standard
+Source: ".\Config_Full\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: full
+
 
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
