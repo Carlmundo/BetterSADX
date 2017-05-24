@@ -105,7 +105,7 @@ begin
       
       Exec('cmd.exe', ExpandConstant('/c MOVE /Y "{app}\SoundData\bgm\wma\*.adx" "{app}\system\sounddata\bgm\wma\"'), '', SW_HIDE, ewWaitUntilTerminated, ErrorCode);
       Exec('cmd.exe', ExpandConstant('/c MOVE /Y "{app}\SoundData\VOICE_JP\WMA\*.adx" "{app}\system\sounddata\VOICE_JP\wma\"'), '', SW_HIDE, ewWaitUntilTerminated, ErrorCode);
-      Exec('cmd.exe', ExpandConstant('/c MOVE /Y "{app}\SoundData\VOICE_US\WMA\*.adx" "{app}\system\sounddata\VOICE_US\wma\"'), '', SW_HIDE, ewWaitUntilTerminated, ErrorCode);      
+      Exec('cmd.exe', ExpandConstant('/c MOVE /Y "{app}\SoundData\VOICE_US\WMA\*.adx" "{app}\system\sounddata\VOICE_US\wma\"'), '', SW_HIDE, ewWaitUntilTerminated, ErrorCode);     
       
       //Remove unneeded folders
       ProgressPage.SetText('Removing unneeded folders...', '');
@@ -332,7 +332,7 @@ Type: files; Name: "{app}\mods\sadx-dc-lighting\sadx-dc-lighting.iobj"
 Type: files; Name: "{app}\mods\sadx-dc-lighting\sadx-dc-lighting.ipdb"
 Type: files; Name: "{app}\mods\sadx-dc-lighting\sadx-dc-lighting.lib"
 Type: files; Name: "{app}\mods\sadx-dc-lighting\sadx-dc-lighting.pdb"
-;Remove for Speedrun installs. Other installs will re-add this.
+;Remove for non-Dreamcast installs. Other installs will re-add this.
 Type: files; Name: "{app}\d3d8.dll"
 ;Remove for non-Speedrun installs
 Type: filesandordirs; Name: "{app}\mods\sadx-frame-limit"
