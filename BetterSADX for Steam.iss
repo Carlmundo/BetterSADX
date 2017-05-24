@@ -106,11 +106,12 @@ begin
       Exec('cmd.exe', ExpandConstant('/c MOVE /Y "{app}\SoundData\bgm\wma\*.adx" "{app}\system\sounddata\bgm\wma\"'), '', SW_HIDE, ewWaitUntilTerminated, ErrorCode);
       Exec('cmd.exe', ExpandConstant('/c MOVE /Y "{app}\SoundData\VOICE_JP\WMA\*.adx" "{app}\system\sounddata\VOICE_JP\wma\"'), '', SW_HIDE, ewWaitUntilTerminated, ErrorCode);
       Exec('cmd.exe', ExpandConstant('/c MOVE /Y "{app}\SoundData\VOICE_US\WMA\*.adx" "{app}\system\sounddata\VOICE_US\wma\"'), '', SW_HIDE, ewWaitUntilTerminated, ErrorCode);
-
+      
       begin
       if IsComponentSelected('full') then
         FileCopy(ExpandConstant('{app}\mods\DC_Edition\DC_Branding_Lesser\system\RE-US.mpg'),ExpandConstant('{app}\mods\DC_Edition\DC_Branding_Lesser\system\RE-JP.mpg'),False);
       end;
+      
       
       //Remove unneeded folders
       ProgressPage.SetText('Removing unneeded folders...', '');
@@ -139,10 +140,10 @@ begin
       DelTree(ExpandConstant('{app}\system\tips_exit'), True, True, True);
       DelTree(ExpandConstant('{app}\system\TUTO'), True, True, True);
       DelTree(ExpandConstant('{app}\system\TUTO_Texture'), True, True, True);
-      DelTree(ExpandConstant('{app}\system\Water'), True, True, True); 
+      DelTree(ExpandConstant('{app}\system\Water'), True, True, True);
       
-      //Install Visual C++ 2013 & 2015 Runtimes
-      ProgressPage.SetText('Installing Visual C++ Redistributables...', '');
+      //Remove 4.0 folders that are no longer required
+      //DelTree(ExpandConstant('{app}\mods\DC_Edition'), True, True, True);
       ProgressPage.SetProgress(50, 100);
       
       Exec(ExpandConstant('{app}\_CommonRedist\vcredist\2013\vcredist_x86.exe'), '/silent', '', SW_SHOW, ewWaitUntilTerminated, ErrorCode);
@@ -326,6 +327,13 @@ Type: files; Name: "{app}\system\ava_LB_MENU.pvm"
 Type: files; Name: "{app}\system\ava_help_options.pvm"
 Type: files; Name: "{app}\system\ava_how2play.pvm"
 Type: files; Name: "{app}\system\ava_tool_tips.pvm"
+
+;Remove redundant directories from 4.0
+Type: filesandordirs; Name: "{app}\mods\DC_Edition"
+Type: filesandordirs; Name: "{app}\mods\SADXFE"
+;D3D8 needs to be removed for Speedrun. Other installs will re-add this file.
+Type: files; Name: "{app}\d3d8.dll"
+
 
 [Files]
 Source: ".\Install_Steam\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: base
