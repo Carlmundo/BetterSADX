@@ -327,12 +327,15 @@ Type: filesandordirs; Name: "{app}\mods\DC_Edition"
 ;New version of SADXFE has different file/folder structure
 Type: filesandordirs; Name: "{app}\mods\SADXFE"
 ;sadx-dc-lighting debug files
+Type: files; Name: "{app}\mods\sadx-dc-lighting\sadx-dc-lighting.exp"
 Type: files; Name: "{app}\mods\sadx-dc-lighting\sadx-dc-lighting.iobj"
 Type: files; Name: "{app}\mods\sadx-dc-lighting\sadx-dc-lighting.ipdb"
 Type: files; Name: "{app}\mods\sadx-dc-lighting\sadx-dc-lighting.lib"
 Type: files; Name: "{app}\mods\sadx-dc-lighting\sadx-dc-lighting.pdb"
-;Files needed to be removed for Speedrun. Other installs will re-add this.
+;Remove for Speedrun installs. Other installs will re-add this.
 Type: files; Name: "{app}\d3d8.dll"
+;Remove for non-Speedrun installs
+Type: filesandordirs; Name: "{app}\mods\sadx-frame-limit"
 
 
 [Files]
