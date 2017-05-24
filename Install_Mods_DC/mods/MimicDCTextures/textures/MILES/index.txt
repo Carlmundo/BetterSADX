@@ -1,0 +1,16 @@
+1200,mtx_anklet01.png
+1201,mtx_anklet02.png
+1202,mtx_anklet03.png
+1203,mtx_body01.png
+1204,mtx_brooch01.png
+1205,mtx_brooch02.png
+1206,mtx_eye.png
+1207,mtx_hand01.png
+1208,mtx_head01.png
+1209,mtx_kuchinaka0.png
+1210,mtx_kuchinaka1.png
+1211,mtx_shoose01.png
+1212,mtx_spin00.png
+1213,mtx_tail.png
+1214,mtx_white.png
+1215,mtx_yellow0.png
