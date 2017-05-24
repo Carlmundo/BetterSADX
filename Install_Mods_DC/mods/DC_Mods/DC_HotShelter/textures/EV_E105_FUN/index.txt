@@ -1,6 +1,0 @@
-600583,05etx_red2.png
-600584,05etx_red4.png
-600585,05etx_red6.png
-600589,etx_asi2.png
-600593,etx_enn2.png
-600651,05etx_fun2.png

@@ -1,2 +1,0 @@
-500, MIW_B001.png
-1099, SB_BOARD1.png

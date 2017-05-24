@@ -1,8 +1,0 @@
-76000,watersmoke01.png
-76004,watersmoke02.png
-76001,watersmoke03.png
-76007,watersmoke04.png
-76003,watersmoke05.png
-76006,watersmoke06.png
-76005,watersmoke07.png
-76002,watersmoke08.png

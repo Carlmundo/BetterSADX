@@ -1,8 +1,460 @@
-Dreamcast Conversion latest notes and changelog
+Dreamcast Conversion changelog
 
-Changelog
+Update 20/5/2017
+Reverted the sky box clipping fix in Sky Deck
 
-Update 08/2/2017
+Update 19/5/2017
+Material color fix for the spotlight in Gamma's cutscene
+Improved the look of EGGMAN buttons on the Egg Carrier
+Implemented a better workaround for Hot Shelter 1 green glass (looks closer to SADX now)
+Removed sky box clipping in Sky Deck Act 3
+
+Update 17/5/2017
+Fog improvement for Windy Valley Act 3
+Improved the glow of the Master Emerald
+Object material fixes for Mystic Ruins and Egg Carrier
+Minor lighting accuracy improvements for Station Square
+
+Update 16/5/2017
+HD GUI and DC Branding updated to include a SA1-like pause box button gradient
+Accuracy improvements for blue and green glass areas in Final Egg 2-3
+Fog and plant model update for Speed Highway 2
+
+Update 15/5/2017
+Code optimization for DC Bosses
+Fixed Chaos 6 clipping functions that caused crashes on some systems
+Restored and properly aligned sky animation in Chaos 6
+Minor transparency improvements for Chaos 4 water
+Fixed a runtime error when running the game with clip distance set to low (DC_EggCarrier)
+Pause box accuracy update for DC Branding
+
+Update 14/5/2017
+A major update for Perfect Chaos particle fix that improves looks and accuracy
+Implemented a workaround for SADX water UV bug in Hot Shelter Act 1
+Minor transparency fixes for Hot Shelter Act 1
+
+Update 13/5/2017
+Adjusted Egg Hornet animation for lower framerates
+Minor transparency fixes for Final Egg Act 3
+
+Update 12/5/2017
+Reverted texlist resize for various object PVMs for compatibility with other mods
+
+Update 11/5/2017 - Update 5 release on ModDB
+Fixed missing door pieces in E101 Beta battle room
+Fixed water animation speed in Tails' Emerald Coast cutscene
+Various material fixes for E101 Beta room
+Flipped the water mesh in Emerald Coast 2 for compatibility with Super Sonic mods (original fix by SonicFreak94)
+Minor transparency fixes for Casino Act 3
+Fixed a minor sound issue in Casino Act 2
+
+Update 10/5/2017
+Recreated police car headlights in Chaos 0
+Removed some leftover textures from DC Bosses
+Fully restored Perfect Chaos damage particles
+Minor updates for Cowgirl's position/collision
+Restored a hidden door model in Station Square hotel
+
+Update 9/5/2017
+Fixed an oversight in DC_Branding that led to corruption of the end credits picture
+Readded Cowgirl to DC_Casinopolis (separate mod download required)
+Fixed a minor transparency issue with fountain lights in Knuckles' Casino
+Fixed a model issue in Casino Act 4
+Redirected supercoolsonic's SET fixes mod to the author's repo
+Implemented a better UV animation method in Mystic Ruins and completed the PVM switch
+Minor fog data update for Station Square
+Replaced PNG textures in Ice Cap with PVR textures
+Restored broken wall pieces in Hot Shelter Act 1 (Amy)
+The "DC Environment Maps" mod has been integrated into DC General
+Removed various duplicate PVMs from DC_General
+
+Update 8/5/2017
+Minor draw distance and alpha tweaks for Final Egg 2
+Started adding changelog support for mod updates
+Switched SADXStyleWater textures to the new PVMX format
+DC Branding: optimization and cleanup
+
+Update 6/5/2017
+Fixed a small lighting inaccuracy in Station Square main area
+DC Branding: fixed a potential main menu background scaling issue on some systems
+Added two missing Final Egg Act 1 layouts to the SET Fixes mod
+Temporarily removed all Adventure Field SET files from the SET Fixes mod
+
+Update 5/5/2017
+Restored various Sky Chase and Sand Hill object models
+Switched DC_SubGames to PVMs
+HD GUI mod updated for compatibility with the DC_SubGames update
+Minor visual tweaks for the breakable glass object in Speed Highway
+Restored the SA1 normal Chao fruit model
+Scaled down all Chao fruits a little bit (this is needed for the normal model to display properly)
+Updated water UVs in the Egg Carrier garden
+Switched DC_ChaoGardens to PVMs
+Restored some Sky Deck enemies
+Added more Dreamcast textures to DC_General
+Added more DC textures to the Station Square mod
+New release of the SET Fixes mod
+
+Update 4/5/2017
+Restored DC animal textures and models
+Repositioned the trees in MR and SS gardens and adjusted Chao spawn points
+Animated SADXStyleWater support for DC Bosses
+Switched DC Bosses to PVMs
+Fixed the main damage sprite for Perfect Chaos
+
+Update 3/5/2017
+Restored over 50 Sky Deck object models and switched Sky Deck to PVMs
+
+Update 2/5/2017
+Restored unused flower pot models in Twinkle Park
+Restored various Lost World object models and switched Lost World to PVMs
+
+Update 1/5/2017
+Restored several Twinkle Park models
+Corrected minor texture issues with various objects in Twinkle Park
+Switched Twinkle Park to PVMs
+
+Update 30/4/2017
+Restored various object models in Speed Highway and switched the level to PVMs
+Restored the missing platform light effect in Tails' Speed Highway
+Egg Carrier collision fixes
+Various object model restorations for Egg Carrier
+Made the street lights turn off during the day in Station Square
+
+Update 29/4/2017
+Fixed a transparency issue with Final Egg 2's blue tubes
+Model restorations for Egg Carrier and partial switch to PVMs
+Restored the proper Silver Sonic and Metal Sonic models at the MR base
+Switched most of Mystic Ruins' textures to PVMs
+Fixed a texture issue with the monkey cage in Mystic Ruins caused by the PVM switch
+
+Update 28/4/2017
+Restored several object models in Windy Valley, Red Mountain and Final Egg
+Switched the above levels to PVMs
+
+Update 27/4/2017
+Improved the look of the sea in Mystic Ruins
+Disabled test collision in the Final Egg base
+Switched Station Square to PVMs and restored more object models
+Fixed fog data in various levels
+Fixed a transparency issue with the seashore with SA1 textures in Station Square main area
+
+Update 26/4/2017
+Restored captain's chair in Egg Carrier's captain room
+Animated SADX water support for Egg Carrier
+
+Update 25/4/2017
+Animated SADX style water support 
+
+Update 23/4/2017
+Switched Windy Valley level textures to PVMs
+
+Update 22/4/2017
+Various material color fixes for Mystic Ruins Past
+Restored several tree and shadow models in Mystic Ruins Past
+Added water animation support for MR Past in SADXStyleWater
+Switched MR Past to PVMs
+
+Update 18/4/2017
+Restored more UV animations in Casinopolis
+Minor layout fixes in Casino 1
+Switched Casinopolis to original and modded Dreamcast PVMs
+Fixed a crash when pausing in Lost World 1 snake room
+Implemented water height shift and a better solution for Emerald Coast 1 ocean effect
+
+Update 15/4/2017
+Fully restored Emerald Coast ocean and wave effect
+Restored various objects in Emerald Coast and Hot Shelter to use non-mirrored textures
+Switched Emerald Coast and Hot Shelter to PVMs
+
+Update 7/4/2017
+Moved all SADX water textures to SADXStyleWater's textures folder
+SADX Style Water now looks a bit closer to its original SADX look, but with animated water waves
+Some mods have been updated to use Dreamcast PVMs rather than PNG textures
+Fixed a material color issue with Final Egg 3's gachapon thrower
+
+Update 4/4/2017
+Fixed alpha issues with broken fan pieces in Windy Valley 1
+
+Update 2/4/2017
+Perfect Chaos' tornadoes now fade in when Chaos emerges from the water
+Improved the look (animation speed/direction) of Perfect Chaos' tornadoes
+Restored (partially) Egg Hornet digging animation
+
+Update 30/3/2017
+DC Branding: implemented high-resolution main menu background + 16:9 support
+Changed the background for Mini Game Collection to match SA1 branding
+Implemented Pause box gradient
+HD GUI mod updated for DC Branding compatibility
+
+Update 29/3/2017
+Restored small grassy rocks in Windy Valley
+Restored several missing UV animations in Casino 1
+Improved the lighting of Master Emerald shards
+
+Update 28/3/2017
+DC Branding updated with improved title screen compatibility
+Changed description for the HD GUI mod
+Added animation and fixed alpha on the VMU transporter
+Restored SA1 Chao Race door animation
+
+Update 26/3/2017
+DC Branding updated for compatibility with DisableSA1Titlescreen
+Animal bubble lighting improvement for DC General
+Major accuracy improvements for the 4:3 title screen
+Enabled collision for some objects in the MR base area
+
+Update 25/3/2017
+Accuracy updates for Station Square, Mystic Ruins and Emerald Coast
+Fixed a texture issue in MR base
+Fully restored MR Ice Cap door and the Ice Cap lock/Ice Stone
+Improved collision in MR pool
+Minor alpha and Z fighting fixes for Station Square
+Fixed a minor collision issue in Red Mountain 1
+Added a custom "PressStartButton" texture to DC Branding
+
+Update 24/3/2017 - mini-hotfix for Update 4
+Removed ADX Voices from the main package (separate link available in the install guide)
+Implemented a slightly better check for Windy Valley 1 dynamic fog
+Fixed an alpha issue in Mystic Ruins base
+Fixed a rhinotank texture problem with the DC_General mod
+The secret egg now hatches a two-tone black Chao
+Removed texture change for two-tone gray eggs
+Repositioned garden teleporters slightly to improve collision
+Restored garden teleporter effects
+Added a missing DLLFile entry to the "Disable SA1 title screen" mod
+Accuracy improvement for Emerald Coast 2 pond
+Restored the rustling grass object in Mystic Ruins main area and Angel Island
+Added some more DC textures to DC_Casinopolis
+HD GUI mod: added spring textures
+DC General: Fixed a texture bug with Deer
+
+Update 23/3/2017 - Update 4 release on ModDB
+Material fixes for Mystic Ruins NPC models
+Tweaked water animation speed in all levels
+Material color fixes for E101R cutscene model
+Minor transparency fixes for Casino Act 1 and Mystic Ruins base
+Disabled jungle fog for Big (this is needed for cutscenes to work properly)
+Optimized landtable layout in Chaos 4 to improve transparency handling
+Fixed minor Z Fighting in Sky Deck 1
+DC General: fixed a SA1/SADX bug with frog textures in Gamma's cutscene
+DC General: reverted some textures related to Eggman and Tikal's hands
+HD GUI mod: added more common object textures, adjusted "Target" gauge
+DC Branding: redid the endgame backgrounds with a better upscaling algorithm
+The DC Tornado Models mod now only replaces the gameplay model - this is needed for compatibility
+Updated all mods for compatibility with the modular update system
+Added fixed SET layouts mod by Supercoolsonic
+
+Update 21/3/2017
+The Egg Carrier Chao egg now hatches a two-tone gray chao like in SA1
+The texture used by the Egg Carrier Chao egg is now applied to all two-tone gray and black eggs (including shiny eggs)
+Prevented a potential collision issue in Sky Deck 2
+DC General: added item capsule code from SADXFE with additional lighting fixes
+Textures in all mods have been optimized with oxipng to reduce filesize and improve loading times (no quality reduction)
+
+Update 20/3/2017
+DC General: disabled animal replacements 
+ADX Voices in now archived since it is unlikely to receive any updates. You can still download it as an archive.
+
+Update 19/3/2017
+Restored proper collision in the EC garden using SET object data from SA1
+Draw distance improvements for Chao Race
+Removed SADX button prompts in Chao gardens
+Improved the look of Monotone Black eggs
+Restored the shiny button on the VMS transporter
+Restored broken spinning cylinder in Knuckles' Casinopolis (DLL, textures and SET file updated)
+The Mystic Ruins mod now restores NPC models and textures (experimental)
+Experimental: added a "Dreamcast General" mod that restores SA1 textures for non-level PVMs and some SA1 animal models
+Fixed a minor transparency issue in Speed Highway 3
+
+Update 18/3/2017
+Restored an unused SA1 fountain model in the Station Square garden (with SADX water texture)
+Restored the waterfall in Chao Race
+Removed a potential source of severe slowdown when loading the gardens
+Minor code optimizations for the DC_ChaoGardens mod
+Fixed a minor texture mirroring issue in Twinkle Park 1
+Minor transparency fixes for Twinkle Park 2
+Updated code to prevent potential issues with bowling texture in Twinkle Park 2
+Red Mountain 2 cloud draw distance improvements
+
+Update 17/3/2017
+Texture fixes for Twinkle Park 2
+Fixed trap doors in Twinkle Park 3
+Changed the texture on the Monotone Black Chao egg to match the one used on the secret Egg Carrier egg
+
+Update 16/3/2017
+Accuracy updates and more DC objects for Twinkle Park, Red Mountain, Speed Highway, Final Egg and Hot Shelter
+Fixed a minor texture issue in Sky Deck 2
+Fixed the bathroom light in Hot Shelter 2/3
+Fixed a misaligned level piece in Egg Carrier transformed
+DC Branding: removed AL_DX_OBJ_CMN.PVM for compatibility with the Chao Gardens mod
+Improved Chao spawn positions in EC and MR gardens
+Added more textures for Chao Gardens
+Minor object loading optimization for Chao gardens
+Material color fixes for Buyon (Twinkle Park mod)
+Fixed material colors and improved water animation in the MR garden
+
+Update 15/3/2017
+Chao Gardens and Chao Race are now included (experimental mod)
+Fixed an alpha issue in Egg Carrier Interior
+Minor material fix for Twinkle Park 1
+Removed leftover water objects in Emerald Coast 2
+
+Update 11/3/2017
+Various accuracy improvements for Twinkle Park 2
+Fixed water Z fighting in Knuckles' Casino
+Sorted some level pieces in Final Egg 3 to prevent potential alpha issues
+Fixed a sorting issue with Ice Cap 2 walls
+Fixed alpha issues with several objects in Speed Highway 3
+Fixed disappearing candle lights in the last room in Twinkle Park 3
+
+Update 10/3/2017
+Red Mountain 2 fog accuracy update
+Fixed a texture issue with trees in the Angel Island area
+Fixed a missing mesh in Station Square plants
+Fixed an alpha issue with some walls in Final Egg 1
+
+Update 9/3/2017
+DC Branding: added a 16:9 title screen that is used automatically depending on screen aspect ratio
+Prevented the mirror room from disabling character lighting in Lost World 2
+Removed leftover textures from the Mystic Ruins mod
+Sound Overhaul 2 is now included in the main mod package
+
+Update 8/3/2017
+Restored (partially) the Ice Cap door in Mystic Ruins
+Reimplemented skybox scale adjustment for Emerald Coast to avoid a possible "stones on water" issue
+Added default CAM files to the "Revert Emerald Coast draw distance" mod
+Minor fog fix for Windy Valley
+Station Square: Restored the alpha on hotel pool chairs
+Fixed a minor alpha sorting issue in Emerald Coast 1
+Tweaked fog code in Emerald Coast 3
+Fixed an alpha sorting issue in MR Final Egg base
+DC Branding: updated the title screen to fix a small offset at higher resolutions
+
+Update 6/3/2017
+Emerald Coast: added an optional mini-mod to revert to default draw distance/fog/skybox scale
+Added an experimental code to disable the ocean in Emerald Coast Act 3 while inside Big's secret area - should fix the top of the cave
+Fixed a potential "stones on water" bug in Emerald Coast Acts 1/2
+Fixed a minor skybox issue caused by the above fix
+Added an optional mod to disable SA1 titlescreen but keep all DC Branding stuff enabled
+Moved all optional mods (KillCream etc.) into a separate folder
+Casino: restored fountain sound in Act 1 (DLL+SET file updated)
+Fixed a number of minor transparency issues in Casino Act 1
+Minor improvements for bathroom lights in Hot Shelter 2/3
+DC Branding: added a higher quality re-encoding of SA1 intro based on the intro from the X360 version
+HD GUI mod: fixed a minor issue with Tornado 2 HUD
+
+Update 4/3/2017
+Restored DC water textures in Emerald Coast (disable SADX Style Water if you want to see them)
+Restored proper seashore textures in Emerald Coast
+Replaced pool textures in Emerald Coast Acts 1 and 2 with DC textures
+Implemented dynamic fog in Emerald Coast Act 3
+
+Update 3/3/2017
+Fixed wrong textures in Speed Highway 3 caused by a transparency workaround
+Fixed a SADX bug that caused the Eggmobile NPC model to have wrong textures
+Added better quality textures for EV_EGGMOBLE0.PVM (Eggmobile in cutscenes)
+Material color fixes for Station Square
+
+Update 2/3/2017
+Minor transparency fixes for Speed Highway 3
+Minor fixes for Hot Shelter 2
+Fixed a texture glitch on the Eggmobile in a cutscene in Super Sonic story (thanks a lot MainMemory and ItsEasyActually!)
+
+Update 29/2/2017
+Fixed a collision issue in Sky Deck 2
+Updated bounds for Lost World 3
+Additional Mystic Ruins jungle layout fixes
+
+Update 28/2/2017
+Minor transparency and layout fixes for Casinopolis 1, Sky Deck 3, Red Mountain 1/3
+Fixed a thing I overlooked in dynamic array allocation for Ice Cap 4 landtable
+Realigned some ruins in MR jungle
+Fixed a collision issue in Lost World Act 3
+
+Update 27/2/2017
+HD GUI mod: updated the Sky Chase health bar for compatibility with a new ModLoader code to enable the Tornado 2 HUD
+Egg Carrier: ported over the SADX part of the turbines that was untextured in the Dreamcast version
+Mystic Ruins: fixed the textures on small trees in the Angel Island area
+Lost World: fixed the texture on the sliding panel when it lights up
+Red Mountain: minor transparency fixes for Act 1
+Sky Deck: minor transparency fixes for Act 2
+Windy Valley 1 skybox and fog now reset properly when leaving and reentering the stage in Trial mode
+
+Update 26/2/2017
+Implemented green door barriers in Egg Carrier Interior (for all characters)
+HD GUI mod: added upscaled level title cards and level objectives
+Fixed a minor transparency issue in Final Egg 3
+Fixed a minor skybox/draw distance issue in Windy Valley 1
+
+Update 22/2/2017
+Fixed some weird water-related behavior with Gamma on the Egg Carrier with DC water textures
+Updated DC Branding with a higher quality title screen, a better solution for window title and a number of bugfixes
+
+Update 20/2/2017 - Update 3 release on ModDB
+ADX Voices now include Japanese voices
+Updated all mod manifests to support an upcoming Mod Loader feature
+Material fixes for all pre-Chaos6 Chaos models
+Minor Z fighting and other SET fixes for Station Square and Mystic Ruins
+Some tweaks for SADX Style Water on the Egg Carrier
+DC Branding: renamed window title from "SonicAdventureDXPC" to "Sonic Adventure"
+Minor accuracy improvements for Hot Shelter
+Disabled fog and increased draw distance in Past Act 1
+Added some more Past-related textures and DC Boss textures
+Added a new mod that allows you to cycle between day, evening and night in Adventure Mode after completing the story
+Added a slightly better main menu shadow to HD GUI mod
+Updated boss font in HD GUI mod
+
+Update 14/2/2017
+Updated mod.ini in SADXStyleWater (I forgot to include the DLL name in it)
+
+Update 13/2/2017
+Disabled the semi-broken function that turns on the lights when inside the hotel - now the lighting inside the hotel is like in SA1
+Fixed sewer water transparency that was broken by a previous update
+Windy Valley 1 skybox improvements
+A huge improvement to Windy Valley 1 tornado/fog accuracy
+Fixed lighting on Eggman's fingers
+Fixed lighting on E101 Beta
+Accuracy improvements for Mystic Ruins jungle fog
+It is no longer necessary to load SADX Style Water before the DC mods (updated Station Square, Mystic Ruins, Past, Bosses and Egg Carrier)
+Reworked an older workaround to improve the look of Station Square water with SADX style textures
+
+Update 12/2/2017
+Implemented transparent skybox pieces in Windy Valley; some tornado tweaks
+Restored DC hotel door model in Station Square
+Restored DC lamp pole model in Station Square
+Several (hopefully temporary) workarounds for water transparency issues in Station Square main area (DC water textures only)
+Lighting accuracy fixes for Station Square
+Fixed transparency issues with hotel pool water (DC water textures)
+Fixed a minor water issue in Twinkle Park 2
+Minor fog tweaks for Mystic Ruins
+Changed the mesh of the ground under the temple in MR jungle to prevent a cutscene camera bug in Sonic's story
+Improved clouds color in Red Mountain
+Minor SET layout fixes for Emerald Coast
+
+Update 11/2/2017
+DC Branding: fixed the glitch that happens when you go to the minigame collection, options and back
+Another small improvement to Ice Cap icicles
+Fixed pirate ship model in Twinkle Park 2
+All levels except Emerald Coast now have DC water textures by default. To revert to SADX style water textures, use the "SADX Style Water" mod
+
+Update 10/2/2017
+DC Branding: fixed the main menu shadow rectangle and implemented a better solution to stop titlescreen scrolling
+Implemented a better solution for Ice Cap icicles
+Fixed (hopefully) alpha issues with the bombs in Ice Cap 3
+
+Update 9/2/2017
+Restored some more Sky Deck objects and improved lighting accuracy in Sky Deck 1
+Improved the look of Ice Cap icicles
+Lost World accuracy improvements
+Updated all mods to support the upcoming Mod Loader update feature
+Updated Windy Valley 1 skybox scale
+Implemented framerate-independent texture animation; the animation should no longer freeze when playing at lower framerates
+Chaos 0 boss material color fixes
+Added a "DC style Environment maps" mod that restores detail on the Egg Hornet model
+Removed the "Flipped environment maps" code from the Final Egg mod - use the DC_EnvMaps mod instead
+DC Bosses: fixed lighting on Zero's model in Amy's cutscenes
+
+Update 8/2/2017
 Removed DC Tornado models from the DC Subgames mod
 
 Update 29/1/2017
@@ -174,8 +626,8 @@ Red Mountain draw distance increased to avoid clipping artifacts
 Restored Dreamcast texture mapping for the crosswalks in Station Square main area
 Misc code cleanup
 
-Update 23/12/2016 - first release on ModDB:
-Emerald Coast transparency and object layout fixes, 
+Update 23/12/2016 - first release on ModDB
+Emerald Coast transparency and object layout fixes 
 Custom effect for Final Egg cylinder (doesn't work with the PL mod for now) 
 Some minor Casinopolis fixes 
 Texture fixes for Sky Deck

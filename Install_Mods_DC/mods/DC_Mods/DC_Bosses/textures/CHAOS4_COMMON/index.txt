@@ -1,9 +1,0 @@
-9055007,c2_hone0.png
-9155000,eme_purple.png
-9055001,c2tx_brain.png
-9055002,c2tx_eme_b.png
-9055003,c2tx_eme_g.png
-9055004,c2tx_eme_p.png
-9055005,c2tx_eme_w.png
-9055006,c2tx_eye1.png
-400515,c2tx_mizu0.png
