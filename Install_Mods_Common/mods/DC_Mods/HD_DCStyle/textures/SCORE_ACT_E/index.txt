@@ -1,7 +1,0 @@
-10000344,action_0.png
-10000333,action_1.png
-10000339,action_2.png
-10000340,action_3.png
-10000341,action_4.png
-10000342,action_5.png
-10000334,action_10.png

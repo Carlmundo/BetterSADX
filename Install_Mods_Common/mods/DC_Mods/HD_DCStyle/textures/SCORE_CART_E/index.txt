@@ -1,4 +1,0 @@
-10000363,minigame_6.png
-10000364,minigame_7.png
-10000365,minigame_8.png
-10000337,action_15.png

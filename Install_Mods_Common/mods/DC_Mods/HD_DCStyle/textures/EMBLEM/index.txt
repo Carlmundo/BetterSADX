@@ -1,5 +1,0 @@
-4270,sonic_emblm01.png
-4271,sonic_emblm03.png
-4272,sonic_emblm04.png
-4273,sonic_emblm05.png
-4274,sstx_body.png

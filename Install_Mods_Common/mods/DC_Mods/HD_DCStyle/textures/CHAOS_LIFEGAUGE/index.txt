@@ -1,2 +1,0 @@
-400997,target_hpbar.png
-400998,target_hp.png

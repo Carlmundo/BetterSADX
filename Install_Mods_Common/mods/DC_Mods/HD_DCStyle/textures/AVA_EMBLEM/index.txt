@@ -1,3 +1,0 @@
-365343,embrem.png
-365344,fs_kakeru.png
-100001010,metal_emblem.png

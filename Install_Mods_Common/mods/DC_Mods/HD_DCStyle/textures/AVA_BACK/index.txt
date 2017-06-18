@@ -1,0 +1,8 @@
+365205,ad_back_1.png,256x256
+365206,ad_back_2.png,256x256
+365207,ad_back_3.png,256x256
+365208,ad_back_4.png,256x256
+365209,ad_back_5.png,128x128
+365210,ad_back_6.png,128x128
+365211,ad_back_7.png,128x128
+365212,ad_back_8.png,128x128
