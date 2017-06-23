@@ -10,6 +10,7 @@ HD GUI 2 works with and without Dreamcast mods. When used together with DC Brand
 
 Version history
 
+0.810 - updated the PressStartButton texture shown during demos
 0.809 - removed the Mod Loader warning and added information on a known issue
 0.808 - minor improvements for SADX menu background and level names
 0.807 - added SADX main menu background (loads if DC Branding is disabled)
