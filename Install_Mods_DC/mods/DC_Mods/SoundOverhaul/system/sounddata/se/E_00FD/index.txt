@@ -18,4 +18,3 @@ E_00FD_06_16.wav
 E_00FD_06_17.wav
 E_00FD_06_18.wav
 E_00FD_06_19.wav
-E_00FD_06_20.wav

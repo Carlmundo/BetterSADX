@@ -1,0 +1,82 @@
+HD GUI 2 mod by PkR and Dark Sonic
+
+This mod provides high-resolution graphics for most ingame menus and GUI items.
+
+Known glitch: some menu items may get cut off or display incorrectly before the character select screen is loaded, such as the songs in the sound test or the bottom right part of the file select screen. This is a Mod Loader bug that can't be fixed on my side.
+
+Please load this mod AFTER all other GUI-related mods, including DC Branding!
+
+HD GUI 2 works with and without Dreamcast mods. When used together with DC Branding, it will have some Dreamcast-like features, like the pause box gradient. The mod detects which other mods are enabled and switches to other texture packs if necessary. If the DC SubGames mod is not enabled, this mod will restore the UVs on some Sky Chase models since the texture pack for Sky Chase (that includes the Tornado life gauge) uses unmirrored textures from the Dreamcast version.
+
+Version history
+
+0.813 - removed SHOOTING1 and SHOOTING2 PVMs from the mod because they aren't actually needed
+0.812 - Chaos and Tornado life gauges updated by Jmtshaw
+0.811 - updated the PressStartButton texture and character banners (thanks Jmtshaw!), remade Chaos and Tornado life gauges
+0.810 - updated the PressStartButton texture shown during demos
+0.809 - removed the Mod Loader warning and added information on a known issue
+0.808 - minor improvements for SADX menu background and level names
+0.807 - added SADX main menu background (loads if DC Branding is disabled)
+0.806 - implemented a workaround for scaling artifacts with Big's fishing rod and character select stuff at 16:9
+0.805 - added Metal Sonic-related assets
+0.804 - updated description/changelog
+0.803 - fixed textures on checkpoints and various other objects
+0.802 - minor changes to option icons
+0.801 - initial release
+
+Credits:
+Dark Sonic - character and item capsule icons
+SteG - boss name font
+Jmtshaw - PressStartButton texture, font edits for character banners
+PkR - everything else
+
+The mod replaces the following graphics:
+
+MENUS
+-File Select menu, including character spheres and the font used for filenames
+-File Select/Options background (upscaled with waifu2x)
+-Character select screen
+-Character names (including Metal Sonic) used in various ingame menus
+-Main menu background and items
+-All dialogs, including dialog window frames and numbers used in them
+-Trial act select screens
+-Emblem results screen
+-Credits font
+-Adventure Field maps (English only)
+-Options screen, including all text and icons (English only)
+-Sound Test screen, including the song font
+
+HUD
+-Timer and ring counter, ring icon
+-Checkpoint timer
+-E102 Gamma's timer and HUD
+-Big's HUD
+-Knuckles' HUD, including emerald radar
+-Character life icons (by Dark Sonic)
+-Item capsule icons (by Dark Sonic)
+-Emblems and emblem icon in the results screen
+-Image of Sonic used on the ingame model of the emblem
+-Animal icons
+-Life gauges for Tornado and bosses
+-Twinkle Circuit HUD
+-Tails' race icons (by Dark Sonic)
+-Various miscellaneous items, such as the "BALLS" text in Casino
+
+MISCELLANEOUS
+-Scoreboard background and all scoreboard text and icons, including bosses, Sky Chase, Hedgehog Hammer and Twinkle Circuit
+-Pause menu items, including button rectangle
+-The font used for boss names (thanks SteG for helping me improve it)
+-Game Over screen (currently not scaled by the Mod Loader even in the menu-scale branch)
+-SEGA and Sonic Team logos
+-All stage title cards (English only)
+-All level objectives (English only)
+-All character tutorials (English only, control explanations based on the Dreamcast controller)
+
+THINGS THIS MOD DOESN'T REPLACE
+-Any assets in languages other than English
+-The font used for ingame subtitles
+-Chao menus, fonts and GUI
+-Mission Mode stat screen, mission start/finish graphics, Mission Mode tutorial
+-Mini Game Collection menus
+
+-PkR
