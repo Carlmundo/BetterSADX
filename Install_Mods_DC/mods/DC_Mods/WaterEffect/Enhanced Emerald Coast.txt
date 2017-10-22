@@ -25,6 +25,12 @@ Known issues:
 
 Version history:
 
+1.53 - Another compatibility update
+
+1.52 - Minor compatibility update
+
+1.51 - Better management of water animation speed at different framerates, Act 3 skybox improvements
+
 1.5 - Improved the look of the ocean during the wave effect even further
 
 1.43 - Minor update to fix a potential crash on Windows XP

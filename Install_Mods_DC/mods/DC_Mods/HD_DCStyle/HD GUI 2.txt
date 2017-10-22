@@ -1,18 +1,26 @@
-HD GUI 2 mod by PkR and Dark Sonic
+HD GUI 2 mod by PkR, Dark Sonic and Jmtshaw
 
 This mod provides high-resolution graphics for most ingame menus and GUI items.
 
 Known glitch: some menu items may get cut off or display incorrectly before the character select screen is loaded, such as the songs in the sound test or the bottom right part of the file select screen. This is a Mod Loader bug that can't be fixed on my side.
 
-Please load this mod AFTER all other GUI-related mods, including DC Branding!
+Known compatibility issues and how to resolve them: 
+Goal Ring mod by MainMemory: please load the Goal Ring mod after HD GUI.
+XInput button prompts by CheatFreak: this mod overrides HD assets with standard resolution assets, no solution as of now other than disabling one of the mods.
 
-HD GUI 2 works with and without Dreamcast mods. When used together with DC Branding, it will have some Dreamcast-like features, like the pause box gradient. The mod detects which other mods are enabled and switches to other texture packs if necessary. If the DC SubGames mod is not enabled, this mod will restore the UVs on some Sky Chase models since the texture pack for Sky Chase (that includes the Tornado life gauge) uses unmirrored textures from the Dreamcast version.
+Unless a mod is mentioned in the compatibility section, please load HD GUI AFTER all other GUI-related mods, including DC Branding!
+
+HD GUI 2 works with and without Dreamcast mods. When used together with DC Branding, it will have some Dreamcast-like features, like the pause box gradient. The mod detects which other mods are enabled and switches to other texture packs if necessary (however, tutorials are Dreamcast style only at the moment). If the DC SubGames mod is not enabled, this mod will restore the UVs on some Sky Chase models since the texture pack for Sky Chase (that includes the Tornado life gauge) uses unmirrored textures from the Dreamcast version.
 
 Version history
 
+0.825 - added Mission Mode status screen by Jmtshaw
+0.821 - updated Sky Chase score HUD to work with the alpha rejection patch in DC mods
+0.820 - Jmtshaw contributions: updated HUD numbers and added Mission Mode tutorial backgrounds
+0.814 - Jmtshaw contributions: updated character and item capsule icons
 0.813 - removed SHOOTING1 and SHOOTING2 PVMs from the mod because they aren't actually needed
-0.812 - Chaos and Tornado life gauges updated by Jmtshaw
-0.811 - updated the PressStartButton texture and character banners (thanks Jmtshaw!), remade Chaos and Tornado life gauges
+0.812 - Jmtshaw contributions: updated Chaos and Tornado life gauges
+0.811 - Jmtshaw contributions: updated the PressStartButton texture and character banners
 0.810 - updated the PressStartButton texture shown during demos
 0.809 - removed the Mod Loader warning and added information on a known issue
 0.808 - minor improvements for SADX menu background and level names
@@ -25,9 +33,9 @@ Version history
 0.801 - initial release
 
 Credits:
-Dark Sonic - character and item capsule icons
+Dark Sonic - character and item capsule icons, Tails' race icons
 SteG - boss name font
-Jmtshaw - PressStartButton texture, font edits for character banners
+Jmtshaw - PressStartButton texture, font edits for character banners, Mission Mode assets, HUD numbers, character and item capsule icon edits, Chaos and Tornado life gauges
 PkR - everything else
 
 The mod replaces the following graphics:
@@ -71,12 +79,14 @@ MISCELLANEOUS
 -All stage title cards (English only)
 -All level objectives (English only)
 -All character tutorials (English only, control explanations based on the Dreamcast controller)
+-Mission Mode status screen
+-Mission Mode tutorial backgrounds
 
 THINGS THIS MOD DOESN'T REPLACE
 -Any assets in languages other than English
 -The font used for ingame subtitles
 -Chao menus, fonts and GUI
--Mission Mode stat screen, mission start/finish graphics, Mission Mode tutorial
+-Mission start/finish graphics
 -Mini Game Collection menus
 
 -PkR

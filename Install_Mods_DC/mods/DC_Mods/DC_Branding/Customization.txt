@@ -4,6 +4,7 @@ RippleEffect: enables the water ripple effect on the SA1 title screen
 DrawOverlay: draws a highlight overlay on top of the SA1 logo like in the International release
 DisableFade: disables the white fade-in on the title screen
 EnableTransition: enable the zoom-in on the logo when Start is pressed. The transition itself is not adjustable.
+RemoveCream: disable Cream cameos
 
 BackgroundOffsetX: offsets the title screen/main menu background horizontally (adjusted from top left corner)
 BackgroundOffsetY: offsets the title screen/main menu background vertically (adjusted from top left corner)
