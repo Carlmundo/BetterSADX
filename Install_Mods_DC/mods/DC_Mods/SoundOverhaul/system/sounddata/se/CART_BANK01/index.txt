@@ -1,6 +1,0 @@
-CART_01_00.wav
-CART_01_01.wav
-CART_01_02.wav
-CART_01_03.wav
-CART_01_04.wav
-CART_01_05.wav

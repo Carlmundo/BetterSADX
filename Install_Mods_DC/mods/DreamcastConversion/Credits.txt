@@ -1,0 +1,21 @@
+I would like to thank the following people for help with various aspects of DC Conversion's development:
+
+MainMemory - author of most SADX/SA1 hacking tools, including the SADX Mod Loader. He also helped me a lot with getting started with SADX modding, and still helps occasionally with code-related stuff.
+
+SonicFreak94 - author of the Mod Loader and Lantern Engine (palette lighting mod), who has also provided extremely valuable help in many seemingly hopeless situations, guided me around the SADX disassembly and helped me with a ton of other things.
+
+ItsEasyActually - helped with model and animation data, as well as offered many interesting insights and help on various aspects of SADX/SA1 hacking. Author of Dreamcast character model ports.
+
+TheArcadeStriker - author of the SADX 99' Edition mod, which inspired me to start working on this conversion. Contributed to early versions of DC Branding and DC Subgames.
+
+SteG - provided original high-quality water textures for SADX Style Water, helped with various design-related things and animated textures.
+
+CheatFreak - provided a re-encoding of the original SA1 intro movie with the animated Sonic Team logo for an older version of DC Branding.
+
+Jeff - provided a code to disable the static Sonic Team logo.
+
+Onso - went through all SA1 PVMs and created texture packs used by DC General, other miscellaneous help.
+
+supercoolsonic - provided fixed and improved SET layouts for the DC mods.
+
+ReimuHakurei - provided update-friendly hosting for DC mods.

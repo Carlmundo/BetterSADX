@@ -1,3 +1,0 @@
-Jmtshaw - PressStartButton text, SEGA copyright text, SA1 logo highlight overlay like in SA1 International
-CheatFreak - custom encoding profile for the intro movie
-Jeff - disable Sonic Team logo code

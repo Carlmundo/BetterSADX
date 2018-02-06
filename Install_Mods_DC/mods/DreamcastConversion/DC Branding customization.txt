@@ -1,0 +1,62 @@
+Settings in config.ini:
+DisableSA1TitleScreen: disables the SA1 title screen and main menu background while keeping all other features of DC Branding
+RippleEffect: enables the water ripple effect on the SA1 title screen
+DrawOverlay: draws a highlight overlay on top of the SA1 logo like in the International release. At 640x480 works only when the ripple effect is enabled.
+DisableFade: disables the title screen fade-in effect
+EnableTransition: enable the zoom effect on the logo when Start is pressed. Works only when the ripple effect is enabled. The transition itself is not adjustable.
+RemoveCream: disable Cream cameos
+
+For resolutions above 640x480 only:
+BackgroundOffsetX: offsets the title screen/main menu background horizontally (adjusted from top left corner)
+BackgroundOffsetY: offsets the title screen/main menu background vertically (adjusted from top left corner)
+BackgroundScaleX: scales the title screen/main menu background horizontally
+BackgroundScaleY: scales the title screen/main menu background vertically
+
+LogoOffsetX: offsets the SA1 logo horizontally (adjusted from top left corner)
+LogoOffsetY: offsets the SA1 logo vertically (adjusted from top left corner)
+LogoScaleX: scales the SA1 logo horizontally
+LogoScaleY: scales the SA1 logo vertically
+
+CopyrightOffsetX: offsets the SEGA copyright text horizontally (adjusted from center)
+CopyrightOffsetY: offsets the SEGA copyright text vertically (adjusted from default position)
+
+SonicTeamOffsetX: offsets the Sonic Team logo horizontally (adjusted from center)
+SonicTeamOffsetY: offsets the Sonic Team logo vertically (adjusted from default position)
+
+PressStartOffsetX: offsets the PressStartButton text horizontally (adjusted from center)
+PressStartOffsetY: offsets the PressStartButton text vertically (adjusted from default position)
+
+Note that the offsets are automatically scaled depending on current resolution. The logo and the copyright text have an extra Y offset of -48 pixels at 1:5 (1920x1200) and -96 pixels at 21:9 and wider, and the PressStartButton text's original Y position is hardcoded for different aspect ratios.
+
+The offset settings are only editable for 800x600 and higher.
+
+Scaling and offsets are hardcoded for 640x480 and partially hardcoded for ultrawide resolutions (21:9).
+
+Textures:
+AVA_GTITLE0_ES.PVMX contains the following textures: PressStartButton, SA1 logo, Sonic Team logo, SA1 logo overlay, copyright text (_small versions are for 640x480)
+AVA_TITLE_CMNS.PVMX contains the static title screen background 
+AVA_TITLE_CMNX.PVMX contains the animated title screen background 
+AVA_TITLE_CMN_SMALLS.PVMX contains title screen backgrounds for 640x480
+AVA_TITLE_BACK_ES.PVMX contains the main menu background
+
+Title screen and main menu backgrounds are composed of 4 512x512 blocks and additional 4 256x256 blocks added on the right. Any 1280x1024 image can be split into these blocks using the following script for ImageMagick:
+
+convert title_bg.png -crop 512x512+0+0 title_bg_00.png
+convert title_bg.png -crop 512x512+512+0 title_bg_01.png
+convert title_bg.png -crop 512x512+0+512 title_bg_02.png
+convert title_bg.png -crop 512x512+512+512 title_bg_03.png
+convert title_bg.png -crop 256x256+1024+0 title_bg_04.png
+convert title_bg.png -crop 256x256+1024+256 title_bg_05.png
+convert title_bg.png -crop 256x256+1024+512 title_bg_06.png
+convert title_bg.png -crop 256x256+1024+768 title_bg_07.png
+
+For 640x480, use the following script with any 640x480 image:
+
+convert title_bg.png -crop 256x256+0+0 title_bg_00.png
+convert title_bg.png -crop 256x256+256+0 title_bg_01.png
+convert title_bg.png -background "#cfcfcf" -crop 256x256+0+256 -extent 256x256 title_bg_02.png
+convert title_bg.png -background "#cfcfcf" -crop 256x256+256+256 -extent 256x256 title_bg_03.png
+convert title_bg.png -crop 128x128+512+0 title_bg_04.png
+convert title_bg.png -crop 128x128+512+128 title_bg_05.png
+convert title_bg.png -crop 128x128+512+256 title_bg_06.png
+convert title_bg.png -background "#cfcfcf" -crop 128x128+512+384 -extent 128x128 title_bg_07.png
