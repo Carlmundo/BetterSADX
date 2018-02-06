@@ -1,42 +1,3 @@
-struct VS_IN
-{
-	float3 position : POSITION;
-	float3 normal   : NORMAL;
-	float2 tex      : TEXCOORD0;
-	float4 color    : COLOR0;
-};
-
-struct PS_IN
-{
-	float4 position : POSITION0;
-	float4 diffuse  : COLOR0;
-	float4 specular : COLOR1;
-	float2 tex      : TEXCOORD0;
-	float  fogDist : FOG;
-};
-
-#ifdef USE_SL
-struct SourceLight_t
-{
-	int y, z;
-	float3 color;
-	float specular;
-	float diffuse;
-	float ambient;
-	float unknown2[15];
-};
-
-struct StageLight
-{
-	float3 direction;
-	float specular;
-	float multiplier;
-	float3 diffuse;
-	float3 ambient;
-	float padding[5];
-};
-#endif
-
 // From FixedFuncEMU.fx
 // Copyright (c) 2005 Microsoft Corporation. All rights reserved.
 #define FOGMODE_NONE   0
@@ -49,82 +10,33 @@ struct StageLight
 #define D3DMCS_COLOR1   1 // Diffuse vertex color is used
 #define D3DMCS_COLOR2   2 // Specular vertex color is used
 
+#define DEFAULT_SAMPLER     \
+	MinFilter = Point;      \
+	MagFilter = Point;      \
+	AddressU  = Clamp;      \
+	AddressV  = Clamp;      \
+	ColorOp   = Modulate;   \
+	ColorArg1 = Texture;    \
+	ColorArg2 = Current;    \
+	AlphaOp   = SelectArg1; \
+	AlphaArg1 = Texture;    \
+	AlphaArg2 = Current
+
 // This never changes
 static const float AlphaRef = 16.0f / 255.0f;
 
-// Diffuse texture
+// Textures
+
 Texture2D BaseTexture : register(t0);
-// Palette atlas A
-Texture2D PaletteA : register(t1);
-// Palette atlas B
-Texture2D PaletteB : register(t2);
-
-float4x4 WorldMatrix : register(c0);
-float4x4 wvMatrix : register(c4);
-float4x4 ProjectionMatrix : register(c8);
-// The inverse transpose of the world view matrix - used for environment mapping.
-float4x4 wvMatrixInvT : register(c12);
-
-// Used primarily for environment mapping.
-float4x4 TextureTransform : register(c16) = {
-	-0.5, 0.0, 0.0, 0.0,
-	0.0, 0.5, 0.0, 0.0,
-	0.0, 0.0, 1.0, 0.0,
-	0.5, 0.5, 0.0, 1.0
-};
-
-uint DiffuseSource : register(c20) = (uint)D3DMCS_COLOR1;
-float4 MaterialDiffuse : register(c21) = float4(1.0f, 1.0f, 1.0f, 1.0f);
-
-// Pre-adjusted on the CPU before being sent to the shader.
-// Used for sampling colors from the palette atlases.
-float DiffuseIndexA : register(c22) = 0;
-float DiffuseIndexB : register(c23) = 0;
-float SpecularIndexA : register(c24) = 0;
-float SpecularIndexB : register(c25) = 0;
-
-float3 LightDirection : register(c26) = float3(0.0f, -1.0f, 0.0f);
-float3 NormalScale : register(c27) = float3(1, 1, 1);
-
-uint   FogMode : register(c28) = (uint)FOGMODE_NONE;
-float  FogStart : register(c29);
-float  FogEnd : register(c30);
-float  FogDensity : register(c31);
-float4 FogColor : register(c32);
-
-float DiffuseBlendFactor : register(c33) = 0.0f;
-float SpecularBlendFactor : register(c34) = 0.0f;
-
-bool AllowVertexColor : register(c35) = true;
-bool ForceDefaultDiffuse : register(c36) = false;
-bool DiffuseOverride : register(c37) = false;
-float3 DiffuseOverrideColor : register(c38) = float3(1, 1, 1);
-
-#ifdef USE_SL
-float4 MaterialSpecular : register(c39) = float4(0.0f, 0.0f, 0.0f, 0.0f);
-float  MaterialPower : register(c40) = 1.0f;
-SourceLight_t SourceLight : register(c41);
-StageLight Lights[4] : register(c42);
-#endif
+Texture2D PaletteA    : register(t1);
+Texture2D PaletteB    : register(t2);
 
 // Samplers
-SamplerState baseSampler : register(s0)= sampler_state
+
+SamplerState baseSampler : register(s0) = sampler_state
 {
 	Texture = BaseTexture;
 };
-
-#define DEFAULT_SAMPLER \
-	MinFilter = Point;\
-	MagFilter = Point;\
-	AddressU  = Clamp;\
-	AddressV  = Clamp;\
-	ColorOp   = Modulate;\
-	ColorArg1 = Texture;\
-	ColorArg2 = Current;\
-	AlphaOp   = SelectArg1;\
-	AlphaArg1 = Texture;\
-	AlphaArg2 = Current
-
 
 SamplerState atlasSamplerA : register(s1) = sampler_state
 {
@@ -138,12 +50,49 @@ SamplerState atlasSamplerB : register(s2) = sampler_state
 	DEFAULT_SAMPLER;
 };
 
+// Parameters
+
+float4x4 WorldMatrix      : register(c0);
+float4x4 wvMatrix         : register(c4);
+float4x4 ProjectionMatrix : register(c8);
+float4x4 wvMatrixInvT     : register(c12); // Inverse transpose world view - used for environment mapping.
+
+// Used primarily for environment mapping.
+float4x4 TextureTransform : register(c16) = {
+	-0.5, 0.0, 0.0, 0.0,
+	 0.0, 0.5, 0.0, 0.0,
+	 0.0, 0.0, 1.0, 0.0,
+	 0.5, 0.5, 0.0, 1.0
+};
+
+float3 NormalScale     : register(c20) = float3(1, 1, 1);
+float3 LightDirection  : register(c21) = float3(0.0f, -1.0f, 0.0f);
+uint   DiffuseSource   : register(c22) = (uint)D3DMCS_COLOR1;
+float4 MaterialDiffuse : register(c23) = float4(1.0f, 1.0f, 1.0f, 1.0f);
+
+// Pre-adjusted on the CPU before being sent to the shader.
+// Used for sampling colors from the palette atlases.
+// .xy is diffuse A and B, .zw is specular A and B.
+float4 Indices : register(c24) = float4(0, 0, 0, 0);
+// .x is diffuse, .y is specular
+float2 BlendFactor : register(c25) = float2(0.0f, 0.0f);
+
+bool   AllowVertexColor     : register(c26) = true;
+bool   ForceDefaultDiffuse  : register(c27) = false;
+bool   DiffuseOverride      : register(c28) = false;
+float3 DiffuseOverrideColor : register(c29) = float3(1, 1, 1);
+
+// FogMode cannot be merged with FogConfig because of
+// Shader Model 3 restrictions on acceptable values.
+uint FogMode : register(c30) = (uint)FOGMODE_NONE;
+// x y and z are start, end, and density respectively
+float3 FogConfig : register(c31);
+float4 FogColor  : register(c32);
+
 // Helpers
 
-#ifdef USE_FOG
 // From FixedFuncEMU.fx
 // Copyright (c) 2005 Microsoft Corporation. All rights reserved.
-
 float CalcFogFactor(float d)
 {
 	float fogCoeff;
@@ -154,21 +103,20 @@ float CalcFogFactor(float d)
 			break;
 
 		case FOGMODE_EXP:
-			fogCoeff = 1.0 / pow(E, d * FogDensity);
+			fogCoeff = 1.0 / pow(E, d * FogConfig.z);
 			break;
 
 		case FOGMODE_EXP2:
-			fogCoeff = 1.0 / pow(E, d * d * FogDensity * FogDensity);
+			fogCoeff = 1.0 / pow(E, d * d * FogConfig.z * FogConfig.z);
 			break;
 
 		case FOGMODE_LINEAR:
-			fogCoeff = (FogEnd - d) / (FogEnd - FogStart);
+			fogCoeff = (FogConfig.y - d) / (FogConfig.y - FogConfig.x);
 			break;
 	}
 
 	return clamp(fogCoeff, 0, 1);
 }
-#endif
 
 float4 GetDiffuse(in float4 vcolor)
 {
@@ -193,6 +141,22 @@ float4 GetDiffuse(in float4 vcolor)
 	return color;
 }
 
+struct VS_IN
+{
+	float3 position : POSITION;
+	float3 normal   : NORMAL;
+	float2 tex      : TEXCOORD0;
+	float4 color    : COLOR0;
+};
+
+struct PS_IN
+{
+	float4 position : POSITION0;
+	float4 diffuse  : COLOR0;
+	float4 specular : COLOR1;
+	float2 tex      : TEXCOORD0;
+	float  fogDist : FOG;
+};
 
 // Vertex shaders
 
@@ -201,7 +165,7 @@ PS_IN vs_main(VS_IN input)
 	PS_IN output;
 
 	output.position = mul(float4(input.position, 1), wvMatrix);
-	output.fogDist  = output.position.z;
+	output.fogDist = output.position.z;
 	output.position = mul(output.position, ProjectionMatrix);
 
 #if defined(USE_TEXTURE) && defined(USE_ENVMAP)
@@ -218,7 +182,7 @@ PS_IN vs_main(VS_IN input)
 
 		// This is the "brightness index" calculation. Just a dot product
 		// of the vertex normal (in world space) and the light direction.
-		float _dot = dot(LightDirection, worldNormal);
+		float _dot = dot(normalize(LightDirection), worldNormal);
 
 		// The palette's brightest point is 0, and its darkest point is 1,
 		// so we push the dot product (-1 .. 1) into the rage 0 .. 1, and
@@ -235,18 +199,20 @@ PS_IN vs_main(VS_IN input)
 		}
 		else
 		{
-			pdiffuse = tex2Dlod(atlasSamplerA, float4(i, DiffuseIndexA, 0, 0));
+			pdiffuse = tex2Dlod(atlasSamplerA, float4(i, Indices.x, 0, 0));
 		}
 
-		float4 pspecular = tex2Dlod(atlasSamplerA, float4(i, SpecularIndexA, 0, 0));
+		float4 pspecular = tex2Dlod(atlasSamplerA, float4(i, Indices.z, 0, 0));
 
-		#ifdef USE_BLEND
-			float4 bdiffuse = tex2Dlod(atlasSamplerB, float4(i, DiffuseIndexB, 0, 0));
-			float4 bspecular = tex2Dlod(atlasSamplerB, float4(i, SpecularIndexB, 0, 0));
+	#ifdef USE_BLEND
+		{
+			float4 bdiffuse = tex2Dlod(atlasSamplerB, float4(i, Indices.y, 0, 0));
+			float4 bspecular = tex2Dlod(atlasSamplerB, float4(i, Indices.w, 0, 0));
 
-			pdiffuse = lerp(pdiffuse, bdiffuse, DiffuseBlendFactor);
-			pspecular = lerp(pspecular, bspecular, SpecularBlendFactor);
-		#endif
+			pdiffuse = lerp(pdiffuse, bdiffuse, BlendFactor.x);
+			pspecular = lerp(pspecular, bspecular, BlendFactor.y);
+		}
+	#endif
 
 		output.diffuse = float4((diffuse * pdiffuse).rgb, diffuse.a);
 		output.specular = float4(pspecular.rgb, 0.0f);
