@@ -326,6 +326,8 @@ Type: files; Name: "{app}\system\ava_tool_tips.pvm"
 Type: filesandordirs; Name: "{app}\mods\DC_Edition"
 Type: filesandordirs; Name: "{app}\mods\DC_Mods"
 Type: filesandordirs; Name: "{app}\mods\DLCCircuits"
+Type: filesandordirs; Name: "{app}\mods\BetterSADX_version"
+Type: filesandordirs; Name: "{app}\mods\input-mod"
 ;New version of SADXFE has different file/folder structure
 Type: filesandordirs; Name: "{app}\mods\SADXFE"
 ;sadx-dc-lighting debug files
