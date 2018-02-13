@@ -328,6 +328,8 @@ Type: filesandordirs; Name: "{app}\mods\DC_Mods"
 Type: filesandordirs; Name: "{app}\mods\DLCCircuits"
 Type: filesandordirs; Name: "{app}\mods\BetterSADX_version"
 Type: filesandordirs; Name: "{app}\mods\input-mod"
+Type: filesandordirs; Name: "{app}\mods\HDDC_Unscale"
+Type: filesandordirs; Name: "{app}\mods\DLC"
 ;New version of SADXFE has different file/folder structure
 Type: filesandordirs; Name: "{app}\mods\SADXFE"
 ;sadx-dc-lighting debug files
@@ -340,9 +342,6 @@ Type: files; Name: "{app}\mods\sadx-dc-lighting\sadx-dc-lighting.pdb"
 Type: files; Name: "{app}\d3d8.dll"
 ;Remove for non-Speedrun installs. A speedrun install will re-add this.
 Type: filesandordirs; Name: "{app}\mods\sadx-frame-limit"
-
-;*Redundant directories from 4.1
-Type: filesandordirs; Name: "{app}\mods\HDDC_Unscale"
 
 
 [Files]
