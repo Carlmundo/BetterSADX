@@ -342,6 +342,9 @@ Type: files; Name: "{app}\mods\sadx-dc-lighting\sadx-dc-lighting.pdb"
 Type: files; Name: "{app}\d3d8.dll"
 ;Remove for non-Speedrun installs. A speedrun install will re-add this.
 Type: filesandordirs; Name: "{app}\mods\sadx-frame-limit"
+;Remove for Standard installs as new versions will be installed
+Type: filesandordirs; Name: "{app}\mods\ECGardenOceanFix"
+Type: filesandordirs; Name: "{app}\mods\MR_FinalEggFix"
 
 
 [Files]
