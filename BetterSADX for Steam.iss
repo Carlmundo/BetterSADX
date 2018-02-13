@@ -348,6 +348,7 @@ Type: filesandordirs; Name: "{app}\mods\HDDC_Unscale"
 [Files]
 Source: ".\Install_Steam\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: base
 Source: ".\Install_Shared\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: base
+Source: ".\Install_Mods_Standard\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: standard
 Source: ".\Install_Mods_Common\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: full standard
 Source: ".\Install_Mods_DC\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: full
 Source: ".\Install_Speedrun\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: speedrun
