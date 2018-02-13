@@ -1,0 +1,173 @@
+<?xml version="1.0"?>
+<ConfigSchema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.sonicretro.org">
+	<Groups>
+		<Group name="General settings">
+			<Property name="DLCMode" type="DLCModes" defaultvalue="Random" display="DLC mode">
+				<HelpText>Select how the DLC content should load in the game.</HelpText>
+			</Property>			
+			<Property name="DLCSingle" type="SingleDLCs" defaultvalue="0" display="Single mode DLC">
+				<HelpText>Select the DLC to be loaded in Single mode.</HelpText>
+			</Property>			
+			<Property name="ForceSADXMode" type="bool" defaultvalue="false" display="Force vanilla SADX mode">
+				<HelpText>Enable this to make the DLCs work with SADX Station Square.</HelpText>
+			</Property>	
+			<Property name="MenuVoiceThing" type="MenuVoiceCharacters" defaultvalue="-1" display="Menu voice">
+				<HelpText>Select the character whose voice will be used in menus.</HelpText>
+			</Property>
+			<Property name="EnableSegaVoice" type="bool" defaultvalue="true" display="Enable SEGA voice">
+				<HelpText>Say SEGA on the SEGA logo screen. The voice will match the character selected for menu voice, or be randomized with the default option.</HelpText>
+			</Property>
+			<Property name="SegaVoiceLanguage" type="Languages" defaultvalue="English" display="SEGA voice language">
+				<HelpText>The game doesn't know which language to use on the SEGA logo screen. Select the language to use for the SEGA voice.</HelpText>
+			</Property>
+		</Group>
+		<Group name="Samba GP settings">
+			<Property name="SuperSonicRacing" type="bool" defaultvalue="false" display="Everybody Super Sonic Racing">
+				<HelpText>Play the Super Sonic Racing music for all characters when they go through the Samba GP gate. When false, the music changes only for Sonic.</HelpText>
+			</Property>	
+			<Property name="SonicTrack" type="TwinkleCircuitTracks" defaultvalue="2" display="Sonic's course">
+				<HelpText>Select the Twinkle Circuit track to load when Sonic goes through the Samba GP gate. Note: the names of unused tracks aren't official.</HelpText>
+			</Property>	
+			<Property name="TailsTrack" type="TwinkleCircuitTracks" defaultvalue="1" display="Tails' course">
+				<HelpText>Select the Twinkle Circuit track to load when Tails goes through the Samba GP gate. Note: the names of unused tracks aren't official.</HelpText>
+			</Property>	
+			<Property name="KnucklesTrack" type="TwinkleCircuitTracks" defaultvalue="3" display="Knuckles' course">
+				<HelpText>Select the Twinkle Circuit track to load when Knuckles goes through the Samba GP gate. Note: the names of unused tracks aren't official.</HelpText>
+			</Property>	
+			<Property name="AmyTrack" type="TwinkleCircuitTracks" defaultvalue="4" display="Amy's course">
+				<HelpText>Select the Twinkle Circuit track to load when Amy goes through the Samba GP gate. Note: the names of unused tracks aren't official.</HelpText>
+			</Property>	
+			<Property name="BigTrack" type="TwinkleCircuitTracks" defaultvalue="5" display="Big's course">
+				<HelpText>Select the Twinkle Circuit track to load when Big goes through the Samba GP gate. Note: the names of unused tracks aren't official.</HelpText>
+			</Property>	
+			<Property name="GammaTrack" type="TwinkleCircuitTracks" defaultvalue="0" display="Gamma's course">
+				<HelpText>Select the Twinkle Circuit track to load when Gamma goes through the Samba GP gate. Note: the names of unused tracks aren't official.</HelpText>			
+			</Property>	
+		</Group>
+		<Group name="Seasonal DLC settings">
+			<Property name="Jan1DLC" type="SingleDLCs" defaultvalue="9" display="January 1-15">
+				<HelpText>Select the DLC to be loaded on January 1-15.</HelpText>
+			</Property>		
+			<Property name="Jan2DLC" type="SingleDLCs" defaultvalue="9" display="January 16-31">
+				<HelpText>Select the DLC to be loaded on January 16-31.</HelpText>
+			</Property>	
+			<Property name="Feb1DLC" type="SingleDLCs" defaultvalue="3" display="February 1-15">
+				<HelpText>Select the DLC to be loaded on February 1-15.</HelpText>
+			</Property>	
+			<Property name="Feb2DLC" type="SingleDLCs" defaultvalue="3" display="February 16-28(29)">
+				<HelpText>Select the DLC to be loaded on February 16-28/29.</HelpText>
+			</Property>	
+			<Property name="Mar1DLC" type="SingleDLCs" defaultvalue="6" display="March 1-15">
+				<HelpText>Select the DLC to be loaded on March 1-15.</HelpText>
+			</Property>	
+			<Property name="Mar2DLC" type="SingleDLCs" defaultvalue="6" display="March 16-31">
+				<HelpText>Select the DLC to be loaded on March 16-31.</HelpText>
+			</Property>	
+			<Property name="Apr1DLC" type="SingleDLCs" defaultvalue="0" display="April 1-15">
+				<HelpText>Select the DLC to be loaded on April 1-15.</HelpText>
+			</Property>	
+			<Property name="Apr2DLC" type="SingleDLCs" defaultvalue="0" display="April 16-30">
+				<HelpText>Select the DLC to be loaded on April 16-30.</HelpText>
+			</Property>	
+			<Property name="May1DLC" type="SingleDLCs" defaultvalue="0" display="May 1-15">
+				<HelpText>Select the DLC to be loaded on May 1-15.</HelpText>
+			</Property>	
+			<Property name="May2DLC" type="SingleDLCs" defaultvalue="0" display="May 16-31">
+				<HelpText>Select the DLC to be loaded on May 16-31.</HelpText>
+			</Property>	
+			<Property name="Jun1DLC" type="SingleDLCs" defaultvalue="8" display="June 1-15">
+				<HelpText>Select the DLC to be loaded on June 1-15.</HelpText>
+			</Property>	
+			<Property name="Jun2DLC" type="SingleDLCs" defaultvalue="8" display="June 16-30">
+				<HelpText>Select the DLC to be loaded on June 16-30.</HelpText>
+			</Property>	
+			<Property name="Jul1DLC" type="SingleDLCs" defaultvalue="7" display="July 1-15">
+				<HelpText>Select the DLC to be loaded on July 1-15.</HelpText>
+			</Property>	
+			<Property name="Jul2DLC" type="SingleDLCs" defaultvalue="7" display="July 16-31">
+				<HelpText>Select the DLC to be loaded on July 16-31.</HelpText>
+			</Property>	
+			<Property name="Aug1DLC" type="SingleDLCs" defaultvalue="-1" display="August 1-15">
+				<HelpText>Select the DLC to be loaded on August 1-15.</HelpText>
+			</Property>	
+			<Property name="Aug2DLC" type="SingleDLCs" defaultvalue="-1" display="August 16-31">
+				<HelpText>Select the DLC to be loaded on August 16-31.</HelpText>
+			</Property>	
+			<Property name="Sep1DLC" type="SingleDLCs" defaultvalue="5" display="September 1-15">
+				<HelpText>Select the DLC to be loaded on September 1-15.</HelpText>
+			</Property>	
+			<Property name="Sep2DLC" type="SingleDLCs" defaultvalue="5" display="September 16-30">
+				<HelpText>Select the DLC to be loaded on September 16-30.</HelpText>
+			</Property>	
+			<Property name="Oct1DLC" type="SingleDLCs" defaultvalue="52" display="October 1-15">
+				<HelpText>Select the DLC to be loaded on October 1-15.</HelpText>
+			</Property>	
+			<Property name="Oct2DLC" type="SingleDLCs" defaultvalue="4" display="October 16-31">
+				<HelpText>Select the DLC to be loaded on October 16-31.</HelpText>
+			</Property>	
+			<Property name="Nov1DLC" type="SingleDLCs" defaultvalue="4" display="November 1-15">
+				<HelpText>Select the DLC to be loaded on November 1-15.</HelpText>
+			</Property>	
+			<Property name="Nov2DLC" type="SingleDLCs" defaultvalue="51" display="November 16-30">
+				<HelpText>Select the DLC to be loaded on November 16-30.</HelpText>
+			</Property>	
+			<Property name="Dec1DLC" type="SingleDLCs" defaultvalue="2" display="December 1-15">
+				<HelpText>Select the DLC to be loaded on December 1-15.</HelpText>
+			</Property>	
+			<Property name="Dec2DLC" type="SingleDLCs" defaultvalue="1" display="December 16-31">
+				<HelpText>Select the DLC to be loaded on December 16-31.</HelpText>
+			</Property>		
+		</Group>
+	</Groups>
+	<Enums>
+		<Enum name="DLCModes">
+			<EnumMember name="Single" display="Single  - always load one DLC" />
+			<EnumMember name="Random" display="Random DLC every startup" />
+			<EnumMember name="Seasonal" display="Seasonal - different every month" />
+		</Enum>
+		<Enum name="SingleDLCs">
+			<EnumMember name="1" display="Christmas 1998"></EnumMember>
+			<EnumMember name="6" display="QUO challenge"></EnumMember>
+			<EnumMember name="3" display="Famitsu challenge"></EnumMember>
+			<EnumMember name="2" display="Christmas 1999"></EnumMember>
+			<EnumMember name="5" display="Dreamcast Launch - US"></EnumMember>
+			<EnumMember name="51" display="Dreamcast Launch - Japan"></EnumMember>
+			<EnumMember name="52" display="Dreamcast Launch - Europe"></EnumMember>
+			<EnumMember name="0" display="ATT challenges"></EnumMember>
+			<EnumMember name="4" display="Halloween event"></EnumMember>
+			<EnumMember name="7" display="Reebok challenge"></EnumMember>
+			<EnumMember name="9" display="Y2K Rings"></EnumMember>
+			<EnumMember name="8" display="Samba GP"></EnumMember>
+			<EnumMember name="-1" display="No DLC"></EnumMember>
+		</Enum>
+		<Enum name="TwinkleCircuitTracks">
+			<EnumMember name="0" display="Standard Twinkle Circuit"></EnumMember>
+			<EnumMember name="1" display="Eggman's Challenge"></EnumMember>
+			<EnumMember name="2" display="Samba GP"></EnumMember>
+			<EnumMember name="3" display="Upward Battle"></EnumMember>
+			<EnumMember name="4" display="Jumps'n'Bumps"></EnumMember>
+			<EnumMember name="5" display="Crazy Corners"></EnumMember>
+		</Enum>
+		<Enum name="DLCRegion">
+			<EnumMember name="US" />
+			<EnumMember name="Japan" />
+			<EnumMember name="Europe" />
+		</Enum>
+		<Enum name="MenuVoiceCharacters">
+			<EnumMember name="-1" display="Last played character (default)"></EnumMember>
+			<EnumMember name="1" display="Sonic"></EnumMember>
+			<EnumMember name="2" display="Tails"></EnumMember>
+			<EnumMember name="3" display="Knuckles"></EnumMember>
+			<EnumMember name="4" display="Amy"></EnumMember>
+			<EnumMember name="5" display="Gamma"></EnumMember>
+			<EnumMember name="6" display="Big"></EnumMember>
+			<EnumMember name="7" display="Eggman"></EnumMember>
+			<EnumMember name="8" display="Tikal"></EnumMember>
+			<EnumMember name="9" display="Random"></EnumMember>
+		</Enum>
+		<Enum name="Languages">
+			<EnumMember name="English" />
+			<EnumMember name="Japanese" />
+		</Enum>
+	</Enums>
+</ConfigSchema>

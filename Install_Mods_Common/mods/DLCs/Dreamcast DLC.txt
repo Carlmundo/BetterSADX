@@ -1,0 +1,34 @@
+Dreamcast DLCs by PkR
+
+Credits: SonicFreak94 for the SEGA voice code, sonicblur for the tool to decrypt VMS files
+
+This mod is a unified version of Dreamcast DLC mods released previously, which makes use of the latest Mod Loader functionality to make the experience as customizable as possible. You can force the mod to load a certain DLC, or make it random, or even make it load a different DLC every month! Check the mod's configuration in SADX Mod Manager for more details.
+
+In the original game and older DLC mods certain DLCs could interfere with the flow of the story - e.g. the Christmas tree from the 1999 DLC would block the card needed to enter Speed Highway as Sonic. To avoid issues with the story, this mod does the following:
+
+1) When playing as Sonic, one of the Christmas trees doesn't spawn if Speed Highway is not cleared
+2) The Reebok DLC doesn't load if Emerald Coast isn't cleared
+3) The AT&T challenge for Sonic doesn't load if Speed Highway is open but not cleared
+
+The mod brings the following Sonic Adventure downloadable events and features to the PC version:
+Samba Grand Prix 
+Y2K Millenium Celebration
+Famitsu Hide-and-Seek challenge (translated by PkR)
+QUO card challenge (translated by PkR)
+Dreamcast Launch Party (all regions, English only)
+AT&T challenges for Sonic, Tails and Knuckles
+Reebok DMX challenge
+Halloween event
+Christmas 1998
+Christmas 1999
+You can also force a specific character to voice all menus like on the Dreamcast
+
+For more information about the DLCs read the following article:
+http://www.moddb.com/mods/sadx-dreamcast-conversion/news/dreamcast-exclusive-dlcs-now-playable-in-sadx-pc
+
+Changelog
+
+1.0003 - added US/International DC camera for Station Square for better compatibility with Dreamcast Conversion
+1.0002 - fixed Y2K posters and the default Samba GP options
+1.0001 - initial release, changed the 1999 Christmas tree to spawn only if Speed Highway is cleared
+1.0000 - initial beta
