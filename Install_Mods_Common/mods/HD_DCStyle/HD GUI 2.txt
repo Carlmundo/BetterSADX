@@ -4,6 +4,12 @@ This mod provides high-resolution graphics for most ingame menus and GUI items.
 
 Version history
 
+0.864 - McAleeCh contributions: updated English level objective cards
+0.863 - Sonikko contributions: updated Tails race icons, life icons and Pause menu header, character recap update
+0.862 - Fixed an issue with the Goal Ring mod
+0.861 - Added a missing PNG file to prevent Sky Chase crashes
+0.860 - Jmtshaw contributions: added the majority of Japanese assets 
+0.843 - Fixed an issue with character recap screens not fading properly
 0.842 - Fixed a crash when opening the Mini Game Collection
 0.841 - Added upscaled Goal Ring mod textures
 0.840 - Switched to new Mod Loader functionality to help avoid mod compatibility issues
@@ -41,8 +47,9 @@ Version history
 Credits:
 Dark Sonic - character and item capsule icons, Tails' race icons
 SteG - boss name font
-Jmtshaw - PressStartButton texture, font edits for character banners, Mission Mode assets, HUD numbers, character and item capsule icon edits, Chaos and Tornado life gauges
-Sonikko - File and character select background, level title cards, Sky Chase reticle, character recap screens, Mission start/finish graphics
+Jmtshaw - PressStartButton texture, font edits for character banners, Mission Mode assets, HUD numbers, character and item capsule icon edits, Chaos and Tornado life gauges, all Japanese language assets
+Windii - all Japanese language assets
+Sonikko - File and character select background, level title cards, Sky Chase reticle, character recap screens, Mission start/finish graphics, Tails race icons, life icons, text
 McAleeCh - mission objective text layout improvements
 PkR - everything else
 
@@ -59,7 +66,7 @@ MENUS
 -Emblem results screen
 -Credits font
 -Adventure Field maps (English only)
--Options screen, including all text and icons (English only)
+-Options screen, including all text and icons
 -Sound Test screen, including the font used for song names
 
 HUD
@@ -85,15 +92,15 @@ MISCELLANEOUS
 -The font used for boss names (thanks SteG for helping me improve it)
 -Game Over screen (currently not scaled by the Mod Loader even in the menu-scale branch)
 -SEGA and Sonic Team logos
--All stage title cards (English only)
--All level objectives (English only)
--All character tutorial texts (English only, control explanations based on the Dreamcast controller)
+-All stage title cards
+-All level objectives
+-All character tutorial texts (English and Japanese, control explanations based on the Dreamcast controller)
 -Mission Mode status screen
 -Mission start/finish graphics
 -Mission Mode tutorial backgrounds
 
-THINGS THIS MOD DOESN'T REPLACE
--Any assets in languages other than English
+THINGS THIS MOD DOESN'T REPLACE (yet)
+-Any assets in languages other than English or Japanese
 -The font used for ingame subtitles
 -Chao menus, fonts and GUI
 -Mini Game Collection menus
