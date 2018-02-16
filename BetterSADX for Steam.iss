@@ -37,7 +37,7 @@ Name: "speedrun"; Description: "Minimal / Speedruns";
 [Components]
 Name: "base"; Description: "Minimum required files"; Types: full standard speedrun; Flags: fixed
 Name: "speedrun"; Description: "Speedrun Install"; Types: speedrun; Flags: fixed
-Name: "standard"; Description: "Major Improvements"; Types: full standard; Flags: fixed
+Name: "standard"; Description: "Major Improvements"; Types: standard; Flags: fixed
 Name: "full"; Description: "Dreamcast Conversion"; Types: full; Flags: fixed
 
 
@@ -136,12 +136,14 @@ begin
       DelTree(ExpandConstant('{app}\system\TUTO_Texture'), True, True, True);
       DelTree(ExpandConstant('{app}\system\Water'), True, True, True);
       
-      //Remove 4.0 folders that are no longer required
-      //DelTree(ExpandConstant('{app}\mods\DC_Edition'), True, True, True);
+      ProgressPage.SetText('Installing redistributables...', ''); 
       ProgressPage.SetProgress(50, 100);
       
       Exec(ExpandConstant('{app}\_CommonRedist\vcredist\2013\vcredist_x86.exe'), '/silent', '', SW_SHOW, ewWaitUntilTerminated, ErrorCode);
       Exec(ExpandConstant('{app}\_CommonRedist\vcredist\2015\vc_redist.x86.exe'), '/silent', '', SW_SHOW, ewWaitUntilTerminated, ErrorCode);
+      Exec(ExpandConstant('{app}\_CommonRedist\vcredist\2017\VC_redist.x86.exe'), '/silent', '', SW_SHOW, ewWaitUntilTerminated, ErrorCode);
+      Exec(ExpandConstant('{app}\_CommonRedist\.NET Framework\dotNetFx40_Full_x86_x64.exe'), '/q /norestart', '', SW_SHOW, ewWaitUntilTerminated, ErrorCode);
+      Exec(ExpandConstant('{app}\_CommonRedist\.NET Framework\dotnetfx45_full_x86_x64.exe'), '/q /norestart', '', SW_SHOW, ewWaitUntilTerminated, ErrorCode);
       
       //Add DEP exemption entry
       ProgressPage.SetText('Adding DEP exception...', '');
@@ -358,8 +360,6 @@ Source: ".\Install_Speedrun\*"; DestDir: "{app}"; Flags: ignoreversion recursesu
 Source: ".\Config_Speedrun\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: speedrun
 Source: ".\Config_Standard\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: standard
 Source: ".\Config_DC\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: full
-
-
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
 [Run]
