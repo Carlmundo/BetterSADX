@@ -5,13 +5,25 @@
 			<Property name="EnableDreamcastWaterRipple" type="bool" defaultvalue="True" display= "Restore the SA1 water ripple">
 				<HelpText>Enable the water ripple model from the Dreamcast version. Scroll down to the Branding section for the title screen ripple effect.</HelpText>
 			</Property>	
+			<Property name="EnableCutsceneFix" type="bool" defaultvalue="True" display= "Fix cutscene camera transitions">
+				<HelpText>Restore camera transitions that are supposed to happen after cutscenes (experimental).</HelpText>
+			</Property>	
+			<Property name="EnableImpressFont" type="Fonts" defaultvalue="Impress" display= "Enable Dreamcast font">
+				<HelpText>Enable the fonts from DC/GC versions of the game. Use Impress for English and Comic Sans (experimental) for other European languages.</HelpText>
+			</Property>	
+			<Property name="DisableFontSmoothing" type="bool" defaultvalue="True" display= "Disable font smoothing">
+				<HelpText>SADXPC adds a white outline that makes the font look thicker. Disable this to make the text sharper (like SA1).</HelpText>
+			</Property>	
+			<Property name="ColorizeFont" type="bool" defaultvalue="False" display= "Colorize subtitle font">
+				<HelpText>Make the subtitle font slightly darker, like in SA1 on Demul. Setting this to false will make the font white.</HelpText>
+			</Property>	
 			<Property name="EnableDreamcastBranding" type="bool" defaultvalue="True" display= "Enable Dreamcast branding">
 				<HelpText>Restore menu textures, options, button prompts, tutorials etc. from the Dreamcast version.</HelpText>
 			</Property>	
 		</Group>
 		<Group name="Miscellaneous" display="2 - Miscellaneous">
 			<Property name="EnableSETFixes" type="SETFixes" defaultvalue="Normal" display="SET layout fixes">
-				<HelpText>Object layout improvements by supercoolsonic. The Extra version adds objects normally not used in the game.</HelpText>
+				<HelpText>Object layout improvements by supercoolsonic. Off reverts to original SET files from SA1 (incompatible with Mission Mode!). Extra adds unused scenery.</HelpText>
 			</Property>	
 			<Property name="EnableCasinopolisCowgirl" type="bool" defaultvalue="True" display= "Enable Casinopolis Cowgirl" />
 			<Property name="EnableTwinkleCircuit" type="bool" defaultvalue="True" display="Enable Twinkle Circuit" />
@@ -19,9 +31,6 @@
 				<HelpText>Restore models and textures for Sky Chase enemies and the Egg Carrier. This is force enabled when Dreamcast Characters or HD GUI are loaded.</HelpText>
 			</Property>	
 			<Property name="EnableSandHill" type="bool" defaultvalue="True" display="Enable Sand Hill" />
-			<Property name="EnableSkyChaseFixes" type="bool" defaultvalue="True" display="Enable Sky Chase fixes">
-				<HelpText>Fixes various gameplay and texture issues in Sky Chase.</HelpText>
-			</Property>	
 			<Property name="RevertEmeraldCoastDrawDistance" type="bool" defaultvalue="False" display="Revert Emerald Coast skybox">
 				<HelpText>Revert skybox scale in Emerald Coast. The ocean will no longer be aligned with the horizon, but fog and draw distance will be the same as in SADX.</HelpText>
 			</Property>	
@@ -237,9 +246,14 @@
 	</Groups>
 	<Enums>
 		<Enum name="SETFixes">
-			<EnumMember name="Normal" />
-			<EnumMember name="Extra" />
-			<EnumMember name="Off" />
+			<EnumMember name="Off" display="Off"></EnumMember>
+			<EnumMember name="Normal" display="Normal"></EnumMember>
+			<EnumMember name="Extra" display="Extra"></EnumMember>
+		</Enum>
+		<Enum name="Fonts">
+			<EnumMember name="Off" display="Off"></EnumMember>
+			<EnumMember name="Impress" display="Impress"></EnumMember>
+			<EnumMember name="ComicSans" display="Comic Sans"></EnumMember>
 		</Enum>
 	</Enums>
 </ConfigSchema>

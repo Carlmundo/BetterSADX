@@ -28,6 +28,8 @@ http://www.moddb.com/mods/sadx-dreamcast-conversion/news/dreamcast-exclusive-dlc
 
 Changelog
 
+1.0005 - merged the "Enable SEGA voice" and SEGA voice language settings
+1.0004 - added a toggle to disable DLC content for current character if his/her story isn't complete
 1.0003 - added US/International DC camera for Station Square for better compatibility with Dreamcast Conversion
 1.0002 - fixed Y2K posters and the default Samba GP options
 1.0001 - initial release, changed the 1999 Christmas tree to spawn only if Speed Highway is cleared

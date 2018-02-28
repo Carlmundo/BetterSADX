@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<ConfigSchema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.sonicretro.org">
+  <Groups>
+    <Group name="General settings">
+      <Property name="SegaVoiceLanguage" type="Languages" defaultvalue="1" display="SEGA voice language">
+        <HelpText>Select the language to use for the voice on the SEGA/Sonic Team screen.</HelpText>
+      </Property>
+    </Group>
+  </Groups>
+  <Enums>
+    <Enum name="Languages">
+      <EnumMember name="0" display="Off"></EnumMember>
+      <EnumMember name="1" display="English"></EnumMember>
+      <EnumMember name="2" display="Japanese"></EnumMember>
+    </Enum>
+  </Enums>
+</ConfigSchema>

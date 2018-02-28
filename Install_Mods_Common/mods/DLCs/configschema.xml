@@ -2,6 +2,9 @@
 <ConfigSchema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.sonicretro.org">
 	<Groups>
 		<Group name="General settings">
+			<Property name="DisableDuringStory" type="bool" defaultvalue="false" display="Disable during story">
+				<HelpText>Only load the DLCs when current character's story is 100% complete.</HelpText>
+			</Property>
 			<Property name="DLCMode" type="DLCModes" defaultvalue="Random" display="DLC mode">
 				<HelpText>Select how the DLC content should load in the game.</HelpText>
 			</Property>			
@@ -14,11 +17,8 @@
 			<Property name="MenuVoiceThing" type="MenuVoiceCharacters" defaultvalue="-1" display="Menu voice">
 				<HelpText>Select the character whose voice will be used in menus.</HelpText>
 			</Property>
-			<Property name="EnableSegaVoice" type="bool" defaultvalue="true" display="Enable SEGA voice">
-				<HelpText>Say SEGA on the SEGA logo screen. The voice will match the character selected for menu voice, or be randomized with the default option.</HelpText>
-			</Property>
 			<Property name="SegaVoiceLanguage" type="Languages" defaultvalue="English" display="SEGA voice language">
-				<HelpText>The game doesn't know which language to use on the SEGA logo screen. Select the language to use for the SEGA voice.</HelpText>
+				<HelpText>Select the language to use for the voice on the SEGA screen, or disabled the voice like in the vanilla game.</HelpText>
 			</Property>
 		</Group>
 		<Group name="Samba GP settings">
@@ -166,6 +166,7 @@
 			<EnumMember name="9" display="Random"></EnumMember>
 		</Enum>
 		<Enum name="Languages">
+			<EnumMember name="Off" />
 			<EnumMember name="English" />
 			<EnumMember name="Japanese" />
 		</Enum>
