@@ -17,6 +17,12 @@
 			<Property name="ColorizeFont" type="bool" defaultvalue="False" display= "Colorize subtitle font">
 				<HelpText>Make the subtitle font slightly darker, like in SA1 on Demul. Setting this to false will make the font white.</HelpText>
 			</Property>	
+			<Property name="ColorizeVideos" type="bool" defaultvalue="True" display= "Imitate Dreamcast video colors">
+				<HelpText>SA1 uses vertex lighting to adjust the colors of the FMVs. Enabling this makes the videos slightly darker.</HelpText>
+			</Property>	
+			<Property name="FadeoutVideos" type="bool" defaultvalue="True" display= "Fade out skipped videos">
+				<HelpText>Fade out to black instead of cutting video when skipping FMVs.</HelpText>
+			</Property>	
 			<Property name="EnableDreamcastBranding" type="bool" defaultvalue="True" display= "Enable Dreamcast branding">
 				<HelpText>Restore menu textures, options, button prompts, tutorials etc. from the Dreamcast version.</HelpText>
 			</Property>	
