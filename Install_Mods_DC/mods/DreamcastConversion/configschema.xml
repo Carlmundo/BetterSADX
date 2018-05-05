@@ -2,8 +2,14 @@
 <ConfigSchema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.sonicretro.org">
 	<Groups>
 		<Group name="General" display="1 - General">
+			<Property name="EnableSpeedFixes" type="bool" defaultvalue="True" display= "Enable framerate fixes">
+				<HelpText>Some objects and animations in SADX weren't adjusted for 60 FPS, these fixes correct them. Disable for a more vanilla-like SADX experience.</HelpText>
+			</Property>
 			<Property name="EnableDreamcastWaterRipple" type="bool" defaultvalue="True" display= "Restore the SA1 water ripple">
 				<HelpText>Enable the water ripple model from the Dreamcast version. Scroll down to the Branding section for the title screen ripple effect.</HelpText>
+			</Property>
+			<Property name="CutsceneSkipMode" type="CutsceneMode" defaultvalue="0" display= "Cutscene skip mode">
+				<HelpText>Improves handling of skippable cutscenes. Cutscenes can be skipped with a single button press. Fade to black makes skipping cutscenes smoother.</HelpText>
 			</Property>	
 			<Property name="EnableCutsceneFix" type="bool" defaultvalue="True" display= "Fix cutscene camera transitions">
 				<HelpText>Restore camera transitions that are supposed to happen after cutscenes (experimental).</HelpText>
@@ -14,23 +20,23 @@
 			<Property name="DisableFontSmoothing" type="bool" defaultvalue="True" display= "Disable font smoothing">
 				<HelpText>SADXPC adds a white outline that makes the font look thicker. Disable this to make the text sharper (like SA1).</HelpText>
 			</Property>	
-			<Property name="ColorizeFont" type="bool" defaultvalue="False" display= "Colorize subtitle font">
-				<HelpText>Make the subtitle font slightly darker, like in SA1 on Demul. Setting this to false will make the font white.</HelpText>
-			</Property>	
-			<Property name="ColorizeVideos" type="bool" defaultvalue="True" display= "Imitate Dreamcast video colors">
-				<HelpText>SA1 uses vertex lighting to adjust the colors of the FMVs. Enabling this makes the videos slightly darker.</HelpText>
-			</Property>	
-			<Property name="FadeoutVideos" type="bool" defaultvalue="True" display= "Fade out skipped videos">
-				<HelpText>Fade out to black instead of cutting video when skipping FMVs.</HelpText>
-			</Property>	
-			<Property name="EnableDreamcastBranding" type="bool" defaultvalue="True" display= "Enable Dreamcast branding">
+			<Property name="ColorizeFont" type="bool" defaultvalue="True" display= "Colorize subtitle font">
+				<HelpText>Imitate the DC SA1 subtitle font color. Disabling this will make the subtitle font white.</HelpText>
+			</Property>
+				<Property name="EnableDreamcastBranding" type="bool" defaultvalue="True" display= "Enable Dreamcast branding">
 				<HelpText>Restore menu textures, options, button prompts, tutorials etc. from the Dreamcast version.</HelpText>
+			</Property>	
+				<Property name="EnableWindowTitle" type="bool" defaultvalue="True" display= "'Sonic Adventure'  window title">
+				<HelpText>Change the game's window title to Sonic Adventure instead of SonicAdventureDXPC. Disable this for compatibility with Fusion's Chao Editor.</HelpText>
 			</Property>	
 		</Group>
 		<Group name="Miscellaneous" display="2 - Miscellaneous">
 			<Property name="EnableSETFixes" type="SETFixes" defaultvalue="Normal" display="SET layout fixes">
 				<HelpText>Object layout improvements by supercoolsonic. Off reverts to original SET files from SA1 (incompatible with Mission Mode!). Extra adds unused scenery.</HelpText>
-			</Property>	
+			</Property>
+			<Property name="EnableLSDFix" type="bool" defaultvalue="False" display="Light Speed Dash distance hack">
+				<HelpText>Make Sonic travel farther (like on the Dreamcast) when using the Light Speed Dash. This is required for compatibility with original Dreamcast SET files.</HelpText>
+			</Property>
 			<Property name="EnableCasinopolisCowgirl" type="bool" defaultvalue="True" display= "Enable Casinopolis Cowgirl" />
 			<Property name="EnableTwinkleCircuit" type="bool" defaultvalue="True" display="Enable Twinkle Circuit" />
 			<Property name="EnableSkyChaseEnemyModels" type="bool" defaultvalue="True" display="Enable Sky Chase enemy models">
@@ -42,22 +48,40 @@
 			</Property>	
 		</Group>
 		<Group name="Branding" display="3 - Branding">
+			<Property name="RemoveCream" type="bool" defaultvalue="True" display= "Disable Cream cameos">
+				<HelpText>Disable Cream cameos in Station Square.</HelpText>
+			</Property>
 			<Property name="DisableSA1TitleScreen" type="bool" defaultvalue="False" display= "Disable the SA1 title screen">
 				<HelpText>Restore the original SADX title screen but keep other improvements from DC Branding.</HelpText>
 			</Property>	
-			<Property name="RippleEffect" type="bool" defaultvalue="True" display= "Enable title screen ripple effect"  />
+			<Property name="SA1LogoMode" type="SA1LogoModes" defaultvalue="0" display= "Title screen layout">
+				<HelpText>Select how the logo should be positioned on the title screen.</HelpText>
+			</Property>	
+			<Property name="RippleEffect" type="bool" defaultvalue="True" display= "Enable title screen ripple effect">
+				<HelpText>Enable the ripple effect on the title screen.</HelpText>
+			</Property>	
 			<Property name="DrawOverlay" type="bool" defaultvalue="True" display= "Draw title screen overlay">
 				<HelpText>Draw a highlight overlay on top of the SA1 logo like in SA International.</HelpText>
 			</Property>
-			<Property name="RemoveCream" type="bool" defaultvalue="True" display= "Disable Cream cameos"  />
-			<Property name="DisableFade" type="bool" defaultvalue="True" display= "Disable title screen fade-in">
-				<HelpText>Disable the title screen fade-in animation on startup.</HelpText>
-			</Property>	
 			<Property name="EnableTransition" type="bool" defaultvalue="True" display= "Enable title screen zoom effect">
 				<HelpText>Enable the logo zoom-in transition when you press Start.</HelpText>
 			</Property>	
 		</Group>
-		<Group name="Levels" display="4 - Levels">
+		<Group name="Videos" display="4 - Videos">
+			<Property name="DisableAllVideoStuff" type="bool" defaultvalue="False" display= "Disable all video enhancements">
+				<HelpText>Disable all video-related functionality, including the FMV fadeout feature. If this setting is enabled, all other settings in this section will be ignored.</HelpText>
+			</Property>	
+			<Property name="EnableSA1Intro" type="bool" defaultvalue="True" display= "Enable the Dreamcast intro movie">
+				<HelpText>Use the Dreamcast Sonic Adventure intro recreated from multiple sources in high quality. Can also be used with the original (non-reconstructed) SA1 intro.</HelpText>
+			</Property>	
+			<Property name="SonicTeamLogoMode" type="SonicTeamLogo" defaultvalue="Animated" display= "Sonic Team logo mode">
+				<HelpText>Show the Sonic Team logo before the intro movie: animated (SA1), static (SADX), or disable entirely.</HelpText>
+			</Property>	
+			<Property name="ColorizeVideos" type="bool" defaultvalue="True" display= "Imitate Dreamcast video colors">
+				<HelpText>Dreamcast SA1 uses vertex lighting to adjust video colors. Enabling this makes the FMVs slightly darker, but closer to what they look like on a real Dreamcast.</HelpText>
+			</Property>	
+		</Group>
+		<Group name="Levels" display="5 - Levels">
 			<Property name="EnableEmeraldCoast" type="bool" defaultvalue="True" display="Enable Emerald Coast" />
 			<Property name="EnableWindyValley" type="bool" defaultvalue="True" display="Enable Windy Valley"  />
 			<Property name="EnableTwinklePark" type="bool" defaultvalue="True" display="Enable Twinkle Park"  />
@@ -74,7 +98,7 @@
 			<Property name="EnableEggCarrier" type="bool" defaultvalue="True" display="Enable Egg Carrier"  />
 			<Property name="EnablePast" type="bool" defaultvalue="True" display="Enable Mystic Ruins Past"  />
 		</Group>
-		<Group name="SADX Style Water" display="5 - SADX Style Water">
+		<Group name="SADX Style Water" display="6 - SADX Style Water">
 			<Property name="EmeraldCoast" type="bool" defaultvalue="False" display="Emerald Coast">
 				<HelpText>Enable SADX-like water in Emerald Coast.</HelpText>
 			</Property>	
@@ -89,15 +113,9 @@
 			</Property>	
 			<Property name="Past" type="bool" defaultvalue="False" display="Mystic Ruins Past">
 				<HelpText>Enable SADX-like water in Mystic Ruins Past.</HelpText>
-			</Property>	
-			<Property name="EggHornet" type="bool" defaultvalue="False" display="Egg Hornet">
-				<HelpText>Enable SADX-like water during the Egg Hornet fight.</HelpText>
-			</Property>	
-			<Property name="ZeroE101R" type="bool" defaultvalue="False" display="Zero and E-101R">
-				<HelpText>Enable SADX-like water when fighting Zero and E-101R.</HelpText>
-			</Property>	
+			</Property>
 		</Group>
-		<Group name="Chao Gardens" display="6 - Chao Gardens">
+		<Group name="Chao Gardens" display="7 - Chao Gardens">
 			<Property name="EnableStationSquareGarden" type="bool" defaultvalue="True" display="Enable the Station Square garden" />
 			<Property name="EnableMysticRuinsGarden" type="bool" defaultvalue="True" display="Enable the Mystic Ruins garden"  />
 			<Property name="EnableEggCarrierGarden" type="bool" defaultvalue="True" display="Enable the Egg Carrier garden" />
@@ -105,7 +123,7 @@
 				<HelpText>Enable the interactive Chao Race lobby from the Dreamcast version.</HelpText>
 			</Property>	
 		</Group>
-		<Group name="Bosses" display="7 - Bosses">
+		<Group name="Bosses" display="8 - Bosses">
 			<Property name="EnableChaos0" type="bool" defaultvalue="True" display="Enable Chaos 0" />
 			<Property name="EnableChaos2" type="bool" defaultvalue="True" display="Enable Chaos 2" />
 			<Property name="EnableChaos4" type="bool" defaultvalue="True" display="Enable Chaos 4" />
@@ -117,139 +135,7 @@
 			<Property name="EnableE101" type="bool" defaultvalue="True" display="Enable E-101"  />
 			<Property name="EnableZeroE101R" type="bool" defaultvalue="True" display="Enable Zero and E-101R"  />
 		</Group>
-		<Group name="SA1 Logo Normal" display="8.1 - SA1 Logo 4:3">
-			<Property name="BackgroundOffsetX" type="int" defaultvalue="-16" display="Background Offset X">
-				<HelpText>Offsets the title screen/main menu background horizontally (adjusted from top left corner).</HelpText>
-			</Property>	
-			<Property name="BackgroundOffsetY" type="int" defaultvalue="0" display="Background Offset Y">
-				<HelpText>Offsets the title screen/main menu background vertically (adjusted from top left corner).</HelpText>
-			</Property>	
-			<Property name="BackgroundScaleX" type="float" defaultvalue="1.05" display="Background Scale X">
-				<HelpText>Scales the title screen/main menu background horizontally.</HelpText>
-			</Property>				
-			<Property name="BackgroundScaleY" type="float" defaultvalue="1.05" display="Background Scale Y">
-				<HelpText>Scales the title screen/main menu background vertically.</HelpText>
-			</Property>	
-			<Property name="LogoOffsetX" type="int" defaultvalue="64" display="Logo Offset X">
-				<HelpText>Offsets the SA1 logo horizontally (adjusted from top left corner).</HelpText>
-			</Property>	
-			<Property name="LogoOffsetY" type="int" defaultvalue="220" display="Logo Offset Y">
-				<HelpText>Offsets the SA1 logo vertically (adjusted from top left corner).</HelpText>
-			</Property>	
-			<Property name="LogoScaleX" type="float" defaultvalue="1.0" display="Logo Scale X">
-				<HelpText>Scales the SA1 logo horizontally.</HelpText>
-			</Property>	
-			<Property name="LogoScaleY" type="float" defaultvalue="1.0" display="Logo Scale Y">
-				<HelpText>Scales the SA1 logo vertically.</HelpText>
-			</Property>	
-			<Property name="CopyrightOffsetX" type="int" defaultvalue="0" display="Copyright text Offset X" >
-				<HelpText>Offsets the SEGA copyright text horizontally (adjusted from center).</HelpText>
-			</Property>
-			<Property name="CopyrightOffsetY" type="int" defaultvalue="0" display="Copyright text Offset Y">
-				<HelpText>Offsets the SEGA copyright text vertically (adjusted from default position).</HelpText>
-			</Property>	
-			<Property name="SonicTeamOffsetX" type="int" defaultvalue="0" display="Sonic Team logo Offset X">
-				<HelpText>Offsets the Sonic Team logo horizontally (adjusted from center).</HelpText>
-			</Property>
-			<Property name="SonicTeamOffsetY" type="int" defaultvalue="0" display="Sonic Team logo Offset Y">
-				<HelpText>Offsets the Sonic Team logo vertically (adjusted from default position).</HelpText>
-			</Property>	
-			<Property name="PressStartOffsetX" type="int" defaultvalue="0" display="Press Start text Offset X">
-				<HelpText>Offsets the PressStartButton text horizontally (adjusted from center).</HelpText>
-			</Property>				
-			<Property name="PressStartOffsetY" type="int" defaultvalue="0" display="Press Start text Offset Y">
-				<HelpText>Offsets the PressStartButton text vertically (adjusted from default position).</HelpText>
-			</Property>	
-		</Group>
-		<Group name="SA1 Logo Widescreen" display="8.2 - SA1 Logo 16:9">
-			<Property name="BackgroundOffsetX" type="int" defaultvalue="-16" display="Background Offset X">
-				<HelpText>Offsets the title screen/main menu background horizontally (adjusted from top left corner).</HelpText>
-			</Property>	
-			<Property name="BackgroundOffsetY" type="int" defaultvalue="-128" display="Background Offset Y">
-				<HelpText>Offsets the title screen/main menu background vertically (adjusted from top left corner).</HelpText>
-			</Property>	
-			<Property name="BackgroundScaleX" type="float" defaultvalue="1.05" display="Background Scale X">
-				<HelpText>Scales the title screen/main menu background horizontally.</HelpText>
-			</Property>				
-			<Property name="BackgroundScaleY" type="float" defaultvalue="1.05" display="Background Scale Y">
-				<HelpText>Scales the title screen/main menu background vertically.</HelpText>
-			</Property>	
-			<Property name="LogoOffsetX" type="int" defaultvalue="64" display="Logo Offset X">
-				<HelpText>Offsets the SA1 logo horizontally (adjusted from top left corner).</HelpText>
-			</Property>	
-			<Property name="LogoOffsetY" type="int" defaultvalue="100" display="Logo Offset Y">
-				<HelpText>Offsets the SA1 logo vertically (adjusted from top left corner).</HelpText>
-			</Property>	
-			<Property name="LogoScaleX" type="float" defaultvalue="1.0" display="Logo Scale X">
-				<HelpText>Scales the SA1 logo horizontally.</HelpText>
-			</Property>	
-			<Property name="LogoScaleY" type="float" defaultvalue="1.0" display="Logo Scale Y">
-				<HelpText>Scales the SA1 logo vertically.</HelpText>
-			</Property>	
-			<Property name="CopyrightOffsetX" type="int" defaultvalue="0" display="Copyright text Offset X" >
-				<HelpText>Offsets the SEGA copyright text horizontally (adjusted from center).</HelpText>
-			</Property>
-			<Property name="CopyrightOffsetY" type="int" defaultvalue="-180" display="Copyright text Offset Y">
-				<HelpText>Offsets the SEGA copyright text vertically (adjusted from default position).</HelpText>
-			</Property>	
-			<Property name="SonicTeamOffsetX" type="int" defaultvalue="0" display="Sonic Team logo Offset X">
-				<HelpText>Offsets the Sonic Team logo horizontally (adjusted from center).</HelpText>
-			</Property>
-			<Property name="SonicTeamOffsetY" type="int" defaultvalue="-36" display="Sonic Team logo Offset Y">
-				<HelpText>Offsets the Sonic Team logo vertically (adjusted from default position).</HelpText>
-			</Property>	
-			<Property name="PressStartOffsetX" type="int" defaultvalue="0" display="Press Start text Offset X">
-				<HelpText>Offsets the PressStartButton text horizontally (adjusted from center).</HelpText>
-			</Property>				
-			<Property name="PressStartOffsetY" type="int" defaultvalue="0" display="Press Start text Offset Y">
-				<HelpText>Offsets the PressStartButton text vertically (adjusted from default position).</HelpText>
-			</Property>	
-		</Group>
-		<Group name="SA1 Logo Ultrawide" display="8.3 - SA1 Logo 21:9">
-			<Property name="BackgroundOffsetX" type="int" defaultvalue="-16" display="Background Offset X">
-				<HelpText>Offsets the title screen/main menu background horizontally (adjusted from top left corner).</HelpText>
-			</Property>	
-			<Property name="BackgroundOffsetY" type="int" defaultvalue="-180" display="Background Offset Y">
-				<HelpText>Offsets the title screen/main menu background vertically (adjusted from top left corner).</HelpText>
-			</Property>	
-			<Property name="BackgroundScaleX" type="float" defaultvalue="1.05" display="Background Scale X">
-				<HelpText>Scales the title screen/main menu background horizontally.</HelpText>
-			</Property>				
-			<Property name="BackgroundScaleY" type="float" defaultvalue="1.05" display="Background Scale Y">
-				<HelpText>Scales the title screen/main menu background vertically.</HelpText>
-			</Property>	
-			<Property name="LogoOffsetX" type="int" defaultvalue="140" display="Logo Offset X">
-				<HelpText>Offsets the SA1 logo horizontally (adjusted from top left corner).</HelpText>
-			</Property>	
-			<Property name="LogoOffsetY" type="int" defaultvalue="160" display="Logo Offset Y">
-				<HelpText>Offsets the SA1 logo vertically (adjusted from top left corner).</HelpText>
-			</Property>	
-			<Property name="LogoScaleX" type="float" defaultvalue="0.8" display="Logo Scale X">
-				<HelpText>Scales the SA1 logo horizontally.</HelpText>
-			</Property>	
-			<Property name="LogoScaleY" type="float" defaultvalue="0.8" display="Logo Scale Y">
-				<HelpText>Scales the SA1 logo vertically.</HelpText>
-			</Property>	
-			<Property name="CopyrightOffsetX" type="int" defaultvalue="50" display="Copyright text Offset X" >
-				<HelpText>Offsets the SEGA copyright text horizontally (adjusted from center).</HelpText>
-			</Property>
-			<Property name="CopyrightOffsetY" type="int" defaultvalue="-230" display="Copyright text Offset Y">
-				<HelpText>Offsets the SEGA copyright text vertically (adjusted from default position).</HelpText>
-			</Property>	
-			<Property name="SonicTeamOffsetX" type="int" defaultvalue="0" display="Sonic Team logo Offset X">
-				<HelpText>Offsets the Sonic Team logo horizontally (adjusted from center).</HelpText>
-			</Property>
-			<Property name="SonicTeamOffsetY" type="int" defaultvalue="32" display="Sonic Team logo Offset Y">
-				<HelpText>Offsets the Sonic Team logo vertically (adjusted from default position).</HelpText>
-			</Property>	
-			<Property name="PressStartOffsetX" type="int" defaultvalue="0" display="Press Start text Offset X">
-				<HelpText>Offsets the PressStartButton text horizontally (adjusted from center).</HelpText>
-			</Property>				
-			<Property name="PressStartOffsetY" type="int" defaultvalue="-20" display="Press Start text Offset Y">
-				<HelpText>Offsets the PressStartButton text vertically (adjusted from default position).</HelpText>
-			</Property>	
-		</Group>
-	</Groups>
+		</Groups>
 	<Enums>
 		<Enum name="SETFixes">
 			<EnumMember name="Off" display="Off"></EnumMember>
@@ -260,6 +146,22 @@
 			<EnumMember name="Off" display="Off"></EnumMember>
 			<EnumMember name="Impress" display="Impress"></EnumMember>
 			<EnumMember name="ComicSans" display="Comic Sans"></EnumMember>
+		</Enum>
+		<Enum name="SonicTeamLogo">
+			<EnumMember name="Animated" display="Animated (Dreamcast)"></EnumMember>
+			<EnumMember name="Static" display="Static (SADX)"></EnumMember>
+			<EnumMember name="Off" display="Off"></EnumMember>
+		</Enum>
+		<Enum name="CutsceneMode">
+			<EnumMember name="3" display="Default SADX"></EnumMember>
+			<EnumMember name="0" display="Fade to black (enhancement)"></EnumMember>
+			<EnumMember name="1" display="Skip immediately (no fade)"></EnumMember>
+			<EnumMember name="2" display="Unskippable (default SA1)"></EnumMember>
+		</Enum>
+		<Enum name="SA1LogoModes">
+			<EnumMember name="0" display="Logo on top, no subtitle (US animated)"></EnumMember>
+			<EnumMember name="2" display="Logo in the middle, no subtitle (US static)"></EnumMember>
+			<EnumMember name="1" display="SA International"></EnumMember>
 		</Enum>
 	</Enums>
 </ConfigSchema>

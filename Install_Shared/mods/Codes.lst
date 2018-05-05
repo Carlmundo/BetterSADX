@@ -140,7 +140,7 @@ writenop 004315C8 5
 writenop 004315ED 5
 writenop 004315F7 5
 writenop 00715445 5
-writenop 00715540 5
+writenop 00715545 5
 writenop 00715775 5
 writenop 007157DF 5
 writenop 00715AE5 5
@@ -150,7 +150,7 @@ writenop 00716375 5
 writenop 00716390 5
 writenop 007163AB 5
 writenop 007164CD 5
-writenop 00716A60 5
+writenop 00716A65 5
 writenop 00716BEC 5
 writenop 00717ECB 5
 writenop 007188AB 5
@@ -264,3 +264,10 @@ Patch "Disable Saving"
 writenop 00422161 5
 writenop 00422175 5
 writenop 004221B0 5
+
+Patch "Reduce Light Speed Dash Charge Time"
+write16 00495086 68
+write16 00495097 120
+
+Patch "Chao Stat Multiplier"
+muls16 008895C8 5 x402

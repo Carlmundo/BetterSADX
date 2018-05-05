@@ -2,7 +2,7 @@
 <ConfigSchema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.sonicretro.org">
 	<Groups>
 		<Group name="General settings">
-			<Property name="DisableDuringStory" type="bool" defaultvalue="false" display="Disable during story">
+			<Property name="DisableDuringStory" type="bool" defaultvalue="true" display="Disable during story">
 				<HelpText>Only load the DLCs when current character's story is 100% complete.</HelpText>
 			</Property>
 			<Property name="DLCMode" type="DLCModes" defaultvalue="Random" display="DLC mode">

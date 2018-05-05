@@ -10,7 +10,9 @@ TheArcadeStriker - author of the SADX 99' Edition mod, which inspired me to star
 
 SteG - provided original high-quality water textures for SADX Style Water, helped with various design-related things and animated textures.
 
-CheatFreak - provided a re-encoding of the original SA1 intro movie with the animated Sonic Team logo for an older version of DC Branding.
+McAleeCh - recreated the original Sonic Adventure intro from various sources in higher quality.
+
+Sonikko - provided various framerate-related fixes for Dreamcast Conversion.
 
 Jeff - provided a code to disable the static Sonic Team logo.
 

@@ -28,6 +28,7 @@ http://www.moddb.com/mods/sadx-dreamcast-conversion/news/dreamcast-exclusive-dlc
 
 Changelog
 
+1.0006 - the "Disable during story" option is now on by default
 1.0005 - merged the "Enable SEGA voice" and SEGA voice language settings
 1.0004 - added a toggle to disable DLC content for current character if his/her story isn't complete
 1.0003 - added US/International DC camera for Station Square for better compatibility with Dreamcast Conversion

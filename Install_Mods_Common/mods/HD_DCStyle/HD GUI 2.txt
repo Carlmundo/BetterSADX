@@ -1,14 +1,31 @@
-HD GUI 2 mod by PkR, Dark Sonic, Sonikko & Jmtshaw
+HD GUI 2 mod by PkR, Dark Sonic, Sonikko & SPEEPSHighway
 
 This mod provides high-resolution graphics for most ingame menus and GUI items.
 
 Version history
 
+0.886 - Added Dreamcast tutorial layouts - if you use plugins for HD GUI, make sure those are updated as well
+0.885 - Updated pause textures for compatibility with a new Dreamcast Conversion update
+0.884 - Removed the background in all maps to make them look better in widescreen, added upscaled Japanese maps
+0.883 - Updated several symbols in the credits font
+0.882 - Updated life icons
+0.881 - Updated credits font
+0.880 - Added Dreamcast credit screenshots by SPEEPSHighway
+0.874 - Final attempt to fix the random ring icon
+0.873 - Double-checking if the random ring icon update was uploaded correctly
+0.872 - Fixed (again) random ring icon scaling at various resolutions and updated random ring icons
+0.871 - Fixed random ring icon scaling at various resolutions and updated random ring icons
+0.870 - Updated company logos used in credits
+0.869 - Added higher resolution company logos for credits, updated pause menu button text
+0.868 - Added support for the new pause box implementation in Dreamcast Conversion (update both mods)
+0.867 - Fixed a crash with Knuckles' French title cards (French is still not supported in HD GUI)
+0.866 - Added Japanese Goal Ring textures by SPEEPSHighway
+0.865 - Updated all PVR graphics with latest optimized versions
 0.864 - McAleeCh contributions: updated English level objective cards
 0.863 - Sonikko contributions: updated Tails race icons, life icons and Pause menu header, character recap update
 0.862 - Fixed an issue with the Goal Ring mod
 0.861 - Added a missing PNG file to prevent Sky Chase crashes
-0.860 - Jmtshaw contributions: added the majority of Japanese assets 
+0.860 - SPEEPSHighway contributions: added the majority of Japanese assets 
 0.843 - Fixed an issue with character recap screens not fading properly
 0.842 - Fixed a crash when opening the Mini Game Collection
 0.841 - Added upscaled Goal Ring mod textures
@@ -26,13 +43,13 @@ Version history
 0.828 - added unmirrored dash pad texture/model for compatibility with DC General
 0.827 - another compatibility update
 0.826 - compatibility update for DC General's water ripple
-0.825 - added Mission Mode status screen by Jmtshaw
+0.825 - added Mission Mode status screen by SPEEPSHighway
 0.821 - updated Sky Chase score HUD to work with the alpha rejection patch in DC mods
-0.820 - Jmtshaw contributions: updated HUD numbers and added Mission Mode tutorial backgrounds
-0.814 - Jmtshaw contributions: updated character and item capsule icons
+0.820 - SPEEPSHighway contributions: updated HUD numbers and added Mission Mode tutorial backgrounds
+0.814 - SPEEPSHighway contributions: updated character and item capsule icons
 0.813 - removed SHOOTING1 and SHOOTING2 PVMs from the mod because they aren't actually needed
-0.812 - Jmtshaw contributions: updated Chaos and Tornado life gauges
-0.811 - Jmtshaw contributions: updated the PressStartButton texture and character banners
+0.812 - SPEEPSHighway contributions: updated Chaos and Tornado life gauges
+0.811 - SPEEPSHighway contributions: updated the PressStartButton texture and character banners
 0.810 - updated the PressStartButton texture shown during demos
 0.809 - removed the Mod Loader warning and added information on a known issue
 0.808 - minor improvements for SADX menu background and level names
@@ -47,9 +64,9 @@ Version history
 Credits:
 Dark Sonic - character and item capsule icons, Tails' race icons
 SteG - boss name font
-Jmtshaw - PressStartButton texture, font edits for character banners, Mission Mode assets, HUD numbers, character and item capsule icon edits, Chaos and Tornado life gauges, all Japanese language assets
+SPEEPSHighway - PressStartButton texture, font edits for character banners, Mission Mode assets, HUD numbers, character and item capsule icon edits, Chaos and Tornado life gauges, all Japanese language assets, pause menu button texts
 Windii - all Japanese language assets
-Sonikko - File and character select background, level title cards, Sky Chase reticle, character recap screens, Mission start/finish graphics, Tails race icons, life icons, text
+Sonikko - File and character select background, level title cards, Sky Chase reticle, character recap screens, Mission start/finish graphics, Tails race icons, life icons, text, random ring icons, various texture edits
 McAleeCh - mission objective text layout improvements
 PkR - everything else
 

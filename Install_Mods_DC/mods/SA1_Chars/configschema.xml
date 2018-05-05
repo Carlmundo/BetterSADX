@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<ConfigSchema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.sonicretro.org">
+	<Groups>
+		<Group name="Characters" display="1 - Characters">
+			<Property name="EnableCDMetalSonic" display="CD Metal Sonic Skin" type="bool" defaultvalue="true">
+				<HelpText>Enable the Metal Sonic model from the Mystic Ruins Base over Metal Sonic.</HelpText>
+			</Property>	
+			<Property name="MetalSonicHoverBehavior" display="Metal Sonic Hover Behavior" type="MSHoverBehavior" defaultvalue="Normal">
+				<HelpText>Swaps Metal Sonic's hover behavior. "Swap" for swapping the Run/Hover animations. "Always" to make Metal Sonic always hover at higher speeds.</HelpText>
+			</Property>	
+			<Property name="StretchyShoes" display="Sonic's Stretchy Shoe Behavior" type="StretchyShoeBehavior" defaultvalue="Regular">
+				<HelpText>Controls the behavior of Sonic's stretchy shoes. Use "LSDashStretch" for the addition of stretchy shoes on the Light Speed Shoes.</HelpText>
+			</Property>	
+			<Property name="HighResTextures" display="Higher Resolution Character Textures" type="bool" defaultvalue="false">
+				<HelpText>Uses higher resolution character textures found in the AutoDemo.</HelpText>
+			</Property>	
+		</Group>
+		<Group name="SkyChase" display="2 - Sky Chase">
+			<Property name="DisableSaturnSkyChase" display="Disable Saturn Sky Chase" type="bool" defaultvalue="false">
+				<HelpText>When enabled, the EV models from the cutscenes involving Sky Chase are used for gameplay.</HelpText>
+			</Property>	
+		</Group>
+	</Groups>
+	<Enums>
+		<Enum name = "MSHoverBehavior">
+			<EnumMember name = "Normal" />
+			<EnumMember name = "Swap" />
+			<EnumMember name = "Always" />
+		</Enum>
+	</Enums>
+	<Enums>
+		<Enum name = "StretchyShoeBehavior">
+			<EnumMember name = "Regular" />
+			<EnumMember name = "LSDashStretch" />
+			<EnumMember name = "Disable" />
+		</Enum>
+	</Enums>
+</ConfigSchema>
