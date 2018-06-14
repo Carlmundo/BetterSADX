@@ -28,6 +28,9 @@ http://www.moddb.com/mods/sadx-dreamcast-conversion/news/dreamcast-exclusive-dlc
 
 Changelog
 
+1.1008 - updated version number for compatibility with automatic builds
+1.0008 - merged GerbilSoft's code optimizations
+1.0007 - added a warning message if old individual DLC mods are detected
 1.0006 - the "Disable during story" option is now on by default
 1.0005 - merged the "Enable SEGA voice" and SEGA voice language settings
 1.0004 - added a toggle to disable DLC content for current character if his/her story isn't complete

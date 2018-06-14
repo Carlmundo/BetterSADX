@@ -29,6 +29,9 @@
 				<Property name="EnableWindowTitle" type="bool" defaultvalue="True" display= "'Sonic Adventure'  window title">
 				<HelpText>Change the game's window title to Sonic Adventure instead of SonicAdventureDXPC. Disable this for compatibility with Fusion's Chao Editor.</HelpText>
 			</Property>	
+			<Property name="FPSLock" type="bool" defaultvalue="False" display= "Enable Dreamcast-like FPS lock">
+				<HelpText>Locks FPS to 30 everywhere outside menus and Twinkle Circuit. Useful for those whose PCs can't run the game fullspeed with the DX11 mod.</HelpText>
+			</Property>	
 		</Group>
 		<Group name="Miscellaneous" display="2 - Miscellaneous">
 			<Property name="EnableSETFixes" type="SETFixes" defaultvalue="Normal" display="SET layout fixes">
@@ -65,6 +68,9 @@
 			</Property>
 			<Property name="EnableTransition" type="bool" defaultvalue="True" display= "Enable title screen zoom effect">
 				<HelpText>Enable the logo zoom-in transition when you press Start.</HelpText>
+			</Property>	
+			<Property name="HUDTweak" type="bool" defaultvalue="True" display= "Adjust HUD position">
+				<HelpText>Adjust the life icon position to be more like SA1.</HelpText>
 			</Property>	
 		</Group>
 		<Group name="Videos" display="4 - Videos">
@@ -122,6 +128,12 @@
 			<Property name="EnableChaoRaceLobby" type="bool" defaultvalue="True" display="Enable the Chao Stadium">
 				<HelpText>Enable the interactive Chao Race lobby from the Dreamcast version.</HelpText>
 			</Property>	
+			<Property name="ReplaceFruits" type="ChaoFruits" defaultvalue="0" display="Replace Chao fruits">
+				<HelpText>Replace Normal Fruit with SA1 Coconut, Hero Fruit with Star Fruit, Dark Fruit with Hastnut, Heart Fruit with Lifenut, Chao Fruit with Chaonut.</HelpText>
+			</Property>	
+			<Property name="ReplaceEggs" type="bool" defaultvalue="True" display="Replace Chao eggs">
+				<HelpText>Replace normal, black, silver and gold Chao egg models (including wearable eggshells) with SA1 counterparts.</HelpText>
+			</Property>	
 		</Group>
 		<Group name="Bosses" display="8 - Bosses">
 			<Property name="EnableChaos0" type="bool" defaultvalue="True" display="Enable Chaos 0" />
@@ -159,9 +171,14 @@
 			<EnumMember name="2" display="Unskippable (default SA1)"></EnumMember>
 		</Enum>
 		<Enum name="SA1LogoModes">
-			<EnumMember name="0" display="Logo on top, no subtitle (US animated)"></EnumMember>
-			<EnumMember name="2" display="Logo in the middle, no subtitle (US static)"></EnumMember>
+			<EnumMember name="0" display="Logo on top, no subtitle (US new/PAL)"></EnumMember>
+			<EnumMember name="2" display="Logo in the middle, no subtitle (US old)"></EnumMember>
 			<EnumMember name="1" display="SA International"></EnumMember>
+		</Enum>
+		<Enum name="ChaoFruits">
+			<EnumMember name="0" display="Common fruits"></EnumMember>
+			<EnumMember name="1" display="Normal fruit only"></EnumMember>
+			<EnumMember name="2" display="Don't replace"></EnumMember>
 		</Enum>
 	</Enums>
 </ConfigSchema>

@@ -12,12 +12,18 @@ SteG - provided original high-quality water textures for SADX Style Water, helpe
 
 McAleeCh - recreated the original Sonic Adventure intro from various sources in higher quality.
 
+Windii - improved the quality of the intro movie with various edits.
+
 Sonikko - provided various framerate-related fixes for Dreamcast Conversion.
+
+SPEEPSHighway - helped with Japanese assets for the Dreamcast title screen.
 
 Jeff - provided a code to disable the static Sonic Team logo.
 
-Onso - went through all SA1 PVMs and created texture packs used by DC General, other miscellaneous help.
+Onso - went through all SA1 PVMs and created texture packs used previously by DC General, other miscellaneous help.
 
-supercoolsonic - provided fixed and improved SET layouts for the DC mods.
+supercoolsonic - edited Dreamcast Conversion SET files with layout fixes (SET Fixes normal) and added scenery (SET Fixes Extra).
 
-ReimuHakurei - provided update-friendly hosting for DC mods.
+ReimuHakurei - provided web space for my projects, including an update server for Dreamcast Conversion.
+
+GerbilSoft - provided various code optimizations for my mods.

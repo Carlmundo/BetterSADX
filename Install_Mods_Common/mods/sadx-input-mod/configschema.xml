@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ConfigSchema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.sonicretro.org">
+  <Groups>
+
+    <Group name="Config">
+      <Property name="Debug" type="bool" defaultvalue="false">
+        <HelpText>Enables ingame controller debugging information.</HelpText>
+      </Property>
+    </Group>
+
+    <Group name="Controller 1">
+      <Property name="DeadzoneL" type="int" defaultvalue="7849" min="0" max="32767" display="Left stick deadzone">
+        <HelpText>Left analog stick deadzone (from 0 to 32767).</HelpText>
+      </Property>
+      <Property name="DeadzoneR" type="int" defaultvalue="8689" min="0" max="32767" display="Right stick deadzone">
+        <HelpText>Right analog stick deadzone (from 0 to 32767).</HelpText>
+      </Property>
+      <Property name="RadialL" type="bool" defaultvalue="true" display="Radial motion for left stick">
+        <HelpText>Enables full range of motion on the left analog stick.</HelpText>
+      </Property>
+      <Property name="RadialR" type="bool" defaultvalue="false" display="Radial motion for right stick">
+        <HelpText>Enables full range of motion on the right analog stick.</HelpText>
+      </Property>
+      <Property name="TriggerThreshold" type="int" defaultvalue="30" min="0" max="32767" display="Trigger threshold">
+        <HelpText>Trigger to digital conversion threshold (from 0 to 32767).</HelpText>
+      </Property>
+      <Property name="RumbleFactor" type="float" defaultvalue="1.0" min="0.0" max="1.0" display="Rumble factor">
+        <HelpText>Rumble multiplier. Values below 0 or above 1 have no effect.</HelpText>
+      </Property>
+      <Property name="MegaRumble" type="bool" defaultvalue="false" display="Mega rumble">
+        <HelpText>Always fire both motors while rumbling, never independently.</HelpText>
+      </Property>
+      <Property name="RumbleMinTime" type="int" defaultvalue="0" min="0" max="32767" display="Minimum rumble time">
+        <HelpText>Minimum rumble time (from 0 to 32767).</HelpText>
+      </Property>
+      <Property name="AllowKeyboard" type="bool" defaultvalue="true" display="Allow keyboard">
+        <HelpText>Enable keyboard input for this controller.</HelpText>
+      </Property>
+    </Group>
+
+    <Group name="Controller 2">
+      <Property name="DeadzoneL" type="int" defaultvalue="7849" min="0" max="32767" display="Left stick deadzone">
+        <HelpText>Left analog stick deadzone (from 0 to 32767).</HelpText>
+      </Property>
+      <Property name="DeadzoneR" type="int" defaultvalue="8689" min="0" max="32767" display="Right stick deadzone">
+        <HelpText>Right analog stick deadzone (from 0 to 32767).</HelpText>
+      </Property>
+      <Property name="RadialL" type="bool" defaultvalue="true" display="Radial motion for left stick">
+        <HelpText>Enables full range of motion on the left analog stick.</HelpText>
+      </Property>
+      <Property name="RadialR" type="bool" defaultvalue="false" display="Radial motion for right stick">
+        <HelpText>Enables full range of motion on the right analog stick.</HelpText>
+      </Property>
+      <Property name="TriggerThreshold" type="int" defaultvalue="30" min="0" max="32767" display="Trigger threshold">
+        <HelpText>Trigger to digital conversion threshold (from 0 to 32767).</HelpText>
+      </Property>
+      <Property name="RumbleFactor" type="float" defaultvalue="1.0" min="0.0" max="1.0" display="Rumble factor">
+        <HelpText>Rumble multiplier. Values below 0 or above 1 have no effect.</HelpText>
+      </Property>
+      <Property name="MegaRumble" type="bool" defaultvalue="false" display="Mega rumble">
+        <HelpText>Always fire both motors while rumbling, never independently.</HelpText>
+      </Property>
+      <Property name="RumbleMinTime" type="int" defaultvalue="0" min="0" max="32767" display="Minimum rumble time">
+        <HelpText>Minimum rumble time (from 0 to 32767).</HelpText>
+      </Property>
+      <Property name="AllowKeyboard" type="bool" defaultvalue="true" display="Allow keyboard">
+        <HelpText>Enable keyboard input for this controller.</HelpText>
+      </Property>
+    </Group>
+
+    <Group name="Controller 3">
+      <Property name="DeadzoneL" type="int" defaultvalue="7849" min="0" max="32767" display="Left stick deadzone">
+        <HelpText>Left analog stick deadzone (from 0 to 32767).</HelpText>
+      </Property>
+      <Property name="DeadzoneR" type="int" defaultvalue="8689" min="0" max="32767" display="Right stick deadzone">
+        <HelpText>Right analog stick deadzone (from 0 to 32767).</HelpText>
+      </Property>
+      <Property name="RadialL" type="bool" defaultvalue="true" display="Radial motion for left stick">
+        <HelpText>Enables full range of motion on the left analog stick.</HelpText>
+      </Property>
+      <Property name="RadialR" type="bool" defaultvalue="false" display="Radial motion for right stick">
+        <HelpText>Enables full range of motion on the right analog stick.</HelpText>
+      </Property>
+      <Property name="TriggerThreshold" type="int" defaultvalue="30" min="0" max="32767" display="Trigger threshold">
+        <HelpText>Trigger to digital conversion threshold (from 0 to 32767).</HelpText>
+      </Property>
+      <Property name="RumbleFactor" type="float" defaultvalue="1.0" min="0.0" max="1.0" display="Rumble factor">
+        <HelpText>Rumble multiplier. Values below 0 or above 1 have no effect.</HelpText>
+      </Property>
+      <Property name="MegaRumble" type="bool" defaultvalue="false" display="Mega rumble">
+        <HelpText>Always fire both motors while rumbling, never independently.</HelpText>
+      </Property>
+      <Property name="RumbleMinTime" type="int" defaultvalue="0" min="0" max="32767" display="Minimum rumble time">
+        <HelpText>Minimum rumble time (from 0 to 32767).</HelpText>
+      </Property>
+      <Property name="AllowKeyboard" type="bool" defaultvalue="true" display="Allow keyboard">
+        <HelpText>Enable keyboard input for this controller.</HelpText>
+      </Property>
+    </Group>
+
+    <Group name="Controller 4">
+      <Property name="DeadzoneL" type="int" defaultvalue="7849" min="0" max="32767" display="Left stick deadzone">
+        <HelpText>Left analog stick deadzone (from 0 to 32767).</HelpText>
+      </Property>
+      <Property name="DeadzoneR" type="int" defaultvalue="8689" min="0" max="32767" display="Right stick deadzone">
+        <HelpText>Right analog stick deadzone (from 0 to 32767).</HelpText>
+      </Property>
+      <Property name="RadialL" type="bool" defaultvalue="true" display="Radial motion for left stick">
+        <HelpText>Enables full range of motion on the left analog stick.</HelpText>
+      </Property>
+      <Property name="RadialR" type="bool" defaultvalue="false" display="Radial motion for right stick">
+        <HelpText>Enables full range of motion on the right analog stick.</HelpText>
+      </Property>
+      <Property name="TriggerThreshold" type="int" defaultvalue="30" min="0" max="32767" display="Trigger threshold">
+        <HelpText>Trigger to digital conversion threshold (from 0 to 32767).</HelpText>
+      </Property>
+      <Property name="RumbleFactor" type="float" defaultvalue="1.0" min="0.0" max="1.0" display="Rumble factor">
+        <HelpText>Rumble multiplier. Values below 0 or above 1 have no effect.</HelpText>
+      </Property>
+      <Property name="MegaRumble" type="bool" defaultvalue="false" display="Mega rumble">
+        <HelpText>Always fire both motors while rumbling, never independently.</HelpText>
+      </Property>
+      <Property name="RumbleMinTime" type="int" defaultvalue="0" min="0" max="32767" display="Minimum rumble time">
+        <HelpText>Minimum rumble time (from 0 to 32767).</HelpText>
+      </Property>
+      <Property name="AllowKeyboard" type="bool" defaultvalue="true" display="Allow keyboard">
+        <HelpText>Enable keyboard input for this controller.</HelpText>
+      </Property>
+    </Group>
+
+    <Group name="Controller 5">
+      <Property name="DeadzoneL" type="int" defaultvalue="7849" min="0" max="32767" display="Left stick deadzone">
+        <HelpText>Left analog stick deadzone (from 0 to 32767).</HelpText>
+      </Property>
+      <Property name="DeadzoneR" type="int" defaultvalue="8689" min="0" max="32767" display="Right stick deadzone">
+        <HelpText>Right analog stick deadzone (from 0 to 32767).</HelpText>
+      </Property>
+      <Property name="RadialL" type="bool" defaultvalue="true" display="Radial motion for left stick">
+        <HelpText>Enables full range of motion on the left analog stick.</HelpText>
+      </Property>
+      <Property name="RadialR" type="bool" defaultvalue="false" display="Radial motion for right stick">
+        <HelpText>Enables full range of motion on the right analog stick.</HelpText>
+      </Property>
+      <Property name="TriggerThreshold" type="int" defaultvalue="30" min="0" max="32767" display="Trigger threshold">
+        <HelpText>Trigger to digital conversion threshold (from 0 to 32767).</HelpText>
+      </Property>
+      <Property name="RumbleFactor" type="float" defaultvalue="1.0" min="0.0" max="1.0" display="Rumble factor">
+        <HelpText>Rumble multiplier. Values below 0 or above 1 have no effect.</HelpText>
+      </Property>
+      <Property name="MegaRumble" type="bool" defaultvalue="false" display="Mega rumble">
+        <HelpText>Always fire both motors while rumbling, never independently.</HelpText>
+      </Property>
+      <Property name="RumbleMinTime" type="int" defaultvalue="0" min="0" max="32767" display="Minimum rumble time">
+        <HelpText>Minimum rumble time (from 0 to 32767).</HelpText>
+      </Property>
+      <Property name="AllowKeyboard" type="bool" defaultvalue="true" display="Allow keyboard">
+        <HelpText>Enable keyboard input for this controller.</HelpText>
+      </Property>
+    </Group>
+
+    <Group name="Controller 6">
+      <Property name="DeadzoneL" type="int" defaultvalue="7849" min="0" max="32767" display="Left stick deadzone">
+        <HelpText>Left analog stick deadzone (from 0 to 32767).</HelpText>
+      </Property>
+      <Property name="DeadzoneR" type="int" defaultvalue="8689" min="0" max="32767" display="Right stick deadzone">
+        <HelpText>Right analog stick deadzone (from 0 to 32767).</HelpText>
+      </Property>
+      <Property name="RadialL" type="bool" defaultvalue="true" display="Radial motion for left stick">
+        <HelpText>Enables full range of motion on the left analog stick.</HelpText>
+      </Property>
+      <Property name="RadialR" type="bool" defaultvalue="false" display="Radial motion for right stick">
+        <HelpText>Enables full range of motion on the right analog stick.</HelpText>
+      </Property>
+      <Property name="TriggerThreshold" type="int" defaultvalue="30" min="0" max="32767" display="Trigger threshold">
+        <HelpText>Trigger to digital conversion threshold (from 0 to 32767).</HelpText>
+      </Property>
+      <Property name="RumbleFactor" type="float" defaultvalue="1.0" min="0.0" max="1.0" display="Rumble factor">
+        <HelpText>Rumble multiplier. Values below 0 or above 1 have no effect.</HelpText>
+      </Property>
+      <Property name="MegaRumble" type="bool" defaultvalue="false" display="Mega rumble">
+        <HelpText>Always fire both motors while rumbling, never independently.</HelpText>
+      </Property>
+      <Property name="RumbleMinTime" type="int" defaultvalue="0" min="0" max="32767" display="Minimum rumble time">
+        <HelpText>Minimum rumble time (from 0 to 32767).</HelpText>
+      </Property>
+      <Property name="AllowKeyboard" type="bool" defaultvalue="true" display="Allow keyboard">
+        <HelpText>Enable keyboard input for this controller.</HelpText>
+      </Property>
+    </Group>
+
+    <Group name="Controller 7">
+      <Property name="DeadzoneL" type="int" defaultvalue="7849" min="0" max="32767" display="Left stick deadzone">
+        <HelpText>Left analog stick deadzone (from 0 to 32767).</HelpText>
+      </Property>
+      <Property name="DeadzoneR" type="int" defaultvalue="8689" min="0" max="32767" display="Right stick deadzone">
+        <HelpText>Right analog stick deadzone (from 0 to 32767).</HelpText>
+      </Property>
+      <Property name="RadialL" type="bool" defaultvalue="true" display="Radial motion for left stick">
+        <HelpText>Enables full range of motion on the left analog stick.</HelpText>
+      </Property>
+      <Property name="RadialR" type="bool" defaultvalue="false" display="Radial motion for right stick">
+        <HelpText>Enables full range of motion on the right analog stick.</HelpText>
+      </Property>
+      <Property name="TriggerThreshold" type="int" defaultvalue="30" min="0" max="32767" display="Trigger threshold">
+        <HelpText>Trigger to digital conversion threshold (from 0 to 32767).</HelpText>
+      </Property>
+      <Property name="RumbleFactor" type="float" defaultvalue="1.0" min="0.0" max="1.0" display="Rumble factor">
+        <HelpText>Rumble multiplier. Values below 0 or above 1 have no effect.</HelpText>
+      </Property>
+      <Property name="MegaRumble" type="bool" defaultvalue="false" display="Mega rumble">
+        <HelpText>Always fire both motors while rumbling, never independently.</HelpText>
+      </Property>
+      <Property name="RumbleMinTime" type="int" defaultvalue="0" min="0" max="32767" display="Minimum rumble time">
+        <HelpText>Minimum rumble time (from 0 to 32767).</HelpText>
+      </Property>
+      <Property name="AllowKeyboard" type="bool" defaultvalue="true" display="Allow keyboard">
+        <HelpText>Enable keyboard input for this controller.</HelpText>
+      </Property>
+    </Group>
+
+    <Group name="Controller 8">
+      <Property name="DeadzoneL" type="int" defaultvalue="7849" min="0" max="32767" display="Left stick deadzone">
+        <HelpText>Left analog stick deadzone (from 0 to 32767).</HelpText>
+      </Property>
+      <Property name="DeadzoneR" type="int" defaultvalue="8689" min="0" max="32767" display="Right stick deadzone">
+        <HelpText>Right analog stick deadzone (from 0 to 32767).</HelpText>
+      </Property>
+      <Property name="RadialL" type="bool" defaultvalue="true" display="Radial motion for left stick">
+        <HelpText>Enables full range of motion on the left analog stick.</HelpText>
+      </Property>
+      <Property name="RadialR" type="bool" defaultvalue="false" display="Radial motion for right stick">
+        <HelpText>Enables full range of motion on the right analog stick.</HelpText>
+      </Property>
+      <Property name="TriggerThreshold" type="int" defaultvalue="30" min="0" max="32767" display="Trigger threshold">
+        <HelpText>Trigger to digital conversion threshold (from 0 to 32767).</HelpText>
+      </Property>
+      <Property name="RumbleFactor" type="float" defaultvalue="1.0" min="0.0" max="1.0" display="Rumble factor">
+        <HelpText>Rumble multiplier. Values below 0 or above 1 have no effect.</HelpText>
+      </Property>
+      <Property name="MegaRumble" type="bool" defaultvalue="false" display="Mega rumble">
+        <HelpText>Always fire both motors while rumbling, never independently.</HelpText>
+      </Property>
+      <Property name="RumbleMinTime" type="int" defaultvalue="0" min="0" max="32767" display="Minimum rumble time">
+        <HelpText>Minimum rumble time (from 0 to 32767).</HelpText>
+      </Property>
+      <Property name="AllowKeyboard" type="bool" defaultvalue="true" display="Allow keyboard">
+        <HelpText>Enable keyboard input for this controller.</HelpText>
+      </Property>
+    </Group>
+
+  </Groups>
+</ConfigSchema>
