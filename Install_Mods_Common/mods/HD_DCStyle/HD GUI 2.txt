@@ -4,6 +4,7 @@ This mod provides high-resolution graphics for most ingame menus and GUI items.
 
 Version history
 
+0.887 - Reorganized individual PVR file replacements for a cleaner mod layout, removed duplicate file replacements in code, optimized filesize for some PNG textures
 0.886 - Added Dreamcast tutorial layouts - if you use plugins for HD GUI, make sure those are updated as well
 0.885 - Updated pause textures for compatibility with a new Dreamcast Conversion update
 0.884 - Removed the background in all maps to make them look better in widescreen, added upscaled Japanese maps

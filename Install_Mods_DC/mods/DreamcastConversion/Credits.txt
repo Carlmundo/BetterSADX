@@ -20,10 +20,10 @@ SPEEPSHighway - helped with Japanese assets for the Dreamcast title screen.
 
 Jeff - provided a code to disable the static Sonic Team logo.
 
-Onso - went through all SA1 PVMs and created texture packs used previously by DC General, other miscellaneous help.
+Onso - beta testing, other miscellaneous help.
 
 supercoolsonic - edited Dreamcast Conversion SET files with layout fixes (SET Fixes normal) and added scenery (SET Fixes Extra).
 
 ReimuHakurei - provided web space for my projects, including an update server for Dreamcast Conversion.
 
-GerbilSoft - provided various code optimizations for my mods.
+GerbilSoft - provided various code optimizations for all my mods.
