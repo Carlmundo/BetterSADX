@@ -73,7 +73,7 @@ begin
     else if RegQueryStringValue(HKLM64, 'SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Steam App 71250',
      'InstallLocation', InstalledDir) then
     begin
-    end;
+    end
     Result := InstalledDir;    
 end;
 
@@ -88,7 +88,7 @@ begin
         MsgBox('The BetterSADX patch installer was unable to locate your Steam copy of Sonic Adventure DX. Please uninstall the game and redownload it through your Steam client and try again. If this issue persists, report it in the discussions section in the BetterSADX steam group.', mbError, MB_OK);
         Result := False;
         exit;
-    end;
+    end
     if (PageId = wpSelectDir) and (not FileExists(ExpandConstant('{app}\SoundData\VOICE_US\wma\0000.adx')) and not FileExists(ExpandConstant('{app}\system\sounddata\VOICE_US\wma\0000.adx')))
     then
     begin
@@ -148,9 +148,9 @@ begin
       ProgressPage.SetText('Installing redistributables...', ''); 
       ProgressPage.SetProgress(50, 100);
       
-      Exec(ExpandConstant('{app}\_CommonRedist\vcredist\2013\vcredist_x86.exe'), '/silent', '', SW_SHOW, ewWaitUntilTerminated, ErrorCode);
-      Exec(ExpandConstant('{app}\_CommonRedist\vcredist\2015\vc_redist.x86.exe'), '/silent', '', SW_SHOW, ewWaitUntilTerminated, ErrorCode);
-      Exec(ExpandConstant('{app}\_CommonRedist\vcredist\2017\VC_redist.x86.exe'), '/silent', '', SW_SHOW, ewWaitUntilTerminated, ErrorCode);
+      Exec(ExpandConstant('{app}\_CommonRedist\vcredist\2013\vcredist_x86.exe'), '/quiet /norestart', '', SW_SHOW, ewWaitUntilTerminated, ErrorCode);
+      Exec(ExpandConstant('{app}\_CommonRedist\vcredist\2015\vc_redist.x86.exe'), '/quiet /norestart', '', SW_SHOW, ewWaitUntilTerminated, ErrorCode);
+      Exec(ExpandConstant('{app}\_CommonRedist\vcredist\2017\VC_redist.x86.exe'), '/quiet /norestart', '', SW_SHOW, ewWaitUntilTerminated, ErrorCode);
       Exec(ExpandConstant('{app}\_CommonRedist\.NET Framework\dotNetFx40_Full_x86_x64.exe'), '/q /norestart', '', SW_SHOW, ewWaitUntilTerminated, ErrorCode);
       Exec(ExpandConstant('{app}\_CommonRedist\.NET Framework\dotnetfx45_full_x86_x64.exe'), '/q /norestart', '', SW_SHOW, ewWaitUntilTerminated, ErrorCode);
       
@@ -176,14 +176,14 @@ begin
       DeleteFile(ExpandConstant('{app}\SADXSteamSaveConverter.exe'));
        
       end      
-      end;
+      end
 
       if IsComponentSelected('standard') or IsComponentSelected('full') then
       begin
         res_x := GetSystemMetrics(SM_CXSCREEN);
         res_y := GetSystemMetrics(SM_CYSCREEN);
         SaveStringToFile(ExpandConstant('{app}\mods\SADXModLoader.ini'), #13#10 + 'HorizontalResolution=' + IntToStr(res_x) + #13#10 + 'VerticalResolution=' + IntToStr(res_y), True);
-      end;
+      end
 
       //End Post Install
       ProgressPage.Hide;
