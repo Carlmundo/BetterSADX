@@ -1,0 +1,66 @@
+Sound Overhaul 2 mod by PkR
+
+Bug reports: https://github.com/PiKeyAr/sadx-sound-overhaul/issues
+Developer's Twitter: https://twitter.com/pkr_sadx
+Soundbank tools: https://dcmods.unreliable.network/owncloud/data/PiKeyAr/files/Various/SoundOverhaul_tools.7z
+
+Changelog:
+
+Update 10/8/2019
+
+The changelog is now split from the main Dreamcast Conversion changelog
+All soundbanks have been packed into DAT files to improve load times
+The mod has been reworked internally for better implementation of some older sound fixes
+Fixed the "Gamma steals Froggy" cutscene that was loading the wrong soundbank
+Fixed a framerate-related issue causing several sounds (rocket platform, Emerald Coast dolphin etc.) to get cut off
+Enabled the code to play character "hurt" sounds (Sonic/Gamma) which is disabled in SADX
+
+Update 10/01/2018
+Made the lock-on sound in Sky Chase less loud
+
+Update 19/10/2017
+Made Gamma's lock-on sound less loud
+
+Update 2/10/2017
+Sand Hill sounds updated
+
+Update 28/9/2017
+Using HTTP instead of HTTPS for downloading updates
+
+Update 27/9/2017
+Updates for compatibility with some SA1 DLCs
+
+Update 23/9/2017
+Fixed a ground issue in Sand Hill caused by the snowboard sound fix
+
+Update 3/9/2017
+Fixed and normalized Metal Sonic's sound effects to match their volume with other character soundbanks
+
+Update 2/9/2017
+Fixed (hopefully) a bug in SADX that prevented the snowboard sound from playing properly
+Updated all Japanese character voice soundbanks
+Fixed a bug in SADX that prevented Sonic from saying "Whoah!" when attacked by Knuckles in a cutscene
+
+Update 31/8/2017
+Fixed the sound of the Tornado 2 landing on the Egg Carrier in Sonic and Tails' cutscenes
+Fixed a bug in SADX that cut off the sound of Tails' plane crashing in Sonic's pool cutscene
+Added a delay to the plane crashing sound in Tails' first cutscene to prevent it from playing too early
+
+Update 21/8/2017
+Added an even better solution for the spindash sound cutoff
+
+Update 20/8/2017
+Fixed a bug in SADX that prevented the Egg Hornet engine sound from looping properly
+Fixed a bug in SADX that cut off Eggman's announcements in Sky Deck 2
+Fixed a bug in SADX that cut off the spindash sound with the Light Speed Dash upgrade
+Updated Egg Hornet sounds
+Restored bomb sounds in Ice Cap 3
+
+Update 6/8/2017
+Updated the clock sound in Speed Highway 3
+
+Update 25/5/2017
+Minor background sound improvements for Chaos 0
+
+Update 25/2/2017
+Initial release

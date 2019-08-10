@@ -1,9 +1,21 @@
 HD GUI 2 mod by PkR, Dark Sonic, Sonikko & SPEEPSHighway
 
-This mod provides high-resolution graphics for most ingame menus and GUI items.
+This mod provides high-resolution graphics for most ingame menus and GUI items. For use with 1280x720 or higher.
+
+This mod will look best if the game's rendering resolution and window size match your native screen resolution. It is not meant to be used with upscaled resolutions (e.g. 640x480 stretched to 2x/3x). It's highly recommended to also enable the "Scale HUD" option in SADX Mod Manager.
 
 Version history
 
+0.905 - Fixed an issue with displaying "... has been added to the list" after credits
+0.902 - Fixed subtitle text issues when Mod Loader UI scaling is turned off
+0.901 - Various tweaks for the subtitle/recap system, added configurable font shadow for subtitles/recap screens
+0.900 - Fixed recap screens containing text from previous recaps after switching characters
+0.899 - Fixed a crash in Sky Chase when Exit is selected in the pause menu
+0.898 - Minor letter layout fixes for subtitles, added more redirects for Japanese layout characters in English text
+0.896 - Improved subtitle spacing and fixed scaling/spacing of mission descriptions in the mission stat screen
+0.895 - Added scaling of the "Deteled" text on the file select screen
+0.894 - Added code fixes to scale Chao Race HUD (no HD textures yet)
+0.893 - Added HD subtitle and recap screen font for English, German, French and Spanish
 0.887 - Reorganized individual PVR file replacements for a cleaner mod layout, removed duplicate file replacements in code, optimized filesize for some PNG textures
 0.886 - Added Dreamcast tutorial layouts - if you use plugins for HD GUI, make sure those are updated as well
 0.885 - Updated pause textures for compatibility with a new Dreamcast Conversion update
@@ -105,6 +117,8 @@ HUD
 -Various miscellaneous items, such as the "BALLS" text in Casino
 
 MISCELLANEOUS
+-Subtitles (except Japanese)
+-Character recap screen (except Japanese)
 -Scoreboard background and all scoreboard text and icons, including bosses, Sky Chase, Hedgehog Hammer and Twinkle Circuit
 -Pause menu items, including button rectangle
 -The font used for boss names (thanks SteG for helping me improve it)
@@ -119,7 +133,7 @@ MISCELLANEOUS
 
 THINGS THIS MOD DOESN'T REPLACE (yet)
 -Any assets in languages other than English or Japanese
--The font used for ingame subtitles
+-Japanese subtitle font
 -Chao menus, fonts and GUI
 -Mini Game Collection menus
 
