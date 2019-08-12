@@ -6,6 +6,7 @@ This mod will look best if the game's rendering resolution and window size match
 
 Version history
 
+0.906 - Improved the look of the recap text when it fades out, disabled the "Now Saving" text function that was interfering with subtitles
 0.905 - Fixed an issue with displaying "... has been added to the list" after credits
 0.902 - Fixed subtitle text issues when Mod Loader UI scaling is turned off
 0.901 - Various tweaks for the subtitle/recap system, added configurable font shadow for subtitles/recap screens
