@@ -3,10 +3,37 @@ Sound Overhaul 2 mod by PkR
 Bug reports: https://github.com/PiKeyAr/sadx-sound-overhaul/issues
 Developer's Twitter: https://twitter.com/pkr_sadx
 Soundbank tools: https://dcmods.unreliable.network/owncloud/data/PiKeyAr/files/Various/SoundOverhaul_tools.7z
+DSOAL DirectSound wrapper: https://dcmods.unreliable.network/owncloud/data/PiKeyAr/files/Various/DSOAL_SADX.zip
+
+Note: Starting with version 0.8532 (October 22, 2019) Sound Overhaul 2 has an option to enable logarithic volume controls. This option makes sound effects louder and is technically more "correct" than default ingame volume adjustment. However, it does not adjust the volume of 3D sounds, which will be too quiet in comparison. To fix this, use a DirectSound wrapper called DSOAL (see link above), which will fix volume adjustment for 3D sounds.
 
 Changelog:
 
-Update 10/8/2019
+Update 22/10/2019
+Added an option to enable logarithmic volume control for sound effects (experimental)
+The spindash sound now fades out with the Light Speed Dash upgrade
+Adjusted the volume of the Boa-Boa fix
+
+Update 20/09/2019
+Added a "classic ring sound pan" option
+
+Update 18/09/2019
+More fixes for Chaos 0 bullets
+
+Update 10/09/2019
+The Boa-Boa fix is now optional (disable in config)
+Adjusted the volume of the Boa-Boa fix
+
+Update 09/09/2019
+Made the Speed Highway fountain sound louder to be audible
+
+Update 08/09/2019
+Missile explosions in Egg Walker are no longer silent when 3D Sound is enabled
+Fixed an issue in SADX affecting many positional sounds: Chaos 0 bullets, Zero chest thump, Ice Cap snowman steps, Speed Highway clock, Kiki jumping in place etc.
+Updated several soundbanks to accommodate the above change
+Improved Boa Boa's fire breathing effect to match the DC version (experimental)
+
+Update 10/08/2019
 
 The changelog is now split from the main Dreamcast Conversion changelog
 All soundbanks have been packed into DAT files to improve load times
@@ -21,46 +48,46 @@ Made the lock-on sound in Sky Chase less loud
 Update 19/10/2017
 Made Gamma's lock-on sound less loud
 
-Update 2/10/2017
+Update 02/10/2017
 Sand Hill sounds updated
 
-Update 28/9/2017
+Update 28/09/2017
 Using HTTP instead of HTTPS for downloading updates
 
-Update 27/9/2017
+Update 27/09/2017
 Updates for compatibility with some SA1 DLCs
 
-Update 23/9/2017
+Update 23/09/2017
 Fixed a ground issue in Sand Hill caused by the snowboard sound fix
 
-Update 3/9/2017
+Update 03/09/2017
 Fixed and normalized Metal Sonic's sound effects to match their volume with other character soundbanks
 
-Update 2/9/2017
+Update 02/09/2017
 Fixed (hopefully) a bug in SADX that prevented the snowboard sound from playing properly
 Updated all Japanese character voice soundbanks
 Fixed a bug in SADX that prevented Sonic from saying "Whoah!" when attacked by Knuckles in a cutscene
 
-Update 31/8/2017
+Update 31/08/2017
 Fixed the sound of the Tornado 2 landing on the Egg Carrier in Sonic and Tails' cutscenes
 Fixed a bug in SADX that cut off the sound of Tails' plane crashing in Sonic's pool cutscene
 Added a delay to the plane crashing sound in Tails' first cutscene to prevent it from playing too early
 
-Update 21/8/2017
+Update 21/08/2017
 Added an even better solution for the spindash sound cutoff
 
-Update 20/8/2017
+Update 20/08/2017
 Fixed a bug in SADX that prevented the Egg Hornet engine sound from looping properly
 Fixed a bug in SADX that cut off Eggman's announcements in Sky Deck 2
 Fixed a bug in SADX that cut off the spindash sound with the Light Speed Dash upgrade
 Updated Egg Hornet sounds
 Restored bomb sounds in Ice Cap 3
 
-Update 6/8/2017
+Update 06/08/2017
 Updated the clock sound in Speed Highway 3
 
-Update 25/5/2017
+Update 25/05/2017
 Minor background sound improvements for Chaos 0
 
-Update 25/2/2017
+Update 25/02/2017
 Initial release

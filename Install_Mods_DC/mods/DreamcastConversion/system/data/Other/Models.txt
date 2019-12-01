@@ -1,0 +1,6 @@
+02CCB4F8 - Frog in Gamma's cutscene (source: sonic.exe)
+02CCDB28 - Frog in Gamma's cutscene (source: sonic.exe)
+02CD0160 - Frog in Gamma's cutscene (source: sonic.exe)
+00006C38 - Crashed Tornado 2 (source: EV00F0.BIN)
+00011208 - Helicopter in Sonic's first cutscene (source: EV0000.BIN)
+0042096C - A copy of Gamma's model with all models erased except the transparent chest bit (source: 1ST_READ.BIN)

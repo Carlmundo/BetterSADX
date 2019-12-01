@@ -1,6 +1,6 @@
 Dreamcast DLCs by PkR
 
-Credits: SonicFreak94 for the SEGA voice code, sonicblur for the tool to decrypt VMS files
+Credits: SonicFreak94 for the SEGA voice code, sonicblur for the tool to decrypt VMS files, Moopthehedgehog for Kadomatsu DLC
 
 This mod is a unified version of Dreamcast DLC mods released previously, which makes use of the latest Mod Loader functionality to make the experience as customizable as possible. You can force the mod to load a certain DLC, or make it random, or even make it load a different DLC every month! Check the mod's configuration in SADX Mod Manager for more details.
 
@@ -9,6 +9,7 @@ In the original game and older DLC mods certain DLCs could interfere with the fl
 1) When playing as Sonic, one of the Christmas trees doesn't spawn if Speed Highway is not cleared
 2) The Reebok DLC doesn't load if Emerald Coast isn't cleared
 3) The AT&T challenge for Sonic doesn't load if Speed Highway is open but not cleared
+4) The Kadomatsu DLC includes two extra decorations in the Casinopolis area that don't exist in the actual DLC
 
 The mod brings the following Sonic Adventure downloadable events and features to the PC version:
 Samba Grand Prix 
@@ -21,6 +22,7 @@ Reebok DMX challenge
 Halloween event
 Christmas 1998
 Christmas 1999
+New Year 1999 (Kadomatsu)
 You can also force a specific character to voice all menus like on the Dreamcast
 
 For more information about the DLCs read the following article:
@@ -28,6 +30,9 @@ http://www.moddb.com/mods/sadx-dreamcast-conversion/news/dreamcast-exclusive-dlc
 
 Changelog
 
+1.1015 - added the recently rediscovered Kadomatsu DLC
+1.1014 - added a new default challenge timer based on the debug font (like in SA1)
+1.1013 - the mod now detects SADX Station Square and adjusts DLC content automatically, minor code optimizations
 1.1008 - updated version number for compatibility with automatic builds
 1.0008 - merged GerbilSoft's code optimizations
 1.0007 - added a warning message if old individual DLC mods are detected

@@ -8,7 +8,7 @@ ItsEasyActually - helped with model and animation data, as well as offered many 
 
 TheArcadeStriker - author of the SADX 99' Edition mod, which inspired me to start working on this conversion. Contributed to early versions of DC Branding and DC Subgames.
 
-SteG - provided original high-quality water textures for SADX Style Water, helped with various design-related things and animated textures.
+SteG - provided original high-quality water textures for SADX Style Water, helped with various design-related things and animated textures in earlier versions of the mod.
 
 McAleeCh - recreated the original Sonic Adventure intro from various sources in higher quality.
 
@@ -22,7 +22,7 @@ Jeff - provided a code to disable the static Sonic Team logo.
 
 Onso - beta testing, other miscellaneous help.
 
-supercoolsonic - edited Dreamcast Conversion SET files with layout fixes (SET Fixes normal) and added scenery (SET Fixes Extra).
+supercoolsonic - edited Dreamcast Conversion SET files with various layout fixes, documented a lot of unused object, various SA1 research, bug reports, miscellaneous coding.
 
 ReimuHakurei - provided web space for my projects, including an update server for Dreamcast Conversion.
 

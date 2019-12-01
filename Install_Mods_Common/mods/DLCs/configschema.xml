@@ -11,14 +11,14 @@
 			<Property name="DLCSingle" type="SingleDLCs" defaultvalue="0" display="Single mode DLC">
 				<HelpText>Select the DLC to be loaded in Single mode.</HelpText>
 			</Property>			
-			<Property name="ForceSADXMode" type="bool" defaultvalue="false" display="Force vanilla SADX mode">
-				<HelpText>Enable this to make the DLCs work with SADX Station Square.</HelpText>
-			</Property>	
 			<Property name="MenuVoiceThing" type="MenuVoiceCharacters" defaultvalue="-1" display="Menu voice">
 				<HelpText>Select the character whose voice will be used in menus.</HelpText>
 			</Property>
 			<Property name="SegaVoiceLanguage" type="Languages" defaultvalue="English" display="SEGA voice language">
-				<HelpText>Select the language to use for the voice on the SEGA screen, or disabled the voice like in the vanilla game.</HelpText>
+				<HelpText>Select the language to use for the voice on the SEGA screen, or disable the voice like in the vanilla game.</HelpText>
+			</Property>
+			<Property name="HDTimer" type="bool" defaultvalue="False" display="Alternative challenge timer GUI">
+				<HelpText>Use a timer based on generic textures instead of the debug font.</HelpText>
 			</Property>
 		</Group>
 		<Group name="Samba GP settings">
@@ -45,7 +45,7 @@
 			</Property>	
 		</Group>
 		<Group name="Seasonal DLC settings">
-			<Property name="Jan1DLC" type="SingleDLCs" defaultvalue="9" display="January 1-15">
+			<Property name="Jan1DLC" type="SingleDLCs" defaultvalue="10" display="January 1-15">
 				<HelpText>Select the DLC to be loaded on January 1-15.</HelpText>
 			</Property>		
 			<Property name="Jan2DLC" type="SingleDLCs" defaultvalue="9" display="January 16-31">
@@ -138,6 +138,7 @@
 			<EnumMember name="7" display="Reebok challenge"></EnumMember>
 			<EnumMember name="9" display="Y2K Rings"></EnumMember>
 			<EnumMember name="8" display="Samba GP"></EnumMember>
+			<EnumMember name="10" display="Kadomatsu"></EnumMember>
 			<EnumMember name="-1" display="No DLC"></EnumMember>
 		</Enum>
 		<Enum name="TwinkleCircuitTracks">

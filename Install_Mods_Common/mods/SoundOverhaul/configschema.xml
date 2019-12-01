@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<ConfigSchema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.sonicretro.org">
+	<Groups>
+		<Group name="General">
+			<Property name="FixSoundVolume" type="bool" defaultvalue="false" display="Logarithmic sound volume">
+				<HelpText>Use logarithmic volume adjustment for non-3D sound effects. Use together with DSOAL.</HelpText>
+			</Property>
+			<Property name="ClassicRingPan" type="bool" defaultvalue="true" display="Classic ring sound panning">
+				<HelpText>Alternate between 100% left and right panning like in the DC version and classic games.</HelpText>
+			</Property>
+			<Property name="BoaBoaFix" type="bool" defaultvalue="true" display="Make Boa-Boa sound deeper">
+				<HelpText>Play the fire breating effect multiple times (like in SA1) instead of once.</HelpText>
+			</Property>
+		</Group>
+	</Groups>
+</ConfigSchema>

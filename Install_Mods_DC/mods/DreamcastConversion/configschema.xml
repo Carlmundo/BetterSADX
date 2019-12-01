@@ -12,16 +12,19 @@
 				<HelpText>Improves handling of skippable cutscenes. Cutscenes can be skipped with a single button press. Fade to black makes skipping cutscenes smoother.</HelpText>
 			</Property>	
 			<Property name="EnableCutsceneFix" type="bool" defaultvalue="True" display= "Fix cutscene camera transitions">
-				<HelpText>Restore camera transitions that are supposed to happen after cutscenes (experimental).</HelpText>
+				<HelpText>Restore camera transitions that are supposed to happen after cutscenes.</HelpText>
 			</Property>	
 			<Property name="EnableImpressFont" type="Fonts" defaultvalue="Impress" display= "Enable Dreamcast font">
 				<HelpText>Enable the fonts from DC/GC versions of the game. Use Impress for English and Comic Sans (experimental) for other European languages.</HelpText>
 			</Property>	
 			<Property name="DisableFontSmoothing" type="bool" defaultvalue="True" display= "Disable font smoothing">
-				<HelpText>SADXPC adds a white outline that makes the font look thicker. Disable this to make the text sharper (like SA1).</HelpText>
-			</Property>	
+				<HelpText>SADXPC adds a white outline that makes the font thicker. This option disables that to make the text sharper, like in SA1.</HelpText>
+			</Property>
+			<Property name="DisableFontFiltering" type="bool" defaultvalue="True" display= "Disable font texture filtering">
+				<HelpText>Enable this option to make subtitles sharp and pixelated, like in SA1. Disable for a filtered (blurrier/smoother) look.</HelpText>
+			</Property>
 			<Property name="ColorizeFont" type="bool" defaultvalue="True" display= "Colorize subtitle font">
-				<HelpText>Imitate the DC SA1 subtitle font color. Disabling this will make the subtitle font white.</HelpText>
+				<HelpText>Imitate the DC SA1 subtitle font color. Disabling this will make the subtitle font white, like in vanilla SADX.</HelpText>
 			</Property>
 				<Property name="EnableDreamcastBranding" type="bool" defaultvalue="True" display= "Enable Dreamcast branding">
 				<HelpText>Restore menu textures, options, button prompts, tutorials etc. from the Dreamcast version.</HelpText>
@@ -30,17 +33,24 @@
 				<HelpText>Change the game's window title to Sonic Adventure instead of SonicAdventureDXPC. Disable this for compatibility with Fusion's Chao Editor.</HelpText>
 			</Property>	
 			<Property name="FPSLock" type="bool" defaultvalue="False" display= "Enable Dreamcast-like FPS lock">
-				<HelpText>Locks FPS to 30 everywhere outside menus and Twinkle Circuit. Useful for those whose PCs can't run the game fullspeed with the DX11 mod.</HelpText>
+				<HelpText>Locks FPS to 30 everywhere outside menus and Twinkle Circuit.</HelpText>
 			</Property>	
+			<Property name="AssumeOIT" type="bool" defaultvalue="False" display= "Disable all transparency sorting">
+				<HelpText>May improve performance. Only use this when Order-Independent Transparency is enabled, otherwise the game will break.</HelpText>
+			</Property>
 		</Group>
 		<Group name="Miscellaneous" display="2 - Miscellaneous">
-			<Property name="EnableSETFixes" type="SETFixes" defaultvalue="Normal" display="SET layout fixes">
-				<HelpText>Object layout improvements by supercoolsonic. Off reverts to original SET files from SA1 (incompatible with Mission Mode!). Extra adds unused scenery.</HelpText>
+			<Property name="Use1999SetFiles" type="SETFiles" defaultvalue="0" display="SET and camera layouts">
+				<HelpText>Use unaltered layouts from the Dreamcast game. Incompatible with Mission Mode!</HelpText>
+			</Property>
+			<Property name="EnableWhiteDiffuse" type="bool" defaultvalue="True" display="Enable white diffuse">
+				<HelpText>White diffuse is a side effect (or a bug) of the Dreamcast version's lighting system that makes some things appear brighter. Enable to recreate the DC look.</HelpText>
 			</Property>
 			<Property name="EnableLSDFix" type="bool" defaultvalue="False" display="Light Speed Dash distance hack">
 				<HelpText>Make Sonic travel farther (like on the Dreamcast) when using the Light Speed Dash. This is required for compatibility with original Dreamcast SET files.</HelpText>
 			</Property>
 			<Property name="EnableCasinopolisCowgirl" type="bool" defaultvalue="True" display= "Enable Casinopolis Cowgirl" />
+			<Property name="EnableHedgehogHammer" type="bool" defaultvalue="True" display="Enable Hedgehog Hammer" />
 			<Property name="EnableTwinkleCircuit" type="bool" defaultvalue="True" display="Enable Twinkle Circuit" />
 			<Property name="EnableSkyChaseEnemyModels" type="bool" defaultvalue="True" display="Enable Sky Chase enemy models">
 				<HelpText>Restore models and textures for Sky Chase enemies and the Egg Carrier. This is force enabled when Dreamcast Characters or HD GUI are loaded.</HelpText>
@@ -70,15 +80,36 @@
 				<HelpText>Enable the logo zoom-in transition when you press Start.</HelpText>
 			</Property>	
 			<Property name="HUDTweak" type="bool" defaultvalue="True" display= "Adjust HUD position">
-				<HelpText>Adjust the life icon position to be more like SA1.</HelpText>
-			</Property>	
+				<HelpText>Adjust the life icon's position to be more like SA1.</HelpText>
+			</Property>
+			<Property name="RemoveQuitPrompt" type="bool" defaultvalue="False" display= "Disable quit prompt">
+				<HelpText>Disable confirmation prompt when exiting the level from the pause menu.</HelpText>
+			</Property>
+			<Property name="RemoveSetUpPad" type="bool" defaultvalue="False" display= "Remove 'Set up pad'">
+				<HelpText>Remove 'Set up pad' from the list of options in the pause menu.</HelpText>
+			</Property>
+			<Property name="RemoveMap" type="bool" defaultvalue="False" display= "Remove 'Map'">
+				<HelpText>Remove 'Map' from the list of options in the pause menu.</HelpText>
+			</Property>
+			<Property name="RemoveCamera" type="bool" defaultvalue="False" display= "Remove camera options">
+				<HelpText>Remove camera from the list of options in the pause menu.</HelpText>
+			</Property>
+			<Property name="RemoveGameGearGames" type="bool" defaultvalue="False" display= "Remove Mini Game Collection">
+				<HelpText>Remove 'Mini Game Collection' from the list of options in the main menu.</HelpText>
+			</Property>
+			<Property name="RemoveMarketRingCount" type="bool" defaultvalue="False" display= "Remove market ring count display">
+				<HelpText>Don't display Black Market ring count after beating a stage.</HelpText>
+			</Property>
+			<Property name="RemoveUnlockMessage" type="bool" defaultvalue="False" display= "Remove 'unlocked' messages">
+				<HelpText>Don't display 'unlocked' messages for Game Gear games and Metal Sonic.</HelpText>
+			</Property>
 		</Group>
 		<Group name="Videos" display="4 - Videos">
 			<Property name="DisableAllVideoStuff" type="bool" defaultvalue="False" display= "Disable all video enhancements">
 				<HelpText>Disable all video-related functionality, including the FMV fadeout feature. If this setting is enabled, all other settings in this section will be ignored.</HelpText>
 			</Property>	
 			<Property name="EnableSA1Intro" type="bool" defaultvalue="True" display= "Enable the Dreamcast intro movie">
-				<HelpText>Use the Dreamcast Sonic Adventure intro recreated from multiple sources in high quality. Can also be used with the original (non-reconstructed) SA1 intro.</HelpText>
+				<HelpText>Use the Dreamcast Sonic Adventure intro recreated from multiple sources in higher quality.</HelpText>
 			</Property>	
 			<Property name="SonicTeamLogoMode" type="SonicTeamLogo" defaultvalue="Animated" display= "Sonic Team logo mode">
 				<HelpText>Show the Sonic Team logo before the intro movie: animated (SA1), static (SADX), or disable entirely.</HelpText>
@@ -127,6 +158,9 @@
 			<Property name="EnableEggCarrierGarden" type="bool" defaultvalue="True" display="Enable the Egg Carrier garden" />
 			<Property name="EnableChaoRaceLobby" type="bool" defaultvalue="True" display="Enable the Chao Stadium">
 				<HelpText>Enable the interactive Chao Race lobby from the Dreamcast version.</HelpText>
+			</Property>
+			<Property name="DisableChaoButtonPrompts" type="bool" defaultvalue="False" display="Hide button prompts">
+				<HelpText>Hide SADX button instructions in the Chao Gardens.</HelpText>
 			</Property>	
 			<Property name="ReplaceFruits" type="ChaoFruits" defaultvalue="0" display="Replace Chao fruits">
 				<HelpText>Replace Normal Fruit with SA1 Coconut, Hero Fruit with Star Fruit, Dark Fruit with Hastnut, Heart Fruit with Lifenut, Chao Fruit with Chaonut.</HelpText>
@@ -149,11 +183,6 @@
 		</Group>
 		</Groups>
 	<Enums>
-		<Enum name="SETFixes">
-			<EnumMember name="Off" display="Off"></EnumMember>
-			<EnumMember name="Normal" display="Normal"></EnumMember>
-			<EnumMember name="Extra" display="Extra"></EnumMember>
-		</Enum>
 		<Enum name="Fonts">
 			<EnumMember name="Off" display="Off"></EnumMember>
 			<EnumMember name="Impress" display="Impress"></EnumMember>
@@ -179,6 +208,11 @@
 			<EnumMember name="0" display="Common fruits"></EnumMember>
 			<EnumMember name="1" display="Normal fruit only"></EnumMember>
 			<EnumMember name="2" display="Don't replace"></EnumMember>
+		</Enum>
+		<Enum name="SETFiles">
+			<EnumMember name="0" display="Optimized layouts (recommended)"></EnumMember>
+			<EnumMember name="1" display="SA1 International"></EnumMember>
+			<EnumMember name="2" display="SA1 Japanese"></EnumMember>
 		</Enum>
 	</Enums>
 </ConfigSchema>
