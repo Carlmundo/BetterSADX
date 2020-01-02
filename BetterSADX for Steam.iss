@@ -336,30 +336,8 @@ Type: files; Name: "{app}\system\ava_help_options.pvm"
 Type: files; Name: "{app}\system\ava_how2play.pvm"
 Type: files; Name: "{app}\system\ava_tool_tips.pvm"
 
-;*Redundant directories from 4.x
-Type: filesandordirs; Name: "{app}\mods\DC_Edition"
-Type: filesandordirs; Name: "{app}\mods\DC_Mods"
-Type: filesandordirs; Name: "{app}\mods\DLCCircuits"
-Type: filesandordirs; Name: "{app}\mods\BetterSADX_version"
-Type: filesandordirs; Name: "{app}\mods\input-mod"
-Type: filesandordirs; Name: "{app}\mods\HDDC_Unscale"
-Type: filesandordirs; Name: "{app}\mods\DLC"
-Type: filesandordirs; Name: "{app}\mods\ADX Audio"
-Type: filesandordirs; Name: "{app}\mods\ECGardenOceanFix"
-Type: filesandordirs; Name: "{app}\mods\MR_FinalEggFix"
-;New version of SADXFE has different file/folder structure
-Type: filesandordirs; Name: "{app}\mods\SADXFE"
-;sadx-dc-lighting debug files
-Type: files; Name: "{app}\mods\sadx-dc-lighting\sadx-dc-lighting.exp"
-Type: files; Name: "{app}\mods\sadx-dc-lighting\sadx-dc-lighting.iobj"
-Type: files; Name: "{app}\mods\sadx-dc-lighting\sadx-dc-lighting.ipdb"
-Type: files; Name: "{app}\mods\sadx-dc-lighting\sadx-dc-lighting.lib"
-Type: files; Name: "{app}\mods\sadx-dc-lighting\sadx-dc-lighting.pdb"
 ;Remove for non-Dreamcast installs. Other installs will re-add this.
 Type: files; Name: "{app}\d3d8.dll"
-;Remove for Standard installs as new versions will be installed
-Type: filesandordirs; Name: "{app}\mods\ECGardenOceanFix"
-Type: filesandordirs; Name: "{app}\mods\MR_FinalEggFix"
 
 
 [Files]
