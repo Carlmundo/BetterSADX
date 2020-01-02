@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<ConfigSchema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.sonicretro.org">
+	<Groups>
+		<Group name="Config" display="General options">
+			<Property name="AlternativeLayouts" type="bool" defaultvalue="False" display= "Enable alternative layouts"><HelpText>Enable keyboard layouts 2 and 3 (configure below).</HelpText></Property>
+			<Property name="DisableMouse" type="bool" defaultvalue="False" display= "Disable mouse input"><HelpText>Completely disable all mouse-related input in the game.</HelpText></Property>
+		</Group>
+		<Group name="Layout 1" display="Keyboard Layout 1">
+			<Property name="Analog Up" type="string" defaultvalue="Up" display= "Analog Up"></Property>
+			<Property name="Analog Down" type="string" defaultvalue="Down" display= "Analog Down"></Property>
+			<Property name="Analog Left" type="string" defaultvalue="Left" display= "Analog Left"></Property>
+			<Property name="Analog Right" type="string" defaultvalue="Right" display= "Analog Right"></Property>
+			<Property name="Button A" type="string" defaultvalue="X" display= "Button A"></Property>
+			<Property name="Button B" type="string" defaultvalue="Z" display= "Button B"></Property>
+			<Property name="Button X" type="string" defaultvalue="S" display= "Button X"></Property>
+			<Property name="Button Y" type="string" defaultvalue="A" display= "Button Y"></Property>
+			<Property name="Button Z" type="string" defaultvalue="None" display= "Button Z"></Property>
+			<Property name="Button C" type="string" defaultvalue="None" display= "Button C"></Property>
+			<Property name="Button D" type="string" defaultvalue="None" display= "Button D"></Property>
+			<Property name="Button Start" type="string" defaultvalue="Enter" display= "Button Start"></Property>
+			<Property name="Trigger L" type="string" defaultvalue="Q" display= "Trigger L"></Property>
+			<Property name="Trigger R" type="string" defaultvalue="W" display= "Trigger R"></Property>
+			<Property name="D-Pad Up" type="string" defaultvalue="I" display= "D-Pad Up"></Property>
+			<Property name="D-Pad Down" type="string" defaultvalue="M" display= "D-Pad Down"></Property>
+			<Property name="D-Pad Left" type="string" defaultvalue="J" display= "D-Pad Left"></Property>
+			<Property name="D-Pad Right" type="string" defaultvalue="K" display= "D-Pad Right"></Property>
+			<Property name="Center Camera" type="string" defaultvalue="E" display= "Center Camera"></Property>
+		</Group>
+		<Group name="Layout 2" display="Keyboard Layout 2">
+			<Property name="Analog Up" type="string" defaultvalue="R" display= "Analog Up"></Property>
+			<Property name="Analog Down" type="string" defaultvalue="C" display= "Analog Down"></Property>
+			<Property name="Analog Left" type="string" defaultvalue="D" display= "Analog Left"></Property>
+			<Property name="Analog Right" type="string" defaultvalue="F" display= "Analog Right"></Property>
+			<Property name="Button A" type="string" defaultvalue="Space" display= "Button A"></Property>
+			<Property name="Button B" type="string" defaultvalue="Escape" display= "Button B"></Property>
+			<Property name="Button X" type="string" defaultvalue="None" display= "Button X"></Property>
+			<Property name="Button Y" type="string" defaultvalue="None" display= "Button Y"></Property>
+			<Property name="Button Z" type="string" defaultvalue="None" display= "Button Z"></Property>
+			<Property name="Button C" type="string" defaultvalue="None" display= "Button C"></Property>
+			<Property name="Button D" type="string" defaultvalue="None" display= "Button D"></Property>
+			<Property name="Button Start" type="string" defaultvalue="Home" display= "Button Start"></Property>
+			<Property name="Trigger L" type="string" defaultvalue="None" display= "Trigger L"></Property>
+			<Property name="Trigger R" type="string" defaultvalue="None" display= "Trigger R"></Property>
+			<Property name="D-Pad Up" type="string" defaultvalue="None" display= "D-Pad Up"></Property>
+			<Property name="D-Pad Down" type="string" defaultvalue="None" display= "D-Pad Down"></Property>
+			<Property name="D-Pad Left" type="string" defaultvalue="None" display= "D-Pad Left"></Property>
+			<Property name="D-Pad Right" type="string" defaultvalue="None" display= "D-Pad Right"></Property>
+			<Property name="Center Camera" type="string" defaultvalue="None" display= "Center Camera"></Property>
+		</Group>
+		<Group name="Layout 3" display="Keyboard Layout 3">
+			<Property name="Analog Up" type="string" defaultvalue="Numpad 8" display= "Analog Up"></Property>
+			<Property name="Analog Down" type="string" defaultvalue="Numpad 2" display= "Analog Down"></Property>
+			<Property name="Analog Left" type="string" defaultvalue="Numpad 4" display= "Analog Left"></Property>
+			<Property name="Analog Right" type="string" defaultvalue="Numpad 6" display= "Analog Right"></Property>
+			<Property name="Button A" type="string" defaultvalue="None" display= "Button A"></Property>
+			<Property name="Button B" type="string" defaultvalue="V" display= "Button B"></Property>
+			<Property name="Button X" type="string" defaultvalue="None" display= "Button X"></Property>
+			<Property name="Button Y" type="string" defaultvalue="None" display= "Button Y"></Property>
+			<Property name="Button Z" type="string" defaultvalue="None" display= "Button Z"></Property>
+			<Property name="Button C" type="string" defaultvalue="None" display= "Button C"></Property>
+			<Property name="Button D" type="string" defaultvalue="None" display= "Button D"></Property>
+			<Property name="Button Start" type="string" defaultvalue="None" display= "Button Start"></Property>
+			<Property name="Trigger L" type="string" defaultvalue="None" display= "Trigger L"></Property>
+			<Property name="Trigger R" type="string" defaultvalue="None" display= "Trigger R"></Property>
+			<Property name="D-Pad Up" type="string" defaultvalue="None" display= "D-Pad Up"></Property>
+			<Property name="D-Pad Down" type="string" defaultvalue="None" display= "D-Pad Down"></Property>
+			<Property name="D-Pad Left" type="string" defaultvalue="None" display= "D-Pad Left"></Property>
+			<Property name="D-Pad Right" type="string" defaultvalue="None" display= "D-Pad Right"></Property>
+			<Property name="Center Camera" type="string" defaultvalue="None" display= "Center Camera"></Property>
+		</Group>
+	</Groups>
+</ConfigSchema>

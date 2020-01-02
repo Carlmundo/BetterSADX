@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<ConfigSchema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.sonicretro.org">
+	<Groups>
+		<Group name="Characters" display="1 - Characters">
+			<Property name="EnableSonic" display="Dreamcast Sonic" type="bool" defaultvalue="True">
+				<HelpText>Enable Sonic's Dreamcast models.</HelpText>
+			</Property>	
+			<Property name="EnableMiles" display="Dreamcast Miles" type="bool" defaultvalue="True">
+				<HelpText>Enable Tails' Dreamcast models.</HelpText>
+			</Property>
+			<Property name="EnableKnuckles" display="Dreamcast Knuckles" type="bool" defaultvalue="True">
+				<HelpText>Enable Knuckles' Dreamcast models.</HelpText>
+			</Property>			
+			<Property name="EnableAmy" display="Dreamcast Amy" type="bool" defaultvalue="True">
+				<HelpText>Enable Amy's Dreamcast models.</HelpText>
+			</Property>	
+			<Property name="EnableBig" display="Dreamcast Big" type="bool" defaultvalue="True">
+				<HelpText>Enable Big's Dreamcast models.</HelpText>
+			</Property>	
+			<Property name="EnableGamma" display="Dreamcast Gamma" type="bool" defaultvalue="True">
+				<HelpText>Enable fixes to add the missing Dreamcast effects for Gamma.</HelpText>
+			</Property>	
+			<Property name="EnableTikal" display="Dreamcast Tikal" type="bool" defaultvalue="True">
+				<HelpText>Replaces Tikal's updated models with their Dreamcast counterparts.</HelpText>
+			</Property>	
+			<Property name="EnableEggman" display="Dreamcast Eggman" type="bool" defaultvalue="True">
+				<HelpText>Replaces Eggman's updated models with their Dreamcast counterparts.</HelpText>
+			</Property>	
+			<Property name="EnableCDMetalSonic" display="CD Metal Sonic Skin" type="bool" defaultvalue="True">
+				<HelpText>Swaps out Metal Sonic's model with the Metal Sonic model in the Mystic Ruins Eggbase.</HelpText>
+			</Property>	
+			<Property name="EnbleSkychase" display="Dreamcast Skycase" type="bool" defaultvalue="True">
+				<HelpText>Enables the Dreamcast Skychase models.</HelpText>
+			</Property>	
+		</Group>
+
+		<Group name="Extras" display="2 - Additional Changes">
+			<Property name="DisableSaturnSkyChase" display="Enable EV Sky Chase" type="bool" defaultvalue="False">
+				<HelpText>When enabled, the EV models from the cutscenes involving Sky Chase are used for gameplay. Requires Dreamcast Skychase to be enabled.</HelpText>
+			</Property>	
+			<Property name="EnableExtras" display="Consistency Additions" type="bool" defaultvalue="False">
+				<HelpText>Swaps out models based on upgrades. Example: Super Sonic can have normal shoes or the Crystal Ring, character's jump models feature upgrades as well.</HelpText>
+			</Property>
+			<Property name="MetalSonicHoverBehavior" display="Metal Sonic Hover Behavior" type="MSHoverBehavior" defaultvalue="Normal">
+				<HelpText>Swaps Metal Sonic's hover behavior. "Swap" for swapping the Run/Hover animations. "Always" to make Metal Sonic always hover at higher speeds.</HelpText>
+			</Property>	
+			<Property name="StretchyShoes" display="Sonic's Stretchy Shoe Behavior" type="StretchyShoeBehavior" defaultvalue="Regular">
+				<HelpText>Controls the behavior of Sonic's stretchy shoes, only functions when Sonic's DC model is enabled. Use "LSShoeMorphs" for the addition of stretchy shoes on the Light Speed Shoes.</HelpText>
+			</Property>
+		</Group>
+	</Groups>
+	<Enums>
+		<Enum name = "MSHoverBehavior">
+			<EnumMember name = "Normal" />
+			<EnumMember name = "Swap" />
+			<EnumMember name = "Always" />
+		</Enum>
+	</Enums>
+	<Enums>
+		<Enum name = "StretchyShoeBehavior">
+			<EnumMember name = "Regular" />
+			<EnumMember name = "LSShoeMorphs" />
+			<EnumMember name = "Disable" />
+		</Enum>
+	</Enums>
+</ConfigSchema>

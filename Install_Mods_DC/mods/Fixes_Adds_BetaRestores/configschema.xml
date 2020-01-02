@@ -1,0 +1,209 @@
+<?xml version="1.0"?>
+<ConfigSchema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.sonicretro.org">
+	<Groups>
+		<Group name="Options1" display="1 - Gameplay Features">
+			<Property name="AnimTestThingie" display="In-Game Animation/Aciton Viewer" type="bool" defaultvalue="false">
+				<HelpText>Enable this and press B, X, and Y at the same time during gameplay to activate. See ReadMe for further details and controls.</HelpText>
+			</Property>
+			<Property name="UseEXTRALayouts" display="Dreamcast Conversion EXTRA Layouts" type="bool" defaultvalue="false">
+				<HelpText>Enable this to use the EXTRA layout files that were previously part of the Dreamcast Conversion mod. They add some unused objects to some levels.</HelpText>
+			</Property>
+			<Property name="JackleCard" display="Nights Pinball 10 Cards" type="bool" defaultvalue="true">
+				<HelpText>Enable to allow the normally unused Jackle card to appear on the Nights pinball table.</HelpText>
+			</Property>
+			<Property name="DTargetRing" display="Drop Target Ring" type="bool" defaultvalue="true">
+				<HelpText>Fixes the ring that is meant to encircle the purple drop targets on the pinball boards by actually making it encircle them.</HelpText>
+			</Property>
+			<Property name="NightRankCrystal" display="Nights Pinball Rank Crystal Fix" type="bool" defaultvalue="true">
+				<HelpText>Enable this to fix the UVs on the normally unused rank crystal object when it lands on a F rank.</HelpText>
+			</Property>
+			<Property name="LostLight" display="Lost World Light Model Fix" type="bool" defaultvalue="true">
+				<HelpText>Replaces the normally unused (and broken) large light model in Lost World with its proper Dreamcast counterpart.</HelpText>
+			</Property>
+			<Property name="AwningColor" display="Speed Highway Awning Color Fix" type="bool" defaultvalue="false">
+				<HelpText>Removes the material color from the unused orange awning object in Speed Highway. (No need to use if using the Autodemo Speed Highway mod.)</HelpText>
+			</Property>
+			<Property name="WindyValleyLeaves" display="Windy Valley Beta Leaf Behavior" type="bool" defaultvalue="true">
+				<HelpText>Restores the normally unused leaf effect when entering a wind gust object. (Fully compatible with Autodemo Windy Valley.)</HelpText>
+			</Property>
+			<Property name="WindyValleyTornado" display="Windy Valley Tornado Extras" type="bool" defaultvalue="true">
+				<HelpText>Fixes some coding with the final's tornado to: make all 3 types of leaves sucked up by the tornado, and make it sometimes suck up a rhino tank. (Fully compatible with Autodemo Windy Valley.)</HelpText>
+			</Property>
+			<Property name="CutsceneFixes" display="Cutscene Correction" type="bool" defaultvalue="true">
+				<HelpText>Enable this to fix Chaos 2's elevation when he first appears in front of Knuckles in the cutscene prior to the boss fight with him.</HelpText>
+			</Property>
+			<Property name="BigBetaHotel" display="Big's Beta Hotel" type="bool" defaultvalue="false">
+				<HelpText>Enable this to make Big's beta hotel puzzle part of the normal story campaign.</HelpText>
+			</Property>
+			<Property name="SkyDeckDrawDist" display="Sky Deck Light Objects Draw Distance" type="bool" defaultvalue="true">
+				<HelpText>Enable this to increase the draw distance of two light objects in Sky Deck that are often too far away to see in the level.</HelpText>
+			</Property>
+			<Property name="StarJumpPanel" display="Jump Panel Star" type="bool" defaultvalue="true">
+				<HelpText>Enable to add the unused beta star panel to the end of each jump panel sequence.</HelpText>
+			</Property>
+			<Property name="TGSModeActive" display="TGS Mode Access" type="bool" defaultvalue="true">
+				<HelpText>Enable to allow access to the TGS Mode by pressing L + R on any menu outside of the main game. See more details in the ReadMe.</HelpText>
+			</Property>
+			<Property name="WaterBridge" display="Emerald Coast Water Bridge Detail" type="bool" defaultvalue="true">
+				<HelpText>Enable to make small, unused metal models appear along the side of the water bridge in Emerald Coast Act 1 that were meant to appear along it.</HelpText>
+			</Property>
+			<Property name="Chaos0Plants" display="Chaos 0 Decorations" type="bool" defaultvalue="true">
+				<HelpText>Enable this to make the plant objects seen in the Unveiling version of the Chaos 0 fight show up in-game.</HelpText>
+			</Property>
+			<Property name="PatrolCopter" display="Egg Carrier Patrol Copter" type="bool" defaultvalue="true">
+				<HelpText>Enable this to restore the beta patrol helicopters on the Egg Carrier with hypothetical behavior. (Will only appear while airborne.)</HelpText>
+			</Property>
+			<Property name="Lightning" display="Egg Carrier Lightning Effect" type="bool" defaultvalue="true">
+				<HelpText>Enable this to make the Egg Carrier's beta lightning effect work. (Will only appear while airbrone.)</HelpText>
+			</Property>
+			<Property name="GoodSign" display="Egg Carrier Good! Sign" type="bool" defaultvalue="true">
+				<HelpText>Enable this to add an unused model with an unused texture that says "Good!" to the E G G M A N button machine for the Chao Garden Room.</HelpText>
+			</Property>
+			<Property name="AngelDoor" display="Angel Island Door Animation" type="bool" defaultvalue="true">
+				<HelpText>Enable this to make the door to the outside area of Angel Island actually use its opening and closing animations when you approach it.</HelpText>
+			</Property>
+			<Property name="SPRActivate" display="SPR Task Display" type="bool" defaultvalue="false">
+				<HelpText>Enable this to allow the SPR Task to be toggled on-screen with the C button. To use the C button, you'll need to use the Input Fix mod.</HelpText>
+			</Property>
+			<Property name="RedMountainPillar" display="Red Mountain Act 2 Pillar" type="bool" defaultvalue="false">
+				<HelpText>Enable this to restore an unused pillar model to the very start of Red Mountain Act 2. (No need to use if using the Autodemo Red Mountain mod.)</HelpText>
+			</Property>
+			<Property name="MRFinalEggTransAnim" display="Mystic Ruins Final Egg Transport Animation" type="bool" defaultvalue="false">
+				<HelpText>Enable this to restore an unused animation for the entrance to the Final Egg Base in Mystic Ruins. When you enter it, you'll see a transport pod move through the tube.</HelpText>
+			</Property>
+			<Property name="MysticRuinsJungleNightNoise" display="Mystic Ruins Jungle Sound Fix" type="bool" defaultvalue="true">
+				<HelpText>Enable this to fix a normally unused feature for the jungle: at night, the sounds heard inside the jungle will change. Also fixes MR Base sound issue. Details in ReadMe.</HelpText>
+			</Property>
+			<Property name="LostWorldDrawDist" display="Lost World Snake Room Platforms Draw Distance" type="bool" defaultvalue="true">
+				<HelpText>Enable this to improve the draw distance of the platforms in the snake room, greatly reducing pop-in and ensuring that the switches aren't seen floating.</HelpText>
+			</Property>
+			<Property name="LostWorldSpikeJAP" display="Lost World Spike Trap Japanese Behavior" type="bool" defaultvalue="false">
+				<HelpText>Enable this to change the moving spike traps in Lost World to the Japanese versions. JP: each one moves independently. International: all move at once.</HelpText>
+			</Property>
+			<Property name="SpeedHighwayTrashcan" display="Speed Highway Trashcan Model Fix" type="bool" defaultvalue="true">
+				<HelpText>Enable this to fix the positioning of the models for the final version of the unused trashcan object. This will not revert it to its Autodemo design.</HelpText>
+			</Property>
+			<Property name="TikalFatherEyes" display="Reveal Tikal's Father's Eyes" type="bool" defaultvalue="true">
+				<HelpText>Enable this to have Pachacamac's eyes be open only when he appears in a cutscene at the burning altar. Normally, he never opens them.</HelpText>
+			</Property>
+			<Property name="PerfectChaosAttackSplines" display="Perfect Chaos Extended Attack Paths" type="bool" defaultvalue="false">
+				<HelpText>Enable this to make Super Sonic use the full 3 attack paths in the Perfect Chaos fight. Normally, the game cuts you off before you make it to the top.</HelpText>
+			</Property>
+		</Group>
+		<Group name="Options2" display="2 - Animations">
+			<Property name="LevelClearPlus" display="Level Clear Ending Animations + Red Mountain Fix" type="bool" defaultvalue="true">
+				<HelpText>Makes some characters use their unused "Revert to idle from level clear stance" animations. Also fixes Red Mountain's cutscene as Sonic.</HelpText>
+			</Property>
+			<Property name="LanderUse" display="Landing Animations" type="bool" defaultvalue="false">
+				<HelpText>Enable this to allow all characters to use their normally unused 'landing' animations. To see them, jump straight on a flat surface. More info in Readme.</HelpText>
+			</Property>
+			<Property name="AnimatePLUS" display="Animation Fixes and Additions" type="bool" defaultvalue="true">
+				<HelpText>Enable this fix a whole slew of animations issues with several characters, as well as add a few normally unused ones into the mix. Details in Readme.</HelpText>
+			</Property>
+			<Property name="KnucklesAnimate" display="More Knuckles Animations" type="bool" defaultvalue="false">
+				<HelpText>Enable this to give Knuckles alternate neutral and idle animations during boss fights, consisting of unused animations! Details in Readme.</HelpText>
+			</Property>
+			<Property name="BigAnimate" display="More Big Animations" type="bool" defaultvalue="false">
+				<HelpText>Enable this to give Big more, normally unused animations after he stands idle for a while.</HelpText>
+			</Property>
+			<Property name="AmyAnimate" display="More Amy Animations" type="bool" defaultvalue="false">
+				<HelpText>Enable this to give Amy more, normally unused animations after she stands idle for a while, and after she recovers from being dizzy from spinning her hammer.</HelpText>
+			</Property>
+			<Property name="TailsAnimate" display="More Tails Animations" type="bool" defaultvalue="false">
+				<HelpText>Enable this to give Tails more, normally unused animations after he stands idle for a while.</HelpText>
+			</Property>
+		</Group>
+		<Group name="Options3" display="3 - Audio">
+			<Property name="FinalEggAnnouncer" display="Intruder Voices" type="bool" defaultvalue="true">
+				<HelpText>Enable this to make unused voice clips play at the start of Final Egg Act 1 when playing as Sonic.</HelpText>
+			</Property>
+			<Property name="FinalEggColorDoor" display="Amy Taunt Voices" type="bool" defaultvalue="true">
+				<HelpText>Makes Eggman speak unused lines when at Amy's color door puzzle in Final Egg. He will taunt her when she chooses the wrong door, up to 3 times.</HelpText>
+			</Property>
+			<Property name="SkyDeck1Announcer" display="Sky Deck Intruder Voices" type="bool" defaultvalue="true">
+				<HelpText>Makes unused voice clips play at the start of Sky Deck Act 1 when playing as Sonic. (They don't play for Tails because reasons.)</HelpText>
+			</Property>
+			<Property name="SkyDeck2Announcer" display="Altitude Warning Voices" type="bool" defaultvalue="true">
+				<HelpText>Enable this to make unused voice clips play when around the giant cannon in Sky Deck Act 2.</HelpText>
+			</Property>
+			<Property name="SkyDeck3Announcer" display="Ship Tilt Voices" type="bool" defaultvalue="true">
+				<HelpText>Enable this to make Eggman speak an unused line when the ship tilts 90 degrees in Sky Deck Act 3 when playing as Sonic.</HelpText>
+			</Property>
+			<Property name="BetaRematch" display="Gamma Plea Voices" type="bool" defaultvalue="true">
+				<HelpText>Enable this to make Gamma speak an unused line at the start of the E-101R boss fight.</HelpText>
+			</Property>
+			<Property name="PerfectChaos" display="Perfect Chaos Cheer Voices" type="bool" defaultvalue="true">
+				<HelpText>Adds a brief conversation between Super Sonic and Tikal at the start of the Perfect Chaos boss fight consisting of unused voice clips.</HelpText>
+			</Property>
+			<Property name="FishingFailed" display="Fishing Music and Voices" type="bool" defaultvalue="true">
+				<HelpText>Enable this to: make Big's unused(?) failed fishing music play when he snaps his line, and make him speak two unused lines about it.</HelpText>
+			</Property>
+			<Property name="WaterStuff" display="Water Sounds" type="bool" defaultvalue="true">
+				<HelpText>Makes an unused ambient underwater effect (Quiet) play whenever you submerge in water. Adds unused sound effects for exiting the water.</HelpText>
+			</Property>
+			<Property name="LightSpeed" display="Light Speed Charge Sound" type="bool" defaultvalue="true">
+				<HelpText>Enable this to make an unused sound effect play when Sonic charges up a light-speed attack/dash.</HelpText>
+			</Property>
+			<Property name="TailsFlight" display="Tails Flight Sound" type="bool" defaultvalue="true">
+				<HelpText>Enable this to make an unused sound effect (Quiet) play whenever Tails flies. (Leftover from Sonic Jam.)</HelpText>
+			</Property>
+			<Property name="KnucklesHurt" display="Knuckles Damage Voice" type="bool" defaultvalue="true">
+				<HelpText>Enable this to make Knuckles speak an unused line that was most likely intended for whenever he took damage.</HelpText>
+			</Property>
+			<Property name="AmyHurt" display="Amy Damage Voice" type="bool" defaultvalue="true">
+				<HelpText>Enable this to make Amy speak an unused line that was most likely intended for whenever she took damage.</HelpText>
+			</Property>
+			<Property name="KnucklesNoRing" display="Knuckles No Ring Voice" type="bool" defaultvalue="true">
+				<HelpText>Enable this to make Knuckles speak an unused line meant for when he gets hit while having no rings.</HelpText>
+			</Property>
+			<Property name="AmyNoRing" display="Amy No Ring Voice" type="bool" defaultvalue="true">
+				<HelpText>Enable this to make Amy speak an unused line meant for when she gets hit while having no rings.</HelpText>
+			</Property>
+			<Property name="TailsNoRing" display="Tails No Ring Voice" type="bool" defaultvalue="true">
+				<HelpText>Enable this to make Tails speak an unused line meant for when he gets hit while having no rings.</HelpText>
+			</Property>
+			<Property name="BigNoRing" display="Big No Ring Voice" type="bool" defaultvalue="true">
+				<HelpText>Enable this to make Big speak an unused line meant for when he gets hit while having no rings.</HelpText>
+			</Property>
+			<Property name="ItemVoices" display="Item Box Voices" type="bool" defaultvalue="true">
+				<HelpText>Enable this to make other characters speak unused lines when they get certain items, like E-102 Gamma.</HelpText>
+			</Property>
+			<Property name="BoatNoise" display="Boat and Raft Sound" type="bool" defaultvalue="true">
+				<HelpText>Enable this to make the vehicles that take you to and from the Egg Carrier to play unused sounds intended for when you boarded them.</HelpText>
+			</Property>
+			<Property name="SkyChaseAlt" display="Alternate Sky Chase Voices" type="bool" defaultvalue="true">
+				<HelpText>Enable this to make Sonic and Tails say some different stuff in Sky Chase Act 2 when the tornado transforms when playing as Sonic.</HelpText>
+			</Property>
+			<Property name="TailsTiredVoices" display="More Tails Tired Voices" type="bool" defaultvalue="true">
+				<HelpText>Enable this to give Tails two more voice clips to speak when he completely tires out while flying, both of which are normally unused.</HelpText>
+			</Property>
+			<Property name="TailsRaceLines" display="More Tails Race Voices" type="bool" defaultvalue="true">
+				<HelpText>Enable this to give the Sonic racing opponent 15 more lines of dialogue, all of which are normally unused.</HelpText>
+			</Property>
+			<Property name="HotShelterNoises" display="Hot Shelter Background Noise" type="bool" defaultvalue="true">
+				<HelpText>Enable this to give all Acts of Hot Shelter background noise, with them changing based on where you are in the level. All noises are normally unused.</HelpText>
+			</Property>
+			<Property name="FinalEggAlarmer" display="Final Egg Act 1 Alarm" type="bool" defaultvalue="true">
+				<HelpText>Enable this to make a normally unused alarm sound effect sound off at the start of Act 1 as Sonic.</HelpText>
+			</Property>
+			<Property name="TailsStoryPlus" display="Extra Tails Story Dialogue" type="bool" defaultvalue="true">
+				<HelpText>Enable this to add an unused line to the cutscene that occurs right after Tails defeats the Egg Walker.</HelpText>
+			</Property>
+			<Property name="LostWorldNoises" display="Lost World Background Noise" type="bool" defaultvalue="true">
+				<HelpText>Enable this to give all Acts of Lost World some background noise. For Act 2, it's only present when playing as Sonic, and only at the cliff at the start.</HelpText>
+			</Property>
+			<Property name="LostWorldPlantNoise" display="Lost World Plant Noises" type="bool" defaultvalue="true">
+				<HelpText>Enable this to give the plant objects in Lost World a sound effect that was meant for them, normally unused, whenever you touch one.</HelpText>
+			</Property>
+			<Property name="SnowmanSound" display="Iceball Enemy Noise Add" type="bool" defaultvalue="true">
+				<HelpText>Enable this to give the Iceball enemy in IceCap an extra, normally unused sound when it walks around outside its machine. To hear it, attack it only once.</HelpText>
+			</Property>
+			<Property name="BigRanker" display="Big Fish Ranking System" type="bool" defaultvalue="true">
+				<HelpText>Enable this to make Big comment on the size of the fish he just caught, using normally unused dialogue.</HelpText>
+			</Property>
+			<Property name="ECParasolSound" display="Emerald Coast Furniture Sound" type="bool" defaultvalue="true">
+				<HelpText>Enable this to make destroying the chairs, tables, and parasols in Emerald Coast play a sound effect that normally isn't used in the level.</HelpText>
+			</Property>
+		</Group>
+	</Groups>
+</ConfigSchema>
