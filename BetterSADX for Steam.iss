@@ -1,5 +1,5 @@
 #define AppName "BetterSADX"
-#define AppVersion "4.4 RC1"
+#define AppVersion "4.4"
 #define Game "Sonic Adventure DX"
 [Setup]
 ; NOTE: The value of AppId uniquely identifies this application.
@@ -143,10 +143,9 @@ begin
       
       ProgressPage.SetText('Installing redistributables...', ''); 
       ProgressPage.SetProgress(50, 100);
-      
-      Exec(ExpandConstant('{app}\_CommonRedist\vcredist\2013\vcredist_x86.exe'), '/quiet /norestart', '', SW_SHOW, ewWaitUntilTerminated, ErrorCode);
-      Exec(ExpandConstant('{app}\_CommonRedist\vcredist\2015\vc_redist.x86.exe'), '/quiet /norestart', '', SW_SHOW, ewWaitUntilTerminated, ErrorCode);
-      Exec(ExpandConstant('{app}\_CommonRedist\vcredist\2017\VC_redist.x86.exe'), '/quiet /norestart', '', SW_SHOW, ewWaitUntilTerminated, ErrorCode);
+      //VC Redist 2015-2019
+      Exec(ExpandConstant('{app}\_CommonRedist\vcredist\VC_redist.x86.exe'), '/quiet /norestart', '', SW_SHOW, ewWaitUntilTerminated, ErrorCode);
+      //.NET Framework 4.0 and 4.5
       Exec(ExpandConstant('{app}\_CommonRedist\.NET Framework\dotNetFx40_Full_x86_x64.exe'), '/q /norestart', '', SW_SHOW, ewWaitUntilTerminated, ErrorCode);
       Exec(ExpandConstant('{app}\_CommonRedist\.NET Framework\dotnetfx45_full_x86_x64.exe'), '/q /norestart', '', SW_SHOW, ewWaitUntilTerminated, ErrorCode);
       
