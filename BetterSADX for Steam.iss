@@ -1,5 +1,5 @@
 #define AppName "BetterSADX"
-#define AppVersion "4.4.2"
+#define AppVersion "4.4.3"
 #define Game "Sonic Adventure DX"
 [Setup]
 ; NOTE: The value of AppId uniquely identifies this application.
