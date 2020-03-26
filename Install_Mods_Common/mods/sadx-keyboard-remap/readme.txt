@@ -20,6 +20,9 @@ Known issues:
 
 Version history
 
+2.31
+The mod should now parse key name strings with an extra space correctly
+
 2.3
 The mod now terminates itself when the Input mod is detected
 Added support for C and D buttons (config file only)

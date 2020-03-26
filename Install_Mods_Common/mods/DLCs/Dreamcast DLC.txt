@@ -1,6 +1,6 @@
 Dreamcast DLCs by PkR
 
-Credits: SonicFreak94 for the SEGA voice code, sonicblur for the tool to decrypt VMS files, Moopthehedgehog for Kadomatsu DLC
+Credits: SonicFreak94 for the SEGA voice code, sonicblur for the tool to decrypt VMS files, Moopthehedgehog for Kadomatsu DLC, TheLegendOfXela for high quality music rips
 
 This mod is a unified version of Dreamcast DLC mods released previously, which makes use of the latest Mod Loader functionality to make the experience as customizable as possible. You can force the mod to load a certain DLC, or make it random, or even make it load a different DLC every month! Check the mod's configuration in SADX Mod Manager for more details.
 
@@ -30,6 +30,8 @@ http://www.moddb.com/mods/sadx-dreamcast-conversion/news/dreamcast-exclusive-dlc
 
 Changelog
 
+1.1018 - small update to hide the non-HD timer when subtitles are displayed
+1.1017 - added Narrator and True Random menu voice options, replaced Kadomatsu and Christmas 98 BGMs with digital captures from a real Dreamcast (thanks Alex/TheLegendOfXela!)
 1.1015 - added the recently rediscovered Kadomatsu DLC
 1.1014 - added a new default challenge timer based on the debug font (like in SA1)
 1.1013 - the mod now detects SADX Station Square and adjusts DLC content automatically, minor code optimizations
@@ -40,6 +42,6 @@ Changelog
 1.0005 - merged the "Enable SEGA voice" and SEGA voice language settings
 1.0004 - added a toggle to disable DLC content for current character if his/her story isn't complete
 1.0003 - added US/International DC camera for Station Square for better compatibility with Dreamcast Conversion
-1.0002 - fixed Y2K posters and the default Samba GP options
+1.0002 - fixed Y2K posters and default Samba GP options
 1.0001 - initial release, changed the 1999 Christmas tree to spawn only if Speed Highway is cleared
 1.0000 - initial beta

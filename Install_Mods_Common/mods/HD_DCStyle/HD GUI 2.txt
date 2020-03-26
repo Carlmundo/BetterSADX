@@ -6,6 +6,9 @@ This mod will look best if the game's rendering resolution and window size match
 
 Version history
 
+0.909 - Added a workaround for translation mods that use a non-standard codepage
+0.908 - Minor bugfixes for the title screen
+0.907 - Added HD SADX title screen
 0.906 - Improved the look of the recap text when it fades out, disabled the "Now Saving" text function that was interfering with subtitles
 0.905 - Fixed an issue with displaying "... has been added to the list" after credits
 0.902 - Fixed subtitle text issues when Mod Loader UI scaling is turned off
@@ -82,11 +85,13 @@ SPEEPSHighway - PressStartButton texture, font edits for character banners, Miss
 Windii - all Japanese language assets
 Sonikko - File and character select background, level title cards, Sky Chase reticle, character recap screens, Mission start/finish graphics, Tails race icons, life icons, text, random ring icons, various texture edits
 McAleeCh - mission objective text layout improvements
+The7hrone & Sonikko - Sonic render edit for the title screen
 PkR - everything else
 
 The mod replaces the following graphics:
 
 MENUS
+-Title screen
 -File Select menu, including character spheres and the font used for filenames
 -File Select/Options background
 -Character select screen

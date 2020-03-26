@@ -12,7 +12,7 @@
 				<HelpText>Select the DLC to be loaded in Single mode.</HelpText>
 			</Property>			
 			<Property name="MenuVoiceThing" type="MenuVoiceCharacters" defaultvalue="-1" display="Menu voice">
-				<HelpText>Select the character whose voice will be used in menus.</HelpText>
+				<HelpText>Select the character whose voice will be used in menus. True Random will switch characters every second.</HelpText>
 			</Property>
 			<Property name="SegaVoiceLanguage" type="Languages" defaultvalue="English" display="SEGA voice language">
 				<HelpText>Select the language to use for the voice on the SEGA screen, or disable the voice like in the vanilla game.</HelpText>
@@ -155,7 +155,8 @@
 			<EnumMember name="Europe" />
 		</Enum>
 		<Enum name="MenuVoiceCharacters">
-			<EnumMember name="-1" display="Last played character (default)"></EnumMember>
+			<EnumMember name="-1" display="Last played character (default DX)"></EnumMember>
+			<EnumMember name="-2" display="Narrator (default SA1 DC)"></EnumMember>
 			<EnumMember name="1" display="Sonic"></EnumMember>
 			<EnumMember name="2" display="Tails"></EnumMember>
 			<EnumMember name="3" display="Knuckles"></EnumMember>
@@ -165,6 +166,7 @@
 			<EnumMember name="7" display="Eggman"></EnumMember>
 			<EnumMember name="8" display="Tikal"></EnumMember>
 			<EnumMember name="9" display="Random"></EnumMember>
+			<EnumMember name="10" display="True Random"></EnumMember>
 		</Enum>
 		<Enum name="Languages">
 			<EnumMember name="Off" />

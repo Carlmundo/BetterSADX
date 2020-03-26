@@ -8,6 +8,9 @@
 			<Property name="EnableDreamcastWaterRipple" type="bool" defaultvalue="True" display= "Restore the SA1 water ripple">
 				<HelpText>Enable the water ripple model from the Dreamcast version. Scroll down to the Branding section for the title screen ripple effect.</HelpText>
 			</Property>
+			<Property name="RestoreHumpAnimations" type="bool" defaultvalue="True" display= "Item hold animations + fix speed errors">
+				<HelpText>Restore item hold animations (like in SA1 JP) and fix animation speed errors.</HelpText>
+			</Property>
 			<Property name="CutsceneSkipMode" type="CutsceneMode" defaultvalue="0" display= "Cutscene skip mode">
 				<HelpText>Improves handling of skippable cutscenes. Cutscenes can be skipped with a single button press. Fade to black makes skipping cutscenes smoother.</HelpText>
 			</Property>	

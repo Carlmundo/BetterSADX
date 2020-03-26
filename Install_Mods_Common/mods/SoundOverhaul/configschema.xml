@@ -2,14 +2,28 @@
 <ConfigSchema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.sonicretro.org">
 	<Groups>
 		<Group name="General">
-			<Property name="FixSoundVolume" type="bool" defaultvalue="false" display="Logarithmic sound volume">
-				<HelpText>Use logarithmic volume adjustment for non-3D sound effects. Use together with DSOAL.</HelpText>
-			</Property>
-			<Property name="ClassicRingPan" type="bool" defaultvalue="true" display="Classic ring sound panning">
+			<Property name="ClassicRingPan" type="bool" defaultvalue="True" display="Classic ring sound panning">
 				<HelpText>Alternate between 100% left and right panning like in the DC version and classic games.</HelpText>
 			</Property>
-			<Property name="BoaBoaFix" type="bool" defaultvalue="true" display="Make Boa-Boa sound deeper">
-				<HelpText>Play the fire breating effect multiple times (like in SA1) instead of once.</HelpText>
+			<Property name="BoaBoaFix" type="bool" defaultvalue="True" display="Restore overlapping sounds">
+				<HelpText>Play some effects multiple times (like in SA1) instead of once.</HelpText>
+			</Property>
+			<Property name="SpindashFade" type="bool" defaultvalue="True" display="Fade out sounds">
+				<HelpText>Fade out some sounds instead of cutting them off.</HelpText>
+			</Property>
+			<Property name="DelayedSounds" type="bool" defaultvalue="True" display="Multiple sound reverb">
+				<HelpText>Simulate a reverb effect by delaying playback of multiple identical sounds. When disabled, multiple sounds will play as a single loud sound.</HelpText>
+			</Property>
+		</Group>
+		<Group name="Volume">
+			<Property name="MovieVolumeSO" type="int" defaultvalue="100" display="FMV volume">
+				<HelpText>FMV volume in percent (0 to 100).</HelpText>
+			</Property>
+			<Property name="MusicVolumeBoost" type="int" defaultvalue="5100" display="Music volume boost">
+				<HelpText>Boost music volume (0 to 65535). Maximum volume without boost is -1100.</HelpText>
+			</Property>
+			<Property name="VoiceVolumeBoost" type="int" defaultvalue="5100" display="Voice volume boost">
+				<HelpText>Boost voice volume (0 to 65535). Maximum volume without boost is -300.</HelpText>
 			</Property>
 		</Group>
 	</Groups>

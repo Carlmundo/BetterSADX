@@ -1,13 +1,49 @@
-Sound Overhaul 2 mod by PkR
+Sound Overhaul 3 mod by PkR
 
 Bug reports: https://github.com/PiKeyAr/sadx-sound-overhaul/issues
 Developer's Twitter: https://twitter.com/pkr_sadx
+SADX Mod Installer: http://www.moddb.com/mods/sadx-dreamcast-conversion/news/new-mod-installer-now-available1
 Soundbank tools: https://dcmods.unreliable.network/owncloud/data/PiKeyAr/files/Various/SoundOverhaul_tools.7z
-DSOAL DirectSound wrapper: https://dcmods.unreliable.network/owncloud/data/PiKeyAr/files/Various/DSOAL_SADX.zip
+DirectSound wrapper: https://dcmods.unreliable.network/owncloud/data/PiKeyAr/files/Various/dsound.7z
 
-Note: Starting with version 0.8532 (October 22, 2019) Sound Overhaul 2 has an option to enable logarithic volume controls. This option makes sound effects louder and is technically more "correct" than default ingame volume adjustment. However, it does not adjust the volume of 3D sounds, which will be too quiet in comparison. To fix this, use a DirectSound wrapper called DSOAL (see link above), which will fix volume adjustment for 3D sounds.
+Note: This mod requires a DirectSound wrapper (see link above), which fixes volume adjustment for 3D sounds. To install the wrapper, put dsound.dll and dsound.ini into the game's main folder (where sonic.exe is), or use SADX Mod Installer to set it up automatically.
+
+Special thanks to Alex/TheLegendOfXela for providing digital sound rips from a real Dreamcast.
 
 Changelog:
+
+Update 23/03/2020
+Restored SA1 Dreamcast Chao jingles in Bank 7
+Updated mod description
+
+Update 22/03/2020 - Sound Overhaul 3 release
+All soundbanks except Chao-related sounds have been replaced with high quality digital rips from a real Dreamcast
+The game now uses 44100hz sounds
+The game now uses full HRTF mode by default
+The entire game, including music and voices, is now much louder
+Reworked volume adjustment for 2D sounds
+Logarithmic volume for 2D sounds is no longer optional
+Background noises (priority 8) are now played louder by default
+Added a feature to simulate a reverb effect for multiple identical sounds
+Added volume boost for music and voices
+Added a separate volume control for videos
+Added more sounds for the fadeout feature (Lost World mirrors etc.)
+Fixed looping of Gamma's hover sounds
+Added a missing sound that is played by gusts of wind in Windy Valley
+Fixed several sounds that were cut off too early
+Fixed an error preventing the snake gate in Lost World from playing its sound
+Sky Deck announcements now play in Japanese if the game's voice language is set to Japanese
+All characters play hurt sounds now
+Added a distance override system for 3D sounds - now certain 3D sounds are more audible
+Fixed the sound error and added 3D sounds for fire pillars in Lost World
+Fixed missing sounds in E-101 battle
+Fixed wrong sound being played when Zero's boss name appears
+Fixed the spaceship in Twinkle Park 1 to be loud enough to be audible
+Made Knuckles' glide sound loop and fade out properly
+Fixed pirate ships in Twinkle Park 2 playing sounds when the character is too far from them
+Fixed the volume of Sky Deck cannons, Sand Hill sand worms, Perfect Chaos roars, multiple cutscene adjustments etc.
+Fixed the timing of a voice played during Sonic vs Knuckles/Chaos 4 cutscene
+Made whistling noises (Sonic falling after Sky Chase, Zero in Amy's Final Egg) sound closer to the Dreamcast version
 
 Update 22/10/2019
 Added an option to enable logarithmic volume control for sound effects (experimental)
