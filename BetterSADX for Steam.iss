@@ -354,4 +354,4 @@ Source: ".\Config_DC\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs c
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
 [Run]
-Filename: "http://steamcommunity.com/groups/BetterSADX"; Description: "Open BetterSADX Steam group"; Flags: shellexec runasoriginaluser postinstall nowait
+Filename: "steam://openurl/https://steamcommunity.com/groups/BetterSADX"; Description: "Open BetterSADX Steam group"; Flags: shellexec runasoriginaluser postinstall nowait
