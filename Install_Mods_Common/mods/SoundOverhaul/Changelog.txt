@@ -12,6 +12,11 @@ Special thanks to Alex/TheLegendOfXela for providing digital sound rips from a r
 
 Changelog:
 
+Update 27/03/2020
+Added an option to replace Chao sound effects (CHAO_EFX_BANK01 soundbank + restored race jingles)
+Added an option to restore unused background noises in the gardens
+Restored the crowd cheering sound after Chao Race (requires replaced Chao sound effects to work)
+
 Update 23/03/2020
 Restored SA1 Dreamcast Chao jingles in Bank 7
 Updated mod description

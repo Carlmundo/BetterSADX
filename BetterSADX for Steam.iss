@@ -1,5 +1,5 @@
 #define AppName "BetterSADX"
-#define AppVersion "4.4.4"
+#define AppVersion "4.4.5"
 #define Game "Sonic Adventure DX"
 [Setup]
 ; NOTE: The value of AppId uniquely identifies this application.
@@ -116,7 +116,6 @@ begin
       ProgressPage.SetText('Removing unneeded folders...', '');
       ProgressPage.SetProgress(25, 100);
             
-      DelTree(ExpandConstant('{app}\_CommonRedist'), True, True, True);
       DelTree(ExpandConstant('{app}\DLC'), True, True, True);
       DelTree(ExpandConstant('{app}\Data'), True, True, True);
       DelTree(ExpandConstant('{app}\Font'), True, True, True);
@@ -151,6 +150,12 @@ begin
       Exec(ExpandConstant('{app}\_CommonRedist\.NET Framework\dotNetFx40_Full_x86_x64.exe'), '/q /norestart', '', SW_SHOW, ewWaitUntilTerminated, ErrorCode);
       Exec(ExpandConstant('{app}\_CommonRedist\.NET Framework\dotnetfx45_full_x86_x64.exe'), '/q /norestart', '', SW_SHOW, ewWaitUntilTerminated, ErrorCode);
       
+      //Remove unneeded redist executables
+      ProgressPage.SetText('Deleting redist installers...', '');
+      ProgressPage.SetProgress(65, 100);
+            
+      DelTree(ExpandConstant('{app}\_CommonRedist'), True, True, True);
+            
       //Add DEP exemption entry
       ProgressPage.SetText('Adding DEP exception...', '');
       ProgressPage.SetProgress(75, 100);

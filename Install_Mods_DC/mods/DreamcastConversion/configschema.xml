@@ -64,6 +64,9 @@
 			</Property>	
 		</Group>
 		<Group name="Branding" display="3 - Branding">
+			<Property name="RestoreDemos" type="Demos" defaultvalue="3" display= "Restore gameplay demos">
+				<HelpText>Restore gameplay shown after waiting on the title screen (experimental). May not work with some mods.</HelpText>
+			</Property>
 			<Property name="RemoveCream" type="bool" defaultvalue="True" display= "Disable Cream cameos">
 				<HelpText>Disable Cream cameos in Station Square.</HelpText>
 			</Property>
@@ -186,6 +189,13 @@
 		</Group>
 		</Groups>
 	<Enums>
+		<Enum name="Demos">
+			<EnumMember name="0" display="Off"></EnumMember>
+			<EnumMember name="1" display="Dreamcast US"></EnumMember>
+			<EnumMember name="2" display="Dreamcast JP"></EnumMember>
+			<EnumMember name="3" display="Gamecube"></EnumMember>
+			<EnumMember name="4" display="PC 2004"></EnumMember>
+		</Enum>
 		<Enum name="Fonts">
 			<EnumMember name="Off" display="Off"></EnumMember>
 			<EnumMember name="Impress" display="Impress"></EnumMember>

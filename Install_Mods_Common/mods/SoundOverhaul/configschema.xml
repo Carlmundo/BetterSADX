@@ -5,6 +5,12 @@
 			<Property name="ClassicRingPan" type="bool" defaultvalue="True" display="Classic ring sound panning">
 				<HelpText>Alternate between 100% left and right panning like in the DC version and classic games.</HelpText>
 			</Property>
+			<Property name="ReplaceChaoSounds" type="bool" defaultvalue="True" display="Replace Chao sounds">
+				<HelpText>Replace SADX Chao sound effects with matching or similar sounds from SA1 Dreamcast.</HelpText>
+			</Property>
+			<Property name="EnableChaoBGSounds" type="bool" defaultvalue="False" display="Restore garden background sounds">
+				<HelpText>Restore unused background noises in Chao gardens.</HelpText>
+			</Property>
 			<Property name="BoaBoaFix" type="bool" defaultvalue="True" display="Restore overlapping sounds">
 				<HelpText>Play some effects multiple times (like in SA1) instead of once.</HelpText>
 			</Property>
