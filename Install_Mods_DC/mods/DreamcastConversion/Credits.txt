@@ -26,4 +26,6 @@ supercoolsonic - edited Dreamcast Conversion SET files with various layout fixes
 
 ReimuHakurei - provided web space for my projects, including an update server for Dreamcast Conversion.
 
-GerbilSoft - provided various code optimizations for all my mods.
+GibHaltmannKill - provided a decompilation of the function for Chaos' bubble effect from the Gamecube version.
+
+GerbilSoft - provided various code optimizations for several of my mods.

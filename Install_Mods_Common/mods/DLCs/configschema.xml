@@ -14,8 +14,8 @@
 			<Property name="MenuVoiceThing" type="MenuVoiceCharacters" defaultvalue="-1" display="Menu voice">
 				<HelpText>Select the character whose voice will be used in menus. True Random will switch characters every second.</HelpText>
 			</Property>
-			<Property name="SegaVoiceLanguage" type="Languages" defaultvalue="English" display="SEGA voice language">
-				<HelpText>Select the language to use for the voice on the SEGA screen, or disable the voice like in the vanilla game.</HelpText>
+			<Property name="SegaVoice" type="bool" defaultvalue="False" display="SEGA voice">
+				<HelpText>Plays the SEGA voice clip on the SEGA screen.</HelpText>
 			</Property>
 			<Property name="HDTimer" type="bool" defaultvalue="False" display="Alternative challenge timer GUI">
 				<HelpText>Use a timer based on generic textures instead of the debug font.</HelpText>

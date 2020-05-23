@@ -8,8 +8,8 @@
 			<Property name="EnableDreamcastWaterRipple" type="bool" defaultvalue="True" display= "Restore the SA1 water ripple">
 				<HelpText>Enable the water ripple model from the Dreamcast version. Scroll down to the Branding section for the title screen ripple effect.</HelpText>
 			</Property>
-			<Property name="RestoreHumpAnimations" type="bool" defaultvalue="True" display= "Item hold animations + fix speed errors">
-				<HelpText>Restore item hold animations (like in SA1 JP) and fix animation speed errors.</HelpText>
+			<Property name="RestoreHumpAnimations" type="bool" defaultvalue="True" display= "Item hold animations + animation fixes">
+				<HelpText>Restore item hold animations (like in SA1 JP) and fix various animation errors.</HelpText>
 			</Property>
 			<Property name="CutsceneSkipMode" type="CutsceneMode" defaultvalue="0" display= "Cutscene skip mode">
 				<HelpText>Improves handling of skippable cutscenes. Cutscenes can be skipped with a single button press. Fade to black makes skipping cutscenes smoother.</HelpText>
@@ -41,13 +41,22 @@
 			<Property name="AssumeOIT" type="bool" defaultvalue="False" display= "Disable all transparency sorting">
 				<HelpText>May improve performance. Only use this when Order-Independent Transparency is enabled, otherwise the game will break.</HelpText>
 			</Property>
+			<Property name="SuppressWarnings" type="bool" defaultvalue="False" display= "Disable warnings">
+				<HelpText>Disable warnings related to mod compatibility.</HelpText>
+			</Property>
 		</Group>
 		<Group name="Miscellaneous" display="2 - Miscellaneous">
+			<Property name="RestoreYButton" type="bool" defaultvalue="True" display="Restore Y button">
+				<HelpText>Use the Y button for actions like on DC (only works outside the Chao Gardens).</HelpText>
+			</Property>
 			<Property name="Use1999SetFiles" type="SETFiles" defaultvalue="0" display="SET and camera layouts">
 				<HelpText>Use unaltered layouts from the Dreamcast game. Incompatible with Mission Mode!</HelpText>
 			</Property>
 			<Property name="EnableWhiteDiffuse" type="bool" defaultvalue="True" display="Enable white diffuse">
 				<HelpText>White diffuse is a side effect (or a bug) of the Dreamcast version's lighting system that makes some things appear brighter. Enable to recreate the DC look.</HelpText>
+			</Property>
+			<Property name="FixHeldObjects" type="bool" defaultvalue="True" display="Fix held objects">
+				<HelpText>Improve collision and fix various issues with throwable objects (experimental).</HelpText>
 			</Property>
 			<Property name="EnableLSDFix" type="bool" defaultvalue="False" display="Light Speed Dash distance hack">
 				<HelpText>Make Sonic travel farther (like on the Dreamcast) when using the Light Speed Dash. This is required for compatibility with original Dreamcast SET files.</HelpText>
@@ -65,7 +74,7 @@
 		</Group>
 		<Group name="Branding" display="3 - Branding">
 			<Property name="RestoreDemos" type="Demos" defaultvalue="3" display= "Restore gameplay demos">
-				<HelpText>Restore gameplay shown after waiting on the title screen (experimental). May not work with some mods.</HelpText>
+				<HelpText>Restore gameplay shown after waiting on the title screen (experimental).</HelpText>
 			</Property>
 			<Property name="RemoveCream" type="bool" defaultvalue="True" display= "Disable Cream cameos">
 				<HelpText>Disable Cream cameos in Station Square.</HelpText>

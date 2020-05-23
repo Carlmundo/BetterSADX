@@ -30,6 +30,7 @@ http://www.moddb.com/mods/sadx-dreamcast-conversion/news/dreamcast-exclusive-dlc
 
 Changelog
 
+1.1019 - Replaced the "SEGA voice language" option with a "SEGA voice" toggle (off by default)
 1.1018 - small update to hide the non-HD timer when subtitles are displayed
 1.1017 - added Narrator and True Random menu voice options, replaced Kadomatsu and Christmas 98 BGMs with digital captures from a real Dreamcast (thanks Alex/TheLegendOfXela!)
 1.1015 - added the recently rediscovered Kadomatsu DLC

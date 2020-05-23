@@ -6,6 +6,7 @@ This mod will look best if the game's rendering resolution and window size match
 
 Version history
 
+0.910 - Added Spanish tutorial messages by kawaiikaorichan
 0.909 - Added a workaround for translation mods that use a non-standard codepage
 0.908 - Minor bugfixes for the title screen
 0.907 - Added HD SADX title screen
@@ -86,6 +87,7 @@ Windii - all Japanese language assets
 Sonikko - File and character select background, level title cards, Sky Chase reticle, character recap screens, Mission start/finish graphics, Tails race icons, life icons, text, random ring icons, various texture edits
 McAleeCh - mission objective text layout improvements
 The7hrone & Sonikko - Sonic render edit for the title screen
+kawaiikaorichan - Spanish assets
 PkR - everything else
 
 The mod replaces the following graphics:
@@ -138,9 +140,7 @@ MISCELLANEOUS
 -Mission Mode tutorial backgrounds
 
 THINGS THIS MOD DOESN'T REPLACE (yet)
--Any assets in languages other than English or Japanese
+-Assets in languages other than English or Japanese (work in progress)
 -Japanese subtitle font
 -Chao menus, fonts and GUI
 -Mini Game Collection menus
-
--PkR
