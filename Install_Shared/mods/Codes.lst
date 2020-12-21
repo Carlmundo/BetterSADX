@@ -18,6 +18,9 @@ write8 03B0EF48 99
 write8 03B0F128 59
 write8 03B0EF35 59
 
+Code "Infinite Rod Tension"
+writefloat 3C5252C 0
+
 Code "Max Enemy Bonus"
 write32 03B0F104 99999999
 
@@ -45,7 +48,7 @@ Code "Have All Upgrades"
 or16 p03B42E30|20|C0|4 0x7FFF
 
 Patch "Disable Music"
-write8 00425690 0xC3
+write8 0091268C 0
 
 Patch "Disable Voices"
 write8 00425710 0xC3

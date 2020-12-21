@@ -1,48 +1,92 @@
-Dreamcast DLCs by PkR
+Dreamcast DLC mod by PkR
 
-Credits: SonicFreak94 for the SEGA voice code, sonicblur for the tool to decrypt VMS files, Moopthehedgehog for Kadomatsu DLC, TheLegendOfXela for high quality music rips
+==DESCRIPTION==
+This mod brings the following Sonic Adventure downloadable content to the PC version:
 
-This mod is a unified version of Dreamcast DLC mods released previously, which makes use of the latest Mod Loader functionality to make the experience as customizable as possible. You can force the mod to load a certain DLC, or make it random, or even make it load a different DLC every month! Check the mod's configuration in SADX Mod Manager for more details.
+-Samba Grand Prix
+-Y2K Millenium Celebration
+-Famitsu Hide-and-Seek challenge
+-QUO card challenge
+-Dreamcast Launch Party (all regions)
+-AT&T challenges for Sonic, Tails and Knuckles
+-Reebok DMX challenge
+-Halloween event
+-Christmas 1998
+-Christmas 1999
+-New Year 1999 (Kadomatsu)
+-Tikal's challenge (custom DLC content created in September 2020)
 
-In the original game and older DLC mods certain DLCs could interfere with the flow of the story - e.g. the Christmas tree from the 1999 DLC would block the card needed to enter Speed Highway as Sonic. To avoid issues with the story, this mod does the following:
+You can make the mod load a certain DLC at all times, or make it load a random DLC every time the game starts, or even make it load a different DLC every month! Check the mod's configuration in SADX Mod Manager for more details. You can also select a specific character voice to be used in menus, like with Dreamcast character voice packs.
 
-1) When playing as Sonic, one of the Christmas trees doesn't spawn if Speed Highway is not cleared
-2) The Reebok DLC doesn't load if Emerald Coast isn't cleared
-3) The AT&T challenge for Sonic doesn't load if Speed Highway is open but not cleared
-4) The Kadomatsu DLC includes two extra decorations in the Casinopolis area that don't exist in the actual DLC
+==CREDITS==
+-SonicFreak94 for the code to play the SEGA/Sonic Team voice
+-Darksecond for figuring out SA1 DLC and rank data encryption and posting it on ASSEMbler
+-Sappharad for providing C# code to decrypt SA1 DLCs and for cracking the integrity check
+-Daguar for giving me a hint on where to look for DLC item table
+-Exant for making a lightweight "sitting Chao" model for the Tikal DLC
+-Moopthehedgehog for the rediscovered Kadomatsu DLC
+-TheLegendOfXela for high quality music and sound rips
+-LastBreath for beta testing
 
-The mod brings the following Sonic Adventure downloadable events and features to the PC version:
-Samba Grand Prix 
-Y2K Millenium Celebration
-Famitsu Hide-and-Seek challenge (translated by PkR)
-QUO card challenge (translated by PkR)
-Dreamcast Launch Party (all regions, English only)
-AT&T challenges for Sonic, Tails and Knuckles
-Reebok DMX challenge
-Halloween event
-Christmas 1998
-Christmas 1999
-New Year 1999 (Kadomatsu)
-You can also force a specific character to voice all menus like on the Dreamcast
+==CHANGES FROM THE OLD DREAMCAST DLCS MOD==
+-The mod has been rewritten from scratch to work more like the original game's DLC system
+-Text strings in all languages used in original DLC content have been preserved
+-DLC content can now load in Adventure, Trial or Mission Mode
+-Added Tikal's challenge
+-Lighting accuracy updates
+-Custom codepage support: add system\dlc\codepage.ini with "FrenchCodepage=...." etc. to make French, Spanish or German strings use a codepage other than 1252
+-Famitsu and QUO challenges no longer replace Station Square camera files with their counterparts from the original 1998 release of SA1
+-Twinkle Circuit options for characters have been removed - you can now use the "Mercury GP" menu to go to any course with any character
+-The "Alternative challenge timer GUI" option has been removed in favor of a more accurate SA1-like timer
+-Seasonal DLC options have been rearranged
+-Workarounds from the old mod to prevent DLC content from interfering with story progression have not been reimplemented
 
-For more information about the DLCs read the following article:
-http://www.moddb.com/mods/sadx-dreamcast-conversion/news/dreamcast-exclusive-dlcs-now-playable-in-sadx-pc
+==USING THE MOD TO DEVELOP DREAMCAST DLC==
+This mod uses DLC data that is compatible with DLC Tool in SA Tools. You can take any folder* from system\dlc and create a VMS file that will work on the Dreamcast version of SA1. You can edit the files in those folders or change files.ini in system\dlc to load DLC content from a different folder. Use the TestSpawn mod to test object placement. Set the "Disable during story" option to false in the mod config if you use Test Spawn.
+*Some challenges, such as AT&T, might not work after rebuilding them for the DC version, I haven't figured out why yet.
 
-Changelog
+==DIFFERENCES FROM THE DREAMCAST VERSION==
+General differences:
+-Save functionality is not available
+-The timer becomes semi-transparent when subtitles are displayed
+-Sound assets stored in MLT files had to be converted to ADX files or DAT soundbanks to work with SADXPC
+-Music changes persist across different acts
+-Some DLC folders include the file "renderinfo.ini" to tell the game which functions to use to render models
+-The mod detects whether you're playing with Dreamcast Conversion or not, and adjusts some SADX assets to make them compatible with DLC content
 
-1.1019 - Replaced the "SEGA voice language" option with a "SEGA voice" toggle (off by default)
-1.1018 - small update to hide the non-HD timer when subtitles are displayed
-1.1017 - added Narrator and True Random menu voice options, replaced Kadomatsu and Christmas 98 BGMs with digital captures from a real Dreamcast (thanks Alex/TheLegendOfXela!)
-1.1015 - added the recently rediscovered Kadomatsu DLC
-1.1014 - added a new default challenge timer based on the debug font (like in SA1)
-1.1013 - the mod now detects SADX Station Square and adjusts DLC content automatically, minor code optimizations
-1.1008 - updated version number for compatibility with automatic builds
-1.0008 - merged GerbilSoft's code optimizations
-1.0007 - added a warning message if old individual DLC mods are detected
-1.0006 - the "Disable during story" option is now on by default
-1.0005 - merged the "Enable SEGA voice" and SEGA voice language settings
-1.0004 - added a toggle to disable DLC content for current character if his/her story isn't complete
-1.0003 - added US/International DC camera for Station Square for better compatibility with Dreamcast Conversion
-1.0002 - fixed Y2K posters and default Samba GP options
-1.0001 - initial release, changed the 1999 Christmas tree to spawn only if Speed Highway is cleared
-1.0000 - initial beta
+Samba GP:
+-Fixed a typo in one of text strings
+-Super Sonic racing plays for all characters, not just Sonic
+-Added an optional "Mercury GP" menu to make it possible to play through all Twinkle Circuit tracks (course names other than Samba GP are unofficial)
+-Added an option to play Super Sonic Racing for all Twinkle Circuit tracks
+-Quitting the track brings you back to Station Square, while in the original game it takes you to the title screen
+
+Famitsu challenge:
+-Translated strings
+
+QUO challenge:
+-Sound converted to a DAT soundbank
+-Translated strings
+
+Reebok challenge:
+-Edited model to make it render better in SADX
+
+Tikal's challenge:
+-Updated object placement for posters in Station Square
+
+XMAS98:
+-Edited model to make it render better in SADX
+-Music converted to ADX
+-Translated strings
+
+XMAS99:
+-Edited model to make it render better in SADX
+-The tree in the City Hall area plays NIGHTS_S instead of NIGHTS_A
+
+Kadomatsu:
+-Converted music to ADX
+-Translated strings
+-Added two decorations to Casino area
+
+Y2K:
+-Edited model to make it render better in SADX

@@ -6,7 +6,7 @@
 				<HelpText>Some objects and animations in SADX weren't adjusted for 60 FPS, these fixes correct them. Disable for a more vanilla-like SADX experience.</HelpText>
 			</Property>
 			<Property name="EnableDreamcastWaterRipple" type="bool" defaultvalue="True" display= "Restore the SA1 water ripple">
-				<HelpText>Enable the water ripple model from the Dreamcast version. Scroll down to the Branding section for the title screen ripple effect.</HelpText>
+				<HelpText>Enable the ingame water ripple model from the Dreamcast version.</HelpText>
 			</Property>
 			<Property name="RestoreHumpAnimations" type="bool" defaultvalue="True" display= "Item hold animations + animation fixes">
 				<HelpText>Restore item hold animations (like in SA1 JP) and fix various animation errors.</HelpText>
@@ -49,6 +49,9 @@
 			<Property name="RestoreYButton" type="bool" defaultvalue="True" display="Restore Y button">
 				<HelpText>Use the Y button for actions like on DC (only works outside the Chao Gardens).</HelpText>
 			</Property>
+			<Property name="BigBeltFix" type="bool" defaultvalue="False" display="Big belt fix">
+				<HelpText>Partial fix for a transparency issue with Big's belt (experimental).</HelpText>
+			</Property>
 			<Property name="Use1999SetFiles" type="SETFiles" defaultvalue="0" display="SET and camera layouts">
 				<HelpText>Use unaltered layouts from the Dreamcast game. Incompatible with Mission Mode!</HelpText>
 			</Property>
@@ -80,20 +83,11 @@
 				<HelpText>Disable Cream cameos in Station Square.</HelpText>
 			</Property>
 			<Property name="DisableSA1TitleScreen" type="bool" defaultvalue="False" display= "Disable the SA1 title screen">
-				<HelpText>Restore the original SADX title screen but keep other improvements from DC Branding.</HelpText>
+				<HelpText>Keep the original SADX title screen but add other improvements from DC Branding.</HelpText>
 			</Property>	
 			<Property name="SA1LogoMode" type="SA1LogoModes" defaultvalue="0" display= "Title screen layout">
-				<HelpText>Select how the logo should be positioned on the title screen.</HelpText>
-			</Property>	
-			<Property name="RippleEffect" type="bool" defaultvalue="True" display= "Enable title screen ripple effect">
-				<HelpText>Enable the ripple effect on the title screen.</HelpText>
-			</Property>	
-			<Property name="DrawOverlay" type="bool" defaultvalue="True" display= "Draw title screen overlay">
-				<HelpText>Draw a highlight overlay on top of the SA1 logo like in SA International.</HelpText>
+				<HelpText>Select which version of SA1 to imitate on the title screen.</HelpText>
 			</Property>
-			<Property name="EnableTransition" type="bool" defaultvalue="True" display= "Enable title screen zoom effect">
-				<HelpText>Enable the logo zoom-in transition when you press Start.</HelpText>
-			</Property>	
 			<Property name="HUDTweak" type="bool" defaultvalue="True" display= "Adjust HUD position">
 				<HelpText>Adjust the life icon's position to be more like SA1.</HelpText>
 			</Property>
@@ -112,11 +106,17 @@
 			<Property name="RemoveGameGearGames" type="bool" defaultvalue="False" display= "Remove Mini Game Collection">
 				<HelpText>Remove 'Mini Game Collection' from the list of options in the main menu.</HelpText>
 			</Property>
+			<Property name="RemoveMissionMode" type="bool" defaultvalue="False" display= "Replace Mission with Internet">
+				<HelpText>Replace Mission Mode with the Internet demo from SA1 Limited Edition.</HelpText>
+			</Property>
 			<Property name="RemoveMarketRingCount" type="bool" defaultvalue="False" display= "Remove market ring count display">
 				<HelpText>Don't display Black Market ring count after beating a stage.</HelpText>
 			</Property>
 			<Property name="RemoveUnlockMessage" type="bool" defaultvalue="False" display= "Remove 'unlocked' messages">
 				<HelpText>Don't display 'unlocked' messages for Game Gear games and Metal Sonic.</HelpText>
+			</Property>
+			<Property name="DrawNowSaving" type="bool" defaultvalue="True" display= "Draw 'Now saving'">
+				<HelpText>Display the 'Now saving' text when the game is being saved.</HelpText>
 			</Property>
 		</Group>
 		<Group name="Videos" display="4 - Videos">
@@ -222,9 +222,10 @@
 			<EnumMember name="2" display="Unskippable (default SA1)"></EnumMember>
 		</Enum>
 		<Enum name="SA1LogoModes">
-			<EnumMember name="0" display="Logo on top, no subtitle (US new/PAL)"></EnumMember>
-			<EnumMember name="2" display="Logo in the middle, no subtitle (US old)"></EnumMember>
-			<EnumMember name="1" display="SA International"></EnumMember>
+			<EnumMember name="0" display="EU/US animated"></EnumMember>
+			<EnumMember name="2" display="JP/US static"></EnumMember>
+			<EnumMember name="1" display="International"></EnumMember>
+			<EnumMember name="3" display="Limited"></EnumMember>
 		</Enum>
 		<Enum name="ChaoFruits">
 			<EnumMember name="0" display="Common fruits"></EnumMember>

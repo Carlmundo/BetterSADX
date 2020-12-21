@@ -6,6 +6,15 @@ This mod will look best if the game's rendering resolution and window size match
 
 Version history
 
+0.923 - Switch to texlist replacements instead of ResizeTextureList, this should improve stability on some systems
+0.922 - Removed Chao Race HUD scaling fix in favor of another fix in the Mod Loader
+0.921 - Fixed Japanese text being offset on the recap screen at some resolutions
+0.920 - Reworked some subtitle-related code for better compatibility
+0.919 - Compatibility update for DC Conversion
+0.918 - Added "Internet" menu item for compatibility with DC Conversion
+0.917 - Scaling fixes for mission tutorial text
+0.916 - Minor texture edits for Spanish tutorials by kawaiikaorichan
+0.915 - Support for Japanese subtitles/recap screen text, HD mission tutorial text
 0.910 - Added Spanish tutorial messages by kawaiikaorichan
 0.909 - Added a workaround for translation mods that use a non-standard codepage
 0.908 - Minor bugfixes for the title screen
@@ -55,29 +64,29 @@ Version history
 0.834 - Sonikko contributions: added the Mystic Ruins titlecard, updated Station Square and Egg Carrier titlecards, added Sky Chase reticle
 0.833 - Sonikko contributions: added Station Square and Egg Carrier titlecards
 0.832 - Sonikko contributions: added Action Stage and subgame titlecards
-0.831 - tweaked various menu shadows
+0.831 - Tweaked various menu shadows
 0.830 - Sonikko contributions: added a high-resolution file/character select background, minor texture fixes
-0.829 - added unmirrored common switch model for compatibility with DC General
-0.828 - added unmirrored dash pad texture/model for compatibility with DC General
-0.827 - another compatibility update
-0.826 - compatibility update for DC General's water ripple
-0.825 - added Mission Mode status screen by SPEEPSHighway
-0.821 - updated Sky Chase score HUD to work with the alpha rejection patch in DC mods
+0.829 - Added unmirrored common switch model for compatibility with DC General
+0.828 - Added unmirrored dash pad texture/model for compatibility with DC General
+0.827 - Another compatibility update
+0.826 - Compatibility update for DC General's water ripple
+0.825 - Added Mission Mode status screen by SPEEPSHighway
+0.821 - Updated Sky Chase score HUD to work with the alpha rejection patch in DC mods
 0.820 - SPEEPSHighway contributions: updated HUD numbers and added Mission Mode tutorial backgrounds
 0.814 - SPEEPSHighway contributions: updated character and item capsule icons
-0.813 - removed SHOOTING1 and SHOOTING2 PVMs from the mod because they aren't actually needed
+0.813 - Removed SHOOTING1 and SHOOTING2 PVMs from the mod because they aren't actually needed
 0.812 - SPEEPSHighway contributions: updated Chaos and Tornado life gauges
 0.811 - SPEEPSHighway contributions: updated the PressStartButton texture and character banners
-0.810 - updated the PressStartButton texture shown during demos
-0.809 - removed the Mod Loader warning and added information on a known issue
-0.808 - minor improvements for SADX menu background and level names
-0.807 - added SADX main menu background (loads if DC Branding is disabled)
-0.806 - implemented a workaround for scaling artifacts with Big's fishing rod and character select stuff at 16:9
-0.805 - added Metal Sonic-related assets
-0.804 - updated description/changelog
-0.803 - fixed textures on checkpoints and various other objects
-0.802 - minor changes to option icons
-0.801 - initial release
+0.810 - Updated the PressStartButton texture shown during demos
+0.809 - Removed the Mod Loader warning and added information on a known issue
+0.808 - Minor improvements for SADX menu background and level names
+0.807 - Added SADX main menu background (loads if DC Branding is disabled)
+0.806 - Implemented a workaround for scaling artifacts with Big's fishing rod and character select stuff at 16:9
+0.805 - Added Metal Sonic-related assets
+0.804 - Updated description/changelog
+0.803 - Fixed textures on checkpoints and various other objects
+0.802 - Minor changes to option icons
+0.801 - Initial release
 
 Credits:
 Dark Sonic - character and item capsule icons, Tails' race icons
@@ -125,8 +134,8 @@ HUD
 -Various miscellaneous items, such as the "BALLS" text in Casino
 
 MISCELLANEOUS
--Subtitles (except Japanese)
--Character recap screen (except Japanese)
+-Subtitles
+-Character recap screen
 -Scoreboard background and all scoreboard text and icons, including bosses, Sky Chase, Hedgehog Hammer and Twinkle Circuit
 -Pause menu items, including button rectangle
 -The font used for boss names (thanks SteG for helping me improve it)
@@ -141,6 +150,5 @@ MISCELLANEOUS
 
 THINGS THIS MOD DOESN'T REPLACE (yet)
 -Assets in languages other than English or Japanese (work in progress)
--Japanese subtitle font
 -Chao menus, fonts and GUI
 -Mini Game Collection menus

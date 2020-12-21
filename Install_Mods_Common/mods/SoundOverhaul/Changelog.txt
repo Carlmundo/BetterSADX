@@ -1,8 +1,7 @@
 Sound Overhaul 3 mod by PkR
 
 Bug reports: https://github.com/PiKeyAr/sadx-sound-overhaul/issues
-Developer's Twitter: https://twitter.com/pkr_sadx
-SADX Mod Installer: http://www.moddb.com/mods/sadx-dreamcast-conversion/news/new-mod-installer-now-available1
+SADX Mod Installer: https://sadxmodinstaller.unreliable.network
 Soundbank tools: https://dcmods.unreliable.network/owncloud/data/PiKeyAr/files/Various/SoundOverhaul_tools.7z
 DirectSound wrapper: https://dcmods.unreliable.network/owncloud/data/PiKeyAr/files/Various/dsound.7z
 
@@ -11,6 +10,9 @@ Note: This mod requires a DirectSound wrapper (see link above), which fixes volu
 Special thanks to Alex/TheLegendOfXela for providing digital sound rips from a real Dreamcast.
 
 Changelog:
+
+Update 15/08/2020
+Made MR base background beeps repeat only once
 
 Update 27/03/2020
 Added an option to replace Chao sound effects (CHAO_EFX_BANK01 soundbank + restored race jingles)

@@ -31,6 +31,6 @@ E-101 MK2 0x4231CD
 Sky Chase 0x4236B1 and 0x4236E0
 Sand Hill 0x42370F
 Twinkle Circuit 0x4235EC
-Chao Gardens 0x423795
+Chao Gardens and Chao Race 0x423795
 
 Note that PVM, SET and other file replacements are currently still executed at mod startup, so you may need to replace files with the _DC suffix in addition to ordinary SADX files in your mod (e.g. replace SET0100S_DC.BIN in addition to SET0100S.BIN).
