@@ -1,5 +1,5 @@
 #define AppName "BetterSADX"
-#define AppVersion "4.4.6"
+#define AppVersion "4.4.7"
 #define Game "Sonic Adventure DX"
 [Setup]
 ; NOTE: The value of AppId uniquely identifies this application.
@@ -69,7 +69,7 @@ begin
     else if RegQueryStringValue(HKLM64, 'SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Steam App 71250',
      'InstallLocation', InstalledDir) then
     begin
-    end
+    end;
     Result := InstalledDir;    
 end;
 
@@ -84,7 +84,7 @@ begin
         MsgBox('The BetterSADX patch installer was unable to locate your Steam copy of Sonic Adventure DX. Please uninstall the game and redownload it through your Steam client and try again. If this issue persists, report it in the discussions section in the BetterSADX steam group.', mbError, MB_OK);
         Result := False;
         exit;
-    end
+    end;
     if (PageId = wpSelectDir) and (not FileExists(ExpandConstant('{app}\SoundData\VOICE_US\wma\0000.adx')) and not FileExists(ExpandConstant('{app}\system\sounddata\VOICE_US\wma\0000.adx')))
     then
     begin
@@ -166,26 +166,21 @@ begin
       ProgressPage.SetText('Copying Save data...', '');
       ProgressPage.SetProgress(90, 100);
       
-      If (not DirExists(ExpandConstant('{app}\savedata\')))
-      Then
-      begin
-      If (DirExists(ExpandConstant('{userdocs}\SEGA\Sonic Adventure DX\savedata\')))
-      Then
-      begin
-      CreateDir(ExpandConstant('{app}\savedata\'));
-      FileCopy(ExpandConstant('{userdocs}\SEGA\Sonic Adventure DX\SAVEDATA\SonicAdventureChaoGarden.snc'),ExpandConstant('{app}\savedata\SONICADVENTURE_DX_CHAOGARDEN.snc'),True);     
-      Exec(ExpandConstant('{app}\SADXSteamSaveConverter.exe'), '', '', SW_HIDE, ewWaitUntilTerminated, ErrorCode);
-      DeleteFile(ExpandConstant('{app}\SADXSteamSaveConverter.exe'));
-       
-      end      
-      end
+      If (not DirExists(ExpandConstant('{app}\savedata\'))) Then begin
+        If (DirExists(ExpandConstant('{userdocs}\SEGA\Sonic Adventure DX\savedata\'))) Then begin
+          CreateDir(ExpandConstant('{app}\savedata\'));
+          FileCopy(ExpandConstant('{userdocs}\SEGA\Sonic Adventure DX\SAVEDATA\SonicAdventureChaoGarden.snc'),ExpandConstant('{app}\savedata\SONICADVENTURE_DX_CHAOGARDEN.snc'),True);     
+          Exec(ExpandConstant('{app}\SADXSteamSaveConverter.exe'), '', '', SW_HIDE, ewWaitUntilTerminated, ErrorCode);
+          DeleteFile(ExpandConstant('{app}\SADXSteamSaveConverter.exe'));     
+        end      
+      end;
 
       if IsComponentSelected('standard') or IsComponentSelected('full') then
       begin
         res_x := GetSystemMetrics(SM_CXSCREEN);
         res_y := GetSystemMetrics(SM_CYSCREEN);
         SaveStringToFile(ExpandConstant('{app}\mods\SADXModLoader.ini'), #13#10 + 'HorizontalResolution=' + IntToStr(res_x) + #13#10 + 'VerticalResolution=' + IntToStr(res_y), True);
-      end
+      end;
 
       //End Post Install
       ProgressPage.Hide;
