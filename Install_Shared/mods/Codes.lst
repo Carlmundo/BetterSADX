@@ -103,7 +103,7 @@ ifmask32 03B0E9D0 0x20
 	divfloat 03B0F0FC 1.05
 endif
 
-Patch "Tails Can Play Emerald Coast"
+Patch "Tails Can Play Emerald Coast (BREAKS SAVE)"
 write8 004F6B02 0xEB
 
 Patch "Don't Lose Rings When Hit"
@@ -288,3 +288,10 @@ write8 00495BEB 146
 
 Patch "Metal Sonic Always Hovers"
 write8 00495BEB 146
+
+Patch "'?' Ring Box Always Gives 40 Rings"
+write8 007E6FE4 40
+write8 007E6FE6 40
+write8 007E6FE8 40
+write8 007E6FEA 40
+write8 007E6FEC 40
