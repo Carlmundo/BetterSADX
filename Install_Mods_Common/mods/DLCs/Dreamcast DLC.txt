@@ -14,24 +14,24 @@ This mod brings the following Sonic Adventure downloadable content to the PC ver
 -Christmas 1998
 -Christmas 1999
 -New Year 1999 (Kadomatsu)
--Tikal's challenge (custom DLC content created in September 2020)
+-Tikal's challenge (custom DLC created in September 2020)
 
 You can make the mod load a certain DLC at all times, or make it load a random DLC every time the game starts, or even make it load a different DLC every month! Check the mod's configuration in SADX Mod Manager for more details. You can also select a specific character voice to be used in menus, like with Dreamcast character voice packs.
 
 ==CREDITS==
 -SonicFreak94 for the code to play the SEGA/Sonic Team voice
 -Darksecond for figuring out SA1 DLC and rank data encryption and posting it on ASSEMbler
--Sappharad for providing C# code to decrypt SA1 DLCs and for cracking the integrity check
+-Sappharad for providing C# code to decrypt SA1 DLC and for cracking the integrity check
 -Daguar for giving me a hint on where to look for DLC item table
 -Exant for making a lightweight "sitting Chao" model for the Tikal DLC
 -Moopthehedgehog for the rediscovered Kadomatsu DLC
 -TheLegendOfXela for high quality music and sound rips
 -LastBreath for beta testing
 
-==CHANGES FROM THE OLD DREAMCAST DLCS MOD==
+==CHANGES FROM THE OLD DREAMCAST DLC MOD==
 -The mod has been rewritten from scratch to work more like the original game's DLC system
--Text strings in all languages used in original DLC content have been preserved
--DLC content can now load in Adventure, Trial or Mission Mode
+-Text strings in all languages used in original DLC have been preserved
+-DLC can now load in Adventure, Trial or Mission Mode
 -Added Tikal's challenge
 -Lighting accuracy updates
 -Custom codepage support: add system\dlc\codepage.ini with "FrenchCodepage=...." etc. to make French, Spanish or German strings use a codepage other than 1252
@@ -39,10 +39,10 @@ You can make the mod load a certain DLC at all times, or make it load a random D
 -Twinkle Circuit options for characters have been removed - you can now use the "Mercury GP" menu to go to any course with any character
 -The "Alternative challenge timer GUI" option has been removed in favor of a more accurate SA1-like timer
 -Seasonal DLC options have been rearranged
--Workarounds from the old mod to prevent DLC content from interfering with story progression have not been reimplemented
+-Workarounds from the old mod to prevent DLC from interfering with story progression have not been reimplemented
 
 ==USING THE MOD TO DEVELOP DREAMCAST DLC==
-This mod uses DLC data that is compatible with DLC Tool in SA Tools. You can take any folder* from system\dlc and create a VMS file that will work on the Dreamcast version of SA1. You can edit the files in those folders or change files.ini in system\dlc to load DLC content from a different folder. Use the TestSpawn mod to test object placement. Set the "Disable during story" option to false in the mod config if you use Test Spawn.
+This mod uses DLC data that is compatible with DLC Tool in SA Tools. You can take any folder* from system\dlc and create a VMS file that will work on the Dreamcast version of SA1. You can edit the files in those folders or change files.ini in system\dlc to load DLC from a different folder. Use the TestSpawn mod to test object placement. Set the "Disable during story" option to false in the mod config if you use Test Spawn.
 *Some challenges, such as AT&T, might not work after rebuilding them for the DC version, I haven't figured out why yet.
 
 ==DIFFERENCES FROM THE DREAMCAST VERSION==
@@ -52,7 +52,7 @@ General differences:
 -Sound assets stored in MLT files had to be converted to ADX files or DAT soundbanks to work with SADXPC
 -Music changes persist across different acts
 -Some DLC folders include the file "renderinfo.ini" to tell the game which functions to use to render models
--The mod detects whether you're playing with Dreamcast Conversion or not, and adjusts some SADX assets to make them compatible with DLC content
+-The mod detects whether you're playing with Dreamcast Conversion or not, and adjusts some SADX assets to make them compatible with DLC
 
 Samba GP:
 -Fixed a typo in one of text strings

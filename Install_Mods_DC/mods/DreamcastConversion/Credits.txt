@@ -31,3 +31,5 @@ GibHaltmannKill - provided a decompilation of the function for Chaos' bubble eff
 kawaiikaorichan - help with upscaled textures
 
 GerbilSoft - provided various code optimizations for several of my mods.
+
+Kell - recreated dynamic collision for Cowgirl's glass.

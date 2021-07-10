@@ -6,6 +6,11 @@ This mod will look best if the game's rendering resolution and window size match
 
 Version history
 
+0.930 - Added HD assets for Mini Game Collection (English only)
+0.927 - Compatibility with the Hill Top mod
+0.926 - Moved the "Original game" text in the SADX title screen farther to the right
+0.925 - Updated SADX title screen to make it possible to use more images for the Sonic render in custom title screens (if your mod changes AVA_TITLE_CMN_HD.PVMX you need to re-apply your edits to the new version of the PVMX)
+0.924 - Updated boss font
 0.923 - Switch to texlist replacements instead of ResizeTextureList, this should improve stability on some systems
 0.922 - Removed Chao Race HUD scaling fix in favor of another fix in the Mod Loader
 0.921 - Fixed Japanese text being offset on the recap screen at some resolutions
@@ -151,4 +156,4 @@ MISCELLANEOUS
 THINGS THIS MOD DOESN'T REPLACE (yet)
 -Assets in languages other than English or Japanese (work in progress)
 -Chao menus, fonts and GUI
--Mini Game Collection menus
+-Mini Game Collection menus in languages other than English

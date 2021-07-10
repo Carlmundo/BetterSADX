@@ -159,11 +159,6 @@ extern "C"
 	API void set_shader_flags(uint32_t flags, bool add);
 
 	/**
-	 * \brief Enables or disables specular lighting for landtables (stage geometry).
-	 */
-	API void allow_landtable_specular(bool allow);
-
-	/**
 	 * \brief Enables or disables vertex colors for "objects" (characters, enemies, etc)
 	 */
 	API void allow_object_vcolor(bool allow);
@@ -201,11 +196,11 @@ extern "C"
 	 */
 	API void diffuse_override(bool enable);
 	/**
-	 * \brief Sets the shader input diffuse override color.
-	 * This replaces the input material and/or vertex color unconditionally.
+	 * \brief Temporarily (optionally permanently) sets the shader input diffuse override color.
+	 * This replaces the input material and/or vertex color.
 	 * \sa diffuse_override
 	 */
-	API void diffuse_override_rgb(float r, float g, float b);
+	API void diffuse_override_rgb(float r, float g, float b, bool permanent);
 
 	/**
 	 * \brief Gets the currently set diffuse index.
@@ -336,6 +331,38 @@ extern "C"
 	 * \param v Pointer to a vector representing the light's direction.
 	 */
 	API void set_light_direction(const NJS_VECTOR* v);
+
+	/**
+	* \brief Fills a specified palette with a single color.
+	* \param index Palette ID.
+	* \param r Red (0-255).
+	* \param g Green (0-255).
+	* \param n Blue (0-255).
+	* \param specular False to replace a diffuse palette, true to replace a specular palette.
+	* \param apply Apply changes by regenerating the palette attlas.
+	*/
+	API void palette_from_rgb(int index, Uint8 r, Uint8 g, Uint8 b, bool specular, bool apply);
+
+	/**
+	* \brief Fills a specified palette with colors from an array.
+	* \param index Palette ID.
+	* \param colors Pointer to an array of NJS_ARGB (256).	
+	* \param specular False to replace a diffuse palette, true to replace a specular palette.
+	* \param apply Apply changes by regenerating the palette attlas.
+	*/
+	API void palette_from_array(int index, NJS_ARGB* colors, bool specular, bool apply);
+
+	/**
+	* \brief Creates a palette by mixing colors from an existing palette with a specified color.
+	* \param index Palette ID to create.
+	* \param index_source Source palette ID.
+	* \param r Red component to mix (0-255).
+	* \param g Green component to mix (0-255).
+	* \param b Blue component to mix (0-255).
+	* \param specular False to replace a diffuse palette, true to replace a specular palette.
+	* \param apply Apply changes by regenerating the palette attlas.
+	*/
+	API void palette_from_mix(int index, int index_source, Uint8 r, Uint8 g, Uint8 b, bool specular, bool apply);
 
 #ifdef __cplusplus
 }

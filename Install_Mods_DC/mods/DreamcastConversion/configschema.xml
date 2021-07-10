@@ -49,8 +49,8 @@
 			<Property name="RestoreYButton" type="bool" defaultvalue="True" display="Restore Y button">
 				<HelpText>Use the Y button for actions like on DC (only works outside the Chao Gardens).</HelpText>
 			</Property>
-			<Property name="BigBeltFix" type="bool" defaultvalue="False" display="Big belt fix">
-				<HelpText>Partial fix for a transparency issue with Big's belt (experimental).</HelpText>
+			<Property name="BigBeltFix" type="bool" defaultvalue="True" display="Big belt fix">
+				<HelpText>Partial fix for a transparency issue with Big's belt.</HelpText>
 			</Property>
 			<Property name="Use1999SetFiles" type="SETFiles" defaultvalue="0" display="SET and camera layouts">
 				<HelpText>Use unaltered layouts from the Dreamcast game. Incompatible with Mission Mode!</HelpText>
