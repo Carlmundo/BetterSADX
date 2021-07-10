@@ -1,5 +1,5 @@
 #define AppName "BetterSADX"
-#define AppVersion "4.4.7"
+#define AppVersion "4.4.8"
 #define Game "Sonic Adventure DX"
 [Setup]
 ; NOTE: The value of AppId uniquely identifies this application.
@@ -22,8 +22,8 @@ WizardImageFile=SADX_Large.bmp
 WizardImageStretch=no
 WizardSmallImageFile=SADX_small.bmp
 ;SetupLogging=yes
-Compression=lzma
-SolidCompression=yes
+;Compression=lzma
+;SolidCompression=yes
 Uninstallable=no
 PrivilegesRequired=admin
 
@@ -35,7 +35,6 @@ Name: "standard"; Description: "Enhanced Director's Cut Experience"
 Name: "base"; Description: "Minimum required files"; Types: full standard; Flags: fixed
 Name: "standard"; Description: "Major Improvements"; Types: standard; Flags: fixed
 Name: "full"; Description: "Dreamcast Conversion"; Types: full; Flags: fixed
-
 
 [Code]
 //Use SystemMetrics to get resolution
@@ -159,7 +158,6 @@ begin
       //Add DEP exemption entry
       ProgressPage.SetText('Adding DEP exception...', '');
       ProgressPage.SetProgress(75, 100);
-      
       Exec('rundll32.exe', ExpandConstant('sysdm.cpl, NoExecuteAddFileOptOutList "{app}\sonic.exe"'), '', SW_SHOW, ewNoWait, ErrorCode);
     
       //Copy Save Data
@@ -340,7 +338,6 @@ Type: files; Name: "{app}\system\ava_tool_tips.pvm"
 ;Remove for non-Dreamcast installs. Other installs will re-add this.
 Type: files; Name: "{app}\d3d8.dll"
 
-
 [Files]
 ; Files
 Source: ".\Install_Steam\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: base
@@ -352,6 +349,10 @@ Source: ".\Install_Mods_DC\*"; DestDir: "{app}"; Flags: ignoreversion recursesub
 Source: ".\Config_Standard\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: standard
 Source: ".\Config_DC\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: full
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
+
+[Registry]
+Root: HKLM64; Subkey: "SOFTWARE\Microsoft\Windows NT\CurrentVersion\AppCompatFlags\Layers"; ValueType: string; ValueName: "{app}\sonic.exe"; ValueData: "HIGHDPIAWARE "; Check: IsWin64
+Root: HKLM32; Subkey: "SOFTWARE\Microsoft\Windows NT\CurrentVersion\AppCompatFlags\Layers"; ValueType: string; ValueName: "{app}\sonic.exe"; ValueData: "HIGHDPIAWARE "; Check: Not IsWin64
 
 [Run]
 Filename: "steam://openurl/https://steamcommunity.com/groups/BetterSADX"; Description: "Open BetterSADX Steam group"; Flags: shellexec runasoriginaluser postinstall nowait
