@@ -1,0 +1,10 @@
+1351,emerader0.png,64x64
+1352,emerader1.png,64x64
+1353,emerader2.png,64x64
+1354,emerader3.png,64x64
+1355,emerader4.png,64x64
+1356,emerader5.png,64x64
+1357,emerader6.png,64x64
+1358,emerader7.png,64x64
+1359,emerader8.png,64x64
+1350,emerader_n.png,64x64

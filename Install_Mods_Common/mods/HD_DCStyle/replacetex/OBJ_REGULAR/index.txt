@@ -1,0 +1,16 @@
+4000,1upknuck.png,64x64
+4001,1upamy.png,64x64
+4002,1upbig.png,64x64
+4003,1up102.png,64x64
+4004,1uptails.png,64x64
+4031,item_1up.png,64x64
+4032,item_ring10.png,64x64
+4033,item_ring5.png,64x64
+4034,item_ringq.png,64x64
+4035,item_speed.png,64x64
+4071,item_tbarria.png,64x64
+4072,item_nbarria.png,64x64
+4073,item_muteki.png,64x64
+4074,item_explosion.png,64x64
+3250000,item_ringnum.png,64x64
+710226,1upmetal.png,64x64

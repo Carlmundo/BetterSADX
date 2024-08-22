@@ -1,4 +1,18 @@
-You can prevent each level's code from running at all if you write 0x90 (5 bytes) to the addresses below. This will work regardless of mod order.
+==Making edits for Dreamcast Conversion levels==
+Make sure your SET file, PVM or texture pack has the _DC suffix (e.g. HIGHWAY01_DC.PVM) and load your mod after DC Conversion. SET file modifications will work if the "Optimized SET files" option is selected in Dreamcast Conversion options. They will not work with 1998/1999 SET files which use hardcoded paths.
+
+==Editing title screen and main menu textures==
+AVA_GTITLE0_DC_HD.PVMX in the textures folder contains title screen and main menu background assets for resolutions other than 640x480.
+AVA_GTITLE0_DC.PVM in the system folder contains title screen assets for 640x480.
+AVA_TITLE_BACK_DC.PVM in the system folder contains main menu backgrounds for 640x480.
+AVA_TITLE_BACK_DC.PVM is only used at 640x480 and only for title screens without ripples (JP/US static and Limited Edition).
+Animated title screens use AVA_GTITLE0_DC.PVM at 640x480 and AVA_GTITLE0_DC_HD.PVMX at other resolutions.
+
+==Checking which levels are enabled in DC Conversion==
+The mod exports a boolean array EnabledLevels, which can be used to check whether a specific level is enabled in the mod's configuration. There is also a boolean EnableDCTitleScreen, which is true when the Dreamcast title screen is enabled.
+
+==Disabling DC Conversion levels from other mods==
+You can also prevent each level's code from running at all if you write 0x90 (5 bytes) to the addresses below. This will work regardless of mod order.
 
 Station Square 0x4231E6
 Egg Carrier Exterior 0x4232C9
@@ -32,5 +46,3 @@ Sky Chase 0x4236B1 and 0x4236E0
 Sand Hill 0x42370F
 Twinkle Circuit 0x4235EC
 Chao Gardens and Chao Race 0x423795
-
-Note that PVM, SET and other file replacements are currently still executed at mod startup, so you may need to replace files with the _DC suffix in addition to ordinary SADX files in your mod (e.g. replace SET0100S_DC.BIN in addition to SET0100S.BIN).

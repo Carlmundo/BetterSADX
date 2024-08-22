@@ -33,3 +33,5 @@ kawaiikaorichan - help with upscaled textures
 GerbilSoft - provided various code optimizations for several of my mods.
 
 Kell - recreated dynamic collision for Cowgirl's glass.
+
+Exant - help with Chao stuff.

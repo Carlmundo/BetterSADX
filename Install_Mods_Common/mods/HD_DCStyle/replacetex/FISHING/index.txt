@@ -1,0 +1,6 @@
+361006,bighyouji.png,256x256
+361002,castgauge0.png,384x768
+361003,castgauge1.png,128x64
+361008,hit0.png,128x128
+361009,hit1.png,128x128
+361007,hyouji_g.png,64x64

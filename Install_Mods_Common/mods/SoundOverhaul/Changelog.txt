@@ -1,15 +1,36 @@
 Sound Overhaul 3 mod by PkR
 
-Bug reports: https://github.com/PiKeyAr/sadx-sound-overhaul/issues
-SADX Mod Installer: https://sadxmodinstaller.unreliable.network
-Soundbank tools: https://dcmods.unreliable.network/owncloud/data/PiKeyAr/files/Various/SoundOverhaul_tools.7z
-DirectSound wrapper: https://dcmods.unreliable.network/owncloud/data/PiKeyAr/files/Various/dsound.7z
+Bug reports: https://gitlab.com/PiKeyAr/sadx-sound-overhaul/issues
 
-Note: This mod requires a DirectSound wrapper (see link above), which fixes volume adjustment for 3D sounds. To install the wrapper, put dsound.dll and dsound.ini into the game's main folder (where sonic.exe is), or use SADX Mod Installer to set it up automatically.
-
-Special thanks to Alex/TheLegendOfXela for providing digital sound rips from a real Dreamcast.
+Special thanks to ReveriePass/TheLegendOfXela for providing digital sound rips from a real Dreamcast.
 
 Changelog:
+
+Update 10/09/2023
+Added a fix for Gamma's whistle sound
+
+Update 28/08/2023
+Removed old links, updated link to bug reports
+
+Update 20/12/2022
+Fixed dolphin sound
+
+Update 03/11/2022
+Fixed sound hooks not applying properly
+
+Update 29/10/2022
+Fixed Gamma's wheels squeak sound playing during cutscenes
+Optimized code
+Added mod category and mod ID
+
+Update 15/07/2022
+Included a note on 3D sounds
+
+Update 12/07/2022
+Compatibility with upcoming BASS SFX support in the Mod Loader
+
+Update 08/07/2022
+Compatibility with the latest Mod Loader update
 
 Update 15/08/2020
 Made MR base background beeps repeat only once

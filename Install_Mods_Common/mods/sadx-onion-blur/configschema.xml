@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ConfigSchema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.sonicretro.org">
+	<Groups>
+		<Group name="General">
+			<Property name="EnableSonic" type="bool" display="Enable Sonic" defaultvalue="True">
+				<HelpText>Enables Sonic's running and spindash blur.</HelpText>
+			</Property>
+			<Property name="EnableTails" type="bool" display="Enable Tails" defaultvalue="True">
+				<HelpText>Enables Tails' tail blur.</HelpText>
+			</Property>
+			<Property name="EnableKnuckles" type="bool" display="Enable Knuckles" defaultvalue="True">
+				<HelpText>Enables Knuckles' running blur.</HelpText>
+			</Property>
+		</Group>
+	</Groups>
+</ConfigSchema>

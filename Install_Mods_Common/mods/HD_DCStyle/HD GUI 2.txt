@@ -1,4 +1,4 @@
-HD GUI 2 mod by PkR, Dark Sonic, Sonikko & SPEEPSHighway
+HD GUI 2 mod by x-hax, Sonikko & Dark Sonic
 
 This mod provides high-resolution graphics for most ingame menus and GUI items. For use with 1280x720 or higher.
 
@@ -6,103 +6,389 @@ This mod will look best if the game's rendering resolution and window size match
 
 Version history
 
-0.930 - Added HD assets for Mini Game Collection (English only)
-0.927 - Compatibility with the Hill Top mod
-0.926 - Moved the "Original game" text in the SADX title screen farther to the right
-0.925 - Updated SADX title screen to make it possible to use more images for the Sonic render in custom title screens (if your mod changes AVA_TITLE_CMN_HD.PVMX you need to re-apply your edits to the new version of the PVMX)
-0.924 - Updated boss font
-0.923 - Switch to texlist replacements instead of ResizeTextureList, this should improve stability on some systems
-0.922 - Removed Chao Race HUD scaling fix in favor of another fix in the Mod Loader
-0.921 - Fixed Japanese text being offset on the recap screen at some resolutions
-0.920 - Reworked some subtitle-related code for better compatibility
-0.919 - Compatibility update for DC Conversion
-0.918 - Added "Internet" menu item for compatibility with DC Conversion
-0.917 - Scaling fixes for mission tutorial text
-0.916 - Minor texture edits for Spanish tutorials by kawaiikaorichan
-0.915 - Support for Japanese subtitles/recap screen text, HD mission tutorial text
-0.910 - Added Spanish tutorial messages by kawaiikaorichan
-0.909 - Added a workaround for translation mods that use a non-standard codepage
-0.908 - Minor bugfixes for the title screen
-0.907 - Added HD SADX title screen
-0.906 - Improved the look of the recap text when it fades out, disabled the "Now Saving" text function that was interfering with subtitles
-0.905 - Fixed an issue with displaying "... has been added to the list" after credits
-0.902 - Fixed subtitle text issues when Mod Loader UI scaling is turned off
-0.901 - Various tweaks for the subtitle/recap system, added configurable font shadow for subtitles/recap screens
-0.900 - Fixed recap screens containing text from previous recaps after switching characters
-0.899 - Fixed a crash in Sky Chase when Exit is selected in the pause menu
-0.898 - Minor letter layout fixes for subtitles, added more redirects for Japanese layout characters in English text
-0.896 - Improved subtitle spacing and fixed scaling/spacing of mission descriptions in the mission stat screen
-0.895 - Added scaling of the "Deteled" text on the file select screen
-0.894 - Added code fixes to scale Chao Race HUD (no HD textures yet)
-0.893 - Added HD subtitle and recap screen font for English, German, French and Spanish
-0.887 - Reorganized individual PVR file replacements for a cleaner mod layout, removed duplicate file replacements in code, optimized filesize for some PNG textures
-0.886 - Added Dreamcast tutorial layouts - if you use plugins for HD GUI, make sure those are updated as well
-0.885 - Updated pause textures for compatibility with a new Dreamcast Conversion update
-0.884 - Removed the background in all maps to make them look better in widescreen, added upscaled Japanese maps
-0.883 - Updated several symbols in the credits font
-0.882 - Updated life icons
-0.881 - Updated credits font
-0.880 - Added Dreamcast credit screenshots by SPEEPSHighway
-0.874 - Final attempt to fix the random ring icon
-0.873 - Double-checking if the random ring icon update was uploaded correctly
-0.872 - Fixed (again) random ring icon scaling at various resolutions and updated random ring icons
-0.871 - Fixed random ring icon scaling at various resolutions and updated random ring icons
-0.870 - Updated company logos used in credits
-0.869 - Added higher resolution company logos for credits, updated pause menu button text
-0.868 - Added support for the new pause box implementation in Dreamcast Conversion (update both mods)
-0.867 - Fixed a crash with Knuckles' French title cards (French is still not supported in HD GUI)
-0.866 - Added Japanese Goal Ring textures by SPEEPSHighway
-0.865 - Updated all PVR graphics with latest optimized versions
-0.864 - McAleeCh contributions: updated English level objective cards
-0.863 - Sonikko contributions: updated Tails race icons, life icons and Pause menu header, character recap update
-0.862 - Fixed an issue with the Goal Ring mod
-0.861 - Added a missing PNG file to prevent Sky Chase crashes
-0.860 - SPEEPSHighway contributions: added the majority of Japanese assets 
-0.843 - Fixed an issue with character recap screens not fading properly
-0.842 - Fixed a crash when opening the Mini Game Collection
-0.841 - Added upscaled Goal Ring mod textures
-0.840 - Switched to new Mod Loader functionality to help avoid mod compatibility issues
-0.839 - McAleeCh contributions: fixed several text issues in level objective cards
-0.837 - Updated the options screen with save icon arrow zoom animation
-0.836 - Sonikko contributions: updated the Options screen
-0.835 - Sonikko contributions: added Mission Mode start/end graphics and character recap screens
-0.834 - Sonikko contributions: added the Mystic Ruins titlecard, updated Station Square and Egg Carrier titlecards, added Sky Chase reticle
-0.833 - Sonikko contributions: added Station Square and Egg Carrier titlecards
-0.832 - Sonikko contributions: added Action Stage and subgame titlecards
-0.831 - Tweaked various menu shadows
-0.830 - Sonikko contributions: added a high-resolution file/character select background, minor texture fixes
-0.829 - Added unmirrored common switch model for compatibility with DC General
-0.828 - Added unmirrored dash pad texture/model for compatibility with DC General
-0.827 - Another compatibility update
-0.826 - Compatibility update for DC General's water ripple
-0.825 - Added Mission Mode status screen by SPEEPSHighway
-0.821 - Updated Sky Chase score HUD to work with the alpha rejection patch in DC mods
-0.820 - SPEEPSHighway contributions: updated HUD numbers and added Mission Mode tutorial backgrounds
-0.814 - SPEEPSHighway contributions: updated character and item capsule icons
-0.813 - Removed SHOOTING1 and SHOOTING2 PVMs from the mod because they aren't actually needed
-0.812 - SPEEPSHighway contributions: updated Chaos and Tornado life gauges
-0.811 - SPEEPSHighway contributions: updated the PressStartButton texture and character banners
-0.810 - Updated the PressStartButton texture shown during demos
-0.809 - Removed the Mod Loader warning and added information on a known issue
-0.808 - Minor improvements for SADX menu background and level names
-0.807 - Added SADX main menu background (loads if DC Branding is disabled)
-0.806 - Implemented a workaround for scaling artifacts with Big's fishing rod and character select stuff at 16:9
-0.805 - Added Metal Sonic-related assets
-0.804 - Updated description/changelog
-0.803 - Fixed textures on checkpoints and various other objects
-0.802 - Minor changes to option icons
-0.801 - Initial release
+0.964
+Added a workaround for line breaks on the Mission status screen
+
+0.963
+Added Japanese title screen support
+Added support for Korean subtitles
+HD subtitles can now be disabled via mod config
+
+0.962
+Added dimensions to CON_REGULAR and CON_REGULAR_E (fixed Game Over buttons in Japanese)
+
+0.961
+Optimized subtitle font loading code
+
+0.959
+Fixed credits images scale with DC Conversion disabled
+Replaced the hook used to load subtitles in Game Gear unlock prompts
+
+0.958
+The background in the mission stat screen now fills the entire screen
+
+0.957
+Updated Big's ring icon
+
+0.956
+Increased offset for Adventure Field ring count to further improve the black line issue
+
+0.955
+Added Mod Category and Mod ID
+
+0.954
+Updated the file icon animation in the Options menu
+
+0.953
+Updated texture packs and PVMX file to improve load times
+Fixed the black line appearing above the Adventure Field ring count
+
+0.952
+Updated a texture in CON_REGULAR for consistency
+
+0.951
+Various code fixes by Lumi:
+- Made Sonic and SADX logo move faster on the title screen
+- Fixed scaling for Japanese characters
+- Fixed spacing and line width calculation
+- Japanese characters are now correctly displayed in English and vice versa (except for a few hardcoded characters)
+- Fixed incorrectly displayed characters in Japanese mission tutorial
+
+0.950
+Added some hacks to make Japanese subtitles look better (experimental)
+
+0.949
+Removed some texture hooks for better compatibility with other mods
+
+0.948
+Updated the Mod Loader version check
+
+0.947
+Switched to individual texture replacement for the following PVMs:
+- AVA_VMSSEL
+- AVA_VMSSEL_E
+- EMBLEM
+- FISHING
+- KNU_EFF
+- OBJ_MINI_CART
+- OBJ_REGULAR
+- SHOOTING0
+As a result of the switch, the mod no longer replaces any models in the game
+
+0.946
+Major texture overhaul by Speeps:
+- Remade the HUD Time/Ring counter icons to be closer to the original graphics.
+- Fixed borders on French and Japanese mission cards for Tails' Speed Highway
+- Added outline to GAMEOVER button text to prevent blending around "Quit".
+- Renamed "Mini Game Collection" to "Game Gear Collection" to diffentiate it from "Mini Games" (ie. Sky Chase).
+- EN Title cards for Sky Chase etc. now say "Mini Game".
+- Made capitalization consistent in the pause menu ("Pad setup" -> "Pad Setup" etc.)
+- Changed Speed Shoes icon to a modified version of Tracker's.
+Artifacts removed:
+- Text in Options Menu
+- Character Select wheel names
+- Twinkle Circuit Lap cons
+- Stage objectives
+Font changed:
+- Main Menu
+- Emblem Result
+- Clear Tallies (all)
+- Trial menu stage stats
+- Sound Test main menu
+- Twinkle Circuit numbers (now the same as the regular HUD).
+
+0.936
+Fixed artifacts on the Station Square title card
+
+0.935 
+Added Name Machine and Black Market textures based on kesnos' and CheatFreak's textures
+
+0.932
+Added French level objective cards by kesnos
+
+0.930
+Added HD assets for Mini Game Collection (English only)
+
+0.927
+Compatibility with the Hill Top mod
+
+0.926
+Moved the "Original game" text in the SADX title screen farther to the right
+
+0.925
+Updated SADX title screen to make it possible to use more images for the Sonic render in custom title screens
+
+0.924
+Updated boss font
+
+0.923
+Switch to texlist replacements instead of ResizeTextureList, this should improve stability on some systems
+
+0.922
+Removed Chao Race HUD scaling fix in favor of another fix in the Mod Loader
+
+0.921
+Fixed Japanese text being offset on the recap screen at some resolutions
+
+0.920
+Reworked some subtitle-related code for better compatibility
+
+0.919
+Compatibility update for DC Conversion
+
+0.918
+Added "Internet" menu item for compatibility with DC Conversion
+
+0.917
+Scaling fixes for mission tutorial text
+
+0.916
+Minor texture edits for Spanish tutorials (by kawaiikaorichan)
+
+0.915
+Support for Japanese subtitles/recap screen text, HD mission tutorial text
+
+0.910
+Added Spanish tutorial messages (by kawaiikaorichan)
+
+0.909
+Added a workaround for translation mods that use a non-standard codepage
+
+0.908
+Minor bugfixes for the title screen
+
+0.907
+Added HD SADX title screen
+
+0.906
+Improved the look of the recap text when it fades out
+Disabled the "Now Saving" text function that was interfering with subtitles
+
+0.905
+Fixed an issue with displaying "... has been added to the list" after credits
+
+0.902
+Fixed subtitle text issues when Mod Loader UI scaling is turned off
+
+0.901
+Various tweaks for the subtitle/recap system
+Added configurable font shadow for subtitles/recap screens
+
+0.900
+Fixed recap screens containing text from previous recaps after switching characters
+
+0.899
+Fixed a crash in Sky Chase when Exit is selected in the pause menu
+
+0.898
+Minor letter layout fixes for subtitles
+Added more redirects for Japanese layout characters in English text
+
+0.896
+Improved subtitle spacing
+Fixed scaling/spacing of mission descriptions in the mission stat screen
+
+0.895
+Added scaling of the "Deteled" text on the file select screen
+
+0.894
+Added code fixes to scale Chao Race HUD (no HD textures yet)
+
+0.893
+Added HD subtitle and recap screen font for English, German, French and Spanish
+
+0.887
+Reorganized individual PVR file replacements for a cleaner mod layout
+Removed duplicate file replacements in code
+Optimized filesize for some PNG textures
+
+0.886
+Added Dreamcast tutorial layouts (if you use plugins for HD GUI, make sure those are updated as well)
+
+0.885
+Updated pause textures for compatibility with a new Dreamcast Conversion update
+
+0.884
+Removed the background in all maps to make them look better in widescreen
+Added upscaled Japanese maps
+
+0.883
+Updated several characters to the credits font
+
+0.882
+Updated life icons
+
+0.881
+Updated credits font
+
+0.880
+Added Dreamcast credits screenshots (by SPEEPSHighway)
+
+0.874
+Final attempt to fix the random ring icon
+
+0.873
+Double-checking if the random ring icon update was uploaded correctly
+
+0.872
+Fixed (again) random ring icon scaling at various resolutions and updated random ring icons
+
+0.871
+Fixed random ring icon scaling at various resolutions and updated random ring icons
+
+0.870
+Updated company logos used in credits
+
+0.869
+Added higher resolution company logos for credits
+Updated pause menu button text
+
+0.868
+Added support for the new pause box implementation in Dreamcast Conversion (update both mods)
+
+0.867
+Fixed a crash with Knuckles' French title cards (French is still not supported in HD GUI)
+
+0.866
+Added Japanese Goal Ring textures (by SPEEPSHighway)
+
+0.865
+Updated all PVR graphics with latest optimized versions
+
+0.864
+Updated English level objective cards (by McAleeCh)
+
+0.863
+Updated Tails race icons, life icons and Pause menu header, character recap update (by Sonikko)
+
+0.862
+Fixed an issue with the Goal Ring mod
+
+0.861
+Added a missing PNG file to prevent Sky Chase crashes
+
+0.860
+Added the majority of Japanese assets (by SPEEPSHighway)
+
+0.843
+Fixed an issue with character recap screens not fading properly
+
+0.842
+Fixed a crash when opening the Mini Game Collection
+
+0.841
+Added upscaled Goal Ring mod textures
+
+0.840
+Switched to new Mod Loader functionality to help avoid mod compatibility issues
+
+0.839
+Fixed several text issues in level objective cards (by McAleeCh)
+
+0.837
+Updated the options screen with save icon arrow zoom animation
+
+0.836
+Updated the Options screen (by Sonikko)
+
+0.835
+Added Mission Mode start/end graphics and character recap screens (by Sonikko)
+
+0.834
+Added the Mystic Ruins titlecard (by Sonikko)
+Updated Station Square and Egg Carrier titlecards (by Sonikko)
+Added Sky Chase reticle (by Sonikko)
+
+0.833
+Added Station Square and Egg Carrier titlecards (by Sonikko)
+
+0.832
+Added Action Stage and subgame titlecards (by Sonikko)
+
+0.831
+Tweaked various menu shadows
+
+0.830
+Added a high-resolution file/character select background (by Sonikko)
+Minor texture fixes
+
+0.829
+Added unmirrored common switch model for compatibility with DC General
+
+0.828
+Added unmirrored dash pad texture/model for compatibility with DC General
+
+0.827
+Another compatibility update
+
+0.826
+Compatibility update for DC General's water ripple
+
+0.825
+Added Mission Mode status screen (by SPEEPSHighway)
+
+0.821
+Updated Sky Chase score HUD to work with the alpha rejection patch in DC mods
+
+0.820
+Updated HUD numbers and added Mission Mode tutorial backgrounds (by SPEEPSHighway)
+
+0.814
+Updated character and item capsule icons (by SPEEPSHighway)
+
+0.813
+Removed SHOOTING1 and SHOOTING2 PVMs from the mod because they aren't actually needed
+
+0.812
+Updated Chaos and Tornado life gauges (by SPEEPSHighway)
+
+0.811
+Updated the PressStartButton texture and character banners (by SPEEPSHighway)
+
+0.810
+Updated the PressStartButton texture shown during demos
+
+0.809
+Removed the Mod Loader warning and added information on a known issue
+
+0.808
+Minor improvements for SADX menu background and level names
+
+0.807
+Added SADX main menu background (loads if DC Branding is disabled)
+
+0.806
+Implemented a workaround for scaling artifacts with Big's fishing rod and character select stuff at 16:9
+
+0.805
+Added Metal Sonic assets
+
+0.804
+Updated description/changelog
+
+0.803
+Fixed textures on checkpoints and various other objects
+
+0.802
+Minor changes to option icons
+
+0.801
+Initial release
 
 Credits:
 Dark Sonic - character and item capsule icons, Tails' race icons
 SteG - boss name font
-SPEEPSHighway - PressStartButton texture, font edits for character banners, Mission Mode assets, HUD numbers, character and item capsule icon edits, Chaos and Tornado life gauges, all Japanese language assets, pause menu button texts
+SPEEPSHighway - PressStartButton texture, font edits for character banners, Mission Mode assets, HUD numbers, character and item capsule icon edits, Chaos and Tornado life gauges, all Japanese language assets, pause menu button texts, newer reworked textures
 Windii - all Japanese language assets
-Sonikko - File and character select background, level title cards, Sky Chase reticle, character recap screens, Mission start/finish graphics, Tails race icons, life icons, text, random ring icons, various texture edits
+Sonikko - gile and character select background, level title cards, Sky Chase reticle, character recap screens, Mission start/finish graphics, Tails race icons, life icons, text, random ring icons, various texture edits
 McAleeCh - mission objective text layout improvements
 The7hrone & Sonikko - Sonic render edit for the title screen
 kawaiikaorichan - Spanish assets
-PkR - everything else
+kesnos - French assets, Chao assets
+CheatFreak - Chao assets
+PkR - all other textures, programming, maintenance
+Tracker - original version of the Speed Shoes icon
+Lumi - various code fixes
 
 The mod replaces the following graphics:
 

@@ -11,13 +11,13 @@
 			<Property name="RestoreHumpAnimations" type="bool" defaultvalue="True" display= "Item hold animations + animation fixes">
 				<HelpText>Restore item hold animations (like in SA1 JP) and fix various animation errors.</HelpText>
 			</Property>
-			<Property name="CutsceneSkipMode" type="CutsceneMode" defaultvalue="0" display= "Cutscene skip mode">
+			<Property name="CutsceneSkipConfig" type="CutsceneMode" defaultvalue="0" display= "Cutscene skip mode">
 				<HelpText>Improves handling of skippable cutscenes. Cutscenes can be skipped with a single button press. Fade to black makes skipping cutscenes smoother.</HelpText>
 			</Property>	
 			<Property name="EnableCutsceneFix" type="bool" defaultvalue="True" display= "Fix cutscene camera transitions">
 				<HelpText>Restore camera transitions that are supposed to happen after cutscenes.</HelpText>
 			</Property>	
-			<Property name="EnableImpressFont" type="Fonts" defaultvalue="Impress" display= "Enable Dreamcast font">
+			<Property name="ImpressFont" type="Fonts" defaultvalue="1" display= "Enable Dreamcast font">
 				<HelpText>Enable the fonts from DC/GC versions of the game. Use Impress for English and Comic Sans (experimental) for other European languages.</HelpText>
 			</Property>	
 			<Property name="DisableFontSmoothing" type="bool" defaultvalue="True" display= "Disable font smoothing">
@@ -38,9 +38,6 @@
 			<Property name="FPSLock" type="bool" defaultvalue="False" display= "Enable Dreamcast-like FPS lock">
 				<HelpText>Locks FPS to 30 everywhere outside menus and Twinkle Circuit.</HelpText>
 			</Property>	
-			<Property name="AssumeOIT" type="bool" defaultvalue="False" display= "Disable all transparency sorting">
-				<HelpText>May improve performance. Only use this when Order-Independent Transparency is enabled, otherwise the game will break.</HelpText>
-			</Property>
 			<Property name="SuppressWarnings" type="bool" defaultvalue="False" display= "Disable warnings">
 				<HelpText>Disable warnings related to mod compatibility.</HelpText>
 			</Property>
@@ -52,41 +49,53 @@
 			<Property name="BigBeltFix" type="bool" defaultvalue="True" display="Big belt fix">
 				<HelpText>Partial fix for a transparency issue with Big's belt.</HelpText>
 			</Property>
+			<Property name="EnableDXOceanEffects" type="bool" defaultvalue="True" display="Mix Emerald Coast effects">
+				<HelpText>Combine SA1 ocean with SADX ocean effects (bobbing, UV shift).</HelpText>
+			</Property>
+			<Property name="RevertEmeraldCoastDrawDistance" type="bool" defaultvalue="False" display="Revert Emerald Coast skybox">
+				<HelpText>Revert skybox scale in Emerald Coast. The ocean will no longer be aligned with the horizon, but fog and draw distance will be the same as in SADX.</HelpText>
+			</Property>
 			<Property name="Use1999SetFiles" type="SETFiles" defaultvalue="0" display="SET and camera layouts">
-				<HelpText>Use unaltered layouts from the Dreamcast game. Incompatible with Mission Mode!</HelpText>
-			</Property>
-			<Property name="EnableWhiteDiffuse" type="bool" defaultvalue="True" display="Enable white diffuse">
-				<HelpText>White diffuse is a side effect (or a bug) of the Dreamcast version's lighting system that makes some things appear brighter. Enable to recreate the DC look.</HelpText>
-			</Property>
-			<Property name="FixHeldObjects" type="bool" defaultvalue="True" display="Fix held objects">
-				<HelpText>Improve collision and fix various issues with throwable objects (experimental).</HelpText>
+				<HelpText>Optimized layouts fix duplicate objects, errors with object placement, various object placement glitches etc. The other two options use unaltered layouts from the Dreamcast game. Warning: Unaltered layouts are incompatible with Mission Mode!</HelpText>
 			</Property>
 			<Property name="EnableLSDFix" type="bool" defaultvalue="False" display="Light Speed Dash distance hack">
 				<HelpText>Make Sonic travel farther (like on the Dreamcast) when using the Light Speed Dash. This is required for compatibility with original Dreamcast SET files.</HelpText>
 			</Property>
-			<Property name="EnableCasinopolisCowgirl" type="bool" defaultvalue="True" display= "Enable Casinopolis Cowgirl" />
-			<Property name="EnableHedgehogHammer" type="bool" defaultvalue="True" display="Enable Hedgehog Hammer" />
-			<Property name="EnableTwinkleCircuit" type="bool" defaultvalue="True" display="Enable Twinkle Circuit" />
+			<Property name="EnableWhiteDiffuse" type="bool" defaultvalue="True" display="Enable white diffuse">
+				<HelpText>White diffuse is a side effect (or a bug) of the Dreamcast version's lighting system that makes some things appear brighter. Enable to recreate a more faithful DC look with Lantern Engine.</HelpText>
+			</Property>
+			<Property name="FixHeldObjects" type="bool" defaultvalue="True" display="Fix held objects">
+				<HelpText>Improve collision and fix various issues with throwable objects (experimental).</HelpText>
+			</Property>
+			<Property name="EnableCasinopolisCowgirl" type="bool" defaultvalue="True" display= "Enable Casinopolis Cowgirl">
+				<HelpText>Replace the billboard on the second floor of Casinopolis with the cowgirl billboard from the Japanese version of SA1.</HelpText>
+			</Property>
+			<Property name="JapaneseLostWorldSpikes" type="bool" defaultvalue="False" display="Japanese Lost World spikes">
+				<HelpText>Make spikes in Lost World desynchronized like in the Japanese version of the game.</HelpText>
+			</Property>	
+			<Property name="EnableHedgehogHammer" type="bool" defaultvalue="True" display="Enable Hedgehog Hammer">
+				<HelpText>Fix textures in the Trial version of Hedgehog Hammer and improve transparency handling.</HelpText>
+			</Property>
+			<Property name="EnableTwinkleCircuit" type="bool" defaultvalue="True" display="Enable Twinkle Circuit">
+				<HelpText>Restore the original version of the first Twinkle Circuit track, fix transparency issues in Twinkle Park and Twinkle Circuit shared objects.</HelpText>
+			</Property>
 			<Property name="EnableSkyChaseEnemyModels" type="bool" defaultvalue="True" display="Enable Sky Chase enemy models">
-				<HelpText>Restore models and textures for Sky Chase enemies and the Egg Carrier. This is force enabled when Dreamcast Characters or HD GUI are loaded.</HelpText>
-			</Property>	
-			<Property name="EnableSandHill" type="bool" defaultvalue="True" display="Enable Sand Hill" />
-			<Property name="RevertEmeraldCoastDrawDistance" type="bool" defaultvalue="False" display="Revert Emerald Coast skybox">
-				<HelpText>Revert skybox scale in Emerald Coast. The ocean will no longer be aligned with the horizon, but fog and draw distance will be the same as in SADX.</HelpText>
-			</Property>	
+				<HelpText>Restore textures for Sky Chase enemies and the model and textures for the Egg Carrier.</HelpText>
+			</Property>
+			<Property name="EnableSandHill" type="bool" defaultvalue="True" display="Enable Sand Hill">
+				<HelpText>Replace the Sand Hill level and textures.</HelpText>
+			</Property>
+
 		</Group>
 		<Group name="Branding" display="3 - Branding">
 			<Property name="RestoreDemos" type="Demos" defaultvalue="3" display= "Restore gameplay demos">
-				<HelpText>Restore gameplay shown after waiting on the title screen (experimental).</HelpText>
+				<HelpText>Restore gameplay demos played after waiting on the title screen (experimental).</HelpText>
 			</Property>
 			<Property name="RemoveCream" type="bool" defaultvalue="True" display= "Disable Cream cameos">
 				<HelpText>Disable Cream cameos in Station Square.</HelpText>
 			</Property>
-			<Property name="DisableSA1TitleScreen" type="bool" defaultvalue="False" display= "Disable the SA1 title screen">
-				<HelpText>Keep the original SADX title screen but add other improvements from DC Branding.</HelpText>
-			</Property>	
 			<Property name="SA1LogoMode" type="SA1LogoModes" defaultvalue="0" display= "Title screen layout">
-				<HelpText>Select which version of SA1 to imitate on the title screen.</HelpText>
+				<HelpText>Select the title screen layout.</HelpText>
 			</Property>
 			<Property name="HUDTweak" type="bool" defaultvalue="True" display= "Adjust HUD position">
 				<HelpText>Adjust the life icon's position to be more like SA1.</HelpText>
@@ -126,7 +135,7 @@
 			<Property name="EnableSA1Intro" type="bool" defaultvalue="True" display= "Enable the Dreamcast intro movie">
 				<HelpText>Use the Dreamcast Sonic Adventure intro recreated from multiple sources in higher quality.</HelpText>
 			</Property>	
-			<Property name="SonicTeamLogoMode" type="SonicTeamLogo" defaultvalue="Animated" display= "Sonic Team logo mode">
+			<Property name="SonicTeamLogoConfig" type="SonicTeamLogo" defaultvalue="0" display= "Sonic Team logo mode">
 				<HelpText>Show the Sonic Team logo before the intro movie: animated (SA1), static (SADX), or disable entirely.</HelpText>
 			</Property>	
 			<Property name="ColorizeVideos" type="bool" defaultvalue="True" display= "Imitate Dreamcast video colors">
@@ -150,41 +159,33 @@
 			<Property name="EnableEggCarrier" type="bool" defaultvalue="True" display="Enable Egg Carrier"  />
 			<Property name="EnablePast" type="bool" defaultvalue="True" display="Enable Mystic Ruins Past"  />
 		</Group>
-		<Group name="SADX Style Water" display="6 - SADX Style Water">
-			<Property name="EmeraldCoast" type="bool" defaultvalue="False" display="Emerald Coast">
-				<HelpText>Enable SADX-like water in Emerald Coast.</HelpText>
+		<Group name="Chao Gardens" display="6 - Chao Gardens">
+			<Property name="DisableChao" type="bool" defaultvalue="False" display="Disable Chao replacements">
+				<HelpText>Disable all Chao code changes, including texture replacements and Chao Race restoration.</HelpText>
 			</Property>	
-			<Property name="StationSquare" type="bool" defaultvalue="False" display="Station Square">
-				<HelpText>Enable SADX-like water in Station Square.</HelpText>
-			</Property>	
-			<Property name="MysticRuins" type="bool" defaultvalue="False" display="Mystic Ruins">
-				<HelpText>Enable SADX-like water in the Mystic Ruins.</HelpText>
-			</Property>	
-			<Property name="EggCarrier" type="bool" defaultvalue="False" display="Egg Carrier">
-				<HelpText>Enable SADX-like water on the Egg Carrier.</HelpText>
-			</Property>	
-			<Property name="Past" type="bool" defaultvalue="False" display="Mystic Ruins Past">
-				<HelpText>Enable SADX-like water in Mystic Ruins Past.</HelpText>
-			</Property>
-		</Group>
-		<Group name="Chao Gardens" display="7 - Chao Gardens">
 			<Property name="EnableStationSquareGarden" type="bool" defaultvalue="True" display="Enable the Station Square garden" />
 			<Property name="EnableMysticRuinsGarden" type="bool" defaultvalue="True" display="Enable the Mystic Ruins garden"  />
 			<Property name="EnableEggCarrierGarden" type="bool" defaultvalue="True" display="Enable the Egg Carrier garden" />
 			<Property name="EnableChaoRaceLobby" type="bool" defaultvalue="True" display="Enable the Chao Stadium">
-				<HelpText>Enable the interactive Chao Race lobby from the Dreamcast version.</HelpText>
+				<HelpText>Restore the interactive Chao Race lobby from the Dreamcast version.</HelpText>
 			</Property>
 			<Property name="DisableChaoButtonPrompts" type="bool" defaultvalue="False" display="Hide button prompts">
 				<HelpText>Hide SADX button instructions in the Chao Gardens.</HelpText>
 			</Property>	
+			<Property name="ReplaceTrees" type="bool" defaultvalue="True" display="Replace trees">
+				<HelpText>Replace the palm trees with their Dreamcast counterparts.</HelpText>
+			</Property>
 			<Property name="ReplaceFruits" type="ChaoFruits" defaultvalue="0" display="Replace Chao fruits">
 				<HelpText>Replace Normal Fruit with SA1 Coconut, Hero Fruit with Star Fruit, Dark Fruit with Hastnut, Heart Fruit with Lifenut, Chao Fruit with Chaonut.</HelpText>
 			</Property>	
 			<Property name="ReplaceEggs" type="bool" defaultvalue="True" display="Replace Chao eggs">
 				<HelpText>Replace normal, black, silver and gold Chao egg models (including wearable eggshells) with SA1 counterparts.</HelpText>
-			</Property>	
+			</Property>
+			<Property name="ReplaceNameMachine" type="bool" defaultvalue="True" display="Replace Chao Name Machine">
+				<HelpText>Replace the Name Machine with the VMU.</HelpText>
+			</Property>		
 		</Group>
-		<Group name="Bosses" display="8 - Bosses">
+		<Group name="Bosses" display="7 - Bosses">
 			<Property name="EnableChaos0" type="bool" defaultvalue="True" display="Enable Chaos 0" />
 			<Property name="EnableChaos2" type="bool" defaultvalue="True" display="Enable Chaos 2" />
 			<Property name="EnableChaos4" type="bool" defaultvalue="True" display="Enable Chaos 4" />
@@ -206,14 +207,14 @@
 			<EnumMember name="4" display="PC 2004"></EnumMember>
 		</Enum>
 		<Enum name="Fonts">
-			<EnumMember name="Off" display="Off"></EnumMember>
-			<EnumMember name="Impress" display="Impress"></EnumMember>
-			<EnumMember name="ComicSans" display="Comic Sans"></EnumMember>
+			<EnumMember name="0" display="Off"></EnumMember>
+			<EnumMember name="1" display="Impress"></EnumMember>
+			<EnumMember name="2" display="Comic Sans"></EnumMember>
 		</Enum>
 		<Enum name="SonicTeamLogo">
-			<EnumMember name="Animated" display="Animated (Dreamcast)"></EnumMember>
-			<EnumMember name="Static" display="Static (SADX)"></EnumMember>
-			<EnumMember name="Off" display="Off"></EnumMember>
+			<EnumMember name="0" display="Animated (Dreamcast)"></EnumMember>
+			<EnumMember name="1" display="Static (SADX)"></EnumMember>
+			<EnumMember name="2" display="Off"></EnumMember>
 		</Enum>
 		<Enum name="CutsceneMode">
 			<EnumMember name="3" display="Default SADX"></EnumMember>
@@ -226,6 +227,7 @@
 			<EnumMember name="2" display="JP/US static"></EnumMember>
 			<EnumMember name="1" display="International"></EnumMember>
 			<EnumMember name="3" display="Limited"></EnumMember>
+			<EnumMember name="4" display="SADX"></EnumMember>
 		</Enum>
 		<Enum name="ChaoFruits">
 			<EnumMember name="0" display="Common fruits"></EnumMember>
@@ -233,7 +235,7 @@
 			<EnumMember name="2" display="Don't replace"></EnumMember>
 		</Enum>
 		<Enum name="SETFiles">
-			<EnumMember name="0" display="Optimized layouts (recommended)"></EnumMember>
+			<EnumMember name="0" display="Optimized (recommended)"></EnumMember>
 			<EnumMember name="1" display="SA1 International"></EnumMember>
 			<EnumMember name="2" display="SA1 Japanese"></EnumMember>
 		</Enum>

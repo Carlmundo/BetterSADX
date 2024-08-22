@@ -1,322 +1,434 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ConfigSchema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.sonicretro.org">
-  <Groups>
-    
-    <Group name="Config">
-      <Property name="Debug" type="bool" defaultvalue="False">
-        <HelpText>Enables ingame controller debugging information.</HelpText>
-      </Property>
-      <Property name="DisableMouse" type="bool" defaultvalue="True" display="Disable mouse">
-        <HelpText>Disable mouse input.</HelpText>
-      </Property>
-      <Property name="KeyboardPlayer" type="Players" defaultvalue="0" display="Keyboard controller">
-        <HelpText>Select which gamepad is controller by the keyboard/mouse.</HelpText>
-      </Property>
-    </Group>
-    
-    <Group name="Controller 1">
-      <Property name="DeadzoneL" type="int" defaultvalue="7849" min="0" max="32767" display="Left stick deadzone">
-        <HelpText>Left analog stick deadzone (from 0 to 32767).</HelpText>
-      </Property>
-      <Property name="DeadzoneR" type="int" defaultvalue="8689" min="0" max="32767" display="Right stick deadzone">
-        <HelpText>Right analog stick deadzone (from 0 to 32767).</HelpText>
-      </Property>
-      <Property name="RadialL" type="bool" defaultvalue="True" display="Radial motion for left stick">
-        <HelpText>Enables full range of motion on the left analog stick.</HelpText>
-      </Property>
-      <Property name="RadialR" type="bool" defaultvalue="False" display="Radial motion for right stick">
-        <HelpText>Enables full range of motion on the right analog stick.</HelpText>
-      </Property>
-      <Property name="TriggerThreshold" type="int" defaultvalue="30" min="0" max="32767" display="Trigger threshold">
-        <HelpText>Trigger to digital conversion threshold (from 0 to 32767).</HelpText>
-      </Property>
-      <Property name="RumbleFactor" type="float" defaultvalue="1.0" min="0.0" max="1.0" display="Rumble factor">
-        <HelpText>Rumble multiplier. Values below 0 or above 1 have no effect.</HelpText>
-      </Property>
-      <Property name="MegaRumble" type="bool" defaultvalue="False" display="Mega rumble">
-        <HelpText>Always fire both motors while rumbling, never independently.</HelpText>
-      </Property>
-      <Property name="RumbleMinTime" type="int" defaultvalue="0" min="0" max="32767" display="Minimum rumble time">
-        <HelpText>Minimum rumble time (from 0 to 32767).</HelpText>
-      </Property>
-    </Group>
+	<Groups>
 
-    <Group name="Controller 2">
-      <Property name="DeadzoneL" type="int" defaultvalue="7849" min="0" max="32767" display="Left stick deadzone">
-        <HelpText>Left analog stick deadzone (from 0 to 32767).</HelpText>
-      </Property>
-      <Property name="DeadzoneR" type="int" defaultvalue="8689" min="0" max="32767" display="Right stick deadzone">
-        <HelpText>Right analog stick deadzone (from 0 to 32767).</HelpText>
-      </Property>
-      <Property name="RadialL" type="bool" defaultvalue="True" display="Radial motion for left stick">
-        <HelpText>Enables full range of motion on the left analog stick.</HelpText>
-      </Property>
-      <Property name="RadialR" type="bool" defaultvalue="False" display="Radial motion for right stick">
-        <HelpText>Enables full range of motion on the right analog stick.</HelpText>
-      </Property>
-      <Property name="TriggerThreshold" type="int" defaultvalue="30" min="0" max="32767" display="Trigger threshold">
-        <HelpText>Trigger to digital conversion threshold (from 0 to 32767).</HelpText>
-      </Property>
-      <Property name="RumbleFactor" type="float" defaultvalue="1.0" min="0.0" max="1.0" display="Rumble factor">
-        <HelpText>Rumble multiplier. Values below 0 or above 1 have no effect.</HelpText>
-      </Property>
-      <Property name="MegaRumble" type="bool" defaultvalue="False" display="Mega rumble">
-        <HelpText>Always fire both motors while rumbling, never independently.</HelpText>
-      </Property>
-      <Property name="RumbleMinTime" type="int" defaultvalue="0" min="0" max="32767" display="Minimum rumble time">
-        <HelpText>Minimum rumble time (from 0 to 32767).</HelpText>
-      </Property>
-    </Group>
+		<Group name="Config">
+			<Property name="Debug" type="bool" defaultvalue="False">
+				<HelpText>Enables ingame controller debugging information.</HelpText>
+			</Property>
+			<Property name="DisableMouse" type="bool" defaultvalue="True" display="Disable mouse">
+				<HelpText>Disable mouse input.</HelpText>
+			</Property>
+			<Property name="KeyboardPlayer" type="Players" defaultvalue="0" display="Keyboard controller">
+				<HelpText>Select which player is controlled by the keyboard and mouse.</HelpText>
+			</Property>
+		</Group>
 
-    <Group name="Controller 3">
-      <Property name="DeadzoneL" type="int" defaultvalue="7849" min="0" max="32767" display="Left stick deadzone">
-        <HelpText>Left analog stick deadzone (from 0 to 32767).</HelpText>
-      </Property>
-      <Property name="DeadzoneR" type="int" defaultvalue="8689" min="0" max="32767" display="Right stick deadzone">
-        <HelpText>Right analog stick deadzone (from 0 to 32767).</HelpText>
-      </Property>
-      <Property name="RadialL" type="bool" defaultvalue="True" display="Radial motion for left stick">
-        <HelpText>Enables full range of motion on the left analog stick.</HelpText>
-      </Property>
-      <Property name="RadialR" type="bool" defaultvalue="False" display="Radial motion for right stick">
-        <HelpText>Enables full range of motion on the right analog stick.</HelpText>
-      </Property>
-      <Property name="TriggerThreshold" type="int" defaultvalue="30" min="0" max="32767" display="Trigger threshold">
-        <HelpText>Trigger to digital conversion threshold (from 0 to 32767).</HelpText>
-      </Property>
-      <Property name="RumbleFactor" type="float" defaultvalue="1.0" min="0.0" max="1.0" display="Rumble factor">
-        <HelpText>Rumble multiplier. Values below 0 or above 1 have no effect.</HelpText>
-      </Property>
-      <Property name="MegaRumble" type="bool" defaultvalue="False" display="Mega rumble">
-        <HelpText>Always fire both motors while rumbling, never independently.</HelpText>
-      </Property>
-      <Property name="RumbleMinTime" type="int" defaultvalue="0" min="0" max="32767" display="Minimum rumble time">
-        <HelpText>Minimum rumble time (from 0 to 32767).</HelpText>
-      </Property>
-    </Group>
+		<Group name="Controller 1">
+			<Property name="DeadzoneL" type="int" defaultvalue="7849" min="0" max="32767" display="Left stick deadzone">
+				<HelpText>Left analog stick deadzone (from 0 to 32767).</HelpText>
+			</Property>
+			<Property name="DeadzoneR" type="int" defaultvalue="8689" min="0" max="32767" display="Right stick deadzone">
+				<HelpText>Right analog stick deadzone (from 0 to 32767).</HelpText>
+			</Property>
+			<Property name="RadialL" type="bool" defaultvalue="True" display="Radial motion for left stick">
+				<HelpText>Enables full range of motion on the left analog stick.</HelpText>
+			</Property>
+			<Property name="RadialR" type="bool" defaultvalue="False" display="Radial motion for right stick">
+				<HelpText>Enables full range of motion on the right analog stick.</HelpText>
+			</Property>
+			<Property name="TriggerThreshold" type="int" defaultvalue="30" min="0" max="32767" display="Trigger threshold">
+				<HelpText>Trigger to digital conversion threshold (from 0 to 32767).</HelpText>
+			</Property>
+			<Property name="RumbleFactor" type="float" defaultvalue="1.0" min="0.0" max="1.0" display="Rumble factor">
+				<HelpText>Rumble multiplier. Values below 0 or above 1 have no effect.</HelpText>
+			</Property>
+			<Property name="MegaRumble" type="bool" defaultvalue="False" display="Mega rumble">
+				<HelpText>Always fire both motors while rumbling, never independently.</HelpText>
+			</Property>
+			<Property name="RumbleMinTime" type="int" defaultvalue="0" min="0" max="32767" display="Minimum rumble time">
+				<HelpText>Minimum rumble time (from 0 to 32767).</HelpText>
+			</Property>
+		</Group>
 
-    <Group name="Controller 4">
-      <Property name="DeadzoneL" type="int" defaultvalue="7849" min="0" max="32767" display="Left stick deadzone">
-        <HelpText>Left analog stick deadzone (from 0 to 32767).</HelpText>
-      </Property>
-      <Property name="DeadzoneR" type="int" defaultvalue="8689" min="0" max="32767" display="Right stick deadzone">
-        <HelpText>Right analog stick deadzone (from 0 to 32767).</HelpText>
-      </Property>
-      <Property name="RadialL" type="bool" defaultvalue="True" display="Radial motion for left stick">
-        <HelpText>Enables full range of motion on the left analog stick.</HelpText>
-      </Property>
-      <Property name="RadialR" type="bool" defaultvalue="False" display="Radial motion for right stick">
-        <HelpText>Enables full range of motion on the right analog stick.</HelpText>
-      </Property>
-      <Property name="TriggerThreshold" type="int" defaultvalue="30" min="0" max="32767" display="Trigger threshold">
-        <HelpText>Trigger to digital conversion threshold (from 0 to 32767).</HelpText>
-      </Property>
-      <Property name="RumbleFactor" type="float" defaultvalue="1.0" min="0.0" max="1.0" display="Rumble factor">
-        <HelpText>Rumble multiplier. Values below 0 or above 1 have no effect.</HelpText>
-      </Property>
-      <Property name="MegaRumble" type="bool" defaultvalue="False" display="Mega rumble">
-        <HelpText>Always fire both motors while rumbling, never independently.</HelpText>
-      </Property>
-      <Property name="RumbleMinTime" type="int" defaultvalue="0" min="0" max="32767" display="Minimum rumble time">
-        <HelpText>Minimum rumble time (from 0 to 32767).</HelpText>
-      </Property>
-    </Group>
+		<Group name="Controller 2">
+			<Property name="DeadzoneL" type="int" defaultvalue="7849" min="0" max="32767" display="Left stick deadzone">
+				<HelpText>Left analog stick deadzone (from 0 to 32767).</HelpText>
+			</Property>
+			<Property name="DeadzoneR" type="int" defaultvalue="8689" min="0" max="32767" display="Right stick deadzone">
+				<HelpText>Right analog stick deadzone (from 0 to 32767).</HelpText>
+			</Property>
+			<Property name="RadialL" type="bool" defaultvalue="True" display="Radial motion for left stick">
+				<HelpText>Enables full range of motion on the left analog stick.</HelpText>
+			</Property>
+			<Property name="RadialR" type="bool" defaultvalue="False" display="Radial motion for right stick">
+				<HelpText>Enables full range of motion on the right analog stick.</HelpText>
+			</Property>
+			<Property name="TriggerThreshold" type="int" defaultvalue="30" min="0" max="32767" display="Trigger threshold">
+				<HelpText>Trigger to digital conversion threshold (from 0 to 32767).</HelpText>
+			</Property>
+			<Property name="RumbleFactor" type="float" defaultvalue="1.0" min="0.0" max="1.0" display="Rumble factor">
+				<HelpText>Rumble multiplier. Values below 0 or above 1 have no effect.</HelpText>
+			</Property>
+			<Property name="MegaRumble" type="bool" defaultvalue="False" display="Mega rumble">
+				<HelpText>Always fire both motors while rumbling, never independently.</HelpText>
+			</Property>
+			<Property name="RumbleMinTime" type="int" defaultvalue="0" min="0" max="32767" display="Minimum rumble time">
+				<HelpText>Minimum rumble time (from 0 to 32767).</HelpText>
+			</Property>
+		</Group>
 
-    <Group name="Controller 5">
-      <Property name="DeadzoneL" type="int" defaultvalue="7849" min="0" max="32767" display="Left stick deadzone">
-        <HelpText>Left analog stick deadzone (from 0 to 32767).</HelpText>
-      </Property>
-      <Property name="DeadzoneR" type="int" defaultvalue="8689" min="0" max="32767" display="Right stick deadzone">
-        <HelpText>Right analog stick deadzone (from 0 to 32767).</HelpText>
-      </Property>
-      <Property name="RadialL" type="bool" defaultvalue="True" display="Radial motion for left stick">
-        <HelpText>Enables full range of motion on the left analog stick.</HelpText>
-      </Property>
-      <Property name="RadialR" type="bool" defaultvalue="False" display="Radial motion for right stick">
-        <HelpText>Enables full range of motion on the right analog stick.</HelpText>
-      </Property>
-      <Property name="TriggerThreshold" type="int" defaultvalue="30" min="0" max="32767" display="Trigger threshold">
-        <HelpText>Trigger to digital conversion threshold (from 0 to 32767).</HelpText>
-      </Property>
-      <Property name="RumbleFactor" type="float" defaultvalue="1.0" min="0.0" max="1.0" display="Rumble factor">
-        <HelpText>Rumble multiplier. Values below 0 or above 1 have no effect.</HelpText>
-      </Property>
-      <Property name="MegaRumble" type="bool" defaultvalue="False" display="Mega rumble">
-        <HelpText>Always fire both motors while rumbling, never independently.</HelpText>
-      </Property>
-      <Property name="RumbleMinTime" type="int" defaultvalue="0" min="0" max="32767" display="Minimum rumble time">
-        <HelpText>Minimum rumble time (from 0 to 32767).</HelpText>
-      </Property>
-    </Group>
+		<Group name="Controller 3">
+			<Property name="DeadzoneL" type="int" defaultvalue="7849" min="0" max="32767" display="Left stick deadzone">
+				<HelpText>Left analog stick deadzone (from 0 to 32767).</HelpText>
+			</Property>
+			<Property name="DeadzoneR" type="int" defaultvalue="8689" min="0" max="32767" display="Right stick deadzone">
+				<HelpText>Right analog stick deadzone (from 0 to 32767).</HelpText>
+			</Property>
+			<Property name="RadialL" type="bool" defaultvalue="True" display="Radial motion for left stick">
+				<HelpText>Enables full range of motion on the left analog stick.</HelpText>
+			</Property>
+			<Property name="RadialR" type="bool" defaultvalue="False" display="Radial motion for right stick">
+				<HelpText>Enables full range of motion on the right analog stick.</HelpText>
+			</Property>
+			<Property name="TriggerThreshold" type="int" defaultvalue="30" min="0" max="32767" display="Trigger threshold">
+				<HelpText>Trigger to digital conversion threshold (from 0 to 32767).</HelpText>
+			</Property>
+			<Property name="RumbleFactor" type="float" defaultvalue="1.0" min="0.0" max="1.0" display="Rumble factor">
+				<HelpText>Rumble multiplier. Values below 0 or above 1 have no effect.</HelpText>
+			</Property>
+			<Property name="MegaRumble" type="bool" defaultvalue="False" display="Mega rumble">
+				<HelpText>Always fire both motors while rumbling, never independently.</HelpText>
+			</Property>
+			<Property name="RumbleMinTime" type="int" defaultvalue="0" min="0" max="32767" display="Minimum rumble time">
+				<HelpText>Minimum rumble time (from 0 to 32767).</HelpText>
+			</Property>
+		</Group>
 
-    <Group name="Controller 6">
-      <Property name="DeadzoneL" type="int" defaultvalue="7849" min="0" max="32767" display="Left stick deadzone">
-        <HelpText>Left analog stick deadzone (from 0 to 32767).</HelpText>
-      </Property>
-      <Property name="DeadzoneR" type="int" defaultvalue="8689" min="0" max="32767" display="Right stick deadzone">
-        <HelpText>Right analog stick deadzone (from 0 to 32767).</HelpText>
-      </Property>
-      <Property name="RadialL" type="bool" defaultvalue="True" display="Radial motion for left stick">
-        <HelpText>Enables full range of motion on the left analog stick.</HelpText>
-      </Property>
-      <Property name="RadialR" type="bool" defaultvalue="False" display="Radial motion for right stick">
-        <HelpText>Enables full range of motion on the right analog stick.</HelpText>
-      </Property>
-      <Property name="TriggerThreshold" type="int" defaultvalue="30" min="0" max="32767" display="Trigger threshold">
-        <HelpText>Trigger to digital conversion threshold (from 0 to 32767).</HelpText>
-      </Property>
-      <Property name="RumbleFactor" type="float" defaultvalue="1.0" min="0.0" max="1.0" display="Rumble factor">
-        <HelpText>Rumble multiplier. Values below 0 or above 1 have no effect.</HelpText>
-      </Property>
-      <Property name="MegaRumble" type="bool" defaultvalue="False" display="Mega rumble">
-        <HelpText>Always fire both motors while rumbling, never independently.</HelpText>
-      </Property>
-      <Property name="RumbleMinTime" type="int" defaultvalue="0" min="0" max="32767" display="Minimum rumble time">
-        <HelpText>Minimum rumble time (from 0 to 32767).</HelpText>
-      </Property>
-    </Group>
+		<Group name="Controller 4">
+			<Property name="DeadzoneL" type="int" defaultvalue="7849" min="0" max="32767" display="Left stick deadzone">
+				<HelpText>Left analog stick deadzone (from 0 to 32767).</HelpText>
+			</Property>
+			<Property name="DeadzoneR" type="int" defaultvalue="8689" min="0" max="32767" display="Right stick deadzone">
+				<HelpText>Right analog stick deadzone (from 0 to 32767).</HelpText>
+			</Property>
+			<Property name="RadialL" type="bool" defaultvalue="True" display="Radial motion for left stick">
+				<HelpText>Enables full range of motion on the left analog stick.</HelpText>
+			</Property>
+			<Property name="RadialR" type="bool" defaultvalue="False" display="Radial motion for right stick">
+				<HelpText>Enables full range of motion on the right analog stick.</HelpText>
+			</Property>
+			<Property name="TriggerThreshold" type="int" defaultvalue="30" min="0" max="32767" display="Trigger threshold">
+				<HelpText>Trigger to digital conversion threshold (from 0 to 32767).</HelpText>
+			</Property>
+			<Property name="RumbleFactor" type="float" defaultvalue="1.0" min="0.0" max="1.0" display="Rumble factor">
+				<HelpText>Rumble multiplier. Values below 0 or above 1 have no effect.</HelpText>
+			</Property>
+			<Property name="MegaRumble" type="bool" defaultvalue="False" display="Mega rumble">
+				<HelpText>Always fire both motors while rumbling, never independently.</HelpText>
+			</Property>
+			<Property name="RumbleMinTime" type="int" defaultvalue="0" min="0" max="32767" display="Minimum rumble time">
+				<HelpText>Minimum rumble time (from 0 to 32767).</HelpText>
+			</Property>
+		</Group>
 
-    <Group name="Controller 7">
-      <Property name="DeadzoneL" type="int" defaultvalue="7849" min="0" max="32767" display="Left stick deadzone">
-        <HelpText>Left analog stick deadzone (from 0 to 32767).</HelpText>
-      </Property>
-      <Property name="DeadzoneR" type="int" defaultvalue="8689" min="0" max="32767" display="Right stick deadzone">
-        <HelpText>Right analog stick deadzone (from 0 to 32767).</HelpText>
-      </Property>
-      <Property name="RadialL" type="bool" defaultvalue="True" display="Radial motion for left stick">
-        <HelpText>Enables full range of motion on the left analog stick.</HelpText>
-      </Property>
-      <Property name="RadialR" type="bool" defaultvalue="False" display="Radial motion for right stick">
-        <HelpText>Enables full range of motion on the right analog stick.</HelpText>
-      </Property>
-      <Property name="TriggerThreshold" type="int" defaultvalue="30" min="0" max="32767" display="Trigger threshold">
-        <HelpText>Trigger to digital conversion threshold (from 0 to 32767).</HelpText>
-      </Property>
-      <Property name="RumbleFactor" type="float" defaultvalue="1.0" min="0.0" max="1.0" display="Rumble factor">
-        <HelpText>Rumble multiplier. Values below 0 or above 1 have no effect.</HelpText>
-      </Property>
-      <Property name="MegaRumble" type="bool" defaultvalue="False" display="Mega rumble">
-        <HelpText>Always fire both motors while rumbling, never independently.</HelpText>
-      </Property>
-      <Property name="RumbleMinTime" type="int" defaultvalue="0" min="0" max="32767" display="Minimum rumble time">
-        <HelpText>Minimum rumble time (from 0 to 32767).</HelpText>
-      </Property>
-    </Group>
+		<Group name="Controller 5">
+			<Property name="DeadzoneL" type="int" defaultvalue="7849" min="0" max="32767" display="Left stick deadzone">
+				<HelpText>Left analog stick deadzone (from 0 to 32767).</HelpText>
+			</Property>
+			<Property name="DeadzoneR" type="int" defaultvalue="8689" min="0" max="32767" display="Right stick deadzone">
+				<HelpText>Right analog stick deadzone (from 0 to 32767).</HelpText>
+			</Property>
+			<Property name="RadialL" type="bool" defaultvalue="True" display="Radial motion for left stick">
+				<HelpText>Enables full range of motion on the left analog stick.</HelpText>
+			</Property>
+			<Property name="RadialR" type="bool" defaultvalue="False" display="Radial motion for right stick">
+				<HelpText>Enables full range of motion on the right analog stick.</HelpText>
+			</Property>
+			<Property name="TriggerThreshold" type="int" defaultvalue="30" min="0" max="32767" display="Trigger threshold">
+				<HelpText>Trigger to digital conversion threshold (from 0 to 32767).</HelpText>
+			</Property>
+			<Property name="RumbleFactor" type="float" defaultvalue="1.0" min="0.0" max="1.0" display="Rumble factor">
+				<HelpText>Rumble multiplier. Values below 0 or above 1 have no effect.</HelpText>
+			</Property>
+			<Property name="MegaRumble" type="bool" defaultvalue="False" display="Mega rumble">
+				<HelpText>Always fire both motors while rumbling, never independently.</HelpText>
+			</Property>
+			<Property name="RumbleMinTime" type="int" defaultvalue="0" min="0" max="32767" display="Minimum rumble time">
+				<HelpText>Minimum rumble time (from 0 to 32767).</HelpText>
+			</Property>
+		</Group>
 
-    <Group name="Controller 8">
-      <Property name="DeadzoneL" type="int" defaultvalue="7849" min="0" max="32767" display="Left stick deadzone">
-        <HelpText>Left analog stick deadzone (from 0 to 32767).</HelpText>
-      </Property>
-      <Property name="DeadzoneR" type="int" defaultvalue="8689" min="0" max="32767" display="Right stick deadzone">
-        <HelpText>Right analog stick deadzone (from 0 to 32767).</HelpText>
-      </Property>
-      <Property name="RadialL" type="bool" defaultvalue="True" display="Radial motion for left stick">
-        <HelpText>Enables full range of motion on the left analog stick.</HelpText>
-      </Property>
-      <Property name="RadialR" type="bool" defaultvalue="False" display="Radial motion for right stick">
-        <HelpText>Enables full range of motion on the right analog stick.</HelpText>
-      </Property>
-      <Property name="TriggerThreshold" type="int" defaultvalue="30" min="0" max="32767" display="Trigger threshold">
-        <HelpText>Trigger to digital conversion threshold (from 0 to 32767).</HelpText>
-      </Property>
-      <Property name="RumbleFactor" type="float" defaultvalue="1.0" min="0.0" max="1.0" display="Rumble factor">
-        <HelpText>Rumble multiplier. Values below 0 or above 1 have no effect.</HelpText>
-      </Property>
-      <Property name="MegaRumble" type="bool" defaultvalue="False" display="Mega rumble">
-        <HelpText>Always fire both motors while rumbling, never independently.</HelpText>
-      </Property>
-      <Property name="RumbleMinTime" type="int" defaultvalue="0" min="0" max="32767" display="Minimum rumble time">
-        <HelpText>Minimum rumble time (from 0 to 32767).</HelpText>
-      </Property>
-    </Group>
-    
-    <Group name="Keyboard">
-      <Property name="-lefty" type="int" defaultvalue="38" min="8" max="255" display="Move forward">
-        <HelpText>Analog Y-.</HelpText>
-      </Property>
-      <Property name="+lefty" type="int" defaultvalue="40" min="8" max="255" display="Move backwards">
-        <HelpText>Analog Y+.</HelpText>
-      </Property>
-      <Property name="-leftx" type="int" defaultvalue="37" min="8" max="255" display="Move left">
-        <HelpText>Analog X-.</HelpText>
-      </Property>
-      <Property name="+leftx" type="int" defaultvalue="39" min="8" max="255" display="Move right">
-        <HelpText>Analog X+.</HelpText>
-      </Property>
-      <Property name="a" type="int" defaultvalue="88" min="8" max="255" display="Jump">
-        <HelpText>A button.</HelpText>
-      </Property>
-      <Property name="b" type="int" defaultvalue="90" min="8" max="255" display="Action/Spindash">
-        <HelpText>B button.</HelpText>
-      </Property>
-      <Property name="x" type="int" defaultvalue="65" min="8" max="255" display="Pick up">
-        <HelpText>X button.</HelpText>
-      </Property>
-      <Property name="y" type="int" defaultvalue="83" min="8" max="255" display="Whistle">
-        <HelpText>Y button.</HelpText>
-      </Property>
-      <Property name="start" type="int" defaultvalue="13" min="8" max="255" display="Start">
-        <HelpText>Start button.</HelpText>
-      </Property>
-      <Property name="-righty" type="int" defaultvalue="73" min="8" max="255" display="Look up">
-        <HelpText>Analog 2 Y-.</HelpText>
-      </Property>
-      <Property name="+righty" type="int" defaultvalue="77" min="8" max="255" display="Look down">
-        <HelpText>Analog 2 Y+.</HelpText>
-      </Property>
-      <Property name="-rightx" type="int" defaultvalue="74" min="8" max="255" display="Look left">
-        <HelpText>Analog 2 X-.</HelpText>
-      </Property>
-      <Property name="+rightx" type="int" defaultvalue="76" min="8" max="255" display="Look right">
-        <HelpText>Analog 2 X+.</HelpText>
-      </Property>
-      <Property name="lefttrigger" type="int" defaultvalue="81" min="8" max="255" display="Rotate camera left">
-        <HelpText>Left trigger.</HelpText>
-      </Property>
-      <Property name="righttrigger" type="int" defaultvalue="87" min="8" max="255" display="Rotate camera right">
-        <HelpText>Right trigger.</HelpText>
-      </Property>
-      <Property name="rightshoulder" type="int" defaultvalue="66" min="8" max="255" display="Z button">
-        <HelpText>Z button (for mods).</HelpText>
-      </Property>
-      <Property name="leftshoulder" type="int" defaultvalue="67" min="8" max="255" display="C button">
-        <HelpText>C button (for mods).</HelpText>
-      </Property>
-      <Property name="back" type="int" defaultvalue="86" min="8" max="255" display="D button">
-        <HelpText>D button (for mods).</HelpText>
-      </Property>
-      <Property name="rightstick" type="int" defaultvalue="160" min="8" max="255" display="Slow walk">
-        <HelpText>Halve analog input for slow walking.</HelpText>
-      </Property>
-      <Property name="leftstick" type="int" defaultvalue="69" min="8" max="255" display="Center camera">
-        <HelpText>Center camera on character.</HelpText>
-      </Property>
-      <Property name="dpup" type="int" defaultvalue="104" min="8" max="255" display="Menu up">
-        <HelpText>D-Pad up.</HelpText>
-      </Property>
-      <Property name="dpdown" type="int" defaultvalue="98" min="8" max="255" display="Menu down">
-        <HelpText>D-Pad down.</HelpText>
-      </Property>
-      <Property name="dpleft" type="int" defaultvalue="100" min="8" max="255" display="Menu left">
-        <HelpText>D-Pad left.</HelpText>
-      </Property>
-      <Property name="dpright" type="int" defaultvalue="102" min="8" max="255" display="Menu right">
-        <HelpText>D-Pad right.</HelpText>
-      </Property>
-    </Group>
-  </Groups>
-  
-  <Enums>
-    <Enum name="Players">
-      <EnumMember name="0" display="Player 1"></EnumMember>
-      <EnumMember name="1" display="Player 2"></EnumMember>
-      <EnumMember name="2" display="Player 3"></EnumMember>
-      <EnumMember name="3" display="Player 4"></EnumMember>
-      <EnumMember name="4" display="Player 5"></EnumMember>
-      <EnumMember name="5" display="Player 6"></EnumMember>
-      <EnumMember name="6" display="Player 7"></EnumMember>
-      <EnumMember name="7" display="Player 8"></EnumMember>
-    </Enum>
-  </Enums>
-  
+		<Group name="Controller 6">
+			<Property name="DeadzoneL" type="int" defaultvalue="7849" min="0" max="32767" display="Left stick deadzone">
+				<HelpText>Left analog stick deadzone (from 0 to 32767).</HelpText>
+			</Property>
+			<Property name="DeadzoneR" type="int" defaultvalue="8689" min="0" max="32767" display="Right stick deadzone">
+				<HelpText>Right analog stick deadzone (from 0 to 32767).</HelpText>
+			</Property>
+			<Property name="RadialL" type="bool" defaultvalue="True" display="Radial motion for left stick">
+				<HelpText>Enables full range of motion on the left analog stick.</HelpText>
+			</Property>
+			<Property name="RadialR" type="bool" defaultvalue="False" display="Radial motion for right stick">
+				<HelpText>Enables full range of motion on the right analog stick.</HelpText>
+			</Property>
+			<Property name="TriggerThreshold" type="int" defaultvalue="30" min="0" max="32767" display="Trigger threshold">
+				<HelpText>Trigger to digital conversion threshold (from 0 to 32767).</HelpText>
+			</Property>
+			<Property name="RumbleFactor" type="float" defaultvalue="1.0" min="0.0" max="1.0" display="Rumble factor">
+				<HelpText>Rumble multiplier. Values below 0 or above 1 have no effect.</HelpText>
+			</Property>
+			<Property name="MegaRumble" type="bool" defaultvalue="False" display="Mega rumble">
+				<HelpText>Always fire both motors while rumbling, never independently.</HelpText>
+			</Property>
+			<Property name="RumbleMinTime" type="int" defaultvalue="0" min="0" max="32767" display="Minimum rumble time">
+				<HelpText>Minimum rumble time (from 0 to 32767).</HelpText>
+			</Property>
+		</Group>
+
+		<Group name="Controller 7">
+			<Property name="DeadzoneL" type="int" defaultvalue="7849" min="0" max="32767" display="Left stick deadzone">
+				<HelpText>Left analog stick deadzone (from 0 to 32767).</HelpText>
+			</Property>
+			<Property name="DeadzoneR" type="int" defaultvalue="8689" min="0" max="32767" display="Right stick deadzone">
+				<HelpText>Right analog stick deadzone (from 0 to 32767).</HelpText>
+			</Property>
+			<Property name="RadialL" type="bool" defaultvalue="True" display="Radial motion for left stick">
+				<HelpText>Enables full range of motion on the left analog stick.</HelpText>
+			</Property>
+			<Property name="RadialR" type="bool" defaultvalue="False" display="Radial motion for right stick">
+				<HelpText>Enables full range of motion on the right analog stick.</HelpText>
+			</Property>
+			<Property name="TriggerThreshold" type="int" defaultvalue="30" min="0" max="32767" display="Trigger threshold">
+				<HelpText>Trigger to digital conversion threshold (from 0 to 32767).</HelpText>
+			</Property>
+			<Property name="RumbleFactor" type="float" defaultvalue="1.0" min="0.0" max="1.0" display="Rumble factor">
+				<HelpText>Rumble multiplier. Values below 0 or above 1 have no effect.</HelpText>
+			</Property>
+			<Property name="MegaRumble" type="bool" defaultvalue="False" display="Mega rumble">
+				<HelpText>Always fire both motors while rumbling, never independently.</HelpText>
+			</Property>
+			<Property name="RumbleMinTime" type="int" defaultvalue="0" min="0" max="32767" display="Minimum rumble time">
+				<HelpText>Minimum rumble time (from 0 to 32767).</HelpText>
+			</Property>
+		</Group>
+
+		<Group name="Controller 8">
+			<Property name="DeadzoneL" type="int" defaultvalue="7849" min="0" max="32767" display="Left stick deadzone">
+				<HelpText>Left analog stick deadzone (from 0 to 32767).</HelpText>
+			</Property>
+			<Property name="DeadzoneR" type="int" defaultvalue="8689" min="0" max="32767" display="Right stick deadzone">
+				<HelpText>Right analog stick deadzone (from 0 to 32767).</HelpText>
+			</Property>
+			<Property name="RadialL" type="bool" defaultvalue="True" display="Radial motion for left stick">
+				<HelpText>Enables full range of motion on the left analog stick.</HelpText>
+			</Property>
+			<Property name="RadialR" type="bool" defaultvalue="False" display="Radial motion for right stick">
+				<HelpText>Enables full range of motion on the right analog stick.</HelpText>
+			</Property>
+			<Property name="TriggerThreshold" type="int" defaultvalue="30" min="0" max="32767" display="Trigger threshold">
+				<HelpText>Trigger to digital conversion threshold (from 0 to 32767).</HelpText>
+			</Property>
+			<Property name="RumbleFactor" type="float" defaultvalue="1.0" min="0.0" max="1.0" display="Rumble factor">
+				<HelpText>Rumble multiplier. Values below 0 or above 1 have no effect.</HelpText>
+			</Property>
+			<Property name="MegaRumble" type="bool" defaultvalue="False" display="Mega rumble">
+				<HelpText>Always fire both motors while rumbling, never independently.</HelpText>
+			</Property>
+			<Property name="RumbleMinTime" type="int" defaultvalue="0" min="0" max="32767" display="Minimum rumble time">
+				<HelpText>Minimum rumble time (from 0 to 32767).</HelpText>
+			</Property>
+		</Group>
+
+		<Group name="Keyboard">
+			<Property name="-lefty" type="Keys" defaultvalue="38" min="8" max="255" display="Move forward">
+				<HelpText>Analog Y-.</HelpText>
+			</Property>
+			<Property name="+lefty" type="Keys" defaultvalue="40" min="8" max="255" display="Move backwards">
+				<HelpText>Analog Y+.</HelpText>
+			</Property>
+			<Property name="-leftx" type="Keys" defaultvalue="37" min="8" max="255" display="Move left">
+				<HelpText>Analog X-.</HelpText>
+			</Property>
+			<Property name="+leftx" type="Keys" defaultvalue="39" min="8" max="255" display="Move right">
+				<HelpText>Analog X+.</HelpText>
+			</Property>
+			<Property name="a" type="Keys" defaultvalue="88" min="8" max="255" display="Jump">
+				<HelpText>A button.</HelpText>
+			</Property>
+			<Property name="b" type="Keys" defaultvalue="90" min="8" max="255" display="Action/Spindash">
+				<HelpText>B button.</HelpText>
+			</Property>
+			<Property name="x" type="Keys" defaultvalue="65" min="8" max="255" display="Pick up">
+				<HelpText>X button.</HelpText>
+			</Property>
+			<Property name="y" type="Keys" defaultvalue="83" min="8" max="255" display="Whistle">
+				<HelpText>Y button.</HelpText>
+			</Property>
+			<Property name="start" type="Keys" defaultvalue="13" min="8" max="255" display="Start">
+				<HelpText>Start button.</HelpText>
+			</Property>
+			<Property name="-righty" type="Keys" defaultvalue="73" min="8" max="255" display="Look up">
+				<HelpText>Analog 2 Y-.</HelpText>
+			</Property>
+			<Property name="+righty" type="Keys" defaultvalue="77" min="8" max="255" display="Look down">
+				<HelpText>Analog 2 Y+.</HelpText>
+			</Property>
+			<Property name="-rightx" type="Keys" defaultvalue="74" min="8" max="255" display="Look left">
+				<HelpText>Analog 2 X-.</HelpText>
+			</Property>
+			<Property name="+rightx" type="Keys" defaultvalue="76" min="8" max="255" display="Look right">
+				<HelpText>Analog 2 X+.</HelpText>
+			</Property>
+			<Property name="lefttrigger" type="Keys" defaultvalue="81" min="8" max="255" display="Rotate camera left">
+				<HelpText>Left trigger.</HelpText>
+			</Property>
+			<Property name="righttrigger" type="Keys" defaultvalue="87" min="8" max="255" display="Rotate camera right">
+				<HelpText>Right trigger.</HelpText>
+			</Property>
+			<Property name="rightshoulder" type="Keys" defaultvalue="66" min="8" max="255" display="Z button">
+				<HelpText>Z button (for mods).</HelpText>
+			</Property>
+			<Property name="leftshoulder" type="Keys" defaultvalue="67" min="8" max="255" display="C button">
+				<HelpText>C button (for mods).</HelpText>
+			</Property>
+			<Property name="back" type="Keys" defaultvalue="86" min="8" max="255" display="D button">
+				<HelpText>D button (for mods).</HelpText>
+			</Property>
+			<Property name="rightstick" type="Keys" defaultvalue="160" min="8" max="255" display="Slow walk">
+				<HelpText>Halve analog input for slow walking.</HelpText>
+			</Property>
+			<Property name="leftstick" type="Keys" defaultvalue="69" min="8" max="255" display="Center camera">
+				<HelpText>Center camera on character.</HelpText>
+			</Property>
+			<Property name="dpup" type="Keys" defaultvalue="104" min="8" max="255" display="Menu up">
+				<HelpText>D-Pad up.</HelpText>
+			</Property>
+			<Property name="dpdown" type="Keys" defaultvalue="98" min="8" max="255" display="Menu down">
+				<HelpText>D-Pad down.</HelpText>
+			</Property>
+			<Property name="dpleft" type="Keys" defaultvalue="100" min="8" max="255" display="Menu left">
+				<HelpText>D-Pad left.</HelpText>
+			</Property>
+			<Property name="dpright" type="Keys" defaultvalue="102" min="8" max="255" display="Menu right">
+				<HelpText>D-Pad right.</HelpText>
+			</Property>
+		</Group>
+	</Groups>
+
+	<Enums>
+		<Enum name="Players">
+			<EnumMember name="0" display="Player 1"></EnumMember>
+			<EnumMember name="1" display="Player 2"></EnumMember>
+			<EnumMember name="2" display="Player 3"></EnumMember>
+			<EnumMember name="3" display="Player 4"></EnumMember>
+			<EnumMember name="4" display="Player 5"></EnumMember>
+			<EnumMember name="5" display="Player 6"></EnumMember>
+			<EnumMember name="6" display="Player 7"></EnumMember>
+			<EnumMember name="7" display="Player 8"></EnumMember>
+		</Enum>
+
+		<Enum name="Keys">
+			<EnumMember name="-1" display="None"></EnumMember>
+			<EnumMember name="65" display="A"></EnumMember>
+			<EnumMember name="66" display="B"></EnumMember>
+			<EnumMember name="67" display="C"></EnumMember>
+			<EnumMember name="68" display="D"></EnumMember>
+			<EnumMember name="69" display="E"></EnumMember>
+			<EnumMember name="70" display="F"></EnumMember>
+			<EnumMember name="71" display="G"></EnumMember>
+			<EnumMember name="72" display="H"></EnumMember>
+			<EnumMember name="73" display="I"></EnumMember>
+			<EnumMember name="74" display="J"></EnumMember>
+			<EnumMember name="75" display="K"></EnumMember>
+			<EnumMember name="76" display="L"></EnumMember>
+			<EnumMember name="77" display="M"></EnumMember>
+			<EnumMember name="78" display="N"></EnumMember>
+			<EnumMember name="79" display="O"></EnumMember>
+			<EnumMember name="80" display="P"></EnumMember>
+			<EnumMember name="81" display="Q"></EnumMember>
+			<EnumMember name="82" display="R"></EnumMember>
+			<EnumMember name="83" display="S"></EnumMember>
+			<EnumMember name="84" display="T"></EnumMember>
+			<EnumMember name="85" display="U"></EnumMember>
+			<EnumMember name="86" display="V"></EnumMember>
+			<EnumMember name="87" display="W"></EnumMember>
+			<EnumMember name="88" display="X"></EnumMember>
+			<EnumMember name="89" display="Y"></EnumMember>
+			<EnumMember name="90" display="Z"></EnumMember>
+			<EnumMember name="27" display="Escape"></EnumMember>
+			<EnumMember name="32" display="Space"></EnumMember>
+			<EnumMember name="33" display="Page Up"></EnumMember>
+			<EnumMember name="34" display="Page Down"></EnumMember>
+			<EnumMember name="35" display="End"></EnumMember>
+			<EnumMember name="36" display="Home"></EnumMember>
+			<EnumMember name="37" display="Left Arrow"></EnumMember>
+			<EnumMember name="38" display="Up Arrow"></EnumMember>
+			<EnumMember name="39" display="Right Arrow"></EnumMember>
+			<EnumMember name="40" display="Down Arrow"></EnumMember>
+			<EnumMember name="44" display="Print Screen"></EnumMember>
+			<EnumMember name="45" display="Insert"></EnumMember>
+			<EnumMember name="46" display="Delete"></EnumMember>
+			<EnumMember name="48" display="0"></EnumMember>
+			<EnumMember name="49" display="1"></EnumMember>
+			<EnumMember name="50" display="2"></EnumMember>
+			<EnumMember name="51" display="3"></EnumMember>
+			<EnumMember name="52" display="4"></EnumMember>
+			<EnumMember name="53" display="5"></EnumMember>
+			<EnumMember name="54" display="6"></EnumMember>
+			<EnumMember name="55" display="7"></EnumMember>
+			<EnumMember name="56" display="8"></EnumMember>
+			<EnumMember name="57" display="9"></EnumMember>
+			<EnumMember name="8" display="Backspace"></EnumMember>
+			<EnumMember name="9" display="Tab"></EnumMember>
+			<EnumMember name="13" display="Enter"></EnumMember>
+			<EnumMember name="18" display="Alt"></EnumMember>
+			<EnumMember name="19" display="Pause"></EnumMember>
+			<EnumMember name="20" display="Caps Lock"></EnumMember>
+			<EnumMember name="144" display="Num Lock"></EnumMember>
+			<EnumMember name="145" display="Scroll Lock"></EnumMember>
+			<EnumMember name="160" display="Left Shift"></EnumMember>
+			<EnumMember name="161" display="Right Shift"></EnumMember>
+			<EnumMember name="162" display="Left Control"></EnumMember>
+			<EnumMember name="163" display="Right Control"></EnumMember>
+			<EnumMember name="164" display="Left Menu"></EnumMember>
+			<EnumMember name="165" display="Right Menu"></EnumMember>
+			<EnumMember name="96" display="Numpad 0"></EnumMember>
+			<EnumMember name="97" display="Numpad 1"></EnumMember>
+			<EnumMember name="98" display="Numpad 2"></EnumMember>
+			<EnumMember name="99" display="Numpad 3"></EnumMember>
+			<EnumMember name="100" display="Numpad 4"></EnumMember>
+			<EnumMember name="101" display="Numpad 5"></EnumMember>
+			<EnumMember name="102" display="Numpad 6"></EnumMember>
+			<EnumMember name="103" display="Numpad 7"></EnumMember>
+			<EnumMember name="104" display="Numpad 8"></EnumMember>
+			<EnumMember name="105" display="Numpad 9"></EnumMember>
+			<EnumMember name="106" display="Multiply"></EnumMember>
+			<EnumMember name="107" display="Add"></EnumMember>
+			<EnumMember name="108" display="Separator"></EnumMember>
+			<EnumMember name="109" display="Subtract"></EnumMember>
+			<EnumMember name="110" display="Decimal"></EnumMember>
+			<EnumMember name="111" display="Divide"></EnumMember>
+			<EnumMember name="112" display="F1"></EnumMember>
+			<EnumMember name="113" display="F2"></EnumMember>
+			<EnumMember name="114" display="F3"></EnumMember>
+			<EnumMember name="115" display="F4"></EnumMember>
+			<EnumMember name="116" display="F5"></EnumMember>
+			<EnumMember name="117" display="F6"></EnumMember>
+			<EnumMember name="118" display="F7"></EnumMember>
+			<EnumMember name="119" display="F8"></EnumMember>
+			<EnumMember name="120" display="F9"></EnumMember>
+			<EnumMember name="121" display="F10"></EnumMember>
+			<EnumMember name="122" display="F11"></EnumMember>
+			<EnumMember name="123" display="F12"></EnumMember>
+			<EnumMember name="124" display="F13"></EnumMember>
+			<EnumMember name="125" display="F14"></EnumMember>
+			<EnumMember name="126" display="F15"></EnumMember>
+			<EnumMember name="127" display="F16"></EnumMember>
+			<EnumMember name="128" display="F17"></EnumMember>
+			<EnumMember name="129" display="F18"></EnumMember>
+			<EnumMember name="130" display="F19"></EnumMember>
+			<EnumMember name="131" display="F20"></EnumMember>
+			<EnumMember name="132" display="F21"></EnumMember>
+			<EnumMember name="133" display="F22"></EnumMember>
+			<EnumMember name="134" display="F23"></EnumMember>
+			<EnumMember name="135" display="F24"></EnumMember>
+			<EnumMember name="93" display="Applications"></EnumMember>
+			<EnumMember name="42" display="Print"></EnumMember>
+			<EnumMember name="43" display="Execute"></EnumMember>
+			<EnumMember name="47" display="Help"></EnumMember>
+			<EnumMember name="41" display="Select"></EnumMember>
+			<EnumMember name="12" display="Clear"></EnumMember>
+		</Enum>
+	</Enums>
 </ConfigSchema>

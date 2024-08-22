@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ConfigSchema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.sonicretro.org">
+	<Groups>
+		<Group name="General">
+			<Property name="Subtitles" type="bool" display="HD subtitles" defaultvalue="True">
+				<HelpText>Enables HD subtitle font (experimental).</HelpText>
+			</Property>
+		</Group>
+	</Groups>
+</ConfigSchema>
