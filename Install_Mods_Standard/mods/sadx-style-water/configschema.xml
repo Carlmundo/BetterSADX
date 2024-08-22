@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<ConfigSchema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.sonicretro.org">
+	<Groups>
+		<Group name="General" display="General">
+			<Property name="EmeraldCoast" type="bool" defaultvalue="True" display="Emerald Coast">
+				<HelpText>Enable SADX style water in Emerald Coast.</HelpText>
+			</Property>	
+			<Property name="StationSquare" type="bool" defaultvalue="True" display="Station Square">
+				<HelpText>Enable SADX style water in Station Square.</HelpText>
+			</Property>	
+			<Property name="MysticRuins" type="bool" defaultvalue="True" display="Mystic Ruins">
+				<HelpText>Enable SADX style water in the Mystic Ruins.</HelpText>
+			</Property>	
+			<Property name="EggCarrier" type="bool" defaultvalue="True" display="Egg Carrier">
+				<HelpText>Enable SADX style water on the Egg Carrier.</HelpText>
+			</Property>	
+			<Property name="Past" type="bool" defaultvalue="True" display="Mystic Ruins Past">
+				<HelpText>Enable SADX style water in Mystic Ruins Past.</HelpText>
+			</Property>
+		</Group>
+	</Groups>
+</ConfigSchema>
