@@ -1,0 +1,274 @@
+﻿//Please keep the lines in the same order
+//You don't need to translate the lines starting with //
+
+//Translated language string (change to your language)
+Deutsch
+
+//Top bar buttons
+OPTIONEN
+STEUERUNG
+SPIELEN
+MODS
+
+//General strings and button captions
+EIN
+AUS
+MONITORE
+ALLE
+LADEN
+STANDARD
+SPEICHERN
+TASTATUR
+KONTROLLER
+WEITERES
+ZURÜCK
+TEXT
+STIMMEN
+Ja
+Nein
+Abbrechen
+
+//Top bar descriptions
+Grafik-, Audio- und Spracheinstellungen
+Kontroller- and Tastatureinstellungen
+Starte das Spiel
+Starte den Mod-Manager
+Minimiert das Programm
+Schließt das Programm
+
+//Dialog boxes
+Dieser Launcher sollte vom SADX-Hauptorder benutzt werden. Bitte verschiebe AppLauncher.exe in Ihrem SADX Ordner (wo sonic.exe ist).
+Updatesuche gescheitert. Der Server könnte offline sein oder es existiert keine Internetverbindung.
+Neue Version gefunden! Möchten Sie es herunterladen?
+Sie benutzen die neueste Version des Launchers.
+Neuer Kontroller gefunden. Steuerung angepasst für:
+Steuerung und Einstellungen gespeichert für:
+Steuerung für Tastatur gespeichert.
+Änderungen wurden noch nicht gespeichert. Möchten Sie die Änderungen speichern?
+
+//Dialog box titles
+SADX nicht gefunden
+Updatesuche gescheitert
+Update gefunden!
+Kein Update nötig
+Neuer Kontroller gefunden
+Erfolgreich gespeichert
+Änderungen speichern?
+
+//Language options
+Ändert Textsprache zu Japanisch sobald das Spiel startet
+Ändert Textsprache zu Englisch sobald das Spiel startet
+Ändert Textsprache zu Französich sobald das Spiel startet
+Ändert Textsprache zu Spanisch sobald das Spiel startet
+Ändert Textsprache zu Deutsch sobald das Spiel startet
+Ändert Stimmen zu Japanisch sobald das Spiel startet
+Ändert Stimmen zu Englisch sobald das Spiel startet
+
+//Strings for the Options screen
+Alle Bildschirme
+Bild-Einstellungen
+Auflösung
+Modus
+Fenster
+Vollbild
+V-Sync
+Veränderbar
+Randlos
+Grafik-Einstellungen
+Bildfrequenz
+Detaillierungsgrad
+Hoch (am besten)
+Tief
+Tiefsten
+Audio-Einstellungen
+Musik-Lautstärke
+Stimmen-Lautst.
+3D-Audio
+Spezifische Fenstergröße
+Aktivieren
+Bildschirm-Skalierung
+Zwinge 4:3
+Texture-Filterung
+Mipmaps
+Debug-Protokoll
+Konsole
+Bildschirm
+Datei
+
+//Descriptions for the Options screen
+Rendering-Auflösung und Fenstergröße
+Das Spiel wird von einem Fenster aus dargestellt
+Exklusives Vollbild, empfohlen für Low-End Systeme
+Synchronisiere die Bildrate mit der Bildwiederholrate des Monitors
+Synchronisere nicht die Bildrate mit der Bildwiederholrate des Monitors
+Die Fenstergröße kann man während des Spieles ändern
+Die Fenstergröße bleibt so wie sie ist, empfohlen für die beste Leistung
+Starte das Spiel im Randlosem-Modus, empfohlen für die meisten Systeme
+Starte das Spiel im exklusivem Vollbild-Modus, empfohlen für Low-End Systeme
+Je höher die Bildrate, desto geschmeidiger läuft das Spiel
+Detaillierungsgrad - Für die meisten Systeme auf Hoch empfohlen
+Musik-Lautstärke in Prozent
+Stimmen-Lautstärke in Prozent
+Aktiviert Surround Stereo
+Deaktiviert Surround Stereo
+Das Spiel wird auf allen Bildschirmen angezeigt werden
+Das Spiel wird auf dem Bildschirm angezeigt werden 1
+Das Spiel wird auf dem Bildschirm angezeigt werden 2
+Änderungen verwerfen
+Lade optimale Standard-Einstellungen
+Speichere Einstellungen
+Über das Programm
+Stellt die Größe des Spiel-Fensters ein (kann anders von der Auflösung sein)
+Skaliert die Darstellung zur Bildschirm/Fenstergröße (für Downsampling)
+Erzwingt Ränder an Seiten für nicht-4:3 Auflösungen
+Lässt Texturen glatter aussehen (empfohlen)
+Lässt Texturen von fernen Objekten glatter aussehen (empfohlen)
+Zeigt Debug-Informationen in Konsole an
+Zeigt Debug-Informationen auf dem Bildschirm an
+Speichert Debug-Protokoll Dateien
+
+//Strings for the Controls screen
+Kontroller-Name
+Eingabe-Geräte
+Tastatur-Spieler
+Aktiviert Maus
+Kontroller Radialbewegung
+Kontroller Deadzones
+Linker Stick
+Rechter Stick
+Trigger
+Kontrollervibration
+Minimale Zeit
+Multiplikator
+Mega Vibrationen
+
+//Descriptions for the Controls screen
+Erweiterte Kontroller-Einstellungen
+Speichert Steuerung und Einstellungen für jetzigen Kontroller/Tastatur
+Lade Standard-Steuerung
+Zeigt ein XInput-ähnliches Layout
+Zeigt Indexe für Knöpfe/Analogsticks
+Ändere Steuerung für Tastatur
+Ändere Steuerung für Kontroller
+Wähle den Spieler aus, der die Tastatur kontrollieren wird
+Aktiviert Maus-Eingabe (global)
+Deaktiviert Maus-Eingabe (global)
+Aktivierte kompletten Bereich des linken Analogsticks
+Deaktiviere kompletten Bereich des linken Analogsticks
+Aktivierte kompletten Bereich des rechten Analogsticks
+Deaktiviere kompletten Bereich des rechten Analogsticks
+Deadzone für den linken Analogstick
+Deadzone für den rechten Analogstick
+Digitaler Umrechnungsschwellenwert für die Analogtrigger
+Minimale Vibrationszeit
+Vibrationsstärke
+Aktiviert beide Motoren auf einmal, niemals unabhängig
+Aktiviert beide Motoren unabhängig voneinander
+
+//Bindings
+Rotiert Kamera nach links
+Rotiert Kamera nach rechts
+Nach vorn bewegen
+Nach hinten bewegen
+Nach links bewegen
+Nach rechts bewegen
+Menü hoch
+Menü runter
+Menü links
+Menü rechts
+Start
+Springen
+Aktion / Spin Dash
+Action / Aufheben
+Pfeifen
+Nach oben sehen
+Nach unten sehen
+Nach links sehen
+Nach rechts sehen
+Kamera zentrieren
+Z Knopf (für Mods)
+C Knopf (für Mods)
+D Knopf (für Mods)
+Langsam laufen
+
+//Binding context menu
+Neu binden
+Lösche Einstellungen
+Standard Einstellungen wiederherstellen
+Lade Einstellungen von Datei
+Auf einer Spezialtaste binden
+Axis
+Knopf
+Steuerkreuz
+
+//Button names for context menu
+Linke Schulter
+Rechte Schulter
+Back
+Start
+Linker Stick
+Rechter Stick
+Home
+Oben
+Unten
+Links
+Rechts
+
+//Key names for context menu
+Linke Umschalttaste
+Rechte Umschalttaste
+Linke Alt-Taste
+Rechte Alt-Taste
+Linke Strg-Taste
+Rechte Strg-Taste
+Numpad
+Ende (1)
+Unten (2)
+Bild Unten (3)
+Links (4)
+Mitte (5)
+Rechts (6)
+Pos 1 (7)
+Oben (8)
+Bild Oben (9)
+Num Entf
+Num Plus
+Num Minus
+Num Mal
+Num Geteilt
+Num Enter
+
+//Misc strings for the Controls screen
+Drücke Knopf für: 
+Drücke Taste für:
+, Escape oder Mittelklick zum Abbrechen
+, Mittelklick zum Abbrechen
+Belegung abgebrochen
+
+//Strings for the About screen
+Über das Programm
+Sonic Adventure DX Launcher
+Konfigurationsprogramm für MainMemorys Mod Loader und SonicFreak94s Input Mod. Übersetzung von AnotherBlob.
+Dieses Programm ist Teil des SADX Mod Installer von PkR.
+Suche nach Launcher-Updates
+Mod Installer Homepage
+Twitter des Entwicklers
+Quellen und Hilfsmittel die benutzt worden sind:
+SADX Steam Launcher Grafiken
+SA1/SADX Texturen, Bildschirmhintergründe und Werbekunst
+SDL2 Programmbibliothek
+Gebaut mit Clickteam Fusion 2.5
+Suche nach Updates für diesen Launcher
+Besuche die SADX Mod Installer Homepage
+Besuche PkRs Twitter
+Gehe zurück zum vorherigen Bildschirm
+Suche nach Updates, bitte warten...
+
+//Strings I forgot to add in the first version of this file
+Einfg (0)
+SUCHEN
+ÖFFNEN
+SADX Input Mod ist nicht installiert. Tastatur und Kontroller Konfigurierung ist nicht verfügbar. Möchten Sie den Input Mod herunterladen?
+Input Mod nicht vorhanden
+Das Spiel wird auf dem Bildschirm angezeigt werden 3
+Das Spiel wird auf dem Bildschirm angezeigt werden 4

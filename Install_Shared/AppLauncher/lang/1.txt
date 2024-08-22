@@ -1,0 +1,274 @@
+﻿//Please keep the lines in the same order
+//You don't need to translate the lines starting with //
+
+//Translated language string (change to your language)
+English
+
+//Top bar buttons
+OPTIONS
+CONTROLS
+PLAY
+MODS
+
+//General strings and button captions
+ON
+OFF
+MONITORS
+ALL
+RELOAD
+DEFAULT
+SAVE
+KEYBOARD
+CONTROLLER
+ADVANCED
+BACK
+TEXT
+VOICES
+Yes
+No
+Cancel
+
+//Top bar descriptions
+Graphics, sound and language options
+Controller and keyboard options
+Start the game
+Launch the Mod Manager
+Minimize the program
+Quit the program
+
+//Dialog boxes
+This launcher is meant to be run from SADX main folder. Please put AppLauncher.exe in your SADX folder (where sonic.exe is).
+Update check failed. The server may be offline, or there is no Internet connection.
+New version found! Would you like to download it?
+You are running the latest version of the launcher.
+New controller detected. Mapping created for:
+Saved bindings and settings for:
+Saved bindings for the keyboard.
+There are unsaved changes. Would you like to apply them?
+
+//Dialog box titles
+SADX not found
+Update check failed
+Update found!
+No updates required
+New controller detected
+Save successful
+Save changes?
+
+//Language options
+Change text language to Japanese when the game starts
+Change text language to English when the game starts
+Change text language to French when the game starts
+Change text language to Spanish when the game starts
+Change text language to German when the game starts
+Change voice language to Japanese when the game starts
+Change voice language to English when the game starts
+
+//Strings for the Options screen
+All screens
+Screen settings
+Resolution
+Mode
+Windowed
+Fullscreen
+VSync
+Resizable
+Borderless
+Graphics settings
+Framerate
+Detail level
+High (best)
+Low
+Lowest
+Sound settings
+Music volume
+Voice volume
+3D sound
+Custom window size
+Enable
+Screen scaling
+Force 4:3
+Texture filtering
+Mipmaps
+Debug messages
+Console
+Screen
+File
+
+//Descriptions for the Options screen
+Rendering resolution and window size
+The game will display in a window
+Exclusive fullscreen, recommended for low-end systems
+Synchronize framerate with the monitor's refresh rate
+Don't synchronize framerate with the monitor's refresh rate
+Make the game's window resizable
+Make the game's window static, recommended for best performance
+Run the game in borderless mode, recommended for most systems
+Run the game in exclusive fullscreen mode, recommended for low-end systems
+Higher framerate provides smoother gameplay
+Detail level - High recommended for most systems
+Music volume in percent
+Voice volume in percent
+Enable surround stereo
+Disable surround stereo
+The game will display on all screens
+The game will display on monitor 1
+The game will display on monitor 2
+Discard changes
+Load optimal default settings
+Save settings
+About this program
+Set the size of the game window (can be different from resolution)
+Scale display to screen/window size (for downsampling)
+Force side borders for non-4:3 resolutions
+Make textures appear smoother (recommended)
+Make textures on distant objects appear smoother (recommended)
+Show debug information in console
+Show debug information on screen
+Enable debug log file output
+
+//Strings for the Controls screen
+Controller name
+Input devices
+Keyboard player
+Enable mouse
+Controller radial motion
+Controller deadzones
+Left stick
+Right stick
+Triggers
+Controller rumble
+Minimum time
+Multiplier
+Mega rumble
+
+//Descriptions for the Controls screen
+Advanced controller settings
+Save bindings and settings for current controller/keyboard
+Load default bindings
+Show an XInput-like layout
+Show indices for buttons/analog sticks
+Change bindings for keyboard
+Change bindings for Controller
+Select which player is controlled by the keyboard
+Enable mouse input (globally)
+Disable mouse input (globally)
+Enable full range for left analog stick
+Disable full range for left analog stick
+Enable full range for right analog stick
+Disable full range for right analog stick
+Deadzone for left analog stick
+Deadzone for right analog stick
+Digital conversion threshold for triggers
+Minimum vibration time
+Vibration strength
+Fire both motors at once, never independently
+Fire motors independently
+
+//Bindings
+Rotate camera left
+Rotate camera right
+Move forward
+Move backwards
+Move left
+Move right
+Menu up
+Menu down
+Menu left
+Menu right
+Start
+Jump
+Action / Spindash
+Action / Pick up
+Whistle
+Look up
+Look down
+Look left
+Look right
+Center camera
+Z button (for mods)
+C button (for mods)
+D button (for mods)
+Slow walk
+
+//Binding context menu
+Rebind
+Clear binding
+Restore default binding
+Reload binding from file
+Bind a special key
+Axis
+Button
+D-Pad
+
+//Button names for context menu
+left shoulder
+right shoulder
+back
+start
+left stick
+right stick
+home
+Up
+Down
+Left
+Right
+
+//Key names for context menu
+Left Shift
+Right Shift
+Left Alt
+Right Alt
+Left Ctrl
+Right Ctrl
+Numpad
+End (1)
+Down (2)
+Page Down (3)
+Left (4)
+Center (5)
+Right (6)
+Home (7)
+Up (8)
+Page Up (9)
+Num Delete
+Num Plus
+Num Minus
+Num Multiply
+Num Divide
+Num Enter
+
+//Misc strings for the Controls screen
+Press button for: 
+Press key for:
+, Escape or middle click to cancel
+, middle click to cancel
+Remapping cancelled
+
+//Strings for the About screen
+About this program
+Sonic Adventure DX Launcher
+Configuration tool for MainMemory's Mod Loader and SonicFreak94's Input Mod.
+This program is part of SADX Mod Installer by PkR.
+Check for launcher updates
+Mod Installer homepage
+Developer's Twitter
+Resources and tools used:
+SADX Steam launcher graphics
+SA1/SADX textures, wallpapers and promotional art
+SDL2 library
+Built with Clickteam Fusion 2.5
+Check for updates for this launcher
+Visit SADX Mod Installer's homepage
+Visit PkR's Twitter
+Go back to the previous screen
+Checking for updates, please wait...
+
+//Strings I forgot to add in the first version of this file
+Insert (0)
+CHECK
+OPEN
+SADX Input Mod is not installed. Keyboard and controller configuration is not available. Would you like to download the Input Mod?
+Input Mod missing
+The game will display on monitor 3
+The game will display on monitor 4
