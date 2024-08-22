@@ -1,5 +1,5 @@
 #define AppName "BetterSADX"
-#define AppVersion "4.4.8"
+#define AppVersion "4.5"
 #define Game "Sonic Adventure DX"
 [Setup]
 ; NOTE: The value of AppId uniquely identifies this application.
@@ -21,9 +21,7 @@ SetupIconFile=SADX.ico
 WizardImageFile=SADX_Large.bmp
 WizardImageStretch=no
 WizardSmallImageFile=SADX_small.bmp
-;SetupLogging=yes
-;Compression=lzma
-;SolidCompression=yes
+Compression=none
 Uninstallable=no
 PrivilegesRequired=admin
 
