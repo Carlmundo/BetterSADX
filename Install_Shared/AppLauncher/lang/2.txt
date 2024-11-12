@@ -37,7 +37,7 @@ Minimiser le programme
 Quitter le programme
 
 //Dialog boxes
-Impossible de détecter le SADX Mod Loader. Il est destiné à être exécuté à partir du dossier principal SADX. Veuillez mettre AppLauncher.exe dans votre dossier SADX (où se trouve SADXModManager.exe).
+Il est destiné à être exécuté à partir du dossier principal SADX. Veuillez mettre AppLauncher.exe dans votre dossier SADX (où se trouve sonic.exe).
 La vérification de la mise à jour a échoué. Le serveur est peut-être hors ligne ou il n'y a pas de connexion Internet.
 Nouvelle version trouvée! Souhaitez-vous la télécharger?
 Vous exécutez la dernière version du lanceur.
@@ -47,7 +47,7 @@ Liaisons enregistrées pour le clavier.
 Il y a des modifications non enregistrées. Souhaitez-vous les appliquer?
 
 //Dialog box titles
-Mod Loader non-trouvé
+SADX non-trouvé
 La vérification de la mise à jour a échoué
 Mise à jour trouvée!
 Aucune mise à jour requise
@@ -112,8 +112,8 @@ Volume des voix en pourcentage
 Activer la stéréo surround
 Déactiver la stéréo surround
 Le jeu s'affichera sur tous les écrans
-Le jeu s'affichera sur le premier écran
-Le jeu s'affichera sur le deuxième écran
+Le jeu s'affichera sur le écran 1
+Le jeu s'affichera sur le écran 2
 Annuler les modifications
 Charger les paramètres par défaut optimaux
 Sauvegarder les paramètres
@@ -270,3 +270,6 @@ VÈRIFIER
 VISITEZ
 SADX Input Mod n'est pas installé. La configuration du clavier et de la manette n'est pas disponible. Voulez-vous télécharger Input Mod?
 Input Mod manquant
+Le jeu s'affichera sur le écran 3
+Le jeu s'affichera sur le écran 4
+Press and release anything on the controller, then click this button to reset axes
