@@ -37,7 +37,7 @@ Minimiert das Programm
 Schließt das Programm
 
 //Dialog boxes
-Dieser Launcher sollte vom SADX-Hauptorder benutzt werden. Bitte verschiebe AppLauncher.exe in Ihrem SADX Ordner (wo sonic.exe ist).
+Konnte den SADX Mod Loader nicht finden. Dieser Launcher sollte vom SADX-Hauptorder benutzt werden. Bitte verschiebe AppLauncher.exe in Ihrem SADX Ordner (wo SADXModManager.exe ist).
 Updatesuche gescheitert. Der Server könnte offline sein oder es existiert keine Internetverbindung.
 Neue Version gefunden! Möchten Sie es herunterladen?
 Sie benutzen die neueste Version des Launchers.
@@ -47,7 +47,7 @@ Steuerung für Tastatur gespeichert.
 Änderungen wurden noch nicht gespeichert. Möchten Sie die Änderungen speichern?
 
 //Dialog box titles
-SADX nicht gefunden
+Mod Loader nicht gefunden
 Updatesuche gescheitert
 Update gefunden!
 Kein Update nötig
@@ -112,8 +112,8 @@ Stimmen-Lautstärke in Prozent
 Aktiviert Surround Stereo
 Deaktiviert Surround Stereo
 Das Spiel wird auf allen Bildschirmen angezeigt werden
-Das Spiel wird auf dem Bildschirm angezeigt werden 1
-Das Spiel wird auf dem Bildschirm angezeigt werden 2
+Das Spiel wird auf dem ersten Bildschirm angezeigt werden
+Das Spiel wird auf dem zweiten Bildschirm angezeigt werden
 Änderungen verwerfen
 Lade optimale Standard-Einstellungen
 Speichere Einstellungen
@@ -270,5 +270,3 @@ SUCHEN
 ÖFFNEN
 SADX Input Mod ist nicht installiert. Tastatur und Kontroller Konfigurierung ist nicht verfügbar. Möchten Sie den Input Mod herunterladen?
 Input Mod nicht vorhanden
-Das Spiel wird auf dem Bildschirm angezeigt werden 3
-Das Spiel wird auf dem Bildschirm angezeigt werden 4

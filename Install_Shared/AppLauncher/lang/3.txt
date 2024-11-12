@@ -37,7 +37,7 @@ Minimizar el programa
 Salir del programa
 
 //Dialog boxes
-Este launcher debe ejecutarse desde la carpeta principal de SADX. Por favor coloca el AppLauncher.exe en tu carpeta de SADX (Donde sonic.exe se encuentra).
+No se detecta SADX Mod Loader. Este launcher debe ejecutarse desde la carpeta principal de SADX. Por favor coloca el AppLauncher.exe en tu carpeta de SADX (Donde SADXModManager.exe se encuentra).
 Búsqueda de actualizaciones fallida. El servidor puede estar fuera de línea o no hay conexión a Internet.
 ¡Nueva versión encontrada! ¿Deseas descargarla?
 Estás usando la ultima versión del launcher.
@@ -47,7 +47,7 @@ Enlaces guardados para el teclado.
 Hay cambios sin guardar. ¿Deseas aplicarlos?
 
 //Dialog box titles
-SADX no encontrado
+Mod Loader no encontrado
 Búsqueda de actualizaciones fallida
 ¡Actualización encontrada!
 Ninguna actualización requerida
@@ -112,8 +112,8 @@ Volumen de la voz en porcentaje
 Habilitar sonido envolvente
 Deshabilitar sonido envolvente
 El juego se mostrará en todas las pantallas
-El juego se mostrará en la pantalla 1
-El juego se mostrará en la pantalla 2
+El juego se mostrará en la primera pantalla
+El juego se mostrará en la segunda pantalla
 Descartar cambios
 Cargar la configuracion óptima por defecto
 Guardar ajustes
@@ -270,5 +270,3 @@ BUSCAR
 VISITAR
 SADX Input Mod no está instalado. La configuración del teclado y el control no está disponible. ¿Quieres descargar el Input Mod?
 Falta el Input Mod
-El juego se mostrará en la pantalla 3
-El juego se mostrará en la pantalla 4

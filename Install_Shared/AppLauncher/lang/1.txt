@@ -37,7 +37,7 @@ Minimize the program
 Quit the program
 
 //Dialog boxes
-This launcher is meant to be run from SADX main folder. Please put AppLauncher.exe in your SADX folder (where sonic.exe is).
+Unable to detect SADX Mod Loader. This launcher is meant to be run from SADX main folder. Please put AppLauncher.exe in your SADX folder (where SADXModManager.exe is).
 Update check failed. The server may be offline, or there is no Internet connection.
 New version found! Would you like to download it?
 You are running the latest version of the launcher.
@@ -47,7 +47,7 @@ Saved bindings for the keyboard.
 There are unsaved changes. Would you like to apply them?
 
 //Dialog box titles
-SADX not found
+Mod Loader not found
 Update check failed
 Update found!
 No updates required
@@ -112,8 +112,8 @@ Voice volume in percent
 Enable surround stereo
 Disable surround stereo
 The game will display on all screens
-The game will display on monitor 1
-The game will display on monitor 2
+The game will display on the first screen
+The game will display on the second screen
 Discard changes
 Load optimal default settings
 Save settings
@@ -270,5 +270,3 @@ CHECK
 OPEN
 SADX Input Mod is not installed. Keyboard and controller configuration is not available. Would you like to download the Input Mod?
 Input Mod missing
-The game will display on monitor 3
-The game will display on monitor 4
