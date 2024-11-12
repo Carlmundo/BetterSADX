@@ -1,0 +1,2 @@
+# Game Controller DB for SDL in 2.0.10 format
+0300938d5e040000120b000000007200,Xbox Series X Controller,a:b0,b:b1,back:b6,dpdown:h0.4,dpleft:h0.8,dpright:h0.2,dpup:h0.1,guide:b10,leftshoulder:b4,leftstick:b8,lefttrigger:+a4,+leftx:+a0,+lefty:+a1,rightshoulder:b5,rightstick:b9,righttrigger:+a5,+rightx:+a2,+righty:+a3,start:b7,x:b2,y:b3,-leftx:-a0,-lefty:-a1,-rightx:-a2,-righty:-a3,platform:Windows,
