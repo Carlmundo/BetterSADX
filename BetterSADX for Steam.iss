@@ -140,27 +140,29 @@ begin
       
       ProgressPage.SetText('Installing redistributables...', ''); 
       ProgressPage.SetProgress(50, 100);
-      //VC Redist 2013, 2015-2019
+      //VC Redist 2013, 2015-2022
       Exec(ExpandConstant('{app}\_CommonRedist\vcredist\2013\vcredist_x86.exe'), '/quiet /norestart', '', SW_SHOW, ewWaitUntilTerminated, ErrorCode);
-      Exec(ExpandConstant('{app}\_CommonRedist\vcredist\2015-2019\VC_redist.x86.exe'), '/quiet /norestart', '', SW_SHOW, ewWaitUntilTerminated, ErrorCode);
-      //.NET Framework 4.0 and 4.5
-      Exec(ExpandConstant('{app}\_CommonRedist\.NET Framework\dotNetFx40_Full_x86_x64.exe'), '/q /norestart', '', SW_SHOW, ewWaitUntilTerminated, ErrorCode);
-      Exec(ExpandConstant('{app}\_CommonRedist\.NET Framework\dotnetfx45_full_x86_x64.exe'), '/q /norestart', '', SW_SHOW, ewWaitUntilTerminated, ErrorCode);
-      
+      Exec(ExpandConstant('{app}\_CommonRedist\vcredist\2015-2022\VC_redist.x86.exe'), '/quiet /norestart', '', SW_SHOW, ewWaitUntilTerminated, ErrorCode);
+      Exec(ExpandConstant('{app}\_CommonRedist\vcredist\2015-2022\VC_redist.x64.exe'), '/quiet /norestart', '', SW_SHOW, ewWaitUntilTerminated, ErrorCode);
+      //.NET Desktop 7.0
+      ProgressPage.SetProgress(60, 100);
+      Exec(ExpandConstant('{app}\_CommonRedist\.NET Desktop\dotnet_x86.exe'), '/q /norestart', '', SW_SHOW, ewWaitUntilTerminated, ErrorCode);
+      ProgressPage.SetProgress(70, 100);
+      Exec(ExpandConstant('{app}\_CommonRedist\.NET Desktop\dotnet_x64.exe'), '/q /norestart', '', SW_SHOW, ewWaitUntilTerminated, ErrorCode);
       //Remove unneeded redist executables
       ProgressPage.SetText('Deleting redist installers...', '');
-      ProgressPage.SetProgress(65, 100);
+      ProgressPage.SetProgress(80, 100);
             
       DelTree(ExpandConstant('{app}\_CommonRedist'), True, True, True);
             
       //Add DEP exemption entry
       ProgressPage.SetText('Adding DEP exception...', '');
-      ProgressPage.SetProgress(75, 100);
+      ProgressPage.SetProgress(90, 100);
       Exec('rundll32.exe', ExpandConstant('sysdm.cpl, NoExecuteAddFileOptOutList "{app}\sonic.exe"'), '', SW_SHOW, ewNoWait, ErrorCode);
     
       //Copy Save Data
       ProgressPage.SetText('Copying Save data...', '');
-      ProgressPage.SetProgress(90, 100);
+      ProgressPage.SetProgress(95, 100);
       
       If (not DirExists(ExpandConstant('{app}\savedata\'))) Then begin
         If (DirExists(ExpandConstant('{userdocs}\SEGA\Sonic Adventure DX\savedata\'))) Then begin
