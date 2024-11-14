@@ -231,6 +231,7 @@ FinishedHeadingLabel=Patch Complete
 [InstallDelete]
 Type: files; Name: "{app}\input_config.xml"
 Type: files; Name: "{app}\keycap_config.xml"
+Type: files; Name: "{app}\SDL2.dll"
 Type: files; Name: "{app}\Sonic Adventure DX.exe"
 Type: files; Name: "{app}\system_config.xml"
 Type: files; Name: "{app}\system\AL_STG_KINDER_AD_TEX_R.pvm"
@@ -355,4 +356,5 @@ Root: HKLM64; Subkey: "SOFTWARE\Microsoft\Windows NT\CurrentVersion\AppCompatFla
 Root: HKLM32; Subkey: "SOFTWARE\Microsoft\Windows NT\CurrentVersion\AppCompatFlags\Layers"; ValueType: string; ValueName: "{app}\sonic.exe"; ValueData: "HIGHDPIAWARE "; Check: Not IsWin64
 
 [Run]
-Filename: "steam://openurl/https://steamcommunity.com/groups/BetterSADX"; Description: "Open BetterSADX Steam group"; Flags: shellexec runasoriginaluser postinstall nowait
+Filename: "{app}/AppLauncher.exe"; Description: "Configure the game"; Flags: runasoriginaluser postinstall nowait
+Filename: "steam://openurl/https://steamcommunity.com/groups/BetterSADX"; Description: "Open BetterSADX Steam group"; Flags: shellexec runasoriginaluser postinstall nowait unchecked
