@@ -35,6 +35,10 @@ Name: "standard"; Description: "Major Improvements"; Types: standard; Flags: fix
 Name: "full"; Description: "Dreamcast Conversion"; Types: full; Flags: fixed
 
 [Code]
+//Parse JSON
+function JSONWriteInteger(AFileName, APath: WideString; AValue: Int64): Boolean;
+	external 'JSONWriteInteger@files:jsonconfig.dll stdcall';
+
 //Use SystemMetrics to get resolution
 function GetSystemMetrics (nIndex: Integer): Integer;
 external 'GetSystemMetrics@User32.dll stdcall setuponly';
@@ -172,13 +176,12 @@ begin
           DeleteFile(ExpandConstant('{app}\SADXSteamSaveConverter.exe'));     
         end      
       end;
-
-      if IsComponentSelected('standard') or IsComponentSelected('full') then
-      begin
-        res_x := GetSystemMetrics(SM_CXSCREEN);
-        res_y := GetSystemMetrics(SM_CYSCREEN);
-        SaveStringToFile(ExpandConstant('{app}\mods\SADXModLoader.ini'), #13#10 + 'HorizontalResolution=' + IntToStr(res_x) + #13#10 + 'VerticalResolution=' + IntToStr(res_y), True);
-      end;
+      
+      res_x := GetSystemMetrics(SM_CXSCREEN);
+      res_y := GetSystemMetrics(SM_CYSCREEN);
+      SaveStringToFile(ExpandConstant('{app}\mods\.modloader\samanager.txt'), ExpandConstant('{app}'), False);
+      JSONWriteInteger(ExpandConstant('{app}\mods\.modloader\Profiles\Default.json'), '/Graphics/HorizontalResolution', res_x);
+      JSONWriteInteger(ExpandConstant('{app}\mods\.modloader\Profiles\Default.json'), '/Graphics/VerticalResolution', res_y)    
 
       //End Post Install
       ProgressPage.Hide;
@@ -340,6 +343,8 @@ Type: files; Name: "{app}\system\ava_tool_tips.pvm"
 Type: files; Name: "{app}\d3d8.dll"
 
 [Files]
+;JSON parser
+Source: "jsonconfig.dll"; Flags: dontcopy
 ; Files
 Source: ".\Install_Steam\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: base
 Source: ".\Install_Shared\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: base
@@ -347,8 +352,8 @@ Source: ".\Install_Mods_Standard\*"; DestDir: "{app}"; Flags: ignoreversion recu
 Source: ".\Install_Mods_Common\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: full standard
 Source: ".\Install_Mods_DC\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: full
 ; Configs
-Source: ".\Config_Standard\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: standard
-Source: ".\Config_DC\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: full
+Source: ".\Config_Standard\*"; DestDir: "{app}\mods\.modloader\profiles"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: standard
+Source: ".\Config_DC\*"; DestDir: "{app}\mods\.modloader\profiles"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: full
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
 [Registry]
