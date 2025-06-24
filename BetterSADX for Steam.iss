@@ -59,13 +59,23 @@ end;
 function GetDefaultDir(def: string): string;
 var InstalledDir : string;
 begin
+    //Local install
     if FileExists('sonic.exe') or FileExists('Sonic Adventure DX.exe') then
     begin
       InstalledDir := GetCurrentDir;
     end
-    else if DirExists('Z:\home\deck\.local\share\Steam\steamapps\common\Sonic Adventure DX\') then
+    //Potential Steam Deck locations
+    else if DirExists('Z:\home\deck\.local\share\Steam\steamapps\common\Sonic Adventure DX') then
     begin
-      InstalledDir := 'Z:\home\deck\.local\share\Steam\steamapps\common\Sonic Adventure DX\';
+      InstalledDir := 'Z:\home\deck\.local\share\Steam\steamapps\common\Sonic Adventure DX';
+    end
+    else if DirExists('D:\steamapps\common\Sonic Adventure DX') then
+    begin
+      InstalledDir := 'D:\steamapps\common\Sonic Adventure DX';
+    end
+    else if DirExists('E:\steamapps\common\Sonic Adventure DX') then
+    begin
+      InstalledDir := 'E:\steamapps\common\Sonic Adventure DX';
     end
     //Check 32bit registry
     else if RegQueryStringValue(HKLM, 'SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Steam App 71250',
