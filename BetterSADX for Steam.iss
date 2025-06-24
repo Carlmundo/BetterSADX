@@ -21,6 +21,8 @@ SetupIconFile=SADX.ico
 WizardImageFile=SADX_Large.bmp
 WizardImageStretch=no
 WizardSmallImageFile=SADX_small.bmp
+;Compression=lzma
+;SolidCompression=yes
 Compression=none
 Uninstallable=no
 PrivilegesRequired=admin
@@ -57,8 +59,16 @@ end;
 function GetDefaultDir(def: string): string;
 var InstalledDir : string;
 begin
+    if FileExists('sonic.exe') or FileExists('Sonic Adventure DX.exe') then
+    begin
+      InstalledDir := GetCurrentDir;
+    end
+    else if DirExists('Z:\home\deck\.local\share\Steam\steamapps\common\Sonic Adventure DX\') then
+    begin
+      InstalledDir := 'Z:\home\deck\.local\share\Steam\steamapps\common\Sonic Adventure DX\';
+    end
     //Check 32bit registry
-    if RegQueryStringValue(HKLM, 'SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Steam App 71250',
+    else if RegQueryStringValue(HKLM, 'SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Steam App 71250',
      'InstallLocation', InstalledDir) then
     begin
     end
@@ -144,15 +154,17 @@ begin
       
       ProgressPage.SetText('Installing redistributables...', ''); 
       ProgressPage.SetProgress(50, 100);
-      //VC Redist 2013, 2015-2022
+      //VC Redist 2010, 2012, 2013, 2015-2022
+      Exec(ExpandConstant('{app}\_CommonRedist\vcredist\2010\vcredist_x86.exe'), '/quiet /norestart', '', SW_SHOW, ewWaitUntilTerminated, ErrorCode);
+      Exec(ExpandConstant('{app}\_CommonRedist\vcredist\2012\vcredist_x86.exe'), '/quiet /norestart', '', SW_SHOW, ewWaitUntilTerminated, ErrorCode);
       Exec(ExpandConstant('{app}\_CommonRedist\vcredist\2013\vcredist_x86.exe'), '/quiet /norestart', '', SW_SHOW, ewWaitUntilTerminated, ErrorCode);
       Exec(ExpandConstant('{app}\_CommonRedist\vcredist\2015-2022\VC_redist.x86.exe'), '/quiet /norestart', '', SW_SHOW, ewWaitUntilTerminated, ErrorCode);
       Exec(ExpandConstant('{app}\_CommonRedist\vcredist\2015-2022\VC_redist.x64.exe'), '/quiet /norestart', '', SW_SHOW, ewWaitUntilTerminated, ErrorCode);
-      //.NET Desktop 7.0
+      //.NET Desktop 8.0
       ProgressPage.SetProgress(60, 100);
-      Exec(ExpandConstant('{app}\_CommonRedist\.NET Desktop\dotnet_x86.exe'), '/q /norestart', '', SW_SHOW, ewWaitUntilTerminated, ErrorCode);
+      Exec(ExpandConstant('{app}\_CommonRedist\.NET Desktop\windowsdesktop-runtime-8.0.17-win-x86.exe'), '/install /quiet /norestart', '', SW_SHOW, ewWaitUntilTerminated, ErrorCode);
       ProgressPage.SetProgress(70, 100);
-      Exec(ExpandConstant('{app}\_CommonRedist\.NET Desktop\dotnet_x64.exe'), '/q /norestart', '', SW_SHOW, ewWaitUntilTerminated, ErrorCode);
+      Exec(ExpandConstant('{app}\_CommonRedist\.NET Desktop\windowsdesktop-runtime-8.0.17-win-x64.exe'), '/install /quiet /norestart', '', SW_SHOW, ewWaitUntilTerminated, ErrorCode);
       //Remove unneeded redist executables
       ProgressPage.SetText('Deleting redist installers...', '');
       ProgressPage.SetProgress(80, 100);
